@@ -36,7 +36,7 @@
     <dc:date>01/06/2004</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: fr.inrialpes.exmo.rdf.bibix.owl,v 1.4 2004/06/15 10:48:21 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: fr.inrialpes.exmo.rdf.bibix.owl,v 1.5 2004/06/15 14:47:55 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
   <!--
@@ -562,7 +562,6 @@
   </owl:Class>
 
   <owl:Class rdf:ID="Conference">
-    <rdfs:subClassOf rdf:resource=""/>
     <rdfs:label xml:lang="en">The location of an event</rdfs:label>
     <rdfs:comment xml:lang="en">An event presenting work.</rdfs:comment>
     <rdfs:subClassOf>
