@@ -36,7 +36,7 @@
     <dc:date>01/06/2004</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: fr.inrialpes.exmo.rdf.bibix.owl,v 1.5 2004/06/15 14:47:55 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: fr.inrialpes.exmo.rdf.bibix.owl,v 1.6 2004/06/15 15:30:45 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
   <!--
@@ -211,12 +211,6 @@
       <owl:Restriction>
 	<owl:onProperty rdf:resource="#pages" />
 	<owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-	<owl:onProperty rdf:resource="#event" />
-	<owl:allValuesFrom rdf:resource="#Conference"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -901,7 +895,7 @@
     <rdfs:comment xml:lang="en">The list of persons who directed the motion picture.</rdfs:comment>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="howPublished">
+  <owl:DatatypeProperty rdf:ID="howPublished">
     <rdfs:domain>
       <owl:Class>
 	<owl:unionOf rdf:parseType="Collection">
@@ -913,7 +907,7 @@
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">published</rdfs:label>
     <rdfs:comment xml:lang="en">How something strange has been published. The first word should be capitalized.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
   <owl:ObjectProperty rdf:ID="institution">
     <rdfs:domain rdf:resource="#TechReport" />
@@ -970,12 +964,12 @@
     <rdfs:comment xml:lang="en">The date when the work was published or, for an unpublished work, in which it was written. This date can be incomplete (i.e., no known day or month) but must contain a year.</rdfs:comment>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="note">
+  <owl:DatatypeProperty rdf:ID="note">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">note</rdfs:label>
     <rdfs:comment xml:lang="en">Any additional information that can help the reader. The first word should be capitalized.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
   <owl:ObjectProperty rdf:ID="organization">
     <rdfs:domain>
@@ -1021,21 +1015,21 @@
     <dc:description>As with "publisher", this could be an ObjectProperty that refers to an external set of school instances.</dc:description>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="series">
+  <owl:DatatypeProperty rdf:ID="series">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">series</rdfs:label>
     <rdfs:comment xml:lang="en">The name of a series or set of books. When citing an entire book, the the title field gives its title and an optional series field gives the name of a series or multi-volume set in which the book is published.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="title">
+  <owl:DatatypeProperty rdf:ID="title">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">title</rdfs:label>
     <rdfs:comment xml:lang="en">The work's title, typed as explained in the LaTeX book.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="type">
+  <owl:DatatypeProperty rdf:ID="type">
     <rdfs:domain>
       <owl:Class>
 	<owl:unionOf rdf:parseType="Collection">
@@ -1048,56 +1042,56 @@
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">type</rdfs:label>
     <rdfs:comment xml:lang="en">The type of a technical report (for example, "Research Note").</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="affiliation">
+  <owl:DatatypeProperty rdf:ID="affiliation">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">affiliation</rdfs:label>
     <rdfs:comment xml:lang="en">The authors affiliation.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="abstract">
+  <owl:DatatypeProperty rdf:ID="abstract">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">abstract</rdfs:label>
     <rdfs:comment xml:lang="en">An abstract of the work.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="contents">
+  <owl:DatatypeProperty rdf:ID="contents">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">ontents</rdfs:label>
     <rdfs:comment xml:lang="en">A Table of Contents.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="copyright">
+  <owl:DatatypeProperty rdf:ID="copyright">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">copyright</rdfs:label>
     <rdfs:comment xml:lang="en">Copyright information.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="isbn">
+  <owl:DatatypeProperty rdf:ID="isbn">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">ISBN</rdfs:label>
     <rdfs:comment xml:lang="en">The International Standard Book Number.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="issn">
+  <owl:DatatypeProperty rdf:ID="issn">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">ISSN</rdfs:label>
     <rdfs:comment xml:lang="en">The International Standard Serial Number. Used to identify a journal.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="keywords">
+  <owl:DatatypeProperty rdf:ID="keywords">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">keywords</rdfs:label>
     <rdfs:comment xml:lang="en">Key words used for searching or possibly for annotation.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:ID="language">
     <rdfs:domain rdf:resource="#Reference" />
@@ -1108,55 +1102,55 @@
 
   <owl:ObjectProperty rdf:ID="location">
     <rdfs:domain rdf:resource="#Reference" />
-    <rdfs:range rdf:resource="&xsd;string" />
+    <rdfs:range rdf:resource="#Address" />
     <rdfs:label xml:lang="en">location</rdfs:label>
     <rdfs:comment xml:lang="en">A location associated with the entry, such as the city in which a conference took place.</rdfs:comment>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:ID="lccn">
+  <owl:DatatypeProperty rdf:ID="lccn">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">LCCN</rdfs:label>
     <rdfs:comment xml:lang="en">The Library of Congress Call Number.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="mrNumber">
+  <owl:DatatypeProperty rdf:ID="mrNumber">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">MR number</rdfs:label>
     <rdfs:comment xml:lang="en">The Mathematical Reviews number.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="price">
+  <owl:DatatypeProperty rdf:ID="price">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">price</rdfs:label>
     <rdfs:comment xml:lang="en">The price of the document.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="size">
+  <owl:DatatypeProperty rdf:ID="size">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">size</rdfs:label>
     <rdfs:comment xml:lang="en">The physical dimensions of a work.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="url">
+  <owl:DatatypeProperty rdf:ID="url">
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">URL</rdfs:label>
     <rdfs:comment xml:lang="en">The WWW Universal Resource Locator that points to the item being referenced. This often is used for technical reports to point to the ftp or web site where the postscript source of the report is located.</rdfs:comment>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="name">
+  <owl:DatatypeProperty rdf:ID="name">
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">The name of an entity.</rdfs:label>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:ID="shortName">
+  <owl:DatatypeProperty rdf:ID="shortName">
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">The name of an entity.</rdfs:label>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
   <!--
     ********  "META" PROPERTIES  ********
