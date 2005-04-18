@@ -1,0 +1,693 @@
+<html>
+<head>
+<title>EON Ontology Alignment Contest</title>
+</head>
+<body bgcolor="white" face="tahoma, arial">
+
+<h1>EON Ontology Alignment Contest</h1>
+
+
+<table width="100%">
+<tr BGCOLOR="yellow" ALIGN="center"><td>
+The results of the contest as presented at the EON Workshop can be
+found <a href="results">here</a>.
+</td></tr>
+</table>
+
+<p>The increasing number of methods available for schema
+  matching/ontology integration suggests the need to establish a
+  consensus for evaluation of these methods. There is now a
+  coordinated international initiative to 
+  forge this consensus through two events in 2004:<ul compact="1">
+<li>The <a
+  href="http://www.atl.external.lmco.com/projects/ontology/i3con.html">Information
+  Interpretation and Integration Conference (I3CON)</a>, 
+  to be held at the NIST Performance Metrics for Intelligent Systems
+  (PerMIS) Workshop, will be an ontology alignment demonstration
+  competition on the model of the NIST Text Retrieval Conference.
+  This contest focuses on "real-life" test cases and compare algorithm
+  global performance.</li>
+<li>The Ontology Alignment Contest at the <a
+  href="http://km.aifb.uni-karlsruhe.de/ws/eon2004">3rd Evaluation of 
+  Ontology-based Tools (EON) Workshop</a>, to be held the <a
+  href="http://iswc2005.semanticweb.org">International
+  Semantic Web Conference (ISWC)</a>, will target the characterization of
+  alignment methods with regard to particular ontology features. This
+  contest aims at defining a proper set of benchmark tests for
+  assessing feature-related behavior.</li></ul>
+</p>
+<p>The goal of this contest is to provide a set of tests on which to
+  assess the merits of ontology alignment algorithms and tools
+  and to compare them.</p>
+<p>This is the first such contest, whose specific goal is to evaluate
+  the merits of this test. We are aware that other tests are possible
+  such as testing alignment between huge unchanged ontologies, or
+  testing a battery of ontologies independently designed on the same
+  topic. We feel that each kind of test has its own merit and
+  should be performed.</p>
+
+<h1>Contest rules</h1>
+
+<p>The contest organisers provide the participants with a complete
+  test base, including couples of ontologies to align as well as
+  expected results.
+  The test is based on one particular ontology dedicated to
+  a very narrow domain and a number of alternative ontologies of the
+  same domain for wich alignments are provided.
+  The ontologies are provided in OWL. The 
+  expected alignments are provided in a standard format expressed in
+  RDF/XML and described in <a
+  href="http://co4.inrialpes.fr/align/">http://co4.inrialpes.fr/align/</a>. From
+  the ontology to compare, the competitors are able to produce their
+  alignments in the same format. They can also compute a number of
+  measures on their results. They can use the ontology provided in <a
+  href="http://www.atl.external.lmco.com/projects/ontology/">http://www.atl.external.lmco.com/projects/ontology/</a>
+  for giving their results.</p> 
+
+<p>The participants will provide the organisers with a paper along the
+  following plan (at most 10 pages):
+<ul compact="1">
+<li>
+1) Presentation of the system<br />
+<ul compact="1">
+<li>1.1) State, purpose general statement</li>
+<li>1.2) Specific techniques used</li>
+<li>1.3) Adaptation made for the proposal</li>
+</ul>
+</li>
+
+<li>2) Results<br />
+2.x) a comment for each test
+</li>
+
+<li>3) General comments<br />
+<ul compact="1">
+<li>3.1) Comments on the results (strength and weaknesses)</li>
+<li>3.2) Discussions on the way to improve the proposed system</li>
+<li>3.3) Comments on the test cases</li>
+<li>3.4) Comments on measures</li>
+<li>3.5) Proposed new measures</li>
+</ul>
+</li>
+
+<li>4) Raw results<br />
+<ul compact="1">
+<li>4.1) Links to the set of provided alignments (in align format)</li>
+<li>4.2) Matrix format</li>
+</ul>
+</li>
+</ul>
+These results will be presented at the ISWC 2004 EON workshop, on
+November 8th, 2004 in Hiroshima (Japan).
+</p>
+<p>The above mentionned paper must be sent by September 15th to Jerome.Euzenat (à)
+  inrialpes.fr with copy to ocorcho (à) isoco.com and sure (à) aifb.uni-karlsruhe.de.</p>
+
+<h2>Preparatory phase</h2>
+
+<p>The ontologies and alignments of the contest are provided in
+  advance during the period between June 21th and July 4th. This is
+  the occasion for potential participants to send observations, bug
+  corrections, remarks and other test cases.</p>
+<p>The goal of this primary period is to be sure that the delivered
+  tests make sense to the participants. So do not hesitate to provide
+  feed back.</p>
+<p>The tests will certainly change after this period, but only for
+  ensuring a better participation to the tests.</p>
+<p>Do not hesitate, however, to contact us if you think that something
+  is incorrect or should be changed in these tests.</p>
+
+<h2>Versions</h2>
+
+<p>Several version of the tests have been provided as soon as the
+  participants found problems with the tests. The tests displayed
+  here are the last version.</p>
+
+<p>The <a href="log10-11.txt">release notes</a> about these versions are available.</p>
+
+<p>Further versions might be made available in the future.</p>
+
+<h2>Schedule</h2>
+<p>
+First publication of test cases: June 21th.<br />
+Comments due: July 4th<br />
+Final publication of test cases: July 9th.<br />
+Papers due: Sep. 15th.<br />
+Camera ready copies: Oct. 1st.<br />
+Workshop : Nov  8th.<br />
+</p>
+
+<h1>Reference ontology</h1>
+
+<p>The domain of this first test is Bibliographic references. It is,
+  of course, based on a subjective view of what must be a
+  bibliographic ontology. There can be many different classifications
+  of publications (based on area, quality, etc.). We choose the one
+  common among scholars based on mean of publications; as many
+  ontologies below (tests #301-304), it is reminiscent to BibTeX.</p>
+<p>This reference ontology contains 33 named classes, 39 object
+  properties, 20 data properties, 56 named individuals and 20
+  anonymous individuals.</p>
+
+<p>However, it is also based on various experiments on designing and
+  using ontologies for that domain. These various ontologies are
+  provided and used as an alignment test (tests #301-304).</p>
+
+<p>The complete ontology is that of <a href="#101">test #101</a>.</p>
+
+<!--p>Its schema is the following:<br />
+Reference
+<ul compact="1">
+<li>Academic
+<ul compact="1">
+<li>PhDThesis</li>
+<li>MasterThesis</li>
+</ul>
+</li>
+<li>Book
+<ul compact="1">
+<li>Monography</li>
+<li>Collection</li>
+<li>Proceedings</li>
+</ul>
+</li>
+<li>Part
+<ul compact="1">
+<li>Article</li>
+<li>Chapter</li>
+<li>InCollection</li>
+<li>Communication</li>
+</ul>
+</li>
+<li>Report
+<ul compact="1">
+<li>TechnicalReport</li>
+<li>ResearchReport</li>
+<li>Deliverable</li>
+<li>Recommendation</li>
+<li>Standard</li>
+</ul>
+</li>
+<li>Informal
+<ul compact="1">
+<li>Booklet</li>
+<li>Manual</li>
+<li>Unpublished</li>
+<li>LectureNotes</li>
+</ul>
+</li>
+<li>MotionPicture</li>
+<li>Misc</li>
+</ul>
+</p-->
+
+<p>The reference ontology is put in the context of the semantic web
+  by using other external resources for expressing non
+  bibliographic information. It takes advantage of FOAF (<a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>) and
+  iCalendar (<a href="http://www.w3.org/2002/12/cal/">http://www.w3.org/2002/12/cal/</a>) for expressing the People, Organization and Event
+  concepts. Here are the external reference used:
+<ul compact="1">
+<li>http://www.w3.org/2002/12/cal/#:Vevent (defined in
+  <a href="http://www.w3.org/2002/12/cal/ical.n3">http://www.w3.org/2002/12/cal/ical.n3</a> and supposedly in <a href="http://www.w3.org/2002/12/cal/ical.rdf">http://www.w3.org/2002/12/cal/ical.rdf</a>)</li>
+<li>http://xmlns.com/foaf/0.1/#:Person (defined in <a href="http://xmlns.com/foaf/0.1/index.rdf">http://xmlns.com/foaf/0.1/index.rdf</a>)</li>
+<li>http://xmlns.com/foaf/0.1/#:Organization (defined in <a href="http://xmlns.com/foaf/0.1/index.rdf">http://xmlns.com/foaf/0.1/index.rdf</a>)</li>
+</ul>
+</p>
+<p>This reference ontology is a bit limited in the sense that it does not
+  contain circular definitions nor attachement to several classes.</p>
+<p>Similarly the kind of proposed alignments is also limited: they
+  only match named classes and properties, they mostly use the "=" relation with
+  confidence of 1.</p>
+<p>The ontologies are described in OWL-DL and serialized in the
+  RDF/XML format. I'd be happy to translate them into N3 if someone
+  have some translation program.</p>
+
+<h1>Alignments</h1>
+
+<p>Below are provided the set of tests with expected alignments in the
+alignment format described at 
+<a
+   href="http://co4.inrialpes.fr/align/">http://co4.inrialpes.fr/align/</a>.
+Each ontology is to be aligned with the reference ontology (i.e.,
+   that of <a href="#101">test #101</a>.</p>
+<p>The only interesting alignments are those involving classes and
+  properties of the given ontologies. So the alignments should not
+  align individuals, nor entities from the external ontologies.
+</p>
+<p>There is some chance that the final test be significantly harder
+  with most of the tests duplicated so that it does not suffice to
+  compare labels of entities.</p>
+
+<hr />
+<a name="101"/>
+<h2>101) Concept test: Id</h2>
+<p>This test compares the ontology to itself.
+</p>
+<p>Ontology : [<a href="101/onto.rdf">RDF/XML</a>]
+[<a href="101/onto.html">HTML</a>]<br />
+Alignment : [<a href="101/refalign.rdf">RDF/XML</a>]
+[<a href="101/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>102) Concept test: ?</h2>
+<p>This test compares the ontology to a totally irrelevant one. We
+  ussed the food ontology given in the OWL guide (verbatim).</p>
+<p>Ontology : [<a href="102/onto.rdf">RDF/XML</a>]
+[<a href="102/onto.html">HTML</a>]<br />
+Alignment : [<a href="102/refalign.rdf">RDF/XML</a>]
+[<a href="102/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>103) Concept test: Language generalisation</h2>
+<p>This test compares the ontology with its generalisation in OWL Lite
+  (i.e., unavailable constraints are replaced by the more general
+  available). The generalization basically removes owl:unionOf and
+  owl:oneOf and the Property types (owl:TransitiveProperty).
+</p>
+<p>Ontology : [<a href="103/onto.rdf">RDF/XML</a>]
+[<a href="103/onto.html">HTML</a>]<br />
+Alignment : [<a href="103/refalign.rdf">RDF/XML</a>]
+[<a href="103/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>104) Concept test: Language restriction</h2>
+<p>This test compares the ontology with its restriction in OWL Lite
+  (where unavailable constraints have been discarded).
+</p>
+<p>Ontology : [<a href="104/onto.rdf">RDF/XML</a>]
+[<a href="104/onto.html">HTML</a>]<br />
+Alignment : [<a href="104/refalign.rdf">RDF/XML</a>]
+[<a href="104/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>201) Systematic: No names</h2>
+<p>Each label or identifier is replaced by a random one.</p>
+<p>Ontology : [<a href="201/onto.rdf">RDF/XML</a>]
+[<a href="201/onto.html">HTML</a>]<br />
+Alignment : [<a href="201/refalign.rdf">RDF/XML</a>]
+[<a href="201/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>202) Systematic: No names, no comment</h2>
+<p>Each label or identifier is replaced by a random one. Comments
+  (rdfs:comment and dc:description) have been suppressed as well.</p>
+<p>Ontology : [<a href="202/onto.rdf">RDF/XML</a>]
+[<a href="202/onto.html">HTML</a>]<br />
+Alignment : [<a href="202/refalign.rdf">RDF/XML</a>]
+[<a href="202/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>203) Systematic: Misspelling</h2>
+<p>A random, but consistent, typo generator should be applied to
+ labels and comments.</p>
+<p>Not available in this test (if you know how to do it, contact me).</p>
+<!--p>Ontology : [<a href="203/onto.rdf">RDF/XML</a>]
+[<a href="203/onto.html">HTML</a>]<br />
+Alignment : [<a href="203/refalign.rdf">RDF/XML</a>]
+[<a href="203/refalign.html">HTML</a>]<br />
+</p-->
+
+<hr />
+<h2>204) Systematic: Naming conventions</h2>
+<p>Different naming conventions (Uppercasing, underscore, dash, etc.)
+  are used for labels. Comments have been suppressed.</p>
+<p>Ontology : [<a href="204/onto.rdf">RDF/XML</a>]
+[<a href="204/onto.html">HTML</a>]<br />
+Alignment : [<a href="204/refalign.rdf">RDF/XML</a>]
+[<a href="204/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>205) Systematic: Synonyms</h2>
+<p>Labels are replaced by synonyms. Comments have been suppressed.</p>
+<p>Ontology : [<a href="205/onto.rdf">RDF/XML</a>]
+[<a href="205/onto.html">HTML</a>]<br />
+Alignment : [<a href="205/refalign.rdf">RDF/XML</a>]
+[<a href="205/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>206) Systematic: Foreign names</h2>
+<p>The complete ontology is translated to another language than
+  english (French in the current case, but other languages would be fine).
+</p>
+<p>Ontology : [<a href="206/onto.rdf">RDF/XML</a>][<a
+						      href="206/onto-utf.rdf">RDF/XML in UTF-8</a>]
+[<a href="206/onto.html">HTML</a>]<br />
+Alignment : [<a href="206/refalign.rdf">RDF/XML</a>]
+[<a href="206/refalign-utf.rdf">RDF/XML in UTF-8</a>]
+[<a href="206/refalign.html">HTML</a>]<br />
+</p>
+<p><b>NOTE:</b> Some parsers do not like ISO-Latin in tags. You are
+  authorized to use the Unicode (UTF-8) version instead (just replace
+  onto.rdf by onto2.rdf).
+</p>
+
+<hr />
+<h2>221) Systematic: No hierarchy</h2>
+<p>All subclass assertions to named classes are suppressed.</p>
+<p>Ontology : [<a href="221/tonto.rdf">RD/XML</a>]
+[<a href="221/onto.html">HTML</a>]<br />
+Alignment : [<a href="221/refalign.rdf">RDF/XML</a>]
+[<a href="221/refalign.html">HTML</a>]<br />
+</p>
+<p>(variation: compile inheritance)</p>
+
+<hr />
+<h2>222) Systematic: Flattened hierarchy</h2>
+<p>A hierarchy still exists but has been strictly reduced.</p>
+<p>Ontology : [<a href="222/tonto.rdf">RDF/XML</a>]
+[<a href="222/onto.html">HTML</a>]<br />
+Alignment : [<a href="222/refalign.rdf">RDF/XML</a>]
+[<a href="222/refalign.html">HTML</a>]<br />
+</p>
+<p>The alignment here contains relations which are not "=" but "&lt;".</p>
+
+<hr />
+<h2>223) Systematic: Expanded hierarchy</h2>
+<p>Numerous intermediate classes are introduced within the hierarchy.</p>
+<p>Ontology : [<a href="223/tonto.rdf">RDF/XML</a>]
+[<a href="223/onto.html">HTML</a>]<br />
+Alignment : [<a href="223/refalign.rdf">RDF/XML</a>]
+[<a href="223/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>224) Systematic: No instances</h2>
+<p>All individuals have been suppressed from the ontology.</p>
+<p>Ontology : [<a href="224/onto.rdf">RDF/XML</a>]
+[<a href="224/onto.html">HTML</a>]<br />
+Alignment : [<a href="224/refalign.rdf">RDF/XML</a>]
+[<a href="224/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>225) Systematic: No restrictions</h2>
+<p>All local restrictions on properties have been suppressed from the ontology.</p>
+<p>Ontology : [<a href="225/onto.rdf">RDF/XML</a>]
+[<a href="225/onto.html">HTML</a>]<br />
+Alignment : [<a href="225/refalign.rdf">RDF/XML</a>]
+[<a href="225/refalign.html">HTML</a>]<br />
+</p>
+<p>(variation: no property nor global restrictions on properties)</p>
+
+<hr />
+<h2>226) Systematic: No datatypes</h2>
+<p>In this test all datatypes are converted to xsd:string.
+</p>
+<p>Not available in this test</p>
+<!--p>Ontology : [<a href="226/onto.rdf">RDF/XML</a>]
+[<a href="226/onto.html">HTML</a>]<br />
+Alignment : [<a href="226/refalign.rdf">RDF/XML</a>]
+[<a href="226/refalign.html">HTML</a>]<br />
+</p-->
+
+<hr />
+<h2>227) Systematic: Unit differences</h2>
+<p>(Measurable) values are expressed in different datatypes.</p>
+<p>Not available in this test</p>
+<!--p>Ontology : [<a href="227/onto.rdf">RDF/XML</a>]
+[<a href="227/onto.html">HTML</a>]<br />
+Alignment : [<a href="227/refalign.rdf">RDF/XML</a>]
+[<a href="227/refalign.html">HTML</a>]<br />
+</p-->
+
+<hr />
+<h2>228) Systematic: No properties</h2>
+<p>Properties and relations between objects have been completely suppressed.
+</p>
+<p>Ontology : [<a href="228/onto.rdf">RDF/XML</a>]
+[<a href="228/onto.html">HTML</a>]<br />
+Alignment : [<a href="228/refalign.rdf">RDF/XML</a>]
+[<a href="228/refalign.html">HTML</a>]<br />
+</p>
+<p>(variation: leave the properties in instances)</p>
+
+<hr />
+<h2>229) Systematic: Class vs instances</h2>
+<p>Some classes have become instances.</p>
+<p>Not available in this test.</p>
+<!--p>Ontology : [<a href="229/onto.rdf">RDF/XML</a>]
+[<a href="229/onto.html">HTML</a>]<br />
+Alignment : [<a href="229/refalign.rdf">RDF/XML</a>]
+[<a href="229/refalign.html">HTML</a>]<br />
+</p-->
+
+<hr />
+<h2>230) Systematic: Flattening entities</h2>
+<p>Some components of classes are expanded in the class structure
+  (e.g., year, month, day attributes instead of date).</p>
+<p>Ontology : [<a href="230/onto.rdf">RDF/XML</a>]
+[<a href="230/onto.html">HTML</a>]<br />
+Alignment : [<a href="230/refalign.rdf">RDF/XML</a>]
+[<a href="230/refalign.html">HTML</a>]<br />
+</p>
+<p>Here one limitation of the proposed format is that it does not cover
+  alignments such as: journalName = name o journal.</p>
+
+<hr />
+<h2>231) Systematic: Multiplying entities</h2>
+<p>Some classes are spreaded over several classes.</p>
+<p>Not available in this test.</p>
+<!--p>Ontology : [<a href="231/onto.rdf">RDF/XML</a>]
+[<a href="231/onto.html">HTML</a>]<br />
+Alignment : [<a href="231/refalign.rdf">RDF/XML</a>]
+[<a href="231/refalign.html">HTML</a>]<br />
+</p-->
+
+<hr />
+<h2>301) Real ontology: BibTeX/MIT</h2>
+<p>For a computer scientist, BibTeX is the starting point for a
+  useful bibliographic ontology. It is of wide use and relatively
+  well thought out.
+This ontology can be found at <a href=""></a> and is documented in <a href="http://visus.mit.edu/bibtex/0.1/">BibTex
+in OWL</a>.</p>
+<p>This is a test of comparing our test ontology with an actual
+  ontology, simpler and closer to the initial BibTeX ontology.
+  The alignment result contains some inclusion (&lt;) alignment relations.
+</p>
+
+</p>
+<p>Ontology : [<a href="301/onto.rdf">RDF/XML</a>]
+[<a href="301/onto.html">HTML</a>]<br />
+Alignment : [<a href="301/refalign.rdf">RDF/XML</a>]
+[<a href="301/refalign.html">HTML</a>]<br />
+</p>
+<!--p>Its schema is the following:<br />
+<ul compact="1">
+<li>article</li>
+<li>book</li>
+<li>inbook</li>
+<li>incollection</li>
+<li>inproceedings</li>
+<li>mastersthesis</li>
+<li>phdthesis</li>
+<li>proceedings</li>
+<li>techreport</li>
+<li>booklet</li>
+<li>misc</li>
+</ul>
+</p-->
+
+
+<hr />
+<h2>302) Real ontology: BibTeX/UMBC</h2>
+<p>This ontology is very similar to the previous one, even closer to
+  the genuine BibTeX, with different
+  extensions and naming conventions. It can be found at <a
+  href="http://ebiquity.umbc.edu">http://ebiquity.umbc.edu</a>.
+</p>
+<p>The alignment result also contains some inclusion (&lt;) alignment
+  relations.</p>
+<p>Ontology : [<a href="302/onto.rdf">RDF/XML</a>]
+[<a href="302/onto.html">HTML</a>]<br />
+Alignment : [<a href="302/refalign.rdf">RDF/XML</a>]
+[<a href="302/refalign.html">HTML</a>]<br />
+</p>
+
+<hr />
+<h2>303) Real ontology: Karlsruhe</h2>
+<p>This is a test of comparing our test ontology with an actual
+  ontology which contains more items than the actual items used in the
+  current ontology.
+</p>
+<p>The Karlsruhe ontology (<a href="http://www.aifb.uni-karlsruhe.de/ontology">http://www.aifb.uni-karlsruhe.de/ontology</a>) is used
+  in the Ontoweb portal. It is a refinement from other ontologies such
+  as (KA)<sup>2</sup>. As such it does not only defines
+  bibliographic items but many other items.</p>
+<p>The alignment contains &lt; as well as &gt; relations.</p>
+<p>Ontology : [<a href="303/onto.rdf">RDF/XML</a>]
+[<a href="303/onto.html">HTML</a>]<br />
+Alignment : [<a href="303/refalign.rdf">RDF/XML</a>]
+[<a href="303/refalign.html">HTML</a>]<br />
+</p>
+<!--p>Its schema is the following:<br />
+Publication
+<ul compact="1">
+<li>InProceedings</li>
+<li>InBook</li>
+<li>Manual</li>
+<li>InCollection</li>
+<li>Report
+<ul compact="1">
+<li>TechnicalReport</li>
+<li>ProjectReport</li>
+</ul>
+</li>
+<li>Thesis
+<ul compact="1">
+<li>PhDThesis</li>
+<li>MasterThesis</li>
+</ul>
+</li>
+<li>Unpublished</li>
+<li>Proceedings</li>
+<li>Book</li>
+<li>Booklet</li>
+<li>Misc</li>
+</ul>
+</p-->
+
+<hr />
+<h2>304) Real ontology: INRIA</h2>
+<p>This is a test of comparing our test ontology with an actual
+  ontology which is not equivalent but quite close (it can be though
+  of as a previous version).
+</p>
+<p>This INRIA ontology (<a href="fr.inrialpes.exmo.rdf.bib.owl">fr.inrialpes.exmo.rdf.bib.owl</a>) has been designed by Antoine Zimmermann from
+  the BibTeX in OWL ontology and our Bibliographic XML DTD. Its goal
+  was to gather easily a number of RDF items. These items were BibTeX
+  entries found on the web and transformed in RDF according to this
+  ontology.</p>
+<p>The actual hierarchy of this ontology contains classes which are subclasses of several other classes.</p>
+<p>Ontology : [<a href="304/onto.rdf">RDF/XML</a>]
+[<a href="304/onto.html">HTML</a>]<br />
+Alignment : [<a href="304/refalign.rdf">RDF/XML</a>]
+[<a href="304/refalign.html">HTML</a>]<br />
+</p>
+<!--p>Its schema is the following:<br />
+Entry
+<ul compact="1">
+<li>Published
+<ul compact="1">
+<li>Article</li>
+</ul>
+</li>
+<li>Composite
+<ul compact="1">
+<li>Book
+<ul compact="1">
+<li>Monography</li>
+</ul>
+</li>
+<li>Proceedings</li>
+</ul>
+</li>
+<li>Informal
+<ul compact="1">
+<li>Booklet</li>
+<li>Misc</li>
+<li>Deliverable</li>
+<li>LectureNotes</li>
+<li>Manual</li>
+<li>Unpublished</li>
+<li>TechReport</li>
+</ul>
+</li>
+<li>Academic
+<ul compact="1">
+<li>Thesis
+<ul compact="1">
+<li>PhDThesis</li>
+<li>MasterThesis</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Part
+<ul compact="1">
+<li>BookPart
+<ul compact="1">
+<li>InBook</li>
+<li>InCollection</li>
+</ul>
+</li>
+<li>InProceedings</li>
+</ul>
+</li>
+<li>MotionPicture</li>
+</ul>
+</p-->
+<hr />
+
+<h1>Tools</h1>
+
+<p>A <a href="oacontest.zip">zip file</a> contains all the material
+  about the contest. That is:
+<ul compact="1">
+<li>This web page;</li>
+<li>All ontology/alignment pairs in OWL/RDF/XML;</li>
+<li>All ontology/alignment pairs in HTML;</li>
+<li>XSLT stylesheet from ontologies and alignment to HTML;</li>
+<li>A directory with some reference ontologies (iCal, Foaf);</li>
+</ul>
+</p>
+
+<p>We would like to find a simple converter from OWL/XML/RDF to 
+N3 (and maybe RDFS).</p>
+
+<p>You can use the <a href="..">Alignment API</a> for manipulating and
+generating your alignments (in particular for computing evaluation of
+your results).</p>
+
+<p>A Ant <a href="build.xml">build.xml</a> file is also provided that
+  can be used for generating the HTML pages. It will be enhanced for
+  computing the characteristics of the results.</p>
+
+<h1>Results</h1>
+
+<p>The fully detailled results, as provided from the competitors
+  files and according to the contests rules can be found <a href="results">here</a>.</p>
+
+<h1>Acknowledgements</h1>
+
+<p>Many resources have been used for setting up this test (I must put links):
+<ul compact="1">
+<li>BibTeX</li>
+<li>UMBC BibTeX</li>
+<li>MIT BibTex</li>
+<li>Java BibTeX parser</li>
+<li><a href="http://www.aifb.uni-karlsruhe.de/ontology">Karlsruhe
+ ontology</a>
+ and bibtex to RDF translator that we adapted</li>
+<li>INRIA's adaptation of the ontologies and the translator above by
+  Antoine Zimmermann.</li>
+<li><a href="http://www.atl.external.lmco.com/projects/ontology/">Lockheed evaluation format</a>.</li>
+<li>WonderWeb/Manchester's <a href="http://phoebus.cs.man.ac.uk:9999/OWL/Validator">OWL species validator</a></li>
+</ul>
+</p>
+
+<p>Various people helped testing or suggested improvements and tests:
+<ul compact="1">
+<li>York Sure and Oscar Corcho for welcoming this at their EON workshop;</li>
+<li>Heiner Stuckenschmidt helped providing several sorts of tests;</li>
+<li>Liz Palmer proposed variation tests;</li>
+<li>Natasha Noy and David Loup have been very helpful in noticing and
+  correcting bugs.</li>
+</ul>
+</p>
+
+<h1>Contacts</h1>
+<p>Contact address is Jerome . Euzenat (À) inrialpes . fr</p>
+<hr />
+<center><small>http://co4.inrialpes.fr/align/Contest</small></center>
+<hr />
+$Id: index.html,v 1.27 2004/11/18 15:23:37 euzenat Exp $
+</body>
+</html>
