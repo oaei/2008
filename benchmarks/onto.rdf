@@ -13,6 +13,8 @@
 	  <!ENTITY dctype 	"http://purl.org/dc/dcmitype/"> ]>
 
 <rdf:RDF
+ xmlns="http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf#"
+ xml:base="http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf#"
  xmlns:units	="&units;"
  xmlns:foaf	="&foaf;"
  xmlns:ical	="&ical;"
@@ -35,8 +37,29 @@
     <dc:date>01/06/2004</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: fr.inrialpes.exmo.rdf.bibix.owl,v 1.13 2004/06/22 19:52:34 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: fr.inrialpes.exmo.rdf.bibix.owl,v 1.9 2004/06/19 15:43:25 euzenat Exp $</owl:versionInfo>
   </owl:Ontology>
+
+<!-- This is due to the Species Validator. -->
+<owl:Class rdf:about="&foaf;Person" />
+<owl:Class rdf:about="&foaf;Organization" />
+<owl:Class rdf:about="&rdf;List" />
+<rdf:List rdf:about="&rdf;nil" />
+<owl:ObjectProperty rdf:about="&rdf;first">
+    <rdfs:domain rdf:resource="&rdf;List" />
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&rdf;rest">
+    <rdfs:domain rdf:resource="&rdf;List" />
+    <rdfs:range rdf:resource="&rdf;List" />
+</owl:ObjectProperty>
+<owl:DatatypeProperty rdf:about="&dc;creator" />
+<owl:DatatypeProperty rdf:about="&dc;contributor" />
+<owl:DatatypeProperty rdf:about="&dc;description" />
+<owl:DatatypeProperty rdf:about="&dc;date" />
+<owl:DatatypeProperty rdf:about="#firstName" />
+<owl:DatatypeProperty rdf:about="#lastName" />
+<owl:DatatypeProperty rdf:about="#name" />
+<owl:DatatypeProperty rdf:about="#shortName" />
 
   <!--
     ********  ENTRIES  ********
@@ -826,7 +849,7 @@
   </owl:ObjectProperty>
 
   <owl:DatatypeProperty rdf:ID="firstPublished">
-    <rdfs:domain rdf:resource="#BookPart" />
+    <rdfs:domain rdf:resource="#Chapter" />
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:label xml:lang="en">First published</rdfs:label>
     <rdfs:comment xml:lang="en">When the reference was first published.</rdfs:comment>
@@ -1006,8 +1029,8 @@
     <rdfs:domain>
       <owl:Class>
 	<owl:unionOf rdf:parseType="Collection">
-	  <owl:Class rdf:about="#BookPart" />
-	  <owl:Class rdf:about="#Techreport" />
+	  <owl:Class rdf:about="#Chapter" />
+	  <owl:Class rdf:about="#TechReport" />
 	  <owl:Class rdf:about="#Academic" />
 	</owl:unionOf>
       </owl:Class>
@@ -1070,7 +1093,7 @@
     <rdfs:domain rdf:resource="#Reference" />
     <rdfs:range rdf:resource="&xsd;language" />
     <rdfs:label xml:lang="en">language</rdfs:label>
-    <rdfs:comment xml:lang="en">The language in which the referenced publication is written or performed (use RFC 3066 [RFC3066] which, in conjunction with ISO639 [ISO639] two-letter and 2xtwo-letter codes).</rdfs:comment>
+    <rdfs:comment xml:lang="en">The language in which the referenced publication is written or performed (use ISO two-letter codes).</rdfs:comment>
   </owl:DatatypeProperty>
 
   <owl:ObjectProperty rdf:ID="location">
@@ -1157,7 +1180,6 @@
     <rdfs:comment xml:lang="en">The number of a journal, magazine, technical report, or of a work in a series. An issue of a journal or magazine is usually identified by its volume and number; the organization that issues a technical report usually gives it a number; and sometimes books are given numbers in a named series.</rdfs:comment>
   </owl:DatatypeProperty>
 
-  <!-- This is a mistake (the union) -->
   <owl:DatatypeProperty rdf:ID="issue">
     <rdfs:domain>
       <owl:Class>
@@ -1234,217 +1256,217 @@
 
 <!-- PEOPLE -->
 
-<foaf:Person rdf:about="#104570373">
+<foaf:Person rdf:about="#a04570373">
 	<rdfs:label>John-Jules Meyer</rdfs:label>
 	<name rdf:datatype="&xsd;string">John-Jules Meyer</name>
 	<firstName rdf:datatype="&xsd;string">John-Jules</firstName>
 	<lastName rdf:datatype="&xsd;string">Meyer</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#243836633">
+<foaf:Person rdf:about="#a43836633">
 	<rdfs:label>Jeen Broekstra</rdfs:label>
 	<name rdf:datatype="&xsd;string">Jeen Broekstra</name>
 	<firstName rdf:datatype="&xsd;string">Jeen</firstName>
 	<lastName rdf:datatype="&xsd;string">Broekstra</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#285228505">
+<foaf:Person rdf:about="#a85228505">
 	<rdfs:label>Alexander Mädche</rdfs:label>
 	<name rdf:datatype="&xsd;string">Alexander Mädche</name>
 	<firstName rdf:datatype="&xsd;string">Alexander</firstName>
 	<lastName rdf:datatype="&xsd;string">Mädche</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#748552212">
+<foaf:Person rdf:about="#a48552212">
 	<rdfs:label>Björn Schnizler</rdfs:label>
 	<name rdf:datatype="&xsd;string">Björn Schnizler</name>
 	<firstName rdf:datatype="&xsd;string">Björn</firstName>
 	<lastName rdf:datatype="&xsd;string">Schnizler</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1971541439">
+<foaf:Person rdf:about="#a971541439">
 	<rdfs:label>Alberto Trombetta</rdfs:label>
 	<name rdf:datatype="&xsd;string">Alberto Trombetta</name>
 	<firstName rdf:datatype="&xsd;string">Alberto</firstName>
 	<lastName rdf:datatype="&xsd;string">Trombetta</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#311090777">
+<foaf:Person rdf:about="#a11090777">
 	<rdfs:label>Christine Parent</rdfs:label>
 	<name rdf:datatype="&xsd;string">Christine Parent</name>
 	<firstName rdf:datatype="&xsd;string">Christine</firstName>
 	<lastName rdf:datatype="&xsd;string">Parent</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1250331360">
+<foaf:Person rdf:about="#a250331360">
 	<rdfs:label>R. Schmidt</rdfs:label>
 	<name rdf:datatype="&xsd;string">R. Schmidt</name>
 	<firstName rdf:datatype="&xsd;string">R.</firstName>
 	<lastName rdf:datatype="&xsd;string">Schmidt</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#579573306">
+<foaf:Person rdf:about="#a79573306">
 	<rdfs:label>York Sure</rdfs:label>
 	<name rdf:datatype="&xsd;string">York Sure</name>
 	<firstName rdf:datatype="&xsd;string">York</firstName>
 	<lastName rdf:datatype="&xsd;string">Sure</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1885257047">
+<foaf:Person rdf:about="#a885257047">
 	<rdfs:label>M. Punceva</rdfs:label>
 	<name rdf:datatype="&xsd;string">M. Punceva</name>
 	<firstName rdf:datatype="&xsd;string">M.</firstName>
 	<lastName rdf:datatype="&xsd;string">Punceva</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#474993404">
+<foaf:Person rdf:about="#a74993404">
 	<rdfs:label>I. V. Levenshtein</rdfs:label>
 	<name rdf:datatype="&xsd;string">I. V. Levenshtein</name>
 	<firstName rdf:datatype="&xsd;string">I. V.</firstName>
 	<lastName rdf:datatype="&xsd;string">Levenshtein</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#371003986">
+<foaf:Person rdf:about="#a71003986">
 	<rdfs:label>Steffen Staab</rdfs:label>
 	<name rdf:datatype="&xsd;string">Steffen Staab</name>
 	<firstName rdf:datatype="&xsd;string">Steffen</firstName>
 	<lastName rdf:datatype="&xsd;string">Staab</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1572406328">
+<foaf:Person rdf:about="#a572406328">
 	<rdfs:label>Frank Boer</rdfs:label>
 	<name rdf:datatype="&xsd;string">Frank Boer</name>
 	<firstName rdf:datatype="&xsd;string">Frank</firstName>
 	<lastName rdf:datatype="&xsd;string">Boer</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#2139477786">
+<foaf:Person rdf:about="#a139477786">
 	<rdfs:label>Maarten Menken</rdfs:label>
 	<name rdf:datatype="&xsd;string">Maarten Menken</name>
 	<firstName rdf:datatype="&xsd;string">Maarten</firstName>
 	<lastName rdf:datatype="&xsd;string">Menken</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1337716610">
+<foaf:Person rdf:about="#a337716610">
 	<rdfs:label>Manfred Hauswirth</rdfs:label>
 	<name rdf:datatype="&xsd;string">Manfred Hauswirth</name>
 	<firstName rdf:datatype="&xsd;string">Manfred</firstName>
 	<lastName rdf:datatype="&xsd;string">Hauswirth</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1086379337">
+<foaf:Person rdf:about="#a086379337">
 	<rdfs:label>Wiebe Hoek</rdfs:label>
 	<name rdf:datatype="&xsd;string">Wiebe Hoek</name>
 	<firstName rdf:datatype="&xsd;string">Wiebe</firstName>
 	<lastName rdf:datatype="&xsd;string">Hoek</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1712561038">
+<foaf:Person rdf:about="#a712561038">
 	<rdfs:label>Marc Ehrig</rdfs:label>
 	<name rdf:datatype="&xsd;string">Marc Ehrig</name>
 	<firstName rdf:datatype="&xsd;string">Marc</firstName>
 	<lastName rdf:datatype="&xsd;string">Ehrig</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1066600210">
+<foaf:Person rdf:about="#a066600210">
 	<rdfs:label>Danilo Montesi</rdfs:label>
 	<name rdf:datatype="&xsd;string">Danilo Montesi</name>
 	<firstName rdf:datatype="&xsd;string">Danilo</firstName>
 	<lastName rdf:datatype="&xsd;string">Montesi</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#2093016135">
+<foaf:Person rdf:about="#a093016135">
 	<rdfs:label>Rogier Eijk</rdfs:label>
 	<name rdf:datatype="&xsd;string">Rogier Eijk</name>
 	<firstName rdf:datatype="&xsd;string">Rogier</firstName>
 	<lastName rdf:datatype="&xsd;string">Eijk</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1944339054">
+<foaf:Person rdf:about="#a944339054">
 	<rdfs:label>Frank van Harmelen</rdfs:label>
 	<name rdf:datatype="&xsd;string">Frank van Harmelen</name>
 	<firstName rdf:datatype="&xsd;string">Frank</firstName>
 	<lastName rdf:datatype="&xsd;string">van Harmelen</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#898078619">
+<foaf:Person rdf:about="#a98078619">
 	<rdfs:label>Philippe Cudré-Mauroux</rdfs:label>
 	<name rdf:datatype="&xsd;string">Philippe Cudré-Mauroux</name>
 	<firstName rdf:datatype="&xsd;string">Philippe</firstName>
 	<lastName rdf:datatype="&xsd;string">Cudré-Mauroux</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#839510672">
+<foaf:Person rdf:about="#a39510672">
 	<rdfs:label>Z. Despotovic</rdfs:label>
 	<name rdf:datatype="&xsd;string">Z. Despotovic</name>
 	<firstName rdf:datatype="&xsd;string">Z.</firstName>
 	<lastName rdf:datatype="&xsd;string">Despotovic</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1431956276">
+<foaf:Person rdf:about="#a431956276">
 	<rdfs:label>Stefano Spaccapietra</rdfs:label>
 	<name rdf:datatype="&xsd;string">Stefano Spaccapietra</name>
 	<firstName rdf:datatype="&xsd;string">Stefano</firstName>
 	<lastName rdf:datatype="&xsd;string">Spaccapietra</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1431956276b">
+<foaf:Person rdf:about="#a431956276b">
 	<rdfs:label>Mike Papazoglou</rdfs:label>
 	<name rdf:datatype="&xsd;string">Mike Papazoglou</name>
 	<firstName rdf:datatype="&xsd;string">Mike</firstName>
 	<lastName rdf:datatype="&xsd;string">Papazoglou</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1431956276c">
+<foaf:Person rdf:about="#a431956276c">
 	<rdfs:label>Zahir Tari</rdfs:label>
 	<name rdf:datatype="&xsd;string">Zahir Tari</name>
 	<firstName rdf:datatype="&xsd;string">Zahir</firstName>
 	<lastName rdf:datatype="&xsd;string">Tari</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#470955601">
+<foaf:Person rdf:about="#a70955601">
 	<rdfs:label>A. Datta</rdfs:label>
 	<name rdf:datatype="&xsd;string">A. Datta</name>
 	<firstName rdf:datatype="&xsd;string">A.</firstName>
 	<lastName rdf:datatype="&xsd;string">Datta</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1467748807">
+<foaf:Person rdf:about="#a467748807">
 	<rdfs:label>Ateret Anaby-Tavor</rdfs:label>
 	<name rdf:datatype="&xsd;string">Ateret Anaby-Tavor</name>
 	<firstName rdf:datatype="&xsd;string">Ateret</firstName>
 	<lastName rdf:datatype="&xsd;string">Anaby-Tavor</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#53105947">
+<foaf:Person rdf:about="#a3105947">
 	<rdfs:label>Ronny Siebes</rdfs:label>
 	<name rdf:datatype="&xsd;string">Ronny Siebes</name>
 	<firstName rdf:datatype="&xsd;string">Ronny</firstName>
 	<lastName rdf:datatype="&xsd;string">Siebes</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#429105611">
+<foaf:Person rdf:about="#a29105611">
 	<rdfs:label>Karl Aberer</rdfs:label>
 	<name rdf:datatype="&xsd;string">Karl Aberer</name>
 	<firstName rdf:datatype="&xsd;string">Karl</firstName>
 	<lastName rdf:datatype="&xsd;string">Aberer</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1958684218">
+<foaf:Person rdf:about="#a958684218">
 	<rdfs:label>Peter Mika</rdfs:label>
 	<name rdf:datatype="&xsd;string">Peter Mika</name>
 	<firstName rdf:datatype="&xsd;string">Peter</firstName>
 	<lastName rdf:datatype="&xsd;string">Mika</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#594533498">
+<foaf:Person rdf:about="#a94533498">
 	<rdfs:label>Peter Haase</rdfs:label>
 	<name rdf:datatype="&xsd;string">Peter Haase</name>
 	<firstName rdf:datatype="&xsd;string">Peter</firstName>
 	<lastName rdf:datatype="&xsd;string">Haase</lastName>
 </foaf:Person>
 
-<foaf:Person rdf:about="#1900366022">
+<foaf:Person rdf:about="#a900366022">
 	<rdfs:label>Avigdor Gal</rdfs:label>
 	<name rdf:datatype="&xsd;string">Avigdor Gal</name>
 	<firstName rdf:datatype="&xsd;string">Avigdor</firstName>
@@ -1453,13 +1475,13 @@
 
 <!-- INSTITUTIONS -->
 
-<Journal rdf:about="#1246119474">
+<Journal rdf:about="#a246119474">
 	<rdfs:label>Journal of Web Semantics</rdfs:label>
 	<name rdf:datatype="&xsd;string">Journal of Web Semantics</name>
 	<shortName rdf:datatype="&xsd;string">JWS</shortName>
 </Journal>
 
-<Publisher rdf:about="#2131020767">
+<Publisher rdf:about="#a131020767">
 	<rdfs:label>Springer-Verlag</rdfs:label>
 	<name rdf:datatype="&xsd;string">Springer-Verlag</name>
 	<address>
@@ -1470,12 +1492,12 @@
 	</address>
 </Publisher>
 
-<Journal rdf:about="#670981683">
+<Journal rdf:about="#a70981683">
 	<rdfs:label>Cybernetics and Control Theory</rdfs:label>
 	<name rdf:datatype="&xsd;string">Cybernetics and Control Theory</name>
 </Journal>
 
-<Publisher rdf:about="#785849488">
+<Publisher rdf:about="#a85849488">
 	<rdfs:label>The MIT Press</rdfs:label>
 	<name rdf:datatype="&xsd;string">The MIT Press</name>
 	<address>
@@ -1487,18 +1509,18 @@
 	</address>
 </Publisher>
 
-<Journal rdf:about="#1362042121">
+<Journal rdf:about="#a362042121">
 	<rdfs:label>International journal of intelligent system</rdfs:label>
 	<name rdf:datatype="&xsd;string">International journal of intelligent system</name>
 	<shortName rdf:datatype="&xsd;string">IJIS</shortName>
 </Journal>
 
-<Journal rdf:about="#1674639524">
+<Journal rdf:about="#a674639524">
 	<rdfs:label>ACM SIGMOD Record</rdfs:label>
 	<name rdf:datatype="&xsd;string">ACM SIGMOD Record</name>
 </Journal>
 
-<Journal rdf:about="#1906774044">
+<Journal rdf:about="#a906774044">
 	<rdfs:label>VLDB Journal</rdfs:label>
 	<name rdf:datatype="&xsd;string">VLDB Journal</name>
 </Journal>
@@ -1524,7 +1546,7 @@
 	</date>
 </Conference>
 
-<Conference rdf:about="#472192307c">
+<Conference rdf:about="#a72192307c">
 	<rdfs:label>13th Int. Conference on Knowledge Engineering and Management (EKAW-2002)</rdfs:label>
 	<name>Int. Conference on Knowledge Engineering and Management</name>
 	<shortName>EKAW</shortName>
@@ -1544,7 +1566,7 @@
 	</date>
 </Conference>
 
-<Conference rdf:about="#332071928c">
+<Conference rdf:about="#a32071928c">
 	<rdfs:label>First European Semantic Web Symposium</rdfs:label>
 	<name>European Semantic Web Symposium</name>
 	<shortName>ESWS</shortName>
@@ -1565,206 +1587,274 @@
 
 <!-- REFERENCES -->
 
-<Proceedings rdf:about="#1060097576">
+<Proceedings rdf:about="#a060097576">
 	<rdfs:label>Proceedings of the SemPGrid 04 Workshop</rdfs:label>
 	<title>Proceedings of the SemPGrid 04 Workshop</title>
 	<date><Date><year>2004</year></Date></date>
 	<event rdf:resource="#spg04"/>
 </Proceedings>
 
-<InProceedings rdf:about="#864263824">
+<InProceedings rdf:about="#a64263824">
 	<rdfs:label>Bibster - A Semantics-Based Bibliographic Peer-to-Peer System</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#243836633"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#1712561038"/>
-			<rdf:rest rdf:parseType="Resource">
-				<rdf:first rdf:resource="#594533498"/>
-				<rdf:rest rdf:parseType="Resource">
-					<rdf:first rdf:resource="#1944339054"/>
-					<rdf:rest rdf:parseType="Resource">
-						<rdf:first rdf:resource="#2139477786"/>
-						<rdf:rest rdf:parseType="Resource">
-							<rdf:first rdf:resource="#1958684218"/>
-							<rdf:rest rdf:parseType="Resource">
-								<rdf:first rdf:resource="#748552212"/>
-								<rdf:rest rdf:parseType="Resource">
-									<rdf:first rdf:resource="#53105947"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a43836633"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a712561038"/>
+			<rdf:rest>
+			    <PersonList>
+				<rdf:first rdf:resource="#a94533498"/>
+				<rdf:rest>
+				    <PersonList>
+					<rdf:first rdf:resource="#a944339054"/>
+					<rdf:rest>
+					    <PersonList>
+						<rdf:first rdf:resource="#a139477786"/>
+						<rdf:rest>
+						    <PersonList>
+							<rdf:first rdf:resource="#a958684218"/>
+							<rdf:rest>
+							    <PersonList>
+								<rdf:first rdf:resource="#a48552212"/>
+								<rdf:rest>
+								    <PersonList>
+									<rdf:first rdf:resource="#a3105947"/>
 									<rdf:rest rdf:resource="&rdf;nil" />
+								    </PersonList>
 								</rdf:rest>
+							    </PersonList>
 							</rdf:rest>
+						    </PersonList>
 						</rdf:rest>
+					    </PersonList>
 					</rdf:rest>
+				    </PersonList>
 				</rdf:rest>
+			    </PersonList>
 			</rdf:rest>
+		    </PersonList>
 		</rdf:rest>
+	    </PersonList>
 	</author>
-	<proceedings rdf:resource="#1060097576"/>
+	<proceedings rdf:resource="#a060097576"/>
 	<title>Bibster - A Semantics-Based Bibliographic Peer-to-Peer System</title>
 </InProceedings>
 
 <!-- HERE -->
 
-<InProceedings rdf:about="#1439508789">
+<InProceedings rdf:about="#a439508789">
 	<rdfs:label>Measuring Similarity between Ontologies</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#285228505"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#371003986"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a85228505"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a71003986"/>
 			<rdf:rest rdf:resource="&rdf;nil" />
+		   </PersonList>
 		</rdf:rest>
+	   </PersonList>
 	</author>
-	<proceedings rdf:resource="#472192307"/>
+	<proceedings rdf:resource="#a72192307"/>
 	<title>Measuring Similarity between Ontologies</title>
 </InProceedings>
 
-<Article rdf:about="#1492378321">
+<Article rdf:about="#a492378321">
 	<rdfs:label>{P-Grid: A Self-organizing Structured P2P System}</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#429105611"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#898078619"/>
-			<rdf:rest rdf:parseType="Resource">
-				<rdf:first rdf:resource="#470955601"/>
-				<rdf:rest rdf:parseType="Resource">
-					<rdf:first rdf:resource="#839510672"/>
-					<rdf:rest rdf:parseType="Resource">
-						<rdf:first rdf:resource="#1337716610"/>
-						<rdf:rest rdf:parseType="Resource">
-							<rdf:first rdf:resource="#1885257047"/>
-							<rdf:rest rdf:parseType="Resource">
-								<rdf:first rdf:resource="#1250331360"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a29105611"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a98078619"/>
+			<rdf:rest>
+			    <PersonList>
+				<rdf:first rdf:resource="#a70955601"/>
+				<rdf:rest>
+				    <PersonList>
+					<rdf:first rdf:resource="#a39510672"/>
+					<rdf:rest>
+					    <PersonList>
+						<rdf:first rdf:resource="#a337716610"/>
+						<rdf:rest>
+						    <PersonList>
+							<rdf:first rdf:resource="#a885257047"/>
+							<rdf:rest>
+							    <PersonList>
+								<rdf:first rdf:resource="#a250331360"/>
 								<rdf:rest rdf:resource="&rdf;nil" />
+							    </PersonList>
 							</rdf:rest>
+						    </PersonList>
 						</rdf:rest>
+					    </PersonList>
 					</rdf:rest>
+				    </PersonList>
 				</rdf:rest>
+			    </PersonList>
 			</rdf:rest>
+		    </PersonList>
 		</rdf:rest>
+	    </PersonList>
 	</author>
-	<journal rdf:resource="#1674639524"/>
+	<journal rdf:resource="#a674639524"/>
 	<title>{P-Grid}: A Self-organizing Structured P2P System</title>
 	<date><Date><year>2003</year></Date></date>
 </Article>
 
-<Article rdf:about="#1475526642">
+<Article rdf:about="#a475526642">
 	<rdfs:label>Binary Codes capable of correcting deletions, insertions, and reversals</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#474993404"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a74993404"/>
 		<rdf:rest rdf:resource="&rdf;nil" />
+	    </PersonList>
 	</author>
-	<journal rdf:resource="#670981683"/>
+	<journal rdf:resource="#a70981683"/>
 	<title>Binary Codes capable of correcting deletions, insertions, and reversals</title>
 	<date><Date><year>1996</year></Date></date>
 </Article>
 
-<InBook rdf:about="#971568377">
+<InBook rdf:about="#a71568377">
 	<rdfs:label>Database integration: the key to data interoperability</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#311090777"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#1431956276"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a11090777"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a431956276"/>
 			<rdf:rest rdf:resource="&rdf;nil" />
+		   </PersonList>
 		</rdf:rest>
+	   </PersonList>
 	</author>
-	<book rdf:resource="#2108048723"/>
+	<book rdf:resource="#a108048723"/>
 	<title>Database integration: the key to data interoperability</title>
-	<editor rdf:parseType="Resource">
-		<rdf:first rdf:resource="#1431956276"/>
-		<rdf:rest rdf:parseType="Resource">
-			  <rdf:first rdf:resource="#1431956276b"/>
-			  <rdf:rest rdf:parseType="Resource">
-			  	    <rdf:first rdf:resource="#1431956276c"/>
+	<editor>
+	    <PersonList>
+		<rdf:first rdf:resource="#a431956276"/>
+		<rdf:rest>
+		    <PersonList>
+			  <rdf:first rdf:resource="#a431956276b"/>
+			  <rdf:rest>
+			      <PersonList>
+			  	    <rdf:first rdf:resource="#a431956276c"/>
 				    <rdf:rest rdf:resource="&rdf;nil" />
+			      </PersonList>
 			  </rdf:rest>
+	             </PersonList>
 		</rdf:rest>
+           </PersonList>
 	</editor>
 </InBook>
 
-<Proceedings rdf:about="#472192307">
+<Proceedings rdf:about="#a72192307">
 	<rdfs:label>Proc. Of the 13th Int. Conference on Knowledge Engineering and Management (EKAW-2002)</rdfs:label>
-	<publisher rdf:resource="#2131020767"/>
+	<publisher rdf:resource="#a131020767"/>
 	<title>Proc. Of the 13th Int. Conference on Knowledge Engineering and Management (EKAW-2002)</title>
-	<event rdf:resource="#472192307c"/>
+	<event rdf:resource="#a72192307c"/>
 	<date><Date><year>2002</year></Date></date>
 </Proceedings>
 
-<Proceedings rdf:about="#332071928">
+<Proceedings rdf:about="#a32071928">
 	<rdfs:label>Proceedings of the First European Semantic Web Symposium</rdfs:label>
-	<publisher rdf:resource="#2131020767"/>
-	<event rdf:resource="#332071928c"/>
+	<publisher rdf:resource="#a131020767"/>
+	<event rdf:resource="#a32071928c"/>
 	<title>Proceedings of the First European Semantic Web Symposium</title>
 	<date><Date><year>2004</year></Date></date>
 </Proceedings>
 
-<Misc rdf:about="#1140583454">
+<Misc rdf:about="#a140583454">
 	<rdfs:label>{QOM} - Quick Ontology Mapping</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#1712561038"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#371003986"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a712561038"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a71003986"/>
 			<rdf:rest rdf:resource="&rdf;nil" />
+		    </PersonList>
 		</rdf:rest>
+	    </PersonList>
 	</author>
 	<title>{QOM} - Quick Ontology Mapping</title>
 	<note>submitted to the ISWC 04</note>
 	<date><Date><year>2004</year></Date></date>
 </Misc>
 
-<InProceedings rdf:about="#111065952">
+<InProceedings rdf:about="#a11065952">
 	<rdfs:label>Ontology Mapping - An Integrated Approach</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#1712561038"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#579573306"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a712561038"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a79573306"/>
 			<rdf:rest rdf:resource="&rdf;nil" />
+		    </PersonList>
 		</rdf:rest>
+	    </PersonList>
 	</author>
-	<proceedings rdf:resource="#332071928"/>
+	<proceedings rdf:resource="#a32071928"/>
 	<title>Ontology Mapping - An Integrated Approach</title>
 	<url>http://www.aifb.uni-karlsruhe.de/WBS/meh/publications/ehrig04ontology_ESWS04.pdf</url>
 </InProceedings>
 
-<Article rdf:about="#280299267">
+<Article rdf:about="#a80299267">
 	<rdfs:label>Start making sense: The Chatty Web approach for global semantic agreements</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#429105611"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#898078619"/>
-			<rdf:rest rdf:parseType="Resource">
-				<rdf:first rdf:resource="#1337716610"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a29105611"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a98078619"/>
+			<rdf:rest>
+			    <PersonList>
+				<rdf:first rdf:resource="#a337716610"/>
 				<rdf:rest rdf:resource="&rdf;nil" />
+			    </PersonList>
 			</rdf:rest>
+		    </PersonList>
 		</rdf:rest>
+	    </PersonList>
 	</author>
-	<journal rdf:resource="#1246119474"/>
+	<journal rdf:resource="#a246119474"/>
 	<title>Start making sense: The Chatty Web approach for global semantic agreements</title>
 	<date><Date><month>12</month><year>2003</year></Date></date>
 </Article>
 
-<Monograph rdf:about="#2108048723">
+<Monograph rdf:about="#a108048723">
 	<rdfs:label>Object-Oriented Data Modeling</rdfs:label>
-	<publisher rdf:resource="#785849488"/>
+	<publisher rdf:resource="#a85849488"/>
 	<title>Object-Oriented Data Modeling</title>
 	<date><Date><year>2000</year></Date></date>
 </Monograph>
 
-<Article rdf:about="#1456080390">
+<Article rdf:about="#a456080390">
 	<rdfs:label>On dynamically generated ontology translators in agent communication</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#2093016135"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#1572406328"/>
-			<rdf:rest rdf:parseType="Resource">
-				<rdf:first rdf:resource="#1086379337"/>
-				<rdf:rest rdf:parseType="Resource">
-					<rdf:first rdf:resource="#104570373"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a093016135"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a572406328"/>
+			<rdf:rest>
+			    <PersonList>
+				<rdf:first rdf:resource="#a086379337"/>
+				<rdf:rest>
+				    <PersonList>
+					<rdf:first rdf:resource="#a04570373"/>
 					<rdf:rest rdf:resource="&rdf;nil" />
+				    </PersonList>
 				</rdf:rest>
+			    </PersonList>
 			</rdf:rest>
+		    </PersonList>
 		</rdf:rest>
+	    </PersonList>
 	</author>
-	<journal rdf:resource="#1362042121"/>
+	<journal rdf:resource="#a362042121"/>
 	<title>On dynamically generated ontology translators in agent communication</title>
 	<pages>
 		<PageRange>
@@ -1775,22 +1865,30 @@
 	<date><Date><month>12</month><year>2001</year></Date></date>
 </Article>
 
-<Article rdf:about="#1846015923">
+<Article rdf:about="#a846015923">
 	<rdfs:label>A Framework for Modeling and Evaluating Automatic Semantic Reconciliation</rdfs:label>
-	<author rdf:parseType="Resource">
-		<rdf:first rdf:resource="#1900366022"/>
-		<rdf:rest rdf:parseType="Resource">
-			<rdf:first rdf:resource="#1467748807"/>
-			<rdf:rest rdf:parseType="Resource">
-				<rdf:first rdf:resource="#1971541439"/>
-				<rdf:rest rdf:parseType="Resource">
-					<rdf:first rdf:resource="#1066600210"/>
+	<author>
+	    <PersonList>
+		<rdf:first rdf:resource="#a900366022"/>
+		<rdf:rest>
+		    <PersonList>
+			<rdf:first rdf:resource="#a467748807"/>
+			<rdf:rest>
+			    <PersonList>
+				<rdf:first rdf:resource="#a971541439"/>
+				<rdf:rest>
+				    <PersonList>
+					<rdf:first rdf:resource="#a066600210"/>
 					<rdf:rest rdf:resource="&rdf;nil" />
+				    </PersonList>
 				</rdf:rest>
+			    </PersonList>
 			</rdf:rest>
+		    </PersonList>
 		</rdf:rest>
+	    </PersonList>
 	</author>
-	<journal rdf:resource="#1906774044"/>
+	<journal rdf:resource="#a906774044"/>
 	<title>A Framework for Modeling and Evaluating Automatic Semantic Reconciliation</title>
 	<note>to appear</note>
 	<date><Date><year>2004</year></Date></date>
