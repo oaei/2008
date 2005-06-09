@@ -1,13 +1,11 @@
-#!/bin/csh
-# $Id: make.sh,v 1.2 2005/06/09 14:15:04 euzenat Exp euzenat $
+#!/bin/sh
+# $Id: make.sh,v 1.3 2005/06/09 18:43:32 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
 # //pass3: generate HTML
 
-echo
 echo Generating files
-echo "================"
 
 # //pass1: generate test files
 
@@ -20,25 +18,29 @@ mkdir 101
 cp onto.rdf 101/
 chmod 664 101/onto.rdf
 cp refalign.rdf 101/
+chmod 664 101/refalign.rdf
 
 #####################################################################
 # 102) Concept test: ?
-# JUST TO BE COPIED
+# JUST TO BE COPIED ONCE
 
 #####################################################################
 # 103) Concept test: Language generalisation
-#//TO BE UPDATED
 
-#This test compares the ontology with its generalisation in OWL Lite
-# (i.e., unavailable constraints are replaced by the more general available).
-# The generalization basically removes owl:unionOf and  owl:oneOf
-# and the Property types (owl:TransitiveProperty).
+#DONE!
+/bin/rm -rf 103
+mkdir 103
+xsltproc xslt/generalization.xsl onto.rdf > 103/onto.rdf
+cp 101/refalign.rdf 103/refalign.rdf
 
 #####################################################################
 # 104) Concept test: Language restriction
-#//TO BE UPDATED
 
-#This test compares the ontology with its restriction in OWL Lite  (where unavailable constraints have been discarded).
+#DONE
+\rm -rf 104
+mkdir 104
+xsltproc xslt/restriction.xsl onto.rdf > 104/onto.rdf
+cp 101/refalign.rdf 104/refalign.rdf
 
 #####################################################################
 # 201) Systematic: No names
@@ -67,7 +69,7 @@ xsltproc xslt/trans-random.xsl refalign.rdf > 202/refalign.rdf
 \rm -rf 203
 mkdir 203
 xsltproc xslt/strip-comments.xsl onto.rdf > 203/onto.rdf
-cp refalign.rdf 203/refalign.rdf
+cp 101/refalign.rdf 203/refalign.rdf
 
 #####################################################################
 # 204) Systematic: Naming conventions
@@ -145,18 +147,20 @@ cp 207/refalign.rdf 210/refalign.rdf
 \rm -rf 221
 mkdir 221
 xsltproc xslt/strip-subclass.xsl onto.rdf > 221/onto.rdf
-cp refalign.rdf 221/refalign.rdf
+cp 101/refalign.rdf 221/refalign.rdf
 
 #####################################################################
 # 222) Systematic: Flattened hierarchy
 #A hierarchy still exists but has been strictly reduced.
+# Suppressed Book, Part, Academic and Informal
+# Replaced their apperance by Reference (incl. suppressed unionOf)
+#inherited their properties
 
-#//TO BE UPDATED
-# In the flattened case, some classes must be suppressed from the hierarchy
+#DONE!
 \rm -rf 222
 mkdir 222
-cp 101/onto.rdf 222/onto.rdf
-cp refalign.rdf 222/refalign.rdf
+cp onto-flat.rdf 222/onto.rdf
+xsltproc xslt/flatten.xsl refalign.rdf > 222/refalign.rdf
 
 #####################################################################
 # 223) Systematic: Expanded hierarchy
@@ -166,7 +170,7 @@ cp refalign.rdf 222/refalign.rdf
 \rm -rf 223
 mkdir 223
 cp 101/onto.rdf 223/onto.rdf
-cp refalign.rdf 223/refalign.rdf
+cp 101/refalign.rdf 223/refalign.rdf
 
 #####################################################################
 # 224) Systematic: No instances
@@ -176,7 +180,7 @@ cp refalign.rdf 223/refalign.rdf
 \rm -rf 224
 mkdir 224
 xsltproc xslt/strip-instances.xsl onto.rdf > 224/onto.rdf
-cp refalign.rdf 224/refalign.rdf
+cp 101/refalign.rdf 224/refalign.rdf
 
 #####################################################################
 # 225) Systematic: No restrictions
@@ -187,7 +191,7 @@ cp refalign.rdf 224/refalign.rdf
 \rm -rf 225
 mkdir 225
 xsltproc xslt/strip-restrictions.xsl onto.rdf > 225/onto.rdf
-cp refalign.rdf 225/refalign.rdf
+cp 101/refalign.rdf 225/refalign.rdf
 
 # 226) Systematic: No datatypes
 #NOTTODO
@@ -219,7 +223,7 @@ xsltproc xslt/strip-propalign.xsl refalign.rdf > 228/refalign.rdf
 \rm -rf 230
 mkdir 230
 cp 101/onto.rdf 230/onto.rdf
-cp refalign.rdf 230/refalign.rdf
+cp 101/refalign.rdf 230/refalign.rdf
 
 #//TODO
 # 231) Systematic: Multiplying entities
@@ -228,7 +232,7 @@ cp refalign.rdf 230/refalign.rdf
 \rm -rf 231
 mkdir 231
 cp 101/onto.rdf 231/onto.rdf
-cp refalign.rdf 231/refalign.rdf
+cp 101/refalign.rdf 231/refalign.rdf
 
 #####################################################################
 # 232) Systematic: No instances, No hierarchy
@@ -570,25 +574,25 @@ cp 266/refalign.rdf 268/refalign.rdf
 # //pass2: fix URI
 # DONE!
 
-echo
-echo Fixing URI
-echo "=========="
+echo -n "Fixing URI "
 
 for i in `ls -d [0-9][0-9][0-9]` 
 do
 echo -n "*"$i"*"
 if [ -f $i/refalign.rdf ]
 then
-ed $i/refalign.rdf << EOF
-1,$ s;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmark/101/;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmark/$i/;
+ed -s $i/refalign.rdf << EOF &>/dev/null
 1,$ s;<onto2>http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf</onto2>;<onto2>http://oaei.inrialpes.fr/2005/benchmark/$i/onto.rdf</onto2>;
+w
 1,$ s;<uri2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</uri2>;<uri2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</uri2>;
+w
+1,$ s;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmark/101/;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmark/$i/;
 w
 EOF
 fi
 if [ -f $i/onto.rdf ]
 then
-ed $i/onto.rdf << EOF
+ed -s $i/onto.rdf << EOF &>/dev/null
 1,$ s;oaei.inrialpes.fr/2005/benchmark/101/;oaei.inrialpes.fr/2005/benchmark/$i/;g
 w
 EOF
@@ -600,8 +604,7 @@ done
 # DONE!
 
 echo
-echo Generating HTML
-echo "==============="
+echo -n "Generating HTML "
 
 for i in `ls -d [0-9][0-9][0-9]` 
 do
@@ -610,3 +613,4 @@ xsltproc xslt/form-align.xsl $i/refalign.rdf > $i/refalign.html
 xsltproc xslt/owl2html.xsl $i/onto.rdf > $i/onto.html
 done
 
+echo
