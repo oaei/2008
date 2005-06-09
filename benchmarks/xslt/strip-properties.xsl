@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+		xmlns:my="http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf#"
+		xmlns:units="http://visus.mit.edu/fontomri/0.01/units.owl#" 
+		xmlns:foaf="http://xmlns.com/foaf/0.1/#" 
+		xmlns:ical="http://www.w3.org/2002/12/cal/#" 
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+		xmlns:owl="http://www.w3.org/2002/07/owl#" 
+		xmlns:wot="http://xmlns.com/wot/0.1/" 
+		xmlns:dc="http://purl.org/dc/elements/1.1/" 
+		xmlns:dcterms="http://purl.org/dc/terms/" 
+		xmlns:dctype="http://purl.org/dc/dcmitype/"
+		version="1.0"
+>
+  <xsl:param name="param"></xsl:param>
+  <xsl:param name="value"></xsl:param>
+  <xsl:param name="ref"></xsl:param>
+
+  <xsl:template match="owl:ObjectProperty"/>
+  <xsl:template match="owl:DatatypeProperty"/>
+  <xsl:template match="owl:TransitiveProperty"/>
+  <xsl:template match="owl:SymmetricProperty"/>
+  <xsl:template match="owl:FunctionalProperty"/>
+  <xsl:template match="owl:InverseFunctionalProperty"/>
+  <xsl:template match="rdfs:subClassOf[not(@rdf:resource)]"/>
+  <xsl:template match="owl:Restriction"/>
+
+  <!-- for suppressing properties in instances -->
+  <xsl:template match="foaf:Person/my:*"/>
+  <xsl:template match="my:*/my:*"/>
+
+  <!-- for suppressing properties in alignment -->
+
+  <xsl:template match="@*|node()"> <!-- node() = text()|* ? -->
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:copy>
+  </xsl:template>
+	
+</xsl:stylesheet>
