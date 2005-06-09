@@ -1,5 +1,5 @@
 #!/bin/csh
-# $Id: make.sh,v 1.1 2005/06/08 16:42:54 euzenat Exp euzenat $
+# $Id: make.sh,v 1.2 2005/06/09 14:15:04 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
@@ -581,13 +581,15 @@ if [ -f $i/refalign.rdf ]
 then
 ed $i/refalign.rdf << EOF
 1,$ s;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmark/101/;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmark/$i/;
+1,$ s;<onto2>http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf</onto2>;<onto2>http://oaei.inrialpes.fr/2005/benchmark/$i/onto.rdf</onto2>;
+1,$ s;<uri2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</uri2>;<uri2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</uri2>;
 w
 EOF
 fi
 if [ -f $i/onto.rdf ]
 then
 ed $i/onto.rdf << EOF
-1,$ s;oaei.inrialpes.fr/2005/benchmark/101/;oaei.inrialpes.fr/2005/benchmark/$i/;
+1,$ s;oaei.inrialpes.fr/2005/benchmark/101/;oaei.inrialpes.fr/2005/benchmark/$i/;g
 w
 EOF
 fi
