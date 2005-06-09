@@ -558,7 +558,6 @@
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
       <relation>=</relation>
     </Cell>
-    <!-- sdksdklqs -->
     <Cell>
       <entity1 rdf:resource='http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf#chapters'/>
       <entity2 rdf:resource='http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf#chapters'/>
