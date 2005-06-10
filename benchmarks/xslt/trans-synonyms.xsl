@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: trans-synonyms.xsl,v 1.2 2005/06/09 21:07:18 euzenat Exp euzenat $ -->
+<!-- $Id: trans-synonyms.xsl,v 1.3 2005/06/10 13:53:59 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -20,6 +20,8 @@
   <xsl:param name="param"></xsl:param>
   <xsl:param name="value"></xsl:param>
   <xsl:param name="ref"></xsl:param>
+
+  <xsl:output method="xml" encoding="iso-8859-1"/>
 
   <xsl:template match="@*|node()"> 
     <xsl:copy>
