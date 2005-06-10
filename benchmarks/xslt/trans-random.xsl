@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id$ -->
+<!-- $Id: trans-random.xsl,v 1.1 2005/06/09 21:07:38 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -90,6 +90,39 @@
     <!-- keep the prefix if necessary -->
     <xsl:if test="contains($string,'#')"><xsl:value-of select="substring-before($string,'#')"/>#</xsl:if>
     <xsl:choose>
+      <xsl:when test="$suffix='Resource'">uqwz</xsl:when>
+      <xsl:when test="$suffix='Text'">PBdgcs</xsl:when>
+      <xsl:when test="$suffix='UserGuide'">ZikPzsz</xsl:when>
+      <xsl:when test="$suffix='ReferenceManual'">ZGKW1E</xsl:when>
+      <xsl:when test="$suffix='JournalPart'">RJbGVM</xsl:when>
+      <xsl:when test="$suffix='Review'">Be</xsl:when>
+      <xsl:when test="$suffix='Editorial'">fGfFm</xsl:when>
+      <xsl:when test="$suffix='Letter'">wFuU</xsl:when>
+      <xsl:when test="$suffix='InstitutionReport'">EwQu</xsl:when>
+      <xsl:when test="$suffix='ProspectiveReport'">xhNJuGU</xsl:when>
+      <xsl:when test="$suffix='EvaluationReport'">UWmlX</xsl:when>
+      <xsl:when test="$suffix='SerialReport'">FPVijs</xsl:when>
+      <xsl:when test="$suffix='NormalizationReport'">cnNCBO</xsl:when>
+      <xsl:when test="$suffix='Standard'">ZVxsNo</xsl:when>
+      <xsl:when test="$suffix='Recommendation'">jZVxsNo</xsl:when>
+      <xsl:when test="$suffix='WorkReport'">Lluuk</xsl:when>
+      <xsl:when test="$suffix='TechnicalMemo'">QMgwFB</xsl:when>
+      <xsl:when test="$suffix='ResearchReport'">YeLgZJu</xsl:when>
+      <xsl:when test="$suffix='ResearchNote'">LXtNU</xsl:when>
+      <xsl:when test="$suffix='PeriodicReport'">XaWa</xsl:when>
+      <xsl:when test="$suffix='YearlyReport'">FkmaDDV</xsl:when>
+      <xsl:when test="$suffix='FinalReport'">pjDVyIr</xsl:when>
+      <xsl:when test="$suffix='Periodical'">BeXCIG</xsl:when>
+      <xsl:when test="$suffix='Magazine'">wxVRZcIXbbz</xsl:when>
+      <xsl:when test="$suffix='ScientificMeeting'">cexQ</xsl:when>
+      <xsl:when test="$suffix='Congress'">RcrfZK</xsl:when>
+      <xsl:when test="$suffix='Symposium'">qHdl</xsl:when>
+      <xsl:when test="$suffix='Workshop'">izVyrw</xsl:when>
+      <xsl:when test="$suffix='Society'">YpNk</xsl:when>
+      <xsl:when test="$suffix='HigherEducationInstitution'">BriFsw</xsl:when>
+      <xsl:when test="$suffix='University'">MyRFOvC</xsl:when>
+      <xsl:when test="$suffix='EngineerSchool'">SNNu</xsl:when>
+      <xsl:when test="$suffix='Polytechnics'">SLoVq</xsl:when>
       <xsl:when test="$suffix='Reference'">sqdsq</xsl:when>
       <xsl:when test="$suffix='Article'">hazdn</xsl:when>
       <xsl:when test="$suffix='Book'">zajdhqs</xsl:when>
@@ -184,7 +217,7 @@
       <xsl:when test="$suffix='country'">zadszabnds</xsl:when>
       <xsl:when test="$suffix='startPage'">sqnhdbdj</xsl:when>
       <xsl:when test="$suffix='endPage'">mkalnshsq</xsl:when>
-      <xsl:when test="$suffix='articles'">YuEma1</xsl:when>
+      <xsl:when test="$suffix='articles'">YuEma</xsl:when>
       <xsl:when test="$suffix='communications'">PrSGUs</xsl:when>
       <xsl:when test="$suffix='parts'">TfniY</xsl:when>
       <xsl:when test="$suffix='chapters'">iNi4b8XV</xsl:when>
