@@ -37,7 +37,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto.rdf,v 1.17 2005/06/09 12:16:05 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto.rdf,v 1.18 2005/06/10 08:25:25 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -63,7 +63,6 @@
 <owl:DatatypeProperty rdf:about="&foaf;firstName" />
 <owl:DatatypeProperty rdf:about="#lastName" />
 <owl:DatatypeProperty rdf:about="&foaf;name" />
-<owl:DatatypeProperty rdf:about="#shortName" />
 
   <!--
     ********  ENTRIES  ********
@@ -1321,217 +1320,217 @@
 
 <foaf:Person rdf:about="#a04570373">
 	<rdfs:label>John-Jules Meyer</rdfs:label>
-	<name rdf:datatype="&xsd;string">John-Jules Meyer</name>
+	<foaf:name rdf:datatype="&xsd;string">John-Jules Meyer</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">John-Jules</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Meyer</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a43836633">
 	<rdfs:label>Jeen Broekstra</rdfs:label>
-	<name rdf:datatype="&xsd;string">Jeen Broekstra</name>
+	<foaf:name rdf:datatype="&xsd;string">Jeen Broekstra</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Jeen</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Broekstra</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a85228505">
 	<rdfs:label>Alexander Mädche</rdfs:label>
-	<name rdf:datatype="&xsd;string">Alexander Mädche</name>
+	<foaf:name rdf:datatype="&xsd;string">Alexander Mädche</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Alexander</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Mädche</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a48552212">
 	<rdfs:label>Björn Schnizler</rdfs:label>
-	<name rdf:datatype="&xsd;string">Björn Schnizler</name>
+	<foaf:name rdf:datatype="&xsd;string">Björn Schnizler</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Björn</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Schnizler</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a971541439">
 	<rdfs:label>Alberto Trombetta</rdfs:label>
-	<name rdf:datatype="&xsd;string">Alberto Trombetta</name>
+	<foaf:name rdf:datatype="&xsd;string">Alberto Trombetta</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Alberto</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Trombetta</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a11090777">
 	<rdfs:label>Christine Parent</rdfs:label>
-	<name rdf:datatype="&xsd;string">Christine Parent</name>
+	<foaf:name rdf:datatype="&xsd;string">Christine Parent</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Christine</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Parent</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a250331360">
 	<rdfs:label>R. Schmidt</rdfs:label>
-	<name rdf:datatype="&xsd;string">R. Schmidt</name>
+	<foaf:name rdf:datatype="&xsd;string">R. Schmidt</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">R.</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Schmidt</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a79573306">
 	<rdfs:label>York Sure</rdfs:label>
-	<name rdf:datatype="&xsd;string">York Sure</name>
+	<foaf:name rdf:datatype="&xsd;string">York Sure</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">York</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Sure</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a885257047">
 	<rdfs:label>M. Punceva</rdfs:label>
-	<name rdf:datatype="&xsd;string">M. Punceva</name>
+	<foaf:name rdf:datatype="&xsd;string">M. Punceva</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">M.</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Punceva</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a74993404">
 	<rdfs:label>I. V. Levenshtein</rdfs:label>
-	<name rdf:datatype="&xsd;string">I. V. Levenshtein</name>
+	<foaf:name rdf:datatype="&xsd;string">I. V. Levenshtein</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">I. V.</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Levenshtein</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a71003986">
 	<rdfs:label>Steffen Staab</rdfs:label>
-	<name rdf:datatype="&xsd;string">Steffen Staab</name>
+	<foaf:name rdf:datatype="&xsd;string">Steffen Staab</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Steffen</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Staab</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a572406328">
 	<rdfs:label>Frank Boer</rdfs:label>
-	<name rdf:datatype="&xsd;string">Frank Boer</name>
+	<foaf:name rdf:datatype="&xsd;string">Frank Boer</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Frank</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Boer</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a139477786">
 	<rdfs:label>Maarten Menken</rdfs:label>
-	<name rdf:datatype="&xsd;string">Maarten Menken</name>
+	<foaf:name rdf:datatype="&xsd;string">Maarten Menken</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Maarten</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Menken</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a337716610">
 	<rdfs:label>Manfred Hauswirth</rdfs:label>
-	<name rdf:datatype="&xsd;string">Manfred Hauswirth</name>
+	<foaf:name rdf:datatype="&xsd;string">Manfred Hauswirth</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Manfred</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Hauswirth</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a086379337">
 	<rdfs:label>Wiebe Hoek</rdfs:label>
-	<name rdf:datatype="&xsd;string">Wiebe Hoek</name>
+	<foaf:name rdf:datatype="&xsd;string">Wiebe Hoek</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Wiebe</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Hoek</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a712561038">
 	<rdfs:label>Marc Ehrig</rdfs:label>
-	<name rdf:datatype="&xsd;string">Marc Ehrig</name>
+	<foaf:name rdf:datatype="&xsd;string">Marc Ehrig</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Marc</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Ehrig</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a066600210">
 	<rdfs:label>Danilo Montesi</rdfs:label>
-	<name rdf:datatype="&xsd;string">Danilo Montesi</name>
+	<foaf:name rdf:datatype="&xsd;string">Danilo Montesi</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Danilo</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Montesi</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a093016135">
 	<rdfs:label>Rogier Eijk</rdfs:label>
-	<name rdf:datatype="&xsd;string">Rogier Eijk</name>
+	<foaf:name rdf:datatype="&xsd;string">Rogier Eijk</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Rogier</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Eijk</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a944339054">
 	<rdfs:label>Frank van Harmelen</rdfs:label>
-	<name rdf:datatype="&xsd;string">Frank van Harmelen</name>
+	<foaf:name rdf:datatype="&xsd;string">Frank van Harmelen</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Frank</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">van Harmelen</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a98078619">
 	<rdfs:label>Philippe Cudré-Mauroux</rdfs:label>
-	<name rdf:datatype="&xsd;string">Philippe Cudré-Mauroux</name>
+	<foaf:name rdf:datatype="&xsd;string">Philippe Cudré-Mauroux</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Philippe</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Cudré-Mauroux</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a39510672">
 	<rdfs:label>Z. Despotovic</rdfs:label>
-	<name rdf:datatype="&xsd;string">Z. Despotovic</name>
+	<foaf:name rdf:datatype="&xsd;string">Z. Despotovic</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Z.</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Despotovic</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a431956276">
 	<rdfs:label>Stefano Spaccapietra</rdfs:label>
-	<name rdf:datatype="&xsd;string">Stefano Spaccapietra</name>
+	<foaf:name rdf:datatype="&xsd;string">Stefano Spaccapietra</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Stefano</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Spaccapietra</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a431956276b">
 	<rdfs:label>Mike Papazoglou</rdfs:label>
-	<name rdf:datatype="&xsd;string">Mike Papazoglou</name>
+	<foaf:name rdf:datatype="&xsd;string">Mike Papazoglou</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Mike</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Papazoglou</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a431956276c">
 	<rdfs:label>Zahir Tari</rdfs:label>
-	<name rdf:datatype="&xsd;string">Zahir Tari</name>
+	<foaf:name rdf:datatype="&xsd;string">Zahir Tari</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Zahir</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Tari</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a70955601">
 	<rdfs:label>A. Datta</rdfs:label>
-	<name rdf:datatype="&xsd;string">A. Datta</name>
+	<foaf:name rdf:datatype="&xsd;string">A. Datta</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">A.</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Datta</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a467748807">
 	<rdfs:label>Ateret Anaby-Tavor</rdfs:label>
-	<name rdf:datatype="&xsd;string">Ateret Anaby-Tavor</name>
+	<foaf:name rdf:datatype="&xsd;string">Ateret Anaby-Tavor</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Ateret</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Anaby-Tavor</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a3105947">
 	<rdfs:label>Ronny Siebes</rdfs:label>
-	<name rdf:datatype="&xsd;string">Ronny Siebes</name>
+	<foaf:name rdf:datatype="&xsd;string">Ronny Siebes</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Ronny</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Siebes</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a29105611">
 	<rdfs:label>Karl Aberer</rdfs:label>
-	<name rdf:datatype="&xsd;string">Karl Aberer</name>
+	<foaf:name rdf:datatype="&xsd;string">Karl Aberer</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Karl</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Aberer</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a958684218">
 	<rdfs:label>Peter Mika</rdfs:label>
-	<name rdf:datatype="&xsd;string">Peter Mika</name>
+	<foaf:name rdf:datatype="&xsd;string">Peter Mika</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Peter</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Mika</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a94533498">
 	<rdfs:label>Peter Haase</rdfs:label>
-	<name rdf:datatype="&xsd;string">Peter Haase</name>
+	<foaf:name rdf:datatype="&xsd;string">Peter Haase</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Peter</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Haase</lastName>
 </foaf:Person>
 
 <foaf:Person rdf:about="#a900366022">
 	<rdfs:label>Avigdor Gal</rdfs:label>
-	<name rdf:datatype="&xsd;string">Avigdor Gal</name>
+	<foaf:name rdf:datatype="&xsd;string">Avigdor Gal</foaf:name>
 	<foaf:firstName rdf:datatype="&xsd;string">Avigdor</foaf:firstName>
 	<lastName rdf:datatype="&xsd;string">Gal</lastName>
 </foaf:Person>
@@ -1540,7 +1539,7 @@
 
 <Journal rdf:about="#a246119474">
 	<rdfs:label>Journal of Web Semantics</rdfs:label>
-	<name rdf:datatype="&xsd;string">Journal of Web Semantics</name>
+	<foaf:name rdf:datatype="&xsd;string">Journal of Web Semantics</foaf:name>
 	<shortName rdf:datatype="&xsd;string">JWS</shortName>
 </Journal>
 
