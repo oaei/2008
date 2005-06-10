@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id$ -->
+<!-- $Id: trans-foreign.xsl,v 1.1 2005/06/09 21:07:28 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -90,6 +90,39 @@
     <!-- keep the prefix if necessary -->
     <xsl:if test="contains($string,'#')"><xsl:value-of select="substring-before($string,'#')"/>#</xsl:if>
     <xsl:choose>
+      <xsl:when test="$suffix='Resource'">Source</xsl:when>
+      <xsl:when test="$suffix='Text'">Texte</xsl:when>
+      <xsl:when test="$suffix='UserGuide'">ManuelUtilisateur</xsl:when>
+      <xsl:when test="$suffix='ReferenceManual'">ManuelDeRéférence</xsl:when>
+      <xsl:when test="$suffix='JournalPart'">Contribution</xsl:when>
+      <xsl:when test="$suffix='Review'">Recension</xsl:when>
+      <xsl:when test="$suffix='Editorial'">Éditorial</xsl:when>
+      <xsl:when test="$suffix='Letter'">Lettre</xsl:when>
+      <xsl:when test="$suffix='InstitutionReport'">RapportInstitutionnel</xsl:when>
+      <xsl:when test="$suffix='ProspectiveReport'">RapportDeProspective</xsl:when>
+      <xsl:when test="$suffix='EvaluationReport'">RapportDÉvaluation</xsl:when>
+      <xsl:when test="$suffix='SerialReport'">RapportNuméroté</xsl:when>
+      <xsl:when test="$suffix='NormalizationReport'">DocumentNormatif</xsl:when>
+      <xsl:when test="$suffix='Standard'">Standard</xsl:when>
+      <xsl:when test="$suffix='Recommendation'">Recommandation</xsl:when>
+      <xsl:when test="$suffix='WorkReport'">RapportDeTravail</xsl:when>
+      <xsl:when test="$suffix='TechnicalMemo'">Mémo</xsl:when>
+      <xsl:when test="$suffix='ResearchReport'">RapportDeRecherche</xsl:when>
+      <xsl:when test="$suffix='ResearchNote'">NoteDeRecherche</xsl:when>
+      <xsl:when test="$suffix='PeriodicReport'">RapportPériodique</xsl:when>
+      <xsl:when test="$suffix='YearlyReport'">RapportAnnuel</xsl:when>
+      <xsl:when test="$suffix='FinalReport'">RapportFinal</xsl:when>
+      <xsl:when test="$suffix='Periodical'">Périodique</xsl:when>
+      <xsl:when test="$suffix='Magazine'">Magazine</xsl:when>
+      <xsl:when test="$suffix='ScientificMeeting'">ManifestationScientifique</xsl:when>
+      <xsl:when test="$suffix='Congress'">Congrès</xsl:when>
+      <xsl:when test="$suffix='Symposium'">Symposium</xsl:when>
+      <xsl:when test="$suffix='Workshop'">Atelier</xsl:when>
+      <xsl:when test="$suffix='Society'">Société</xsl:when>
+      <xsl:when test="$suffix='HigherEducationInstitution'">ÉtablissementDEnseignementSupérieur</xsl:when>
+      <xsl:when test="$suffix='University'">Université</xsl:when>
+      <xsl:when test="$suffix='EngineerSchool'">ÉcoleDIngénieur</xsl:when>
+      <xsl:when test="$suffix='Polytechnics'">IUT</xsl:when>
       <xsl:when test="$suffix='Booklet'">Livret</xsl:when>
       <xsl:when test="$suffix='InBook'">ExtraitLivre</xsl:when>
       <xsl:when test="$suffix='InCollection'">ExtraitCompilation</xsl:when>
