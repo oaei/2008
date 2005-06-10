@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id$ -->
+<!-- $Id: trans-synonyms.xsl,v 1.2 2005/06/09 21:07:18 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -90,6 +90,23 @@
     <!-- keep the prefix if necessary -->
     <xsl:if test="contains($string,'#')"><xsl:value-of select="substring-before($string,'#')"/>#</xsl:if>
     <xsl:choose>
+      <xsl:when test="$suffix='Resource'">Source</xsl:when>
+      <xsl:when test="$suffix='Text'">Document</xsl:when>
+      <xsl:when test="$suffix='UserGuide'">UserManual</xsl:when>
+      <xsl:when test="$suffix='ReferenceManual'">ReferenceGuide</xsl:when>
+      <xsl:when test="$suffix='JournalPart'">Contribution</xsl:when>
+      <xsl:when test="$suffix='Review'">BookReview</xsl:when>
+      <xsl:when test="$suffix='Editorial'">Forehead</xsl:when>
+      <xsl:when test="$suffix='Letter'">Note</xsl:when>
+      <xsl:when test="$suffix='ProspectiveReport'">ForecastReport</xsl:when>
+      <xsl:when test="$suffix='Standard'">Norm</xsl:when>
+      <xsl:when test="$suffix='WorkReport'">WhitePaper</xsl:when>
+      <xsl:when test="$suffix='TechnicalMemo'">TechNote</xsl:when>
+      <xsl:when test="$suffix='PeriodicReport'">RegularReport</xsl:when>
+      <xsl:when test="$suffix='YearlyReport'">AnnualReport</xsl:when>
+      <xsl:when test="$suffix='Periodical'"></xsl:when>
+      <xsl:when test="$suffix='Society'">Association</xsl:when>
+      <xsl:when test="$suffix='EngineerSchool'">TechnicalSchool</xsl:when>
       <xsl:when test="$suffix='Booklet'">Brochure</xsl:when>
       <xsl:when test="$suffix='InBook'">Extract</xsl:when>
       <xsl:when test="$suffix='InCollection'">InCompilation</xsl:when>
