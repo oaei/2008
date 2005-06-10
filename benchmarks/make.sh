@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: make.sh,v 1.3 2005/06/09 18:43:32 euzenat Exp euzenat $
+# $Id: make.sh,v 1.4 2005/06/09 21:05:42 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
@@ -166,11 +166,11 @@ xsltproc xslt/flatten.xsl refalign.rdf > 222/refalign.rdf
 # 223) Systematic: Expanded hierarchy
 #Numerous intermediate classes are introduced within the hierarchy.
 
-#//TO BE UPDATED
+#DONE!
 \rm -rf 223
 mkdir 223
-cp 101/onto.rdf 223/onto.rdf
-cp 101/refalign.rdf 223/refalign.rdf
+cp onto-exp.rdf 223/onto.rdf
+cp refalign.rdf 223/refalign.rdf
 
 #####################################################################
 # 224) Systematic: No instances
@@ -218,11 +218,11 @@ xsltproc xslt/strip-propalign.xsl refalign.rdf > 228/refalign.rdf
 #Some components of classes are expanded in the class structure  (e.g., year, month, day attributes instead of date).
 #Here one limitation of the proposed format is that it does not cover  alignments such as: journalName = name o journal.
 
-#//TO BE UPDATED
+#//TO BE UPDATED: this is currently the old version
 # when flattening not all alignment should be preserved
 \rm -rf 230
 mkdir 230
-cp 101/onto.rdf 230/onto.rdf
+cp onto-cflat.rdf 230/onto.rdf
 cp 101/refalign.rdf 230/refalign.rdf
 
 #//TODO
@@ -257,18 +257,18 @@ xsltproc xslt/strip-propalign.xsl 221/refalign.rdf > 233/refalign.rdf
 
 # DONE!
 \rm -rf 234
-mkdir 234
-xsltproc xslt/strip-subclass.xsl 230/onto.rdf > 234/onto.rdf
-cp 230/refalign.rdf 234/refalign.rdf
+#mkdir 234
+#xsltproc xslt/strip-subclass.xsl 230/onto.rdf > 234/onto.rdf
+#cp 230/refalign.rdf 234/refalign.rdf
 
 #####################################################################
 # 235) Systematic: No hierarchy, expansed classes
 
 # DONE!
 \rm -rf 235
-mkdir 235
-xsltproc xslt/strip-subclass.xsl 231/onto.rdf > 235/onto.rdf
-cp 231/refalign.rdf 235/refalign.rdf
+#mkdir 235
+#xsltproc xslt/strip-subclass.xsl 231/onto.rdf > 235/onto.rdf
+#cp 231/refalign.rdf 235/refalign.rdf
 
 ######################################################################
 # 236) Systematic: No instances, No properties
@@ -285,8 +285,8 @@ xsltproc xslt/strip-propalign.xsl 224/refalign.rdf > 236/refalign.rdf
 # DONE!
 \rm -rf 237
 mkdir 237
-xsltproc xslt/strip-instances.xsl 230/onto.rdf > 237/onto.rdf
-cp 230/refalign.rdf 237/refalign.rdf
+xsltproc xslt/strip-instances.xsl 222/onto.rdf > 237/onto.rdf
+cp 222/refalign.rdf 237/refalign.rdf
 
 #####################################################################
 # 238) Systematic: No instances, expansed classes
@@ -294,8 +294,8 @@ cp 230/refalign.rdf 237/refalign.rdf
 # DONE!
 \rm -rf 238
 mkdir 238
-xsltproc xslt/strip-instances.xsl 231/onto.rdf > 238/onto.rdf
-cp 231/refalign.rdf 238/refalign.rdf
+xsltproc xslt/strip-instances.xsl 223/onto.rdf > 238/onto.rdf
+cp 223/refalign.rdf 238/refalign.rdf
 
 #####################################################################
 # 239) Systematic: No properties, flattened classes
@@ -303,8 +303,8 @@ cp 231/refalign.rdf 238/refalign.rdf
 #DONE!
 \rm -rf 239
 mkdir 239
-xsltproc xslt/strip-properties.xsl 230/onto.rdf > 239/onto.rdf
-xsltproc xslt/strip-propalign.xsl 230/refalign.rdf > 239/refalign.rdf
+xsltproc xslt/strip-properties.xsl 222/onto.rdf > 239/onto.rdf
+xsltproc xslt/strip-propalign.xsl 222/refalign.rdf > 239/refalign.rdf
 
 #####################################################################
 # 240) Systematic: No properties, expansed classes
@@ -312,8 +312,8 @@ xsltproc xslt/strip-propalign.xsl 230/refalign.rdf > 239/refalign.rdf
 #DONE!
 \rm -rf 240
 mkdir 240
-xsltproc xslt/strip-properties.xsl 231/onto.rdf > 240/onto.rdf
-xsltproc xslt/strip-propalign.xsl 231/refalign.rdf > 240/refalign.rdf
+xsltproc xslt/strip-properties.xsl 223/onto.rdf > 240/onto.rdf
+xsltproc xslt/strip-propalign.xsl 223/refalign.rdf > 240/refalign.rdf
 
 ######################################################################
 # 241) Systematic: No instances, No hierarchy, No properties
@@ -328,38 +328,38 @@ cp 233/refalign.rdf 241/refalign.rdf
 # 242) Systematic: No instances, No hierarchy, flattened classes
 
 # DONE!
-\rm -rf 242
-mkdir 242
-xsltproc xslt/strip-instances.xsl 234/onto.rdf > 242/onto.rdf
-cp 234/refalign.rdf 242/refalign.rdf
+#\rm -rf 242
+#mkdir 242
+#xsltproc xslt/strip-instances.xsl 234/onto.rdf > 242/onto.rdf
+#cp 234/refalign.rdf 242/refalign.rdf
 
 #####################################################################
 # 243) Systematic: No instances, No hierarchy, expansed classes
 
 # DONE!
-\rm -rf 243
-mkdir 243
-xsltproc xslt/strip-instances.xsl 235/onto.rdf > 243/onto.rdf
-cp 235/refalign.rdf 243/refalign.rdf
+#\rm -rf 243
+#mkdir 243
+#xsltproc xslt/strip-instances.xsl 235/onto.rdf > 243/onto.rdf
+#cp 235/refalign.rdf 243/refalign.rdf
 
 ######################################################################
 # 244) Systematic: No properties, No hierarchy, flattened classes
 
 #DONE!
-\rm -rf 244
-mkdir 244
-xsltproc xslt/strip-properties.xsl 234/onto.rdf > 244/onto.rdf
-xsltproc xslt/strip-propalign.xsl 234/refalign.rdf > 244/refalign.rdf
+#\rm -rf 244
+#mkdir 244
+#xsltproc xslt/strip-properties.xsl 234/onto.rdf > 244/onto.rdf
+#xsltproc xslt/strip-propalign.xsl 234/refalign.rdf > 244/refalign.rdf
 
 
 #####################################################################
 # 245) Systematic: No properties, No hierarchy, expansed classes
 
 #DONE!
-\rm -rf 245
-mkdir 245
-xsltproc xslt/strip-properties.xsl 235/onto.rdf > 245/onto.rdf
-xsltproc xslt/strip-propalign.xsl 235/refalign.rdf > 245/refalign.rdf
+#\rm -rf 245
+#mkdir 245
+#xsltproc xslt/strip-properties.xsl 235/onto.rdf > 245/onto.rdf
+#xsltproc xslt/strip-propalign.xsl 235/refalign.rdf > 245/refalign.rdf
 
 ######################################################################
 # 246) Systematic: No properties, No instances, flattened classes
@@ -412,9 +412,9 @@ xsltproc xslt/strip-propalign.xsl 202/refalign.rdf > 250/refalign.rdf
 #DONE
 \rm -rf 251
 mkdir 251
-xsltproc xslt/strip-comments.xsl 230/onto.rdf > 251/preonto.rdf
+xsltproc xslt/strip-comments.xsl 222/onto.rdf > 251/preonto.rdf
 xsltproc xslt/trans-random.xsl 251/preonto.rdf > 251/onto.rdf
-xsltproc xslt/trans-random.xsl 230/refalign.rdf > 251/refalign.rdf
+xsltproc xslt/trans-random.xsl 222/refalign.rdf > 251/refalign.rdf
 
 #####################################################################
 # 252) Systematic: No names, expanded classes
@@ -422,9 +422,9 @@ xsltproc xslt/trans-random.xsl 230/refalign.rdf > 251/refalign.rdf
 #DONE
 \rm -rf 252
 mkdir 252
-xsltproc xslt/strip-comments.xsl 231/onto.rdf > 252/preonto.rdf
+xsltproc xslt/strip-comments.xsl 223/onto.rdf > 252/preonto.rdf
 xsltproc xslt/trans-random.xsl 252/preonto.rdf > 252/onto.rdf
-xsltproc xslt/trans-random.xsl 231/refalign.rdf > 252/refalign.rdf
+xsltproc xslt/trans-random.xsl 223/refalign.rdf > 252/refalign.rdf
 
 #####################################################################
 # 253) Systematic: No names, no hierarchy, no instance
@@ -448,19 +448,19 @@ xsltproc xslt/strip-propalign.xsl 248/refalign.rdf > 254/refalign.rdf
 # 255) Systematic: No names, No hierarchy, flattened classes
 
 #DONE
-\rm -rf 255
-mkdir 255
-xsltproc xslt/strip-subclass.xsl 251/onto.rdf > 255/onto.rdf
-cp 251/refalign.rdf 255/refalign.rdf
+#\rm -rf 255
+#mkdir 255
+#xsltproc xslt/strip-subclass.xsl 251/onto.rdf > 255/onto.rdf
+#cp 251/refalign.rdf 255/refalign.rdf
 
 #####################################################################
 # 256) Systematic: No names, No hierarchy, expanded classes
 
 #DONE
-\rm -rf 256
-mkdir 256
-xsltproc xslt/strip-subclass.xsl 252/onto.rdf > 256/onto.rdf
-cp 252/refalign.rdf 256/refalign.rdf
+#\rm -rf 256
+#mkdir 256
+#xsltproc xslt/strip-subclass.xsl 252/onto.rdf > 256/onto.rdf
+#cp 252/refalign.rdf 256/refalign.rdf
 
 #####################################################################
 # 257) Systematic: No names, no instances, no properties
@@ -520,19 +520,19 @@ xsltproc xslt/strip-propalign.xsl 253/refalign.rdf > 262/refalign.rdf
 # 263) Systematic: No names, No instances, No hierarchy, flattened classes
 
 #DONE
-\rm -rf 263
-mkdir 263
-xsltproc xslt/strip-instances.xsl 255/onto.rdf > 263/onto.rdf
-cp 255/refalign.rdf 263/refalign.rdf
+#\rm -rf 263
+#mkdir 263
+#xsltproc xslt/strip-instances.xsl 255/onto.rdf > 263/onto.rdf
+#cp 255/refalign.rdf 263/refalign.rdf
 
 #####################################################################
 # 264) Systematic: No names, No instances, No hierarchy, expanded classes
 
 #DONE
-\rm -rf 264
-mkdir 264
-xsltproc xslt/strip-instances.xsl 256/onto.rdf > 264/onto.rdf
-cp 256/refalign.rdf 264/refalign.rdf
+#\rm -rf 264
+#mkdir 264
+#xsltproc xslt/strip-instances.xsl 256/onto.rdf > 264/onto.rdf
+#cp 256/refalign.rdf 264/refalign.rdf
 
 #####################################################################
 # 265) Systematic: No names, No instances, No hierarchy, flattened classes
@@ -556,19 +556,19 @@ cp 261/refalign.rdf 266/refalign.rdf
 # 267) Systematic: Nothing, flattened classes
 
 #DONE
-\rm -rf 267
-mkdir 267
-xsltproc xslt/strip-subclass.xsl 265/onto.rdf > 267/onto.rdf
-cp 265/refalign.rdf 267/refalign.rdf
+#\rm -rf 267
+#mkdir 267
+#xsltproc xslt/strip-subclass.xsl 265/onto.rdf > 267/onto.rdf
+#cp 265/refalign.rdf 267/refalign.rdf
 
 #####################################################################
 # 268) Systematic: Nothing, expanded classes
 
 #DONE
-\rm -rf 268
-mkdir 268
-xsltproc xslt/strip-subclass.xsl 266/onto.rdf > 268/onto.rdf
-cp 266/refalign.rdf 268/refalign.rdf
+#\rm -rf 268
+#mkdir 268
+#xsltproc xslt/strip-subclass.xsl 266/onto.rdf > 268/onto.rdf
+#cp 266/refalign.rdf 268/refalign.rdf
 
 #####################################################################
 # //pass2: fix URI
@@ -576,24 +576,49 @@ cp 266/refalign.rdf 268/refalign.rdf
 
 echo -n "Fixing URI "
 
-for i in `ls -d [0-9][0-9][0-9]` 
+for i in `ls -d [1-2][0-9][0-9]` 
 do
 echo -n "*"$i"*"
 if [ -f $i/refalign.rdf ]
 then
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto2>http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf</onto2>;<onto2>http://oaei.inrialpes.fr/2005/benchmark/$i/onto.rdf</onto2>;
+1,$ s;<onto2>http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf</onto2>;<onto2>http://oaei.inrialpes.fr/2005/benchmarks/$i/onto.rdf</onto2>;
 w
 1,$ s;<uri2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</uri2>;<uri2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</uri2>;
 w
-1,$ s;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmark/101/;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmark/$i/;
+1,$ s;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmarks/101/;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmarks/$i/;
 w
 EOF
 fi
 if [ -f $i/onto.rdf ]
 then
 ed -s $i/onto.rdf << EOF &>/dev/null
-1,$ s;oaei.inrialpes.fr/2005/benchmark/101/;oaei.inrialpes.fr/2005/benchmark/$i/;g
+1,$ s;oaei.inrialpes.fr/2005/benchmarks/101/;oaei.inrialpes.fr/2005/benchmarks/$i/;g
+w
+EOF
+fi
+done
+
+################
+\rm -rf 301 302 303 304
+mkdir 301 302 303 304
+cp ../2004/Contest/301/* 301
+cp ../2004/Contest/302/* 302
+cp ../2004/Contest/303/* 303
+cp ../2004/Contest/304/* 304
+
+for i in `ls -d 3[0-9][0-9]` 
+do
+echo -n "*"$i"*"
+if [ -f $i/refalign.rdf ]
+then
+ed -s $i/refalign.rdf << EOF &>/dev/null
+1,$ s;http://co4.inrialpes.fr/align/Contest/101/onto.rdf;http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf;g
+1,$ s;<onto2>http://co4.inrialpes.fr/align/Contest/[^<]*</onto2>;<onto2>http://oaei.inrialpes.fr/2005/benchmarks/$i/onto.rdf</onto2>;
+w
+1,$ s;<uri2>http://co4.inrialpes.fr/align/Contest/[^<]*</uri2>;<uri2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</uri2>;
+w
+1,$ s;entity2 rdf:resource="http://co4.inrialpes.fr/align/Contest/[^#]*;entity2 rdf:resource="http://oaei.inrialpes.fr/2005/benchmarks/$i/onto.rdf;
 w
 EOF
 fi
@@ -614,3 +639,17 @@ xsltproc xslt/owl2html.xsl $i/onto.rdf > $i/onto.html
 done
 
 echo
+
+#####################################################################
+# //pass3: generate HTML
+# DONE!
+
+cd ..
+
+# copy
+
+#cp 2005/benchmarks/benchmar
+#mv 2005/benchmarks 2005/benchmarks.old
+#cp -rf tests 2005/benchmarks
+
+#zip 2005/benchmarks/bench20.zip -r tests/*
