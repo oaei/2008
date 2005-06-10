@@ -25,7 +25,7 @@
 
   <!-- for suppressing properties in alignment -->
   <xsl:template match="align:Cell">
-    <xsl:variable name="name" select="substring-after(align:entity2/@rdf:resource,'#')"/>
+    <xsl:variable name="name" select="substring-after(align:entity1/@rdf:resource,'#')"/>
     <xsl:variable name="myself" select="."/>
     <xsl:for-each select="document($uri)">
       <xsl:if test="not(key('prop',$name))">
