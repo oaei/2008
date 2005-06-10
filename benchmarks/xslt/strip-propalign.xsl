@@ -21,7 +21,7 @@
 
   <!-- JE: This is an anthological piece of XSLT! -->
 
-  <xsl:variable name="uri"><xsl:value-of select="/rdf:RDF/align:Alignment/align:uri1/text()"/></xsl:variable>
+  <xsl:variable name="uri"><xsl:value-of select="/rdf:RDF/align:Alignment/align:onto1/text()"/></xsl:variable>
   <xsl:variable name="file"><xsl:value-of select="document($uri)"/></xsl:variable>
 
   <xsl:key name="prop" match="owl:ObjectProperty|owl:TransitiveProperty|owl:SymmetricProperty|owl:InverseFunctionalProperty|owl:InverseFunctionalProperty|owl:DatatypeProperty" use="@rdf:ID"/>
