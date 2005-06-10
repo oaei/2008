@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id$ -->
+<!-- $Id: strip-instances.xsl,v 1.1 2005/06/09 21:09:41 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -19,6 +19,8 @@
   <xsl:param name="param"></xsl:param>
   <xsl:param name="value"></xsl:param>
   <xsl:param name="ref"></xsl:param>
+
+  <xsl:output method="xml" encoding="iso-8859-1"/>
 
   <xsl:template match="foaf:Person"/>
   <xsl:template match="my:Journal|my:Publisher|my:Conference"/>

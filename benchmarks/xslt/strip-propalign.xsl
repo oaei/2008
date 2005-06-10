@@ -16,6 +16,9 @@
 		xmlns:dctype="http://purl.org/dc/dcmitype/"
 		version="1.0"
 >
+
+  <xsl:output method="xml" encoding="iso-8859-1"/>
+
   <!-- JE: This is an anthological piece of XSLT! -->
 
   <xsl:variable name="uri"><xsl:value-of select="/rdf:RDF/align:Alignment/align:uri1/text()"/></xsl:variable>

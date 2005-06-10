@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id$ -->
+<!-- $Id: strip-properties.xsl,v 1.2 2005/06/09 21:06:58 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -19,6 +19,8 @@
   <xsl:param name="param"></xsl:param>
   <xsl:param name="value"></xsl:param>
   <xsl:param name="ref"></xsl:param>
+
+  <xsl:output method="xml" encoding="iso-8859-1"/>
 
   <xsl:template match="owl:ObjectProperty"/>
   <xsl:template match="owl:DatatypeProperty"/>
