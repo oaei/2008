@@ -38,7 +38,7 @@
     <dc:date>01/06/2004</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id$</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.1 2005/06/10 15:30:03 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -1178,7 +1178,14 @@
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:ID="issue">
-    <rdfs:domain rdf:resource="#Reference"/>
+    <rdfs:domain>
+      <owl:Class>
+	<owl:unionOf rdf:parseType="Collection">
+	  <owl:Class rdf:about="#Reference" />
+	  <owl:Class rdf:about="#Conference" />
+	</owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
     <rdfs:range rdf:resource="&xsd;string" />
     <rdfs:subPropertyOf rdf:resource="#numberOrVolume" />
     <rdfs:label xml:lang="en">Issue</rdfs:label>
