@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: trans-foreign.xsl,v 1.3 2005/06/10 20:46:04 euzenat Exp euzenat $ -->
+<!-- $Id: trans-foreign.xsl,v 1.4 2005/06/14 09:34:54 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -93,14 +93,30 @@
 
   <xsl:template name="translate">
     <xsl:param name="string"/>
-    <xsl:variable name="suffix">
-      <xsl:choose>
-	<xsl:when test="contains($string,'#')"><xsl:value-of select="substring-after($string,'#')"/></xsl:when>
-	<xsl:otherwise><xsl:value-of select="$string"/></xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-    <!-- keep the prefix if necessary -->
-    <xsl:if test="contains($string,'#')"><xsl:value-of select="substring-before($string,'#')"/>#</xsl:if>
+    <xsl:choose>
+      <xsl:when test="not(contains($string,'#'))">
+	<xsl:call-template name="replace">
+	  <xsl:with-param name="suffix"><xsl:value-of select="$string"/></xsl:with-param>
+	</xsl:call-template>
+      </xsl:when>
+      <xsl:when test="substring-before($string,'#')=''">
+	<xsl:text>#</xsl:text>
+	<xsl:call-template name="replace">
+	  <xsl:with-param name="suffix"><xsl:value-of select="substring-after($string,'#')"/></xsl:with-param>
+	</xsl:call-template>
+      </xsl:when>
+      <xsl:when test="substring-before($string,'#')='http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf'">
+	<xsl:text>http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#</xsl:text>
+	<xsl:call-template name="replace">
+	  <xsl:with-param name="suffix"><xsl:value-of select="substring-after($string,'#')"/></xsl:with-param>
+	</xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise><xsl:value-of select="$string"/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="replace">
+    <xsl:param name="suffix"/>
     <xsl:choose>
       <xsl:when test="$suffix='Resource'">Source</xsl:when>
       <xsl:when test="$suffix='isPartOf'">partieDe</xsl:when>
@@ -143,7 +159,7 @@
       <xsl:when test="$suffix='Reference'">Référence</xsl:when>
       <xsl:when test="$suffix='Article'">Article</xsl:when>
       <xsl:when test="$suffix='Book'">Livre</xsl:when>
-      <xsl:when test="$suffix='Monography'">Monographie</xsl:when>
+      <xsl:when test="$suffix='Monograph'">Monographie</xsl:when>
       <xsl:when test="$suffix='Collection'">Compilation</xsl:when>
       <xsl:when test="$suffix='Informal'">Informel</xsl:when>
       <xsl:when test="$suffix='Part'">Partie</xsl:when>
