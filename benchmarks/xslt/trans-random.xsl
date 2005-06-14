@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: trans-random.xsl,v 1.2 2005/06/10 14:07:08 euzenat Exp euzenat $ -->
+<!-- $Id: trans-random.xsl,v 1.3 2005/06/10 20:45:25 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -49,13 +49,23 @@
     </xsl:attribute>
   </xsl:template>
 
+  <xsl:template match="@rdf:about">
+    <xsl:attribute name="rdf:about">
+      <xsl:call-template name="translate">
+	<xsl:with-param name="string">
+	  <xsl:value-of select="."/>
+	</xsl:with-param>
+      </xsl:call-template>
+    </xsl:attribute>
+  </xsl:template>
+
   <!-- do not change anything in this specific case -->
   <xsl:template match="align:entity1/@rdf:resource">
     <xsl:attribute name="rdf:resource"><xsl:value-of select="."/></xsl:attribute>
   </xsl:template>
 
   <!-- tag name -->
-  <xsl:template match="*[namespace-uri(.)='http://oaei.inrialpes.fr/2005/benchmark/101/onto.rdf#']">
+  <xsl:template match="*[namespace-uri(.)='http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#']">
     <xsl:variable name="new">
       <xsl:call-template name="translate">
 	<xsl:with-param name="string">
@@ -93,6 +103,7 @@
     <xsl:if test="contains($string,'#')"><xsl:value-of select="substring-before($string,'#')"/>#</xsl:if>
     <xsl:choose>
       <xsl:when test="$suffix='Resource'">uqwz</xsl:when>
+      <xsl:when test="$suffix='isPartOf'">EzGNplyLBiS</xsl:when>
       <xsl:when test="$suffix='Text'">PBdgcs</xsl:when>
       <xsl:when test="$suffix='UserGuide'">ZikPzsz</xsl:when>
       <xsl:when test="$suffix='ReferenceManual'">ZGKW1E</xsl:when>
