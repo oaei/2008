@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: restriction.xsl,v 1.1 2005/06/09 21:06:35 euzenat Exp euzenat $ -->
+<!-- $Id: restriction.xsl,v 1.2 2005/06/10 20:40:46 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -39,6 +39,10 @@
   <xsl:template match="rdfs:range[owl:Class/owl:intersectionOf]"/>
   <xsl:template match="rdfs:range[owl:Class/owl:complementOf]"/>
   <xsl:template match="rdfs:range[owl:Class/owl:oneOf]"/>
+
+  <!-- really ad hoc: this shows that a backward recursive scheme is needed -->
+  <xsl:template
+     match="rdfs:subClassOf[owl:Restriction/owl:allValuesFrom/owl:Class/owl:unionOf]"/>
 
   <xsl:template match="@*|node()"> <!-- node() = text()|* ? -->
     <xsl:copy>
