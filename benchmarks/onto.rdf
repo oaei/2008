@@ -37,7 +37,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto.rdf,v 1.20 2005/06/10 08:43:38 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto.rdf,v 1.21 2005/06/10 15:26:49 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -1018,7 +1018,14 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="date">
-    <rdfs:domain rdf:resource="#Reference" />
+    <rdfs:domain>
+      <owl:Class>
+	<owl:unionOf rdf:parseType="Collection">
+	  <owl:Class rdf:about="#Reference" />
+	  <owl:Class rdf:about="#Conference" />
+	</owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
     <rdfs:range rdf:resource="#Date" />
     <rdfs:label xml:lang="en">date</rdfs:label>
     <rdfs:comment xml:lang="en">The date when the work was published or, for an unpublished work, in which it was written. This date can be incomplete (i.e., no known day or month) but must contain a year.</rdfs:comment>
@@ -1159,7 +1166,14 @@
   </owl:DatatypeProperty>
 
   <owl:ObjectProperty rdf:ID="location">
-    <rdfs:domain rdf:resource="#Reference" />
+    <rdfs:domain>
+      <owl:Class>
+	<owl:unionOf rdf:parseType="Collection">
+	  <owl:Class rdf:about="#Reference" />
+	  <owl:Class rdf:about="#Conference" />
+	</owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
     <rdfs:range rdf:resource="#Address" />
     <rdfs:label xml:lang="en">location</rdfs:label>
     <rdfs:comment xml:lang="en">A location associated with the entry, such as the city in which a conference took place (this is now obsolete).</rdfs:comment>
