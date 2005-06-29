@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: make.sh,v 1.9 2005/06/14 13:04:41 euzenat Exp euzenat $
+# $Id: make.sh,v 1.10 2005/06/14 13:15:14 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
@@ -232,7 +232,8 @@ xsltproc xslt/strip-propalign.xsl refalign.rdf > 228/refalign.rdf
 mkdir 230
 cp onto-cflat.rdf 230/onto.rdf
 chmod 644 230/onto.rdf
-cp 101/refalign.rdf 230/refalign.rdf
+cp refalign-cflat.rdf 230/refalign.rdf
+chmod 644 230/refalign.rdf
 
 #//TODO
 # 231) Systematic: Multiplying entities
@@ -595,7 +596,7 @@ ed -s $i/refalign.rdf << EOF &>/dev/null
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</onto2>;
+1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/lib/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/lib/$i/onto.rdf</onto2>;
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
@@ -638,7 +639,7 @@ exit
 
 # copy
 
-VERSION=21
+VERSION=22
 
 cd ..
 
@@ -646,7 +647,7 @@ cp 2005/benchmarks/bench*.zip 2005/versions
 \rm -rf 2005/benchmarks.old
 mv 2005/benchmarks 2005/benchmarks.old
 
-cp -rf tests 2005/benchmarks
+cp -rf lib 2005/benchmarks
 
 cd 2005/benchmarks
 
@@ -654,13 +655,13 @@ for i in `ls -d [0-9][0-9][0-9]`
 do
 echo -n "*"$i"*"
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.inrialpes.fr/2005/benchmarks;
+1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/lib;http://oaei.inrialpes.fr/2005/benchmarks;
 w
 EOF
 if [ -f $i/refalign-utf8.rdf ]
 then
 ed -s $i/refalign-utf8.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.inrialpes.fr/2005/benchmarks;
+1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/lib;http://oaei.inrialpes.fr/2005/benchmarks;
 w
 EOF
 fi
@@ -668,8 +669,17 @@ done
 
 cd ..
 
-zip bench$VERSION.zip -r benchmarks/*
+zip bench$VERSION.zip -r  benchmarks/ -x RCS -x *~ -x inria.rdf*
 mv bench$VERSION.zip benchmarks
 cp benchmarks/bench$VERSION.zip benchmarks/bench.zip
 
-#java -cp /Volumes/Phata/JAVA/ontoalign/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.SubsDistNameAlignment
+#java -cp /Volumes/Phata/JAVA/ontoalign/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file://localhost/Volumes/Phata/Web/html/co4/oaei/lib/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.SubsDistNameAlignment
+
+for i in `ls -d [0-9][0-9][0-9]`
+do
+ed -s $i/refalign.rdf << EOF &>/dev/null
+1,$ s;<onto1>http://oaei.inrialpes.fr/2005;<onto1>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
+1,$ s;<onto2>http://oaei.inrialpes.fr/2005;<onto2>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
+w
+EOF
+done
