@@ -432,6 +432,18 @@
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
       <relation>=</relation>
     </Cell>
+    <Cell>
+      <entity1 rdf:resource='http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#lastName'/>
+      <entity2 rdf:resource='http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#lastName'/>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+      <relation>=</relation>
+    </Cell>
+    <Cell>
+      <entity1 rdf:resource='http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#language'/>
+      <entity2 rdf:resource='http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#language'/>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+      <relation>=</relation>
+    </Cell>
   </map>
 </Alignment>
 </rdf:RDF>
