@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id -->
+<!-- $Id$ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 		xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
 		xmlns:units="http://visus.mit.edu/fontomri/0.01/units.owl#" 
-		xmlns:foaf="http://xmlns.com/foaf/0.1/#" 
-		xmlns:ical="http://www.w3.org/2002/12/cal/#" 
+		xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+		xmlns:ical="http://www.w3.org/2002/12/cal/ical#" 
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
 		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
 		xmlns:owl="http://www.w3.org/2002/07/owl#" 

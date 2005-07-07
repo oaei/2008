@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: trans-random.xsl,v 1.5 2005/06/14 09:33:07 euzenat Exp euzenat $ -->
+<!-- $Id: trans-random.xsl,v 1.6 2005/06/14 10:23:42 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 		xmlns:my="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
 		xmlns:units="http://visus.mit.edu/fontomri/0.01/units.owl#" 
-		xmlns:foaf="http://xmlns.com/foaf/0.1/#" 
-		xmlns:ical="http://www.w3.org/2002/12/cal/#" 
+		xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+		xmlns:ical="http://www.w3.org/2002/12/cal/ical#" 
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
 		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
 		xmlns:owl="http://www.w3.org/2002/07/owl#" 
@@ -57,6 +57,19 @@
 	</xsl:with-param>
       </xsl:call-template>
     </xsl:attribute>
+  </xsl:template>
+
+  <xsl:template match="rdfs:label">
+    <rdfs:label>
+      <xsl:if test="@xml:lang">
+	<xsl:attribute name="xml:lang"><xsl:value-of select="@xml:lang"/></xsl:attribute>
+      </xsl:if>
+      <xsl:call-template name="translate">
+	<xsl:with-param name="string">
+	  <xsl:value-of select="text()"/>
+	</xsl:with-param>
+      </xsl:call-template>
+    </rdfs:label>
   </xsl:template>
 
   <!-- do not change anything in this specific case -->
