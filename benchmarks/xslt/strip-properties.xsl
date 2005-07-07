@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: strip-properties.xsl,v 1.3 2005/06/10 20:44:28 euzenat Exp euzenat $ -->
+<!-- $Id: strip-properties.xsl,v 1.4 2005/06/14 09:39:38 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 		xmlns:my="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
-		xmlns:units="http://visus.mit.edu/fontomri/0.01/units.owl#" 
-		xmlns:foaf="http://xmlns.com/foaf/0.1/#" 
-		xmlns:ical="http://www.w3.org/2002/12/cal/#" 
+		xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+		xmlns:ical="http://www.w3.org/2002/12/cal/ical#" 
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
 		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
 		xmlns:owl="http://www.w3.org/2002/07/owl#" 
-		xmlns:wot="http://xmlns.com/wot/0.1/" 
 		xmlns:dc="http://purl.org/dc/elements/1.1/" 
-		xmlns:dcterms="http://purl.org/dc/terms/" 
-		xmlns:dctype="http://purl.org/dc/dcmitype/"
 		version="1.0"
 >
   <xsl:param name="param"></xsl:param>
@@ -22,8 +18,9 @@
 
   <xsl:output method="xml" encoding="iso-8859-1"/>
 
-  <xsl:template match="owl:ObjectProperty"/>
-  <xsl:template match="owl:DatatypeProperty"/>
+  <!-- quite ad hoc for avoiding to strip foaf and dc declarations -->
+  <xsl:template match="owl:ObjectProperty[@rdf:ID]"/>
+  <xsl:template match="owl:DatatypeProperty[@rdf:ID]"/>
   <xsl:template match="owl:TransitiveProperty"/>
   <xsl:template match="owl:SymmetricProperty"/>
   <xsl:template match="owl:FunctionalProperty"/>
@@ -33,6 +30,7 @@
 
   <!-- for suppressing properties in instances -->
   <xsl:template match="foaf:Person/my:*"/>
+  <xsl:template match="foaf:Person/lastName"/> <!-- really ad hoc -->
   <xsl:template match="my:*/my:*"/>
 
   <!-- for suppressing properties in alignment -->
