@@ -6,26 +6,19 @@
 	  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#" >
 	  <!ENTITY dc		"http://purl.org/dc/elements/1.1/" >
 	  <!ENTITY owl		"http://www.w3.org/2002/07/owl#" >
-	  <!ENTITY units	"http://visus.mit.edu/fontomri/0.01/units.owl#" >
-	  <!ENTITY foaf 	"http://xmlns.com/foaf/0.1/#">
-	  <!ENTITY ical 	"http://www.w3.org/2002/12/cal/#">
-	  <!ENTITY dcterms 	"http://purl.org/dc/terms/">
-	  <!ENTITY dctype 	"http://purl.org/dc/dcmitype/"> ]>
+	  <!ENTITY foaf 	"http://xmlns.com/foaf/0.1/">
+	  <!ENTITY ical 	"http://www.w3.org/2002/12/cal/ical#">]>
 
 <rdf:RDF
  xmlns="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
  xml:base="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
- xmlns:units	="&units;"
  xmlns:foaf	="&foaf;"
  xmlns:ical	="&ical;"
  xmlns:rdf	="&rdf;"
  xmlns:xsd	="&xsd;"
  xmlns:rdfs	="&rdfs;"
  xmlns:owl	="http://www.w3.org/2002/07/owl#"
- xmlns:wot	="http://xmlns.com/wot/0.1/"
- xmlns:dc	="&dc;"
- xmlns:dcterms	="&dcterms;"
- xmlns:dctype	="&dctype;">
+ xmlns:dc	="&dc;">
 
 <!-- This ontology describes bibliographic references.
  -->
@@ -38,32 +31,32 @@
     <dc:date>01/06/2004</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.5 2005/06/29 14:29:27 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.6 2005/06/30 08:36:17 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
-<!-- Every entity (even external) must be typed in OWL-DL. -->
+  <!-- Every entity (even external) must be typed in OWL-DL. -->
 
-<owl:Class rdf:about="&rdf;List" />
-<rdf:List rdf:about="&rdf;nil" />
-<owl:ObjectProperty rdf:about="&rdf;first">
+  <owl:Class rdf:about="&rdf;List" />
+  <rdf:List rdf:about="&rdf;nil" />
+  <owl:ObjectProperty rdf:about="&rdf;first">
     <rdfs:domain rdf:resource="&rdf;List" />
-</owl:ObjectProperty>
-<owl:ObjectProperty rdf:about="&rdf;rest">
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&rdf;rest">
     <rdfs:domain rdf:resource="&rdf;List" />
     <rdfs:range rdf:resource="&rdf;List" />
-</owl:ObjectProperty>
+  </owl:ObjectProperty>
 
-<owl:DatatypeProperty rdf:about="&dc;creator" />
-<owl:DatatypeProperty rdf:about="&dc;contributor" />
-<owl:DatatypeProperty rdf:about="&dc;description" />
-<owl:DatatypeProperty rdf:about="&dc;date" />
+  <owl:DatatypeProperty rdf:about="&dc;creator" />
+  <owl:DatatypeProperty rdf:about="&dc;contributor" />
+  <owl:DatatypeProperty rdf:about="&dc;description" />
+  <owl:DatatypeProperty rdf:about="&dc;date" />
 
-<!-- foaf extensions -->
-<owl:Class rdf:about="&foaf;Person" />
-<owl:Class rdf:about="&foaf;Organization" />
-<owl:DatatypeProperty rdf:about="&foaf;firstName" />
-<owl:DatatypeProperty rdf:about="#lastName" />
-<owl:DatatypeProperty rdf:about="&foaf;name" />
+  <!-- foaf extensions -->
+  <owl:Class rdf:about="&foaf;#Person" />
+  <owl:Class rdf:about="&foaf;#Organization" />
+  <owl:DatatypeProperty rdf:about="&foaf;#firstName" />
+  <owl:DatatypeProperty rdf:ID="lastName" />
+  <owl:DatatypeProperty rdf:about="&foaf;#name" />
 
    <!--
     ********  ENTRIES  ********
@@ -811,7 +804,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
 	<owl:onProperty rdf:resource="&rdf;first" />
-	<owl:allValuesFrom rdf:resource="&foaf;Person" />
+	<owl:allValuesFrom rdf:resource="&foaf;#Person" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
