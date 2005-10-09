@@ -4,17 +4,23 @@
 </head>
 <body bgcolor="white" face="tahoma, arial">
 
-<center><a href="..">OAEI 2005</a></center>
-
+<a href=".."><img border="0" width="20%" src="../oaei.jpg" align="right" /></a>
 <h1>Ontology Alignment Evaluation Initiative<br/>
-Modification of the 2005 test library</h1>
+Modifications of the test library</h1>
 
-<table><tr><td bgcolor="yellow">
-If in any event, you cannot work with the last released version,
-send me an email and use the version immediatly before.
-</td></tr></table>
+<h2><a href="../versions/bench30.zip"></a> 3.0: unreleased</h2>
 
-<h2><a href="../versions/bench27.zip">2.7</a>: updated version 02/08/2005</h2>
+<ul compact="1">
+<li>UTF-8 is now the standard test encoding (iso-latin an alternative)</li>
+<li>tests URIs/locations are now to http://oaei.inrialpes.fr/tests</li>
+</ul>
+
+<hr />
+
+<h2><a href="../versions/bench27.zip">2.7</a>: updated version
+  02/08/2005</h2>
+
+<p><b>Version 2.7 was the evaluation version of <a href="../2005/">OAEI-2005</a>.</b></p>
 
 <p>A correction by Raphaël Troncy:
 <ul compact="1">
@@ -75,11 +81,56 @@ send me an email and use the version immediatly before.
 
 <h2><a href="../versions/bench20.zip">2.0</a>: unreleased version</h2>
 
+<hr />
+
+<h2><a href="../versions/oacontest17.zip">1.7</a>: OAEI-2004 final version released 10/10/2004</h2>
+
+<p><b>Version 1.7 was the evaluation version of <a href="../2004/Contest/">OAEI-2004</a>.</b></p>
+
+<h2><a href="../versions/oacontest16.zip"></a>1.6: unreleased</h2>
+<h2><a href="../versions/oacontest15.zip"></a>1.5: unreleased</h2>
+<h2><a href="../versions/oacontest14.zip"></a>1.4: unreleased</h2>
+<h2><a href="../versions/oacontest13.zip"></a>1.3: unreleased</h2>
+
+<h2><a href="../versions/oacontest12.zip">1.2</a>: released 5/9/2004</h2>
+
+<p>List of modifications (thanks to Natasha Noy and David Loup) to the tests:
+<ul compact="1">
+<li>changed test n°102 with the actual food.owl file (bug);</li>
+<li>suppressed mentions to BookPart objects in n°101,204,223,224,225 (bug);</li>
+<li>corrected rdf:reference mention in n°103 (bug);</li>
+<li>corrected xsd:langage mention in n°206 (bug);</li>
+<li>corrected mentions to parseType="Compilation" and parseType="sqxsqkd" to parseType="Collection" (bug)</li>
+<li>corrected mentions to &xsd;sqkxndc and &xsd;idiom to xsd;language (bug)</li>
+<li>corrected mentions to plink.org to purl.org (bug)</li>
+<li>corrected ill-written "Techreport" in refaligns (bug).</li>
+<li>changed refalign mentions to local filesystem URI;</li>
+<li>changed refalign and RDF namespaces in refalign to the correct ones;</li>
+<li>updated many discarded entities in the refalign n°230, and others
+in 301-304;</li>
+<li>turned location from a DatatypeProperty to an ObjectProperty (bug).</li>
+<li>added an UTF-8 206 file;</li>
+<li>introduced more generalisation in test n°103 using xsd:integer instead of xsd:nonNegativeIngeger in startPage and endPage (improvement);</li>
+<li>better defined test n°230 (School and Institution being embedded into their refering classes).</li>
+<li>added in http://co4.inrialpes.fr/align/dtd/refalign.rdfs kindly provided by Natasha.</li>
+<li>added a letter at the begining of each fragment identifiers (for Jena compliance, this is a reasonable request);</li>
+<li>not changed the diacritics in tests n°206 and 224 (for OWLAPI
+  compliance, this must be solved by these Parsers. However,
+  contestors may use the UTF-8 counterpart provided).</li>
+<li>OWL API parser display problems with importing in test n°102.</li>
+</ul>
+
+<h2><a href="../versions/oacontest11.zip">1.1</a>: corrected version released 3/9/2004</h2>
+
+<h2><a href="../versions/oacontest10.zip">1.0</a>: OAEI-2004 released 2/9/2004</h2>
+
+<h2><a href="../versions/oacontest09.zip">0.9</a>: OAEI-2004 preversion released 9/7/2004</h2>
+
 <h1>Contacts</h1>
 <p>Contact address is Jerome . Euzenat (À) inrialpes . fr</p>
 <hr />
-<center><small>http://oaei.inrialpes.fr/2005/benchmarks</small></center>
+<center><small>http://oaei.inrialpes.fr/tests/logs.html</small></center>
 <hr />
-$Id: logs.html,v 1.7 2005/08/02 09:08:02 euzenat Exp euzenat $
+$Id: logs.html,v 1.8 2005/08/02 10:06:31 euzenat Exp euzenat $
 </body>
 </html>
