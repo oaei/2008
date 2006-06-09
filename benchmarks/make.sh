@@ -1,10 +1,11 @@
 #!/bin/sh
-# $Id: make.sh,v 1.15 2005/08/02 10:13:07 euzenat Exp euzenat $
+# $Id: make.sh,v 1.16 2005/10/09 18:55:35 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
 # //pass3: generate HTML
 # //pass4: put everything on the web site (to be processed manually)
+
 echo Generating files
 
 # //pass1: generate test files
@@ -98,10 +99,10 @@ xsltproc xslt/trans-synonyms.xsl refalign.rdf > 205/refalign.rdf
 #DONE! // NOMORECOMMENT TRANSLATIONS
 \rm -rf 206
 mkdir 206
-xsltproc xslt/trans-foreign.xsl onto.rdf > 206/onto.rdf
-xsltproc xslt/trans-foreign.xsl refalign.rdf > 206/refalign.rdf
-cat 206/onto.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 206/onto-utf8.rdf
-cat 206/refalign.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 206/refalign-utf8.rdf
+xsltproc xslt/trans-foreign.xsl onto.rdf > 206/onto-iso8859.rdf
+xsltproc xslt/trans-foreign.xsl refalign.rdf > 206/refalign-iso8859.rdf
+cat 206/onto-iso8859.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 206/onto.rdf
+cat 206/refalign-iso8859.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 206/refalign.rdf
 
 #####################################################################
 # 207) Systematic: Foreign names
@@ -110,10 +111,10 @@ cat 206/refalign.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 206/re
 #DONE!
 \rm -rf 207
 mkdir 207
-xsltproc xslt/trans-foreign.xsl onto.rdf > 207/onto.rdf
-cat 207/onto.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 207/onto-utf8.rdf
+xsltproc xslt/trans-foreign.xsl onto.rdf > 207/onto-iso8859.rdf
+cat 207/onto-iso8859.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 207/onto.rdf
 cp 206/refalign.rdf 207/refalign.rdf
-cp 206/refalign-utf8.rdf 207/refalign-utf8.rdf
+cp 206/refalign-iso8859.rdf 207/refalign-iso8859.rdf
 
 #####################################################################
 # 208) Systematic: Convention and no comments
@@ -139,10 +140,10 @@ cp 205/refalign.rdf 209/refalign.rdf
 #DONE!
 \rm -rf 210
 mkdir 210
-xsltproc xslt/strip-comments.xsl 207/onto.rdf > 210/onto.rdf
-cat 210/onto.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 210/onto-utf8.rdf
+xsltproc xslt/strip-comments.xsl 207/onto.rdf > 210/onto-iso8859.rdf
+cat 210/onto-iso8859.rdf | ./convert_iso2utf8.pl | sed "s:iso-8859-1:utf-8:"> 210/onto.rdf
 cp 207/refalign.rdf 210/refalign.rdf
-cp 207/refalign-utf8.rdf 210/refalign-utf8.rdf
+cp 207/refalign-iso8859.rdf 210/refalign-iso8859.rdf
 
 #####################################################################
 # 221) Systematic: No hierarchy
@@ -592,51 +593,49 @@ echo -n "*"$i"*"
 if [ -f $i/refalign.rdf ]
 then
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<uri2>http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf</uri2>;<uri2>http://oaei.inrialpes.fr/2005/benchmarks/$i/onto.rdf</uri2>;
+1,$ s;<uri2>http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf</uri2>;<uri2>http://oaei.ontologymatching.org/2006/benchmarks/$i/onto.rdf</uri2>;
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/lib/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/lib/$i/onto.rdf</onto2>;
+1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</onto2>;
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;entity2 rdf:resource=\(['"]\)http://oaei.inrialpes.fr/2005/benchmarks/101/;entity2 rdf:resource=\1http://oaei.inrialpes.fr/2005/benchmarks/$i/;
+1,$ s;entity2 rdf:resource=\(['"]\)http://oaei.ontologymatching.org/2006/benchmarks/101/;entity2 rdf:resource=\1http://oaei.ontologymatching.org/2006/benchmarks/$i/;
 w
 EOF
 fi
-if [ -f $i/refalign-utf8.rdf ]
+if [ -f $i/refalign-iso8859.rdf ]
 then
-ed -s $i/refalign-utf8.rdf << EOF &>/dev/null
-1,$ s;<uri2>http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf</uri2>;<uri2>http://oaei.inrialpes.fr/2005/benchmarks/$i/onto.rdf</uri2>;
+ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
+1,$ s;<uri2>http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf</uri2>;<uri2>http://oaei.ontologymatching.org/2006/benchmarks/$i/onto.rdf</uri2>;
 w
 EOF
 # Beware, this is different here...
-ed -s $i/refalign-utf8.rdf << EOF &>/dev/null
-1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/lib/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/lib/$i/onto-utf8.rdf</onto2>;
+ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
+1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto-iso8859.rdf</onto2>;
 w
 EOF
-ed -s $i/refalign-utf8.rdf << EOF &>/dev/null
-1,$ s;entity2 rdf:resource=\(['"]\)http://oaei.inrialpes.fr/2005/benchmarks/101/;entity2 rdf:resource=\1http://oaei.inrialpes.fr/2005/benchmarks/$i/;
+ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
+1,$ s;entity2 rdf:resource=\(['"]\)http://oaei.ontologymatching.org/2006/benchmarks/101/;entity2 rdf:resource=\1http://oaei.ontologymatching.org/2006/benchmarks/$i/;
 w
 EOF
 fi
 if [ -f $i/onto.rdf ]
 then
 ed -s $i/onto.rdf << EOF &>/dev/null
-1,$ s;oaei.inrialpes.fr/2005/benchmarks/101/;oaei.inrialpes.fr/2005/benchmarks/$i/;g
+1,$ s;oaei.ontologymatching.org/2006/benchmarks/101/;oaei.ontologymatching.org/2006/benchmarks/$i/;g
 w
 EOF
 fi
-if [ -f $i/onto-utf8.rdf ]
+if [ -f $i/onto-iso8859.rdf ]
 then
-ed -s $i/onto-utf8.rdf << EOF &>/dev/null
-1,$ s;oaei.inrialpes.fr/2005/benchmarks/101/;oaei.inrialpes.fr/2005/benchmarks/$i/;g
+ed -s $i/onto-iso8859.rdf << EOF &>/dev/null
+1,$ s;oaei.ontologymatching.org/2006/benchmarks/101/;oaei.ontologymatching.org/2006/benchmarks/$i/;g
 w
 EOF
 fi
 done
-
-################
 
 #####################################################################
 # //pass3: generate HTML
@@ -662,7 +661,7 @@ exit
 
 # copy
 
-VERSION=27
+VERSION=30
 
 cd ..
 
@@ -677,13 +676,13 @@ for i in `ls -d [0-9][0-9][0-9]`
 do
 echo -n "*"$i"*"
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/lib;http://oaei.inrialpes.fr/2005/benchmarks;
+1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.ontologymatching.org/2006/benchmarks;
 w
 EOF
-if [ -f $i/refalign-utf8.rdf ]
+if [ -f $i/refalign-iso8859.rdf ]
 then
-ed -s $i/refalign-utf8.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/lib;http://oaei.inrialpes.fr/2005/benchmarks;
+ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
+1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.ontologymatching.org/2006/benchmarks;
 w
 EOF
 fi
@@ -692,17 +691,17 @@ echo
 
 cd ..
 
-zip bench$VERSION.zip -r  benchmarks/ -x benchmarks/RCS/* benchmarks/test-species/* benchmarks/xslt/RCS/* benchmarks/NEW305/*
+zip bench$VERSION.zip -r  benchmarks/ -x benchmarks/RCS/* benchmarks/xslt/RCS/* benchmarks/NEW305/*
 mv bench$VERSION.zip ../versions
 cp ../versions/bench$VERSION.zip benchmarks/bench.zip
 
-#java -cp /Volumes/Phata/JAVA/ontoalign/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file://localhost/Volumes/Phata/Web/html/co4/oaei/lib/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.SubsDistNameAlignment
+#java -cp /Volumes/Phata/JAVA/ontoalign/tests/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.SubsDistNameAlignment
 
 for i in `ls -d [0-9][0-9][0-9]`
 do
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto1>http://oaei.inrialpes.fr/2005;<onto1>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
-1,$ s;<onto2>http://oaei.inrialpes.fr/2005;<onto2>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
+1,$ s;<onto1>http://oaei.ontologymatching.org/2005;<onto1>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
+1,$ s;<onto2>http://oaei.ontologymatching.org/2005;<onto2>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
 w
 EOF
 done
