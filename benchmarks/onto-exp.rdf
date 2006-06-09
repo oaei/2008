@@ -13,8 +13,8 @@
 	  <!ENTITY dctype 	"http://purl.org/dc/dcmitype/"> ]>
 
 <rdf:RDF
- xmlns="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
- xml:base="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
+ xmlns="http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf#"
+ xml:base="http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf#"
  xmlns:units	="&units;"
  xmlns:foaf	="&foaf;"
  xmlns:ical	="&ical;"
@@ -37,7 +37,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-exp.rdf,v 1.1 2005/06/10 15:29:47 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-exp.rdf,v 1.2 2005/06/10 20:53:26 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->

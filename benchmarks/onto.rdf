@@ -10,8 +10,8 @@
 	  <!ENTITY ical 	"http://www.w3.org/2002/12/cal/ical#">]>
 
 <rdf:RDF
- xmlns="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
- xml:base="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
+ xmlns="http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf#"
+ xml:base="http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf#"
  xmlns:foaf	="&foaf;"
  xmlns:ical	="&ical;"
  xmlns:rdf	="&rdf;"
@@ -30,7 +30,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto.rdf,v 1.22 2005/06/28 13:06:47 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto.rdf,v 1.23 2005/08/02 09:05:28 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
   <!-- Every entity (even external) must be typed in OWL-DL. -->
