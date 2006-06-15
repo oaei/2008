@@ -10,17 +10,12 @@ The benchmark suite in one file is available <a href="bench.zip">HERE</a>.<br />
 </td></tr>
 </table>
 
-<a href=".."><img border="0" width="20%" src="../oaei.jpg" align="right" /></a>
+<a href=".."><img border="0" width="20%" src="../../oaei.jpg" align="right" /></a>
 
 <h1>Ontology Alignment Evaluation Initiative<br/>
 Test library</h1>
 
 <h2>Reference ontology</h2>
-
-<p>The reference ontology is based on the one of the first <a
-  href="../2004/Contest">EON Ontology Alignment Contest</a>. It is
-  improved by comprising a number of circular relations that were
-  missing from the first test.</p>
 
 <p>The domain of this first test is Bibliographic references. It is,
   of course, based on a subjective view of what must be a
@@ -33,6 +28,12 @@ Test library</h1>
   anonymous individuals.</p>
 
 <p>The complete ontology is that of <a href="#101">test #101</a>.</p-->
+
+<p>The reference ontology is based on the one of the first <a
+  href="../2004/Contest">EON Ontology Alignment Contest</a>. It is
+  improved by comprising a number of circular relations that were
+  missing from the first test. In 2006, we have put the UTF-8 version
+  of the tests as standard, the ISO-8859-1 being optional.</p>
 
 <!--p>Its schema is the following:<br />
 Reference
@@ -216,11 +217,10 @@ Reference
 <h1>Alignments</h1>
 
 <p>Below are provided the set of tests with expected alignments in the
-alignment format described at 
-<a
-   href="http://co4.inrialpes.fr/align/">http://co4.inrialpes.fr/align/</a>.
+Alignment format described 
+<a href="../align.html">here</a>.
 Each ontology is to be aligned with the reference ontology (i.e.,
-   that of <a href="#101">test #101</a>.</p>
+   that of <a href="#101">test #101</a>).</p>
 <p>The only interesting alignments are those involving classes and
   properties of the given ontologies. So the alignments should not
   align individuals, nor entities from the external ontologies.
@@ -345,15 +345,14 @@ Alignment : [<a href="205/refalign.rdf">RDF/XML</a>]
   english (French in the current case, but other languages would be fine).
 </p>
 <p>Ontology : [<a href="206/onto.rdf">RDF/XML</a>]
-[<a href="206/onto-utf8.rdf">RDF/XML in UTF-8</a>]
+[<a href="206/onto-iso8859.rdf">RDF/XML in ISO-8859-1</a>]
 [<a href="206/onto.html">HTML</a>]<br />
 Alignment : [<a href="206/refalign.rdf">RDF/XML</a>]
-[<a href="206/refalign-utf8.rdf">RDF/XML in UTF-8</a>]
+[<a href="206/refalign-iso8859.rdf">RDF/XML in ISO-8859-1</a>]
 [<a href="206/refalign.html">HTML</a>]<br />
 </p>
-<p><b>NOTE:</b> Some parsers do not like ISO-Latin in tags. You are
-  authorized to use the Unicode (UTF-8) version instead (just replace
-  onto.rdf by onto2.rdf).
+<p><b>NOTE:</b> You can use alternatively the ISO-Latin-1 (ISO-8859-1)
+  version of the tests by renaming them after their UTF-8 version.
 </p>
 
 <hr />
@@ -362,15 +361,14 @@ Alignment : [<a href="206/refalign.rdf">RDF/XML</a>]
 <p>Each label or identifieris translated to another language than
   english (French in the current case, but other languages would be fine).
 <p>Ontology : [<a href="207/onto.rdf">RDF/XML</a>]
-[<a href="207/onto-utf8.rdf">RDF/XML in UTF-8</a>]
+[<a href="207/onto-iso8859.rdf">RDF/XML in ISO-8859-1</a>]
 [<a href="207/onto.html">HTML</a>]<br />
 Alignment : [<a href="207/refalign.rdf">RDF/XML</a>]
-[<a href="207/refalign-utf8.rdf">RDF/XML in UTF-8</a>]
+[<a href="207/refalign-iso8859.rdf">RDF/XML in ISO-8859-1</a>]
 [<a href="207/refalign.html">HTML</a>]<br />
 </p>
-<p><b>NOTE:</b> Some parsers do not like ISO-Latin in tags. You are
-  authorized to use the Unicode (UTF-8) version instead (just replace
-  onto.rdf by onto2.rdf).
+<p><b>NOTE:</b> You can use alternatively the ISO-Latin-1 (ISO-8859-1)
+  version of the tests by renaming them after their UTF-8 version.
 </p>
 
 <hr />
@@ -398,15 +396,14 @@ Alignment : [<a href="209/refalign.rdf">RDF/XML</a>]
 <h2>210) Systematic: </h2>
 <p></p>
 <p>Ontology : [<a href="210/onto.rdf">RDF/XML</a>]
-[<a href="210/onto-utf8.rdf">RDF/XML in UTF-8</a>]
+[<a href="210/onto-iso8859.rdf">RDF/XML in ISO-8859-1</a>]
 [<a href="210/onto.html">HTML</a>]<br />
 Alignment : [<a href="210/refalign.rdf">RDF/XML</a>]
-[<a href="210/refalign-utf8.rdf">RDF/XML in UTF-8</a>]
+[<a href="210/refalign-iso8859.rdf">RDF/XML in ISO-8859-1</a>]
 [<a href="210/refalign.html">HTML</a>]<br />
 </p>
-<p><b>NOTE:</b> Some parsers do not like ISO-Latin in tags. You are
-  authorized to use the Unicode (UTF-8) version instead (just replace
-  onto.rdf by onto2.rdf).
+<p><b>NOTE:</b> You can use alternatively the ISO-Latin-1 (ISO-8859-1)
+  version of the tests by renaming them after their UTF-8 version.
 </p>
 
 <hr />
@@ -953,7 +950,7 @@ Entry
 
 <h1>Versions</h1>
 
-<p>The release notes of the previous test versions used in the OAEI-2005
+<p>The release notes of the previous test versions used in the OAEI-2006
 can be found <a href="logs.html">here</a>.</p>
 
 <h1>Tools</h1>
@@ -1017,10 +1014,10 @@ your results).</p>
 </p>
 
 <h1>Contacts</h1>
-<p>Contact address is Jerome . Euzenat (À) inrialpes . fr</p>
+<p>Contact address is Jerome : Euzenat # inrialpes : fr</p>
 <hr />
-<center><small>http://oaei.ontologymatching.org/tests</small></center>
+<center><small>http://oaei.ontologymatching.org/2006/benchmarks</small></center>
 <hr />
-$Id: index.html,v 1.18 2005/11/16 17:16:04 euzenat Exp euzenat $
+$Id: index.html,v 1.19 2006/01/11 17:16:08 euzenat Exp euzenat $
 </body>
 </html>
