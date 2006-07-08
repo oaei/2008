@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: strip-comments.xsl,v 1.3 2005/06/14 09:38:41 euzenat Exp euzenat $ -->
+<!-- $Id: strip-comments.xsl,v 1.4 2005/07/07 14:47:13 euzenat Exp $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-		xmlns:my="http://oaei.inrialpes.fr/2005/benchmarks/101/onto.rdf#"
+		xmlns:my="http://oeai.ontologymatching.org/2006/benchmarks/101/onto.rdf#"
 		xmlns:units="http://visus.mit.edu/fontomri/0.01/units.owl#" 
 		xmlns:foaf="http://xmlns.com/foaf/0.1/" 
 		xmlns:ical="http://www.w3.org/2002/12/cal/ical#" 
