@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: make.sh,v 1.17 2006/06/09 21:46:08 euzenat Exp euzenat $
+# $Id: make.sh,v 1.18 2006/07/08 22:39:22 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
@@ -671,16 +671,16 @@ exit
 
 # copy
 
-VERSION=30
+VERSION=31
 
 cd ..
 
-\rm -rf 2005/benchmarks.old
-mv 2005/benchmarks 2005/benchmarks.old
+\rm -rf 2006/benchmarks.old
+mv 2006/benchmarks 2006/benchmarks.old
 
-cp -rf lib 2005/benchmarks
+cp -rf lib 2006/benchmarks
 
-cd 2005/benchmarks
+cd 2006/benchmarks
 
 for i in `ls -d [0-9][0-9][0-9]` 
 do
@@ -710,8 +710,8 @@ cp ../versions/bench$VERSION.zip benchmarks/bench.zip
 for i in `ls -d [0-9][0-9][0-9]`
 do
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto1>http://oaei.ontologymatching.org/2005;<onto1>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
-1,$ s;<onto2>http://oaei.ontologymatching.org/2005;<onto2>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
+1,$ s;<onto1>http://oaei.ontologymatching.org/2006;<onto1>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
+1,$ s;<onto2>http://oaei.ontologymatching.org/2006;<onto2>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
 w
 EOF
 done
