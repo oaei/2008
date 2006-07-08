@@ -1,10 +1,20 @@
 #!/bin/sh
-# $Id: make.sh,v 1.16 2005/10/09 18:55:35 euzenat Exp euzenat $
+# $Id: make.sh,v 1.17 2006/06/09 21:46:08 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
 # //pass3: generate HTML
 # //pass4: put everything on the web site (to be processed manually)
+
+echo Have you done the preparation
+
+# The preparation involves modifying the files in xslt so that they
+# use the correct URI! In particular for the alignment campaigns it is 
+# necessary that the Year appearing in the URI be changed.
+# This applies for trans-random.xsl*, generalization.xsl, restriction.xsl,
+# strip-comments.xsl, strip-instances.xsl, strip-properties.xsl, 
+# strip-restrictions.xsl, strip-subclass.xsl, trans-conv.xsl*, 
+# trans-foreign.xsl*, trans-synonyms.xsl* (*=several times).
 
 echo Generating files
 
@@ -695,7 +705,7 @@ zip bench$VERSION.zip -r  benchmarks/ -x benchmarks/RCS/* benchmarks/xslt/RCS/* 
 mv bench$VERSION.zip ../versions
 cp ../versions/bench$VERSION.zip benchmarks/bench.zip
 
-#java -cp /Volumes/Phata/JAVA/ontoalign/tests/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.SubsDistNameAlignment
+#java -cp /Volumes/Phata/JAVA/alignapi/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file://localhost/Volumes/Phata/Web/html/co4/oaei/2006/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment
 
 for i in `ls -d [0-9][0-9][0-9]`
 do
