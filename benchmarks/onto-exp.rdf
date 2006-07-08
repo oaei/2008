@@ -37,7 +37,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-exp.rdf,v 1.2 2005/06/10 20:53:26 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-exp.rdf,v 1.2 2006/07/08 22:15:51 euzenat Exp $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -1823,8 +1823,8 @@
 	</location>
 	<date>
 		<Date>
-			<month>05</month>
-			<year>2004</year>
+			<month rdf:datatype="&xsd;gMonth">--05</month>
+			<year rdf:datatype="&xsd;gYear">2004</year>
 		</Date>
 	</date>
 </Workshop>
@@ -1843,8 +1843,8 @@
 	</location-->
 	<date>
 		<Date>
-			<month>10</month>
-			<year>2002</year>
+			<month rdf:datatype="&xsd;gMonth">--10</month>
+			<year rdf:datatype="&xsd;gYear">2002</year>
 		</Date>
 	</date>
 </Conference>
@@ -1862,8 +1862,8 @@
 	</location>
 	<date>
 		<Date>
-			<month>05</month>
-			<year>2004</year>
+			<month rdf:datatype="&xsd;gMonth">--05</month>
+			<year rdf:datatype="&xsd;gYear">2004</year>
 		</Date>
 	</date>
 </Conference>
@@ -1873,7 +1873,7 @@
 <Proceedings rdf:about="#a060097576">
 	<rdfs:label>Proceedings of the SemPGrid 04 Workshop</rdfs:label>
 	<title>Proceedings of the SemPGrid 04 Workshop</title>
-	<date><Date><year>2004</year></Date></date>
+	<date><Date><year rdf:datatype="&xsd;gYear">2004</year></Date></date>
 	<event rdf:resource="#spg04"/>
 </Proceedings>
 
@@ -1983,7 +1983,7 @@
 	</author>
 	<journal rdf:resource="#a674639524"/>
 	<title>{P-Grid}: A Self-organizing Structured P2P System</title>
-	<date><Date><year>2003</year></Date></date>
+	<date><Date><year rdf:datatype="&xsd;gYear">2003</year></Date></date>
 </Article>
 
 <Article rdf:about="#a475526642">
@@ -1996,7 +1996,7 @@
 	</author>
 	<journal rdf:resource="#a70981683"/>
 	<title>Binary Codes capable of correcting deletions, insertions, and reversals</title>
-	<date><Date><year>1996</year></Date></date>
+	<date><Date><year rdf:datatype="&xsd;gYear">1996</year></Date></date>
 </Article>
 
 <InBook rdf:about="#a71568377">
@@ -2037,7 +2037,7 @@
 	<publisher rdf:resource="#a131020767"/>
 	<title>Proc. Of the 13th Int. Conference on Knowledge Engineering and Management (EKAW-2002)</title>
 	<event rdf:resource="#a72192307c"/>
-	<date><Date><year>2002</year></Date></date>
+	<date><Date><year rdf:datatype="&xsd;gYear">2002</year></Date></date>
 </Proceedings>
 
 <Proceedings rdf:about="#a32071928">
@@ -2045,7 +2045,7 @@
 	<publisher rdf:resource="#a131020767"/>
 	<event rdf:resource="#a32071928c"/>
 	<title>Proceedings of the First European Semantic Web Symposium</title>
-	<date><Date><year>2004</year></Date></date>
+	<date><Date><year rdf:datatype="&xsd;gYear">2004</year></Date></date>
 </Proceedings>
 
 <Misc rdf:about="#a140583454">
@@ -2063,7 +2063,7 @@
 	</author>
 	<title>{QOM} - Quick Ontology Mapping</title>
 	<note>submitted to the ISWC 04</note>
-	<date><Date><year>2004</year></Date></date>
+	<date><Date><year rdf:datatype="&xsd;gYear">2004</year></Date></date>
 </Misc>
 
 <InProceedings rdf:about="#a11065952">
@@ -2104,14 +2104,14 @@
 	</author>
 	<journal rdf:resource="#a246119474"/>
 	<title>Start making sense: The Chatty Web approach for global semantic agreements</title>
-	<date><Date><month>12</month><year>2003</year></Date></date>
+	<date><Date><month rdf:datatype="&xsd;gMonth">--12</month><year rdf:datatype="&xsd;gYear">2003</year></Date></date>
 </Article>
 
 <Monograph rdf:about="#a108048723">
 	<rdfs:label>Object-Oriented Data Modeling</rdfs:label>
 	<publisher rdf:resource="#a85849488"/>
 	<title>Object-Oriented Data Modeling</title>
-	<date><Date><year>2000</year></Date></date>
+	<date><Date><year rdf:datatype="&xsd;gYear">2000</year></Date></date>
 </Monograph>
 
 <Article rdf:about="#a456080390">
@@ -2145,7 +2145,7 @@
 			<endPage rdf:datatype="&xsd;nonNegativeInteger">607</endPage>
 		</PageRange>
 	</pages>
-	<date><Date><month>12</month><year>2001</year></Date></date>
+	<date><Date><month rdf:datatype="&xsd;gMonth">--12</month><year rdf:datatype="&xsd;gYear">2001</year></Date></date>
 </Article>
 
 <Article rdf:about="#a846015923">
@@ -2174,7 +2174,7 @@
 	<journal rdf:resource="#a906774044"/>
 	<title>A Framework for Modeling and Evaluating Automatic Semantic Reconciliation</title>
 	<note>to appear</note>
-	<date><Date><year>2004</year></Date></date>
+	<date><Date><year rdf:datatype="&xsd;gYear">2004</year></Date></date>
 </Article>
 
 </rdf:RDF>

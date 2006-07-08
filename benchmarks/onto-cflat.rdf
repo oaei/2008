@@ -31,7 +31,7 @@
     <dc:date>01/06/2004</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.7 2005/07/08 09:54:54 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.3 2006/07/08 22:14:04 euzenat Exp $</owl:versionInfo>
   </owl:Ontology>
 
   <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -1458,12 +1458,12 @@
 <Proceedings rdf:about="#a060097576">
 	<rdfs:label>Proceedings of the SemPGrid 04 Workshop</rdfs:label>
 	<title>Proceedings of the SemPGrid 04 Workshop</title>
-	<year>2004</year>
+	<year rdf:datatype="&xsd;gYear">2004</year>
 	<eventName>SemPGrid 04 Workshop</eventName>
-			<city>New-York</city>
-			<state>NY</state>
-			<country>US</country>
-			<month>05</month>
+	<city>New-York</city>
+	<state>NY</state>
+	<country>US</country>
+	<month  rdf:datatype="&xsd;gMonth">--05</month>
 </Proceedings>
 
 <InProceedings rdf:about="#a64263824">
@@ -1572,7 +1572,7 @@
 	</author>
 	<journalName rdf:datatype="&xsd;string">ACM SIGMOD Record</journalName>
 	<title>{P-Grid}: A Self-organizing Structured P2P System</title>
-	<year>2003</year>
+	<year rdf:datatype="&xsd;gYear">2003</year>
 </Article>
 
 <Article rdf:about="#a475526642">
@@ -1585,7 +1585,7 @@
 	</author>
 	<journalName rdf:datatype="&xsd;string">Cybernetics and Control Theory</journalName>
 	<title>Binary Codes capable of correcting deletions, insertions, and reversals</title>
-	<year>1996</year>
+	<year rdf:datatype="&xsd;gYear">1996</year>
 </Article>
 
 <InBook rdf:about="#a71568377">
@@ -1624,29 +1624,27 @@
 <Proceedings rdf:about="#a72192307">
 	<rdfs:label>Proc. Of the 13th Int. Conference on Knowledge Engineering and Management (EKAW-2002)</rdfs:label>
 	<publisherName rdf:datatype="&xsd;string">Springer-Verlag</publisherName>
-			<city>Heidelberg</city>
-			<country>DE</country>
+	<city>Heidelberg</city>
+	<country>DE</country>
 	<title>Proc. Of the 13th Int. Conference on Knowledge Engineering and Management (EKAW-2002)</title>
 	<eventName>Int. Conference on Knowledge Engineering and Management</eventName>
 	<shortName>EKAW</shortName>
 	<issue>13</issue>
-	<month>10</month>
-	<year>2002</year>
+	<month  rdf:datatype="&xsd;gMonth">--10</month>
+	<year rdf:datatype="&xsd;gYear">2002</year>
 </Proceedings>
 
 <Proceedings rdf:about="#a32071928">
 	<rdfs:label>Proceedings of the First European Semantic Web Symposium</rdfs:label>
 	<publisherName rdf:datatype="&xsd;string">Springer-Verlag</publisherName>
-			<city>Heidelberg</city>
-			<country>DE</country>
 	<eventName>European Semantic Web Symposium</eventName>
 	<shortName>ESWS</shortName>
 	<issue>1</issue>
-			<city> rdf:datatype="&xsd;string">Heraklion</city>
-			<country>GR</country>
-			<month>05</month>
+	<city> rdf:datatype="&xsd;string">Heraklion</city>
+	<country>GR</country>
+	<month  rdf:datatype="&xsd;gMonth">--05</month>
 	<title>Proceedings of the First European Semantic Web Symposium</title>
-	<year>2004</year>
+	<year rdf:datatype="&xsd;gYear">2004</year>
 </Proceedings>
 
 <Misc rdf:about="#a140583454">
@@ -1664,7 +1662,7 @@
 	</author>
 	<title>{QOM} - Quick Ontology Mapping</title>
 	<note>submitted to the ISWC 04</note>
-	<year>2004</year>
+	<year rdf:datatype="&xsd;gYear">2004</year>
 </Misc>
 
 <InProceedings rdf:about="#a11065952">
@@ -1706,7 +1704,7 @@
 	<journalName rdf:datatype="&xsd;string">Journal of Web Semantics</journalName>
 	<shortName rdf:datatype="&xsd;string">JWS</shortName>
 	<title>Start making sense: The Chatty Web approach for global semantic agreements</title>
-	<month>12</month><year>2003</year>
+	<month  rdf:datatype="&xsd;gMonth">--12</month><year rdf:datatype="&xsd;gYear">2003</year>
 </Article>
 
 <Monograph rdf:about="#a108048723">
@@ -1716,7 +1714,7 @@
 	<state rdf:datatype="&xsd;string">MA</state>
 	<country rdf:datatype="&xsd;string">US</country>
 	<title>Object-Oriented Data Modeling</title>
-	<year>2000</year>
+	<year rdf:datatype="&xsd;gYear">2000</year>
 </Monograph>
 
 <Article rdf:about="#a456080390">
@@ -1747,7 +1745,7 @@
 	<title>On dynamically generated ontology translators in agent communication</title>
 			<startPage rdf:datatype="&xsd;nonNegativeInteger">587</startPage>
 			<endPage rdf:datatype="&xsd;nonNegativeInteger">607</endPage>
-	<month>12</month><year>2001</year>
+	<month  rdf:datatype="&xsd;gMonth">--12</month><year rdf:datatype="&xsd;gYear">2001</year>
 </Article>
 
 <Article rdf:about="#a846015923">
@@ -1776,7 +1774,7 @@
 	<journalName rdf:datatype="&xsd;string">VLDB Journal</journalName>
 	<title>A Framework for Modeling and Evaluating Automatic Semantic Reconciliation</title>
 	<note>to appear</note>
-	<year>2004</year>
+	<year rdf:datatype="&xsd;gYear">2004</year>
 </Article>
 
 </rdf:RDF>
