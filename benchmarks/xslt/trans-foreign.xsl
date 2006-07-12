@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: trans-foreign.xsl,v 1.6 2005/07/07 14:49:17 euzenat Exp $ -->
+<!-- $Id: trans-foreign.xsl,v 1.7 2006/07/08 22:36:18 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-		xmlns:my="http://oeai.ontologymatching.org/2006/benchmarks/101/onto.rdf#"
+		xmlns:my="http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf#"
 		xmlns:units="http://visus.mit.edu/fontomri/0.01/units.owl#" 
 		xmlns:foaf="http://xmlns.com/foaf/0.1/" 
 		xmlns:ical="http://www.w3.org/2002/12/cal/ical#" 
@@ -75,7 +75,7 @@
   </xsl:template>
 
   <!-- tag name -->
-  <xsl:template match="*[namespace-uri(.)='http://oeai.ontologymatching.org/2006/benchmarks/101/onto.rdf#']">
+  <xsl:template match="*[namespace-uri(.)='http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf#']">
     <xsl:variable name="new">
       <xsl:call-template name="translate">
 	<xsl:with-param name="string">
@@ -115,8 +115,8 @@
 	  <xsl:with-param name="suffix"><xsl:value-of select="substring-after($string,'#')"/></xsl:with-param>
 	</xsl:call-template>
       </xsl:when>
-      <xsl:when test="substring-before($string,'#')='http://oeai.ontologymatching.org/2006/benchmarks/101/onto.rdf'">
-	<xsl:text>http://oeai.ontologymatching.org/2006/benchmarks/101/onto.rdf#</xsl:text>
+      <xsl:when test="substring-before($string,'#')='http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf'">
+	<xsl:text>http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf#</xsl:text>
 	<xsl:call-template name="replace">
 	  <xsl:with-param name="suffix"><xsl:value-of select="substring-after($string,'#')"/></xsl:with-param>
 	</xsl:call-template>
