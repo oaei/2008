@@ -37,7 +37,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-flat.rdf,v 1.2 2006/07/08 22:17:03 euzenat Exp $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-flat.rdf,v 1.6 2006/07/08 22:27:57 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -1150,7 +1150,7 @@
   </owl:DatatypeProperty>
 
   <owl:ObjectProperty rdf:ID="institution">
-    <rdfs:domain rdf:resource="#TechReport" />
+    <rdfs:domain rdf:resource="#Report" />
     <rdfs:range rdf:resource="#Institution" />
     <rdfs:label xml:lang="en">institution</rdfs:label>
     <rdfs:comment xml:lang="en">The sponsoring institution of a technical report.</rdfs:comment>
