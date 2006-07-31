@@ -37,7 +37,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-exp.rdf,v 1.2 2006/07/08 22:15:51 euzenat Exp $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-exp.rdf,v 1.4 2006/07/08 22:27:57 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -1055,7 +1055,7 @@
 
   <owl:ObjectProperty rdf:ID="communications">
     <rdfs:domain rdf:resource="#Proceedings"/>
-    <rdfs:range rdf:resource="#InProceedings" />
+    <rdfs:range rdf:resource="#InProceedings"/>
     <rdfs:label xml:lang="en">communications</rdfs:label>
     <rdfs:comment xml:lang="en">The communications to a conference as collected in proceedings.</rdfs:comment>
   </owl:ObjectProperty>
@@ -1068,7 +1068,7 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="articles">
-    <rdfs:subPropertyOf rdf:resource="contributions"/>
+    <rdfs:subPropertyOf rdf:resource="#contributions"/>
     <rdfs:domain rdf:resource="#Journal"/>
     <rdfs:range rdf:resource="#Article" />
     <rdfs:label xml:lang="en">articles</rdfs:label>
