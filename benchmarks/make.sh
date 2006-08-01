@@ -1,20 +1,10 @@
 #!/bin/sh
-# $Id: make.sh,v 1.20 2006/07/12 14:02:00 euzenat Exp euzenat $
+# $Id: make.sh,v 1.21 2006/07/22 07:19:45 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
 # //pass3: generate HTML
 # //pass4: put everything on the web site (to be processed manually)
-
-echo Have you done the preparation
-
-# The preparation involves modifying the files in xslt so that they
-# use the correct URI! In particular for the alignment campaigns it is 
-# necessary that the Year appearing in the URI be changed.
-# This applies for trans-random.xsl*, generalization.xsl, restriction.xsl,
-# strip-comments.xsl, strip-instances.xsl, strip-properties.xsl, 
-# strip-restrictions.xsl, strip-subclass.xsl, trans-conv.xsl*, 
-# trans-foreign.xsl*, trans-synonyms.xsl* (*=several times).
 
 echo Generating files
 
@@ -602,46 +592,73 @@ do
 echo -n "*"$i"*"
 if [ -f $i/refalign.rdf ]
 then
-ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<uri2>http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf</uri2>;<uri2>http://oaei.ontologymatching.org/2006/benchmarks/$i/onto.rdf</uri2>;
+ed -s $i/onto.rdf << EOF &>/dev/null
+1,$ s;/tests/101/onto.rdf;/tests/$i/onto.rdf;g
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</onto2>;
+1,$ s;<uri2>http://oaei.ontologymatching.org/tests/101/onto.rdf</uri2>;<uri2>http://oaei.ontologymatching.org/tests/$i/onto.rdf</uri2>;g
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;entity2 rdf:resource=\(['"]\)http://oaei.ontologymatching.org/2006/benchmarks/101/;entity2 rdf:resource=\1http://oaei.ontologymatching.org/2006/benchmarks/$i/;
+1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</onto2>;g
+w
+EOF
+ed -s $i/refalign.rdf << EOF &>/dev/null
+1,$ s;entity2 rdf:resource=\(['"]\)http://oaei.ontologymatching.org/tests/101/;entity2 rdf:resource=\1http://oaei.ontologymatching.org/tests/$i/;g
 w
 EOF
 fi
 if [ -f $i/refalign-iso8859.rdf ]
 then
+ed -s $i/onto-iso8859.rdf << EOF &>/dev/null
+1,$ s;/tests/101/onto.rdf;/tests/$i/onto.rdf;g
+w
+EOF
 ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-1,$ s;<uri2>http://oaei.ontologymatching.org/2006/benchmarks/101/onto.rdf</uri2>;<uri2>http://oaei.ontologymatching.org/2006/benchmarks/$i/onto.rdf</uri2>;
+1,$ s;<uri2>http://oaei.ontologymatching.org/tests/101/onto.rdf</uri2>;<uri2>http://oaei.ontologymatching.org/tests/$i/onto.rdf</uri2>;g
 w
 EOF
 # Beware, this is different here...
 ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto-iso8859.rdf</onto2>;
+1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto-iso8859.rdf</onto2>;g
 w
 EOF
 ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-1,$ s;entity2 rdf:resource=\(['"]\)http://oaei.ontologymatching.org/2006/benchmarks/101/;entity2 rdf:resource=\1http://oaei.ontologymatching.org/2006/benchmarks/$i/;
+1,$ s;entity2 rdf:resource=\(['"]\)http://oaei.ontologymatching.org/tests/101/;entity2 rdf:resource=\1http://oaei.ontologymatching.org/tests/$i/;g
 w
 EOF
 fi
-if [ -f $i/onto.rdf ]
-then
+done
+
+CURRENT=2006/benchmarks
+
+for i in `ls -d [1-2][0-9][0-9]` 
+do
 ed -s $i/onto.rdf << EOF &>/dev/null
-1,$ s;oaei.ontologymatching.org/2006/benchmarks/101/;oaei.ontologymatching.org/2006/benchmarks/$i/;g
+1,$ s;oaei.ontologymatching.org/tests/;oaei.ontologymatching.org/$CURRENT/;g
 w
 EOF
-fi
+ed -s $i/refalign.rdf << EOF &>/dev/null
+1,$ s;oaei.ontologymatching.org/tests/;oaei.ontologymatching.org/$CURRENT/;g
+w
+EOF
+ed -s $i/refalign.rdf << EOF &>/dev/null
+1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/;http://oaei.ontologymatching.org/$CURRENT/;g
+w
+EOF
 if [ -f $i/onto-iso8859.rdf ]
 then
 ed -s $i/onto-iso8859.rdf << EOF &>/dev/null
-1,$ s;oaei.ontologymatching.org/2006/benchmarks/101/;oaei.ontologymatching.org/2006/benchmarks/$i/;g
+1,$ s;oaei.ontologymatching.org/tests/;oaei.ontologymatching.org/$CURRENT/;g
+w
+EOF
+ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
+1,$ s;oaei.ontologymatching.org/tests/;oaei.ontologymatching.org/$CURRENT/;g
+w
+EOF
+ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
+1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/;http://oaei.ontologymatching.org/$CURRENT/;g
 w
 EOF
 fi
@@ -667,40 +684,48 @@ echo
 # //pass4: generate ZIP file
 # DONE!
 
+echo "Be sure that CURRENT was correctly set ("$CURRENT")"
+echo "Apply pass4 manually with the correct VERSION"
+echo Check that the 3xx series is in the appropriate form
+
 exit
+
+# BEWARE: THIS LAST PART CANNOT BE BLINDLY APPLIED
 
 # copy
 
-VERSION=33
+VERSION=34
 
-cd ..
+cd ../..
 
-\rm -rf 2006/benchmarks.old
-mv 2006/benchmarks 2006/benchmarks.old
+\rm -rf $CURRENT.old
+mv $CURRENT $CURRENT.old
 
-cp -rf lib 2006/benchmarks
+cp -rf lib $CURRENT
 
-cd 2006/benchmarks
+# THIS HAS NOW BEEN PREPARED IN ADVANCE
+#cd $CURRENT
 
-for i in `ls -d [0-9][0-9][0-9]` 
-do
-echo -n "*"$i"*"
-ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.ontologymatching.org/2006/benchmarks;
-w
-EOF
-if [ -f $i/refalign-iso8859.rdf ]
-then
-ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.ontologymatching.org/2006/benchmarks;
-w
-EOF
-fi
-done
-echo
+#for i in `ls -d [0-9][0-9][0-9]` 
+#do
+#echo -n "*"$i"*"
+#ed -s $i/refalign.rdf << EOF &>/dev/null
+#1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.ontologymatching.org/$CURRENT;g
+#w
+#EOF
+#if [ -f $i/refalign-iso8859.rdf ]
+#then
+#ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
+#1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.ontologymatching.org/$CURRENT;g
+#w
+#EOF
+#fi
+#done
+#echo
 
-cd ..
+#cd ..
 
+/bin/rm benchmarks/bench.zip
 zip bench$VERSION.zip -r  benchmarks/ -x benchmarks/RCS/* benchmarks/xslt/RCS/* benchmarks/NEW305/*
 mv bench$VERSION.zip ../versions
 cp ../versions/bench$VERSION.zip benchmarks/bench.zip
@@ -710,8 +735,8 @@ cp ../versions/bench$VERSION.zip benchmarks/bench.zip
 for i in `ls -d [0-9][0-9][0-9]`
 do
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto1>http://oaei.ontologymatching.org/2006;<onto1>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
-1,$ s;<onto2>http://oaei.ontologymatching.org/2006;<onto2>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;
+1,$ s;<onto1>http://oaei.ontologymatching.org/2006;<onto1>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;g
+1,$ s;<onto2>http://oaei.ontologymatching.org/2006;<onto2>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;g
 w
 EOF
 done
