@@ -1,10 +1,13 @@
 #!/bin/sh
-# $Id: make.sh,v 1.22 2006/08/01 13:07:52 euzenat Exp euzenat $
+# $Id: make.sh,v 1.23 2006/08/23 10:53:44 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
 # //pass3: generate HTML
 # //pass4: put everything on the web site (to be processed manually)
+
+VERSION=35
+CURRENT=2006/benchmarks
 
 echo Generating files
 
@@ -629,8 +632,6 @@ EOF
 fi
 done
 
-CURRENT=2006/benchmarks
-
 for i in `ls -d [1-2][0-9][0-9]` 
 do
 ed -s $i/onto.rdf << EOF &>/dev/null
@@ -683,7 +684,7 @@ echo
 # DONE!
 
 echo "Be sure that CURRENT was correctly set ("$CURRENT")"
-echo "Apply pass4 manually with the correct VERSION"
+echo "Apply pass4 manually with the correct VERSION ("$VERSION")"
 echo Check that the 3xx series is in the appropriate form
 
 exit
@@ -691,8 +692,6 @@ exit
 # BEWARE: THIS LAST PART CANNOT BE BLINDLY APPLIED
 
 # copy
-
-VERSION=35
 
 cd ../..
 
