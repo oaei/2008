@@ -31,7 +31,7 @@
     <dc:date>01/06/2004</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.9 2006/07/08 22:27:57 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.10 2006/08/01 10:05:53 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
   <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -52,11 +52,11 @@
   <owl:DatatypeProperty rdf:about="&dc;date" />
 
   <!-- foaf extensions -->
-  <owl:Class rdf:about="&foaf;#Person" />
-  <owl:Class rdf:about="&foaf;#Organization" />
-  <owl:DatatypeProperty rdf:about="&foaf;#firstName" />
+  <owl:Class rdf:about="&foaf;Person" />
+  <owl:Class rdf:about="&foaf;Organization" />
+  <owl:DatatypeProperty rdf:about="&foaf;firstName" />
   <owl:DatatypeProperty rdf:ID="lastName" />
-  <owl:DatatypeProperty rdf:about="&foaf;#name" />
+  <owl:DatatypeProperty rdf:about="&foaf;name" />
 
    <!--
     ********  ENTRIES  ********
@@ -804,7 +804,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
 	<owl:onProperty rdf:resource="&rdf;first" />
-	<owl:allValuesFrom rdf:resource="&foaf;#Person" />
+	<owl:allValuesFrom rdf:resource="&foaf;Person" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
