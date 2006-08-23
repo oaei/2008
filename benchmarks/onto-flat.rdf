@@ -7,7 +7,7 @@
 	  <!ENTITY dc		"http://purl.org/dc/elements/1.1/" >
 	  <!ENTITY owl		"http://www.w3.org/2002/07/owl#" >
 	  <!ENTITY units	"http://visus.mit.edu/fontomri/0.01/units.owl#" >
-	  <!ENTITY foaf 	"http://xmlns.com/foaf/0.1/#">
+	  <!ENTITY foaf 	"http://xmlns.com/foaf/0.1/">
 	  <!ENTITY ical 	"http://www.w3.org/2002/12/cal/#">
 	  <!ENTITY dcterms 	"http://purl.org/dc/terms/">
 	  <!ENTITY dctype 	"http://purl.org/dc/dcmitype/"> ]>
@@ -37,7 +37,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-flat.rdf,v 1.9 2006/07/22 07:25:04 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-flat.rdf,v 1.10 2006/08/01 10:04:51 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->
