@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: make.sh,v 1.21 2006/07/22 07:19:45 euzenat Exp euzenat $
+# $Id: make.sh,v 1.22 2006/08/01 13:07:52 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
@@ -227,8 +227,6 @@ xsltproc xslt/strip-propalign.xsl refalign.rdf > 228/refalign.rdf
 #Some components of classes are expanded in the class structure  (e.g., year, month, day attributes instead of date).
 #Here one limitation of the proposed format is that it does not cover  alignments such as: journalName = name o journal.
 
-#//TO BE UPDATED: this is currently the old version
-# when flattening not all alignment should be preserved
 \rm -rf 230
 mkdir 230
 cp onto-cflat.rdf 230/onto.rdf
@@ -694,7 +692,7 @@ exit
 
 # copy
 
-VERSION=34
+VERSION=35
 
 cd ../..
 
