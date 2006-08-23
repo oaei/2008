@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: make.sh,v 1.23 2006/08/23 10:53:44 euzenat Exp euzenat $
+# $Id: make.sh,v 1.24 2006/08/23 10:59:05 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
@@ -722,7 +722,9 @@ cp -rf lib $CURRENT
 
 #cd ..
 
-/bin/rm benchmarks/bench.zip
+cd $CURRENT
+/bin/rm bench.zip
+cd ..
 zip bench$VERSION.zip -r  benchmarks/ -x benchmarks/RCS/* benchmarks/xslt/RCS/* benchmarks/NEW305/*
 mv bench$VERSION.zip ../versions
 cp ../versions/bench$VERSION.zip benchmarks/bench.zip
