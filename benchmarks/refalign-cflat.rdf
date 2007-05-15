@@ -7,8 +7,8 @@
   <xml>yes</xml>
   <level>0</level>
   <type>11</type>
-  <onto1>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto1>
-  <onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>
+  <onto1>file:///Web/html/oaei/tests/101/onto.rdf</onto1>
+  <onto2>file:///Web/html/oaei/tests/101/onto.rdf</onto2>
   <uri1>http://oaei.ontologymatching.org/tests/101/onto.rdf</uri1>
   <uri2>http://oaei.ontologymatching.org/tests/101/onto.rdf</uri2>
   <map>
