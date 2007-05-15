@@ -61,3 +61,8 @@ w
 q
 EOF
 done
+
+echo "Updated data"
+echo Edit all HTML files for 2xxx/benchmarks -> tests
+echo and ../../ to ..
+echo and REDO THE ZIP FILE!
