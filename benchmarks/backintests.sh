@@ -26,3 +26,22 @@ w
 q
 EOF
 ci -u -q -m"updated test" logs.html
+
+for d in 301 302 303 304
+do
+ed $d/refalign.rdf <<EOF
+1,$ s:2007/benchmarks:tests:g
+w
+q
+EOF
+ed $d/refalign.html <<EOF
+1,$ s:2007/benchmarks:tests:g
+w
+q
+EOF
+ed $d/onto.rdf <<EOF
+1,$ s:2007/benchmarks:tests:g
+w
+q
+EOF
+done
