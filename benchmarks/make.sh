@@ -1,13 +1,14 @@
 #!/bin/sh
-# $Id: make.sh,v 1.24 2006/08/23 10:59:05 euzenat Exp euzenat $
+# $Id: make.sh,v 1.25 2006/08/23 11:05:04 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
 # //pass3: generate HTML
 # //pass4: put everything on the web site (to be processed manually)
 
-VERSION=35
-CURRENT=2006/benchmarks
+VERSION=40
+CURRENT=2007/benchmarks
+#CURRENT=tests
 
 echo Generating files
 
@@ -602,7 +603,7 @@ ed -s $i/refalign.rdf << EOF &>/dev/null
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto.rdf</onto2>;g
+1,$ s;<onto2>file:///Web/html/oaei/tests/101/onto.rdf</onto2>;<onto2>file:///Web/html/oaei/tests/$i/onto.rdf</onto2>;g
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
@@ -622,7 +623,7 @@ w
 EOF
 # Beware, this is different here...
 ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-1,$ s;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/101/onto.rdf</onto2>;<onto2>file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/$i/onto-iso8859.rdf</onto2>;g
+1,$ s;<onto2>file:///Web/html/oaei/tests/101/onto.rdf</onto2>;<onto2>file:///Web/html/oaei/tests/$i/onto-iso8859.rdf</onto2>;g
 w
 EOF
 ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
@@ -643,7 +644,7 @@ ed -s $i/refalign.rdf << EOF &>/dev/null
 w
 EOF
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/;http://oaei.ontologymatching.org/$CURRENT/;g
+1,$ s;file:///Web/html/oaei/tests/;http://oaei.ontologymatching.org/$CURRENT/;g
 w
 EOF
 if [ -f $i/onto-iso8859.rdf ]
@@ -657,7 +658,7 @@ ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
 w
 EOF
 ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests/;http://oaei.ontologymatching.org/$CURRENT/;g
+1,$ s;file:///Web/html/oaei/tests/;http://oaei.ontologymatching.org/$CURRENT/;g
 w
 EOF
 fi
@@ -707,13 +708,13 @@ cp -rf lib $CURRENT
 #do
 #echo -n "*"$i"*"
 #ed -s $i/refalign.rdf << EOF &>/dev/null
-#1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.ontologymatching.org/$CURRENT;g
+#1,$ s;file:///Web/html/oaei/tests;http://oaei.ontologymatching.org/$CURRENT;g
 #w
 #EOF
 #if [ -f $i/refalign-iso8859.rdf ]
 #then
 #ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-#1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/tests;http://oaei.ontologymatching.org/$CURRENT;g
+#1,$ s;file:///Web/html/oaei/tests;http://oaei.ontologymatching.org/$CURRENT;g
 #w
 #EOF
 #fi
@@ -729,13 +730,13 @@ zip bench$VERSION.zip -r  benchmarks/ -x benchmarks/RCS/* benchmarks/xslt/RCS/* 
 mv bench$VERSION.zip ../versions
 cp ../versions/bench$VERSION.zip benchmarks/bench.zip
 
-#java -cp /Volumes/Phata/JAVA/alignapi/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file://localhost/Volumes/Phata/Web/html/co4/oaei/2006/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment
+#java -cp /Volumes/Phata/JAVA/alignapi/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file:///Web/html/oaei/2006/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment
 
 for i in `ls -d [0-9][0-9][0-9]`
 do
 ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;<onto1>http://oaei.ontologymatching.org/2006;<onto1>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;g
-1,$ s;<onto2>http://oaei.ontologymatching.org/2006;<onto2>file://localhost/Volumes/Phata/JAVA/TEST-ALIGN;g
+1,$ s;<onto1>http://oaei.ontologymatching.org/2006;<onto1>file:///Java/TEST-ALIGN;g
+1,$ s;<onto2>http://oaei.ontologymatching.org/2006;<onto2>file:///Java/TEST-ALIGN;g
 w
 EOF
 done
