@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: make.sh,v 1.25 2006/08/23 11:05:04 euzenat Exp euzenat $
+# $Id: make.sh,v 1.26 2007/05/15 21:40:10 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
@@ -686,7 +686,7 @@ echo
 
 echo "Be sure that CURRENT was correctly set ("$CURRENT")"
 echo "Apply pass4 manually with the correct VERSION ("$VERSION")"
-echo Check that the 3xx series is in the appropriate form
+echo "Check that the 3xx series is in the appropriate form (files contain correct URI)"
 
 exit
 
