@@ -1,68 +1,28 @@
 #!/bin/sh
+# 2007 ready
 
-for i in `ls -d [0-9][0-9][0-9]`
-do
-echo $i
-ed -s $i/onto.rdf << EOF &>/dev/null
-1,$ s;2006/benchmarks;tests;g
-w
-q
-EOF
-ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;2006/benchmarks;tests;g
-w
-q
-EOF
-ed -s $i/onto.html << EOF &>/dev/null
-1,$ s;2006/benchmarks;tests;g
-w
-q
-EOF
-ed -s $i/refalign.html << EOF &>/dev/null
-1,$ s;2006/benchmarks;tests;g
-w
-q
-EOF
-done
-for i in 206 207 210
-do
-echo $i
-ed -s $i/onto-iso8859.rdf << EOF &>/dev/null
-1,$ s;2006/benchmarks;tests;g
-w
-q
-EOF
-ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-1,$ s;2006/benchmarks;tests;g
-w
-q
-EOF
-done
+echo "1) update informative part of HTML files"
+echo "2) run make.sh with CURRENT=tests"
+echo "3) copy the current set "
+echo "4) run the following script to update HTML files"
+echo "5) run the manual part of make.sh to generate bench.zip"
 
-for i in `ls -d [0-9][0-9][0-9]`
-do
-echo $i
-ed -s $i/refalign.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/lib;http://oaei.inrialpes.fr/tests;g
-w
-q
-EOF
-ed -s $i/refalign.html << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/lib;http://oaei.inrialpes.fr/tests;g
-w
-q
-EOF
-done
-for i in 206 207 210
-do
-ed -s $i/refalign-iso8859.rdf << EOF &>/dev/null
-1,$ s;file://localhost/Volumes/Phata/Web/html/co4/oaei/lib;http://oaei.inrialpes.fr/tests;g
-w
-q
-EOF
-done
+exit
 
-echo "Updated data"
-echo Edit all HTML files for 2xxx/benchmarks -> tests
-echo and ../../ to ..
-echo and REDO THE ZIP FILE!
+co -l index.html
+ed index.html <<EOF
+1,$ s:\.\./\.\.:\.\.:g
+1,$ s:2007/benchmarks:tests:g
+w
+q
+EOF
+ci -u -q -m"updated test" index.html
+
+co -l logs.html
+ed logs.html <<EOF
+1,$ s:\.\./\.\.:\.\.:g
+1,$ s:2007/benchmarks:tests:g
+w
+q
+EOF
+ci -u -q -m"updated test" logs.html
