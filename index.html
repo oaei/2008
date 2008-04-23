@@ -1,0 +1,421 @@
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::2007</title>
+<style type="text/css">
+<!--
+a:link {  color: #0074CA; text-decoration: none}
+a[href]:hover {  color: #0074CA; text-decoration: none; background-color: #D3DBFE}
+a:visited {  color: #0084E6; text-decoration: none}
+.justification { font-family: Arial, Helvetica, sans-serif; font-size: 7pt; letter-spacing: normal; text-align: justify; word-spacing: normal ; font-style: normal; font-weight: normal; font-variant: normal; white-space: normal}
+-->
+</style>
+</head>
+<body bgcolor="white" face="tahoma, arial">
+
+<table width="100%">
+<tr BGCOLOR="yellow" ALIGN="center"><td>
+The OAEI-2007 results are available <a href="results">here</a>
+</td></tr>
+</table>
+
+<a href=".."><img width="20%" border="0" src="../oaei.jpg" align="right" /></a>
+
+<h1>Ontology Alignment Evaluation Initiative</h1>
+<h1>2007 Campaign</h1>
+
+<p>The increasing number of methods available for schema matching/ontology integration 
+  suggests the need to establish a consensus for evaluation of these methods. 
+Since 2004, <a href="http://oaei.ontologymatching.org">OAEI</a> organizes evaluation campaigns aiming at
+  evaluating ontology matching technologies (see
+  <a href="http://oaei.ontologymatching.org/2004/Contest/">http://oaei.ontologymatching.org/2004/Contest/</a>,
+  <a href="http://oaei.ontologymatching.org/2005">http://oaei.ontologymatching.org/2005</a>,
+  and <a href="http://oaei.ontologymatching.org/2006">http://oaei.ontologymatching.org/2006</a>).</p>
+<p>The OAEI 2007 campaign is
+  associated to the <a href="http://iswc2007.semanticweb.org">ISWC</a>
+  <a href="http://om2007.ontologymatching.org">Ontology matching
+    workshop</a>
+  to be help at Busan, Korea on November 11, 2007.</p>
+
+<h2>Problems</h2>
+
+<p>This year's campaign will consist of four tracks gathering six data
+  sets and different evaluation modalities.
+
+<dl compact="1">
+<dt>Comparison track: <a href="benchmarks">benchmark</a></dt><dd>
+  Like in previous campaigns, a <b>systematic benchmark series</b> has 
+  been produced. The goal of this benchmark series is to identify the areas in 
+  which each alignment algorithm is strong and weak. The test is based on one 
+  particular ontology dedicated to the very narrow domain of
+  bibliography and a 
+  number of alternative ontologies of the same domain for which alignments are 
+  provided.</dd>
+<dt>Expressive ontologies</dt><dd>
+<dl compact="1">
+<dt><a
+  href="anatomy/">anatomy</a></dt><dd>The <b>anatomy</b>
+  real world case is about matching the Adult Mouse Anatomy (2744 classes) and the NCI Thesaurus (3304 classes) describing the human anatomy.<!-- covers the domain 
+  of body anatomy and will consists of two ontologies with an approximate size 
+  of several 10k classes and several dozen of relations.--></dd>
+<!--dt><a href="http://wissensnetze.ag-nbi.de/oaei/jobs.htm">jobs</a></dt><dd>The <b>jobs</b> use case is an industry
+evaluated real world business case. A company has a need to improve job
+portal functionality with semantic technologies. To enable higher precision
+in retrieval of relevant job offers or applicants, OWL
+ontologies from the employment sector are used to describe jobs and job
+seekers and semantic matching with regard to these ontologies provides the
+improved results. For
+confidentiality reasons, the test will be run by the participant
+with software provided by the company team. This will involve
+instrumenting the current company software for using the
+alignments and running the integration task against real results
+on this basis.</dd-->
+</dl></dd>
+<dt>Directories and thesauri</dt><dd>
+<dl compact="1">
+<dt><a href="directory/">directory</a></dt><dd>The <b>directory</b> real world case consists of alignming web
+  sites directory (like open directory or Yahoo's). It is more than
+  4 thousand elementary tests.</dd>
+<dt><a href="food">food</a></dt><dd>
+    Two SKOS thesauri about <b>food</b> have to be aligned using relations from the SKOS Mapping vocabulary. Samples of the results are evaluated by domain experts.
+</dd>
+<dt><a href="environment/">environment</a></dt><dd>Three SKOS thesauri about the <b>environment</b> have to be aligned (A-B,
+    B-C, C-A) using relations from the SKOS Mapping
+    vocabulary. Samples of the results are evaluated by domain
+    experts. 
+</dd>
+<dt><a
+    href="library/">library</a></dt><dd>Two
+    SKOS thesauri about <b>books</b> have to be aligned using relations from the SKOS Mapping vocabulary. Samples of the results are evaluated by domain experts. 
+</dd>
+</dl></dd> 
+<dt>Consensus workshop: <a href="conference/">conference</a></dt><dd>
+Participants will be asked to freely explore a collection of 'conference
+organisation' ontologies (the domain being well understandable for every
+researcher). This effort will materialise in (complete or sections of)
+submitted papers, containing e.g. interesting individual correspondences
+('nuggets'), aggregated statistical observations and/or implicit design
+patterns. There is no a priori reference alignment. 
+Organisers of this track offer a posteriori evaluation of results in part
+manually and in part by data-mining techniques. For a selected sample of
+correspondences, consensus will be sought at the workshop and the process
+of its reaching will be recorded.
+</dd>
+</dl>
+</p>
+<p>We summarize below the variation between the results expected by
+  these tests (all results are given in the Alignment format):
+<center>
+<table>
+<tr><td>test</td><td>language</td><td>relations</td><td>confidence</td><td></td></tr>
+<tr><td>benchmarks</td><td>OWL</td><td>=</td><td>[0 1]</td><td>open</td></tr>
+<tr><td>anatomy</td><td>OWL</td><td>=</td><td>1</td><td>blind</td></tr>
+<!--tr><td>jobs</td><td>OWL</td><td>=</td><td>[0 1]</td><td>external</td></tr-->
+<tr><td>directory</td><td>OWL</td><td>=</td><td>1</td><td>blind</td></tr>
+
+<tr><td>food<br/>environment<br/>library</td><td>SKOS<br/>+OWL</td><td>exactMatch,<br
+								 />narrowMatch,<br
+										  />broadMatch</td><td>1</td><td>blind</td></tr>
+
+<tr><td>conference</td><td>OWL-DL</td><td>=, <=</td><td>1</td><td>blind+consensual</td></tr>
+</table>
+</center>
+</p>
+
+<h2>Evaluation process</h2>
+
+<p>Each data set has a different evaluation process. They can be
+  roughly divided into four groups:
+<dl compact="1">
+<dt>benchmark: open</dt><dd>benchmark tests are provided with the
+    expected results. Participants must return their obtained results
+    to organisers;</dd>
+<dt>anatomy, directory, food, library: blind</dt><dd>these are blind tests,
+    i.e., participants do not know the results and 
+    must return their results to organisers;</dd>
+<!--dt>anatomy, jobs: external</dt><dd>have a "double blind" evaluation such
+    that participants must submit their systems by September 4th and the
+    tests will be run and evaluated by the organizers.</dd-->
+<dt>conference: consensus</dt><dd>requires that participants
+    send their results to organisers, the results are not
+    pre-determined through reference alignments but computed and/or
+    discussed as a consensus among given results.</dd>
+<dt></dt><dd></dd>
+</dl>
+<p>However, the evaluation will be processed in the same three
+  successive steps as before.</p>
+
+<h3>Preparatory Phase </h3>
+
+<p>Ontologies are described in OWL-DL and serialized 
+  in the RDF/XML format. The expected alignments are provided in the
+  <a href="align.html">Alignment format</a> expressed in RDF/XML.
+<p>The ontologies and alignments of the evaluation are provided in
+  advance during the period between May 15th and June 15th. This gives
+  potential participants the occasion to send observations, bug
+  corrections, remarks and other test cases to the organizers. The
+  goal of this primary period is to be sure that the delivered 
+  tests make sense to the participants. The feedback is important, so
+  all participants should not hesitate to provide it. The tests will
+  certainly change after this period, but only for ensuring a better
+  participation to the tests. The final test base will be released on
+  July 2nd.</p>
+
+<h3>Execution Phase </h3>
+
+<p>During the execution phase the <b>participants</b> will use their
+  algorithms to automatically match the ontologies of both part. The  
+  participants should only use one algorithm and the same set of
+  parameters for all tests in all tracks. Of course, it is fair to
+  select the 
+  set of parameters that provide the best results (for the tests where
+  results are known). Beside the
+  parameters the input of the algorithms must be the two provided
+  ontology to align and any general purpose resource available to
+  everyone (that is no resourse especially designed for the test). In
+  particular, the participants should not use the data (ontologies
+  and results) from other test sets to help their algorithm. And
+  cheating is not fair...</p>
+<p>The deadline for delivering finial results is October 1st,
+  sharp. However, it is <i>highly advised</i> that participants send
+  results before (preferably by September 3rd) to the organisers so
+  that they can check that they will be able to evaluate the results
+  smoothly and can provide some feedback to participants.</>
+<!-- For 
+  some of the tests the organizers further provide sets of alignments which are 
+  considered to be preknown to the system. These can be given to the alignment 
+  algorithm prior to running it. They are based on a draw of 10% of
+  the target alignment. -->
+<p>The <b>participants</b> will provide their alignment for each test
+  in the <a href="align.html">Alignment
+  format</a>. The results will be provided in a <i>zip</i> file containing
+  one directory per test (named after its number) and each directory
+  containing one result file in the
+  RDF/XML <a href="align.html">Alignment 
+  format</a> with always the same name
+  (e.g., participant.rdf replacing participant by the name you want
+  your system to appear in the results, limited to 6 alphanumeric characters). This should yield the following structure:
+<pre>
+participant.zip
++- benchmarks
+|  +- 101
+|  |  +- participant.rdf
+|  +- 103
+|  |  +- participant.rdf
+|  + ...
++- anatomy
+|  +- 1
+|  |  +- participant.rdf
+|  +- 2
+|  |  +- participant.rdf
+|  +- ...
++- directory
+|  +- 1
+|  |  +- participant.rdf
+|  + ...
++ ...
+</pre>
+</p>
+<p>They will also provide for October 1st a paper to be published in the
+  proceedings and a link to their program and parameter set.</a>
+<p>The only interesting alignments are those involving classes and
+  properties of the given ontologies. So the alignments should not
+  align individuals, nor entities from the external ontologies.</p>
+
+<!--table width="75%" border="1">
+  <tr> 
+    <th>Ontology 1</th>
+    <th>Ontology 2</th>
+    <th>Input Alignments</th>
+    <th>Expected Result Alignments</th>
+	<th>Comments</th>
+  </tr>
+  <tr> 
+    <td>onto101.owl</td>
+    <td>onto102.owl</td>
+    <td>-</td>
+    <td>onto101_102.xml</td>
+	<td>&nbsp; </td>
+  </tr>
+  <tr> 
+    <td>...</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+		<td>&nbsp; </td>
+  </tr>
+</table-->
+
+<h3>Evaluation Phase</h3>
+
+<p>The <b>organizers</b> will evaluate the results of the algorithms
+  used by the participants and provide comparisons on the basis of the
+  provided alignments.</p>
+<p>In order to ensure that it will be possible to process
+  automatically the provided results, the <b>participants</b>
+  are requested to provide (preliminary) results by September 4th. In
+  the case of blind tests only the organizers will do the evaluation
+  with regard to the withheld alignments. In the case of double blind
+  tests, the <b>participants</b> will provide a version of their
+  system and the values of the parameters if any.</p>
+<p>An email with the location
+  of the required zip files must be sent to the contact addresses below.
+</p>
+<p>The standard evaluation measures will be precision and recall
+  computed against the reference alignments. For the matter of
+  aggregation of the measures we will use weighted harmonic means
+  (weight being the size of reference alignment). 
+  <a
+  href="http://www.oracle.com/technology/products/text/htdocs/imt_quality.htm?_template=/ocom/ocom_item_templates/print">Precision/recall
+  graphs</a> will also be computed, so it is advised that participants
+  provide their results with a weight to each correspondence they
+  found (participants can provide two alignment results:
+  &lt;name&gt;.rdf for the selected alignment and
+  &lt;name&gt;-full.rdf for the alignment with weights.</p> 
+<p>Furthermore, it is planned to
+  introduce new measures addressing some limitations of precision and
+  recall. These will be presented at the workshop discussion
+  in order for the participants to provide feedback on the
+  opportunity to use them in a further evaluation.</p>
+
+<h2>Schedule Overview</h2>
+
+<dl compact="1">
+<dt>May 15st</dt><dd><strike>tests are out</strike></dd>
+<dt>June 15t</dt><dd><strike>end of commenting period</strike></dd>
+<dt>July 2nd</dt><dd><strike>tests are frozen</strike></dd>
+<dt>September 3rd</dt><dd><strike>participants send preliminary results (for interoperability-checking)</strike></dd>
+<dt>October 1st</dt><dd><strike>participants send final results and papers</strike></dd>
+<dt>October 11th</dt><dd><strike>organizers publish results for comments</strike></dd>
+<dt>November 11th</dt><dd><strike>final results ready and <a href="http://om2007.ontologymatching.org">OM-2007 workshop</a></strike>.</dd>
+</dl>
+
+<h2>Presentation</h2>
+
+<p>From the results of the experiments the participants are expected
+  to provide the organisers with a paper to be published in the proceedings   
+  of the workshop. 
+  The paper must be around 8 pages long and formatted using the LNCS Style.
+  To ensure easy comparability among the participants it has to follow the given 
+  outline. A package with LaTeX and Word templates will be made available <a href="templates.zip">here</a>.
+  The above mentionned paper must be sent in PDF format by October 1st to
+  Pavel Shvaiko (pavel (à) dit dot unitn dot it) with copy to
+  Jerome . Euzenat (à) inrialpes . fr.</p>
+<p>Participants may also submit a longer version of their paper,
+  with a length justified by its technical content,
+  to be published online in the CEUR-WS collection and on the OAEI web
+  site (this last paper will be due just before the workshop).</p>
+<p>The outline of the paper is as below:
+<ul 1>
+  <li> 1) Presentation of the system<br />
+    <ul 1>
+      <li>1.1) State, purpose, general statement<br/>
+      It is interesting to see here what was the purpose of the
+      algorithm used in terms of the following categories: ontology
+      matching, schema matching, version matching, directory
+      matching. The purpose of this information is to study the
+      correlation between these purposes and the success in some
+      particular tests.</li>
+      <li>1.2) Specific techniques used</li>
+      <li>1.3) Adaptations made for the evaluation</li>
+      <li>1.4) Link to the system and parameters file</li>
+      <li>1.5) Link to the set of provided alignments (in align format)</li>
+    </ul>
+  </li>
+  <li>2) Results<br />
+    2.x) a comment for each test</li>
+  <li>3) General comments<br />
+    <ul 1>
+      <li>3.1) Comments on the results (strength and weaknesses)</li>
+      <li>3.2) Discussions on the way to improve the proposed system</li>
+      <li>3.3) Comments on the OAEI procedure</li>
+      <li>3.4) Comments on the OAEI test cases</li>
+      <li>3.5) Comments on the OAEI measures</li>
+      <li>3.6) Proposed new measures</li>
+    </ul>
+  </li>
+  <li>4) Conclusions<br />
+  <li>References<br />
+  <li>Appendix: Raw results<br />
+    <ul 1>
+      <li>Matrix format<br />
+	Of course, this applies to non-blind tests.
+	If possible provide the run time values in hh.mn.ss.mms format.</li>
+    </ul>
+  </li>
+</ul>
+</p>
+
+<p>The results from both, the participants and the organizers, will be presented 
+  at the <a href="http://om2007.ontologymatching.org"> Workshop on 
+  Ontology matching</a> at ISWC 2007 taking place at Busan (Korea) on November, 
+  11th 2007. We hope to see you there.</p>
+
+<h2>Tools and material</h2>
+
+<p>The material for evaluation will be available soon from this page.</p>
+
+<!--h3>Systematic benchmarks</h3>
+
+<p>The zip file containing all the data is 
+<a href="benchmarks/bench.zip">here</a> as well as the <a href="benchmarks/">full description of the benchmarks</a>.</p>
+
+<h3>Real world case: Directory</h3>
+
+<p>Real world case on directories can be found <a href="directory">here</a>.</p>
+
+<h3>Real world case: Anatomy</h3>
+
+<p>Real world case on anatomy can be found <a href="anatomy">here</a>.</p-->
+
+<!--h3>Versions</h3>
+
+<p>Several version of the tests could provided as soon as the
+  participants found problems with the tests. The tests displayed
+  here are the last version.</p>
+
+<p>The <a href="log10-11.txt">release notes</a> about these versions are available.</p>
+
+<p>Further versions might be made available in the future.</p-->
+
+<h3>Processing tools</h3>
+
+<p>The <b>participants</b> may use the <a
+  href="align.html">Alignment API</a> for generating and manipulating their alignments (in particular for computing 
+  evaluation of results). </p>
+
+<!--p>A Ant <a href="build.xml">build.xml</a> file is also provided that
+  can be used for generating the HTML pages. It will be enhanced for
+  computing the characteristics of the results.</p-->
+
+<h3>SKOS conversion tools</h3>
+
+<p>The <b>participants</b> may use <a href="skos2owl.html">various options</a> if they need to convert SKOS vocabularies into OWL.</p>
+
+<h3>OWL-N3 conversion tools</h3>
+
+<p>Vassilis Spiliopoulos pointed out to <a href="http://www.altova.com/downloadtrialsemanticworks.html?gclid=CNXR9ubdu4wCFQ-HlAod-QXdVg">Altova
+    transformer</a> from OWL to N3 notation. This can be useful for
+    some. This is a commercial tool with a 30 days free trial.</a>
+
+<h2>Organizers</h2>
+
+<p><ul compact="1">
+<li>Pavel Shvaiko (University of Trento)</li>
+<li>J&eacute;r&ocirc;me Euzenat (INRIA Rh&ocirc;ne-Alpes &amp; LIG)</li>
+<li>Heiner Stuckenschmidt (Manheim Universit&auml;t)</li>
+<li>Mikalai Yatskevich (University of Trento)</li>
+<li>Willem Robert van Hage (VU Amsterdam)</li>
+<!--li>Malgorzata Mochol (FU Berlin and WWJobs)</li-->
+<li>Vojtech Svatek (University of Economics, Praha)</li>
+<li>Christian Meilicke (Manheim Universit&auml;t)</li>
+<li>Ondrej Svab (University of Economics, Praha)</li>
+<li>Antoine Isaac (VU Amsterdam)</li>
+</ul></p>
+
+<hr />
+<center><small>http://oaei.ontologymatching.org/2007/</small></center>
+<hr />
+$Id: index.html,v 1.34 2008/03/07 20:20:31 euzenat Exp $
+</body>
+</html>
+
