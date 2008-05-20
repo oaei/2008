@@ -1,21 +1,14 @@
 <html>
 <head>
 <title>Ontology Alignment Evaluation Initiative::2007</title>
-<style type="text/css">
-<!--
-a:link {  color: #0074CA; text-decoration: none}
-a[href]:hover {  color: #0074CA; text-decoration: none; background-color: #D3DBFE}
-a:visited {  color: #0084E6; text-decoration: none}
-.justification { font-family: Arial, Helvetica, sans-serif; font-size: 7pt; letter-spacing: normal; text-align: justify; word-spacing: normal ; font-style: normal; font-weight: normal; font-variant: normal; white-space: normal}
--->
-</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body bgcolor="white" face="tahoma, arial">
+<body>
 
 <a href=".."><img border="0" width="20%" src="../oaei.jpg" align="right" /></a>
 
 <h1>Alignment format and API</h1>
-<h1>2007 Campaign</h1>
+<h1>2008 Campaign</h1>
 
 <h2>The Alignment format</h2>
 
@@ -67,10 +60,10 @@ The last instruction should output some XML.
 
 <h4>The systematic benchmark tests</h4>
 <pre>
-$ curl http://oaei.ontologymatching.org/2007/benchmarks/bench.zip -o bench.zip
+$ curl http://oaei.ontologymatching.org/2008/benchmarks/bench.zip -o bench.zip
 $ unzip bench.zip
 $ cd benchmarks
-$ java -cp $CWD/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o stringeq  -n http://oaei.inrialpes.fr/2007/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment -Dnoinst=1
+$ java -cp $CWD/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o stringeq  -n http://oaei.inrialpes.fr/2008/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment -Dnoinst=1
 </pre>
 This will output the results of the test in the Alignment format,
 required by the organizers, in one file named <tt>stringeq.rdf</tt> in each test
@@ -81,7 +74,7 @@ directory.
   counterpart.
 </p>
 <!--
-java -cp $CWD/lib/procola.jar fr.inrialpes.exmo.align.util.GroupAlign -o ola-noinst -n http://oaei.ontologymatching.org/2007/benchmarks/101/onto.rdf -i ca.umontreal.iro.ola.OLAlignment -Dnoinst=1
+java -cp $CWD/lib/procola.jar fr.inrialpes.exmo.align.util.GroupAlign -o ola-noinst -n http://oaei.ontologymatching.org/2008/benchmarks/101/onto.rdf -i ca.umontreal.iro.ola.OLAlignment -Dnoinst=1
 -->
 
 <h4>The directory tests</h4>
@@ -97,7 +90,7 @@ required by the organizers, in one file named <tt>stringeq.rdf</tt> in each test
 directory.
 </p>
 <!-- java -Xmx100000k -cp $CWD/lib/procola.jar  fr.inrialpes.exmo.align.util.GroupAlign -o ola -s source.owl -t target.owl -i ca.umontreal.iro.ola.OLAlignment -->
-<p>Currently this test breaks after having dealt with most of the
+<p>Currently (2007) this test breaks after having dealt with most of the
   tests (it breaks at 97 in alphabetical order with the standard 64Kb
   of heap). We are currently working towards spotting memory leaks; a
   temporary fix is the one given above: expanding memory size with -Xmx100000k.
@@ -204,8 +197,8 @@ Such a parameter file can be sent to the organizers of the evaluation.
 
 
 <hr />
-<center><small>http://oaei.ontologymatching.org/2007/align.html</small></center>
+<center><small>http://oaei.ontologymatching.org/2008/align.html</small></center>
 <hr />
-$Id: align.html,v 1.8 2007/05/09 16:04:37 euzenat Exp $
+$Id: align.html,v 1.1 2008/05/20 07:53:08 euzenat Exp euzenat $
 </body>
 </html>
