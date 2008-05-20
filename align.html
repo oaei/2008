@@ -1,0 +1,211 @@
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::2007</title>
+<style type="text/css">
+<!--
+a:link {  color: #0074CA; text-decoration: none}
+a[href]:hover {  color: #0074CA; text-decoration: none; background-color: #D3DBFE}
+a:visited {  color: #0084E6; text-decoration: none}
+.justification { font-family: Arial, Helvetica, sans-serif; font-size: 7pt; letter-spacing: normal; text-align: justify; word-spacing: normal ; font-style: normal; font-weight: normal; font-variant: normal; white-space: normal}
+-->
+</style>
+</head>
+<body bgcolor="white" face="tahoma, arial">
+
+<a href=".."><img border="0" width="20%" src="../oaei.jpg" align="right" /></a>
+
+<h1>Alignment format and API</h1>
+<h1>2007 Campaign</h1>
+
+<h2>The Alignment format</h2>
+
+<p>We use a simple alignment format example of which can be found in
+  the alignments of the benchmark dataset.</p>
+
+<p>This format is described in <a href="http://gforge.inria.fr/docman/view.php/117/251/align.pdf">the API documentation</a>.</p>
+
+<p>These formats can be manipulated through the Alignment API (see below).</p>
+
+<h2>How to use the alignment API for generating evaluation results</h2>
+
+<p>The instructions here work with version 3.0 of the alignment API</p>
+
+<h3>Getting the API</h3>
+
+<p>See the instructions on 
+<a
+   href="http://alignapi.gforge.inria.fr">http://alignapi.gforge.inria.fr</a>
+   or download directly now at: <a href="http://gforge.inria.fr/frs/?group_id=117">http://gforge.inria.fr/frs/?group_id=117</a></p>
+<p>All required libraries are included.</p>
+<p>Please, always download the last version.</p>
+
+<h3>Installing</h3>
+
+<!-- owl api is included -->
+<pre>
+$ mkdir test
+$ cd test
+$ curl http://gforge.inria.fr/frs/download.php/1775/align-3.0.zip -o align.zip
+$ unzip align.zip
+</pre>
+
+<h3>Checking that it works</h3>
+
+<p>First here is a simple test that it works:
+<pre>
+$ setenv CWD `pwd`
+$ java -jar lib/procalign.jar --help
+$ java -jar lib/procalign.jar file://$CWD/rdf/onto1.owl file://$CWD/rdf/onto2.owl
+</pre>
+The last instruction should output some XML.
+</p>
+
+<h3>Using the API for the tests</h3>
+
+<p>You can run all the tests at once by using the <tt>GroupAlign</tt>
+  class</p>
+
+<h4>The systematic benchmark tests</h4>
+<pre>
+$ curl http://oaei.ontologymatching.org/2007/benchmarks/bench.zip -o bench.zip
+$ unzip bench.zip
+$ cd benchmarks
+$ java -cp $CWD/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o stringeq  -n http://oaei.inrialpes.fr/2007/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment -Dnoinst=1
+</pre>
+This will output the results of the test in the Alignment format,
+required by the organizers, in one file named <tt>stringeq.rdf</tt> in each test
+directory.
+</p>
+<p><b>Note for using ISO-Latin: </b> For using the ISO-Latin files it is
+  first necessary to replace the onto.rdf by their onto-iso8859.rdf
+  counterpart.
+</p>
+<!--
+java -cp $CWD/lib/procola.jar fr.inrialpes.exmo.align.util.GroupAlign -o ola-noinst -n http://oaei.ontologymatching.org/2007/benchmarks/101/onto.rdf -i ca.umontreal.iro.ola.OLAlignment -Dnoinst=1
+-->
+
+<h4>The directory tests</h4>
+<pre>
+$ mkdir directory
+$ cd directory
+$ curl http://dit.unitn.it/~accord/ev_subs.zip -o ev_subs.zip
+$ unzip ev_subs.zip
+$ java -Xmx100000k -cp $CWD/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o stringeq -s source.owl -t target.owl -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment
+</pre>
+This will output the results of the test in the Alignment format,
+required by the organizers, in one file named <tt>stringeq.rdf</tt> in each test
+directory.
+</p>
+<!-- java -Xmx100000k -cp $CWD/lib/procola.jar  fr.inrialpes.exmo.align.util.GroupAlign -o ola -s source.owl -t target.owl -i ca.umontreal.iro.ola.OLAlignment -->
+<p>Currently this test breaks after having dealt with most of the
+  tests (it breaks at 97 in alphabetical order with the standard 64Kb
+  of heap). We are currently working towards spotting memory leaks; a
+  temporary fix is the one given above: expanding memory size with -Xmx100000k.
+</p>
+
+<!--h3>The anatomy tests</h3>
+<pre>
+$ mkdir anatomy
+$ cd anatomy
+$ curl 
+$ curl &amp;The FMA file as indicated&amp;
+$ unzip FMA.zip
+$ unzip OpenGalen.zip
+$ java -jar $CWD/lib/procalign.jar -o edna.rdf file://$CWD/anatomy/OpenGalen.owl file://$CWD/anatomy/FMA.owl -i fr.inrialpes.exmo.align.impl.method.EditDistNameAlignment
+</pre>
+This will output the results of the test in the Alignment format,
+required by the organizers, in one file named <tt>edna.rdf</tt> in each test
+directory.
+</p-->
+<p>Currently the anatomy test breaks on loading ontologies.</p>
+
+<h3>Evaluating your results</h3>
+
+<p>In the case of the benchmark tests, the reference ontologies are
+  available so you can directly get the performance of the used
+  method by using the <tt>GroupEval</tt> class:
+<pre>
+$ java -cp $CWD/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupEval -c -l "edna" > result.html
+</pre>
+which will output the precision and recall results in the
+<tt>results.html</tt> file which looks like this:
+<table border='2' frame='sides' rules='groups'>
+<colgroup align='center' />
+<colgroup align='center' span='2' />
+<thead valign='top'><tr><th>algo</th>
+<th colspan='2'>edna</th>
+</tr></thead><tbody><tr><td>test</td>
+<td>Prec.</td>
+<td>Rec.</td>
+</tr></tbody><tbody>
+<tr>
+<td>101</td>
+<td>0.90</td>
+<td>0.99</td>
+</tr>
+<tr bgcolor="lightblue">
+<td>103</td>
+<td>0.90</td>
+<td>0.99</td>
+</tr>
+<tr>
+<td>104</td>
+<td>0.90</td>
+<td>0.99</td>
+</tr>
+<tr><td colspan="3">...</td></tr>
+</table>
+
+This class will only work if you are connected to the web because the
+reference alignments look for their ontologies on Internet.
+</p>
+<p><b>Note for using ISO-Latin: </b> For using the ISO-Latin files it is
+  first necessary to replace the onto.rdf by their onto-iso8859.rdf
+  counterpart.
+</p>
+<!-- note for JE: I will myself have to convert all given results in
+  UTF-8, prior to globally evaluate them -->
+<p>It is not possible to use this for the directory and anatomy tests
+  because reference alignments are not available (but you can create
+  yours and check your performances in the same way).</p>
+
+<h2>Implementing your aligner within the API</h2>
+
+<p>In order for your method to be used in this way you have to
+  implement the Alignment API (or rather to extend our implementation
+  of the Alignment API).</p>
+
+<p>Instructions for implementing the API can be found in 
+<a href="http://gforge.inria.fr/docman/view.php/117/251/align.pdf">the API documentation</a>.</p>
+
+<p>This basically amounts to define a subclass of <tt>BasicAlignment</tt>,
+  getting its parameters from a <tt>Parameters</tt> structure and to
+  fill the alignment with the results of the algorithm.</p>
+
+<h3>Passing parameters</h3>
+
+<p>If you use the <tt>Procalign</tt> or <tt>GroupAlign</tt> class, it is very
+  convenient to pass them parameters stored in a file (e.g.,
+  <tt>param.xml</tt>) by:
+<pre>
+$ java -cp ... -p param.xml
+</pre>
+Such a parameter file can be sent to the organizers of the evaluation.
+</p>
+<p>Parameter file are in a simple XML format:
+<pre>
+&lt;Whatever>
+&lt;param name="<i>name<sub>1</sub></i>"><i>value<sub>1</sub></i>&lt;/param>
+...
+&lt;param name="<i>name<sub>n</sub></i>"><i>value<sub>n</sub></i>&lt;/param>
+&lt;/Whatever>
+</pre>
+</p>
+
+
+<hr />
+<center><small>http://oaei.ontologymatching.org/2007/align.html</small></center>
+<hr />
+$Id: align.html,v 1.8 2007/05/09 16:04:37 euzenat Exp $
+</body>
+</html>
