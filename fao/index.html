@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::Track name</title>
+<link rel="stylesheet" type="text/css" href="http://oaei.ontologymatching.org/2008/style.css" />
+</head>
+<body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2008/">Ontology
+  Alignment Evaluation Initiative - OAEI-2008
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="http://oaei.ontologymatching.org/oaeismall.jpg" alt="OAEI"
+		   style="float:right; margin-left: 5pt; border-style:none;"/></a>
+</div>
+
+<h1>FAO</h1>
+
+<p>The task consists of matching networked ontologies from domains
+related to fisheries manipulated by the Food and Agricultural
+Organization of the United Nations (FAO). These corresponds to the
+ontologisation of resources like thesauri (ASFA, Agrovoc) or databases
+(Fisheries) which are currently in exploitation at FAO. They are made
+of several thousand classes each.</p>
+
+<h2>Data sets</h2>
+
+<p>The task is made of three data sets which are ontologies in OWL.</p>
+
+<!--h3>Versions</h3>
+<p>Please uncomment and fill if there are several versions of the
+  dataset.</p-->
+
+<h3>AGROVOC</h3>
+
+<p><a href="http://www.fao.org/aims/ag_intro.htm">AGROVOC</a> is a
+  multilingual, structured and controlled vocabulary designed to cover
+  the terminology of all subject fields in agriculture, forestry,
+  fisheries, food and related domains (e.g. environment). We use here
+  the.</p>
+
+<p>We selected some "modules" of the of modular transcription of AGROVOC in OWL (only English, French, Spanish):
+<ul>
+<li>"organisms", in OWL format: organism.owl</li>
+<li>"vehicles" (including vessels): vehicles.owl</li>
+<li>"fishing gear": fishing-gear.owl</li>
+</ul>
+They all import: aos.owl, asc.owl, faopa.owl.</p>
+
+<p>The conversion of AGROVOC into an OWL ontology is work in progress. Depending
+on the 
+development of the conversion and on the feedback we receive from
+participants these moduels could be 
+improved (and/or include other languages), or the entire AGROVOC-OWL could be
+given.</p>
+
+<p>The resulting dataset is made of around 2.500 classes and 
+  available <a href="fishing-gear.zip">here</a>.</p>
+
+<h3>ASFA</h3>
+
+<p>Aquatic Sciences and Fisheries Abstracts (<a href="http://www.fao.org/fishery/asfa/8">ASFA</a>)
+is an abstracting and indexing service covering the world's literature
+on the science, technology, management, and conservation of marine,
+brackish water, and freshwater resources and environments, including
+their socio-economic and legal aspects. It is available in English,
+French and Spanish.</p>
+
+<p>We use a OWL transcription of ASFA. A web broswer of the thesaurus
+is available at: http://www4.fao.org/asfa/asfa.htm</p>
+
+<p>The afsa-d ontology is made of around 10.000 classes and is
+  available <a href="asfa-d.zip">here</a>.</p>
+
+<h3>Fisheries ontologies</h3>
+
+<p>The <a href="http://www.fao.org/aims/neon.jsp">fishery
+ontologies</a> are developed by FAO, in the context of
+the <a href="http://www.neon-project.org">NeOn project</a> as a set of modular OWL ontologies
+covering the Fishery domain.</p>
+<p>These ontologies are available from <a href="http://www.fao.org/aims/neon.jsp">http://www.fao.org/aims/neon.jsp</a> where one
+can also find information about the coding system modelled in the 
+ontologies. Please note that the ontologies to consider are those that are
+"populated with instances" (it is expected that the result will
+contain instances matched against classes).
+<ul>
+<li>Land areas</li>
+<li>Biological entities</li>
+<li>Fisheries commodities</li>
+<li>Vessel types and size</li>
+<li>Gear types</li>
+</ul>
+Or as a comprehensive zip file.
+</p>
+
+<h2>Modalities</h2>
+
+<p>The task consists of finding alignements between
+<ul>
+<li>AGROVOC and ASFA</li>
+<li>AGROVOC organism module and biological entities</li>
+<!--li>AGROVOC gear module and gear types</li>
+<li>AGROVOC vessels and vessel types and size</li-->
+<li>fisheries commodities and biological entities</li>
+</ul>
+Each alignment will be returned in
+an <a href="../align.html">alignment</a> file systemname.rdf in a separate
+directory (agrafsa, agrorgbio, agrgear, agrvess, fishbio). So this
+should be like:
+<pre>
+|- agrafsa/systemname.rdf
+|- agrorgbio/systemname.rdf
+|- fishbio/systemname.rdf
+</pre>
+<!--|- agrgear/systemname.rdf
+|- agrvess/systemname.rdf-->
+</p>
+
+<p>Mappings are not known in advance. Domain experts will assess samples of the
+mappings proposed and return participats results.</p>
+
+<h2>Schedule</h2>
+
+<p>The schedule is that of the <a href="..">OAEI 2008 campaign</a>.</p>
+
+<!--h2>Tool</h2>
+
+<p>If there are any usable specfic tools</p-->
+
+<h2>Acknowledgements</h2>
+
+<p>We thank all the people in FAO working on AGROVOC and ASFA, and in the NeOn
+project.</p>
+
+<h2>Contacts</h2>
+<p>Contact address is Caterina Caracciolo: caterina . caracciolo AT fao . org</p>
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2008/fao/</div>
+<!--$Id$-->
+</div>
+</body>
+</html>
