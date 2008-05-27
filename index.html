@@ -37,11 +37,10 @@ Since 2004, <a href="http://oaei.ontologymatching.org">OAEI</a> organizes evalua
   prospective schedule is below.
 </p>
 
-<!--h2>Problems</h2>
+<h2>Problems</h2>
 
-<p>This year's campaign will consist of four tracks gathering six data
+<p>This year's campaign will consist of four tracks gathering eight data
   sets and different evaluation modalities.
-
 <dl compact="1">
 <dt>Comparison track: <a href="benchmarks">benchmark</a></dt><dd>
   Like in previous campaigns, a <b>systematic benchmark series</b> has 
@@ -54,38 +53,45 @@ Since 2004, <a href="http://oaei.ontologymatching.org">OAEI</a> organizes evalua
 <dt>Expressive ontologies</dt><dd>
 <dl compact="1">
 <dt><a
-  href="anatomy/">anatomy</a></dt><dd>The <b>anatomy</b>
-  real world case is about matching the Adult Mouse Anatomy (2744 classes) and the NCI Thesaurus (3304 classes) describing the human anatomy.
+  href="http://webrum.uni-mannheim.de/math/lski/anatomy08/">anatomy</a></dt><dd>The <b>anatomy</b>
+  real world case is about matching the Adult Mouse Anatomy (2744 classes) and the NCI Thesaurus (3304 classes) describing the human anatomy.</dd>
+<dt><a
+  href="fao/">fao</a></dt><dd><!--The <b>anatomy</b>
+  real world case is about matching the Adult Mouse Anatomy (2744 classes) and the NCI Thesaurus (3304 classes) describing the human anatomy.--></dd>
 </dl></dd>
 <dt>Directories and thesauri</dt><dd>
 <dl compact="1">
-<dt><a href="http://disi.unitn.it/~pane/OAEI/2008/directory/index.htm">directory</a></dt><dd>The <b>directory</b> real world case consists of alignming web
-  sites directory (like open directory or Yahoo's). It is more than
+<dt><a href="http://www.disi.unitn.it/~pane/OAEI/2008/directory/">directory</a></dt><dd>The <b>directory</b> real world case consists of alignming web
+  sites directories (like open directory or Yahoo's). It is more than
   4 thousand elementary tests.</dd>
-<dt><a href="food">food</a></dt><dd>
-    Two SKOS thesauri about <b>food</b> have to be aligned using relations from the SKOS Mapping vocabulary. Samples of the results are evaluated by domain experts.
-</dd>
-<dt><a href="environment/">environment</a></dt><dd>Three SKOS thesauri about the <b>environment</b> have to be aligned (A-B,
-    B-C, C-A) using relations from the SKOS Mapping
-    vocabulary. Samples of the results are evaluated by domain
-    experts. 
-</dd>
-<dt><a
-    href="library/">library</a></dt><dd>Two
+<dt><a href="http://ri-www.nii.ac.jp/OAEI/2008/">mldirectory</a></dt><dd>The <b>mldirectory</b> real world case consists of alignming web
+  sites directories (like Dmoz, Licos and Yahoo's) in different
+  languages (English and Japanese). These are exerpts of the
+  directories which contain around one thousand categories.</dd>
+<dt><a href="http://www.few.vu.nl/~aisaac/oaei2008/">library</a></dt><dd>Two
     SKOS thesauri about <b>books</b> have to be aligned using relations from the SKOS Mapping vocabulary. Samples of the results are evaluated by domain experts. 
 </dd>
+<dt><a href="http://www.few.vu.nl/~laurah/oaei/">very large crosslingual resources</a></dt><dd>
+This real world test case require marching of very large resources (<b>vlcr</b>)
+available on the web, viz. DBPedia, WordNet and the Dutch audiovisual
+archive (GTAA), DBPedia is multilingual and GTAA is in Dutch.
+</dd>
 </dl></dd> 
-<dt>Consensus workshop: <a href="conference/">conference</a></dt><dd>
-Participants will be asked to freely explore a collection of 'conference
-organisation' ontologies (the domain being well understandable for every
-researcher). This effort will materialise in (complete or sections of)
-submitted papers, containing e.g. interesting individual correspondences
-('nuggets'), aggregated statistical observations and/or implicit design
-patterns. There is no a priori reference alignment. 
-Organisers of this track offer a posteriori evaluation of results in part
-manually and in part by data-mining techniques. For a selected sample of
-correspondences, consensus will be sought at the workshop and the process
-of its reaching will be recorded.
+<dt>Consensus workshop: <a href="http://nb.vse.cz/~svabo/oaei2008/">conference</a></dt><dd>
+Participants will be asked to freely explore a collection of
+'conference organisation' ontologies (the domain being well
+understandable for every researcher) with regard to two possible tasks
+(generic correspondences or application-specific
+correspondences). This effort will materialise in (complete or
+sections of) submitted papers, containing e.g. interesting individual
+correspondences, aggregated statistical observations
+and/or implicit design patterns. Organisers of this track offer a
+posteriori evaluation of results in part manually and in part by
+data-mining techniques and logical reasoning techniques. Newly, there
+will also be evaluation against reference mapping based on small
+subset of the whole collection. For a selected sample of
+correspondences, consensus will be sought at the workshop and the
+process of its reaching will be recorded.
 </dd>
 </dl>
 </p>
@@ -93,19 +99,22 @@ of its reaching will be recorded.
   these tests (all results are given in the Alignment format):
 <center>
 <table>
-<tr><td>test</td><td>language</td><td>relations</td><td>confidence</td><td></td></tr>
-<tr><td>benchmarks</td><td>OWL</td><td>=</td><td>[0 1]</td><td>open</td></tr>
-<tr><td>anatomy</td><td>OWL</td><td>=</td><td>1</td><td>blind</td></tr>
-<tr><td>directory</td><td>OWL</td><td>=</td><td>1</td><td>blind</td></tr>
+<tr><td>test</td><td>language</td><td>relations</td><td>confidence</td><td>Modalities</td><td>Language</td><td>Size</td></tr>
+<tr><td>benchmarks</td><td>OWL</td><td>=</td><td>[0 1]</td><td>open</td><td>EN</td><td>(36+61)*2*49</td></tr>
+<tr><td>anatomy</td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td>3k*3k</td></tr>
+<tr><td>fao</td><td>OWL</td><td>=</td><td>1</td><td>expert</td><td>EN+FR+ES</td><td></td></tr>
+<tr><td></td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td></td></tr>
+<tr><td>directory</td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td></td></tr>
+<tr><td>mdirectory</td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN+JP</td><td></td></tr>
 
-<tr><td>food<br/>environment<br/>library</td><td>SKOS<br/>+OWL</td><td>exactMatch,<br
+<tr><td><br/>vlcr<br/></td><td>SKOS<br/>+OWL</td><td>exactMatch,<br
 								 />narrowMatch,<br
-										  />broadMatch</td><td>1</td><td>blind</td></tr>
+										  />broadMatch</td><td>1</td><td>blind</td><td>EN+DU</td></tr>
 
-<tr><td>conference</td><td>OWL-DL</td><td>=, <=</td><td>1</td><td>blind+consensual</td></tr>
+<tr><td>conference</td><td>OWL-DL</td><td>=, <=</td><td>1</td><td>blind+consensual</td><td>EN</td></tr>
 </table>
 </center>
-</p-->
+</p>
 
 <!--h2>Evaluation process</h2>
 
@@ -231,8 +240,7 @@ participant.zip
   in order for the participants to provide feedback on the
   opportunity to use them in a further evaluation.</p-->
 
-<!--h2>Schedule Overview</h2-->
-<h2>Prospective schedule</h2>
+<h2><a name="schedule">Schedule</a></h2>
 
 <dl compact="1">
 <dt>May 19th</dt><dd>datasets are out</dd>
@@ -305,7 +313,7 @@ participant.zip
   Ontology matching</a> at ISWC 2008 taking place at Karlsruhe (Germany) on October, 
   26th or 27th 2008. We hope to see you there.</p-->
 
-<!--h2>Tools and material</h2>
+<h2>Tools and material</h2>
 
 <p>The material for evaluation will be available soon from this page.</p>
 
@@ -323,25 +331,29 @@ participant.zip
 
 <p>Vassilis Spiliopoulos pointed out to <a href="http://www.altova.com/downloadtrialsemanticworks.html?gclid=CNXR9ubdu4wCFQ-HlAod-QXdVg">Altova
     transformer</a> from OWL to N3 notation. This can be useful for
-    some. This is a commercial tool with a 30 days free trial.</a-->
+    some. This is a commercial tool with a 30 days free trial.</a>
 
-<!--h2>Organizers</h2>
+<h2>Organizers</h2>
 
 <p><ul compact="1">
-<li>Pavel Shvaiko (University of Trento)</li>
-<li>J&eacute;r&ocirc;me Euzenat (INRIA Rh&ocirc;ne-Alpes &amp; LIG)</li>
-<li>Heiner Stuckenschmidt (Manheim Universit&auml;t)</li>
-<li>Mikalai Yatskevich (University of Trento)</li>
-<li>Willem Robert van Hage (VU Amsterdam)</li>
-<li>Vojtech Svatek (University of Economics, Praha)</li>
-<li>Christian Meilicke (Manheim Universit&auml;t)</li>
-<li>Ondrej Svab (University of Economics, Praha)</li>
+<li>Caterina Caracciolo (FAO, Roma)</li>
+<li>J&eacute;r&ocirc;me Euzenat (INRIA Rh&ocirc;ne-Alpes &amp; LIG, Grenoble)</li>
+<li>Laura Hollink (VU Amsterdam)</li>
 <li>Antoine Isaac (VU Amsterdam)</li>
-</ul></p-->
+<li>Ryutaro Ichise (NII, Tokyo)</li>
+<li>V&eacute;ronique Malais&eacute; (VU Amsterdam)</li>
+<li>Christian Meilicke (Manheim Universit&auml;t)</li>
+<li>Juan Pane (University of Trento)</li>
+<li>Pavel Shvaiko (University of Trento)</li>
+<li>Heiner Stuckenschmidt (Manheim Universit&auml;t)</li>
+<li>Ondrej Svab (University of Economics, Praha)</li>
+<li>Vojtech Svatek (University of Economics, Praha)</li>
+<li>Ondrej Zamazal (University of Economics, Praha)</li>
+</ul></p>
 
 <div class="address">
 <div class="footer">http://oaei.ontologymatching.org/2008/</div>
-$Id: index.html,v 1.3 2008/05/09 13:40:29 euzenat Exp euzenat $
+$Id: index.html,v 1.4 2008/05/09 15:02:44 euzenat Exp euzenat $
 </div>
 </body>
 </html>
