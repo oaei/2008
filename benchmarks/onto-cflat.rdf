@@ -31,7 +31,7 @@
     <dc:date>01/06/2004</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.10 2006/08/01 10:05:53 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-cflat.rdf,v 1.11 2006/08/23 10:40:26 euzenat Exp euzenat $</owl:versionInfo>
   </owl:Ontology>
 
   <!-- Every entity (even external) must be typed in OWL-DL. -->
@@ -1154,7 +1154,7 @@
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:ID="numberOrVolume">
-    <rdfs:domain rdf:resource="#Reference"/>
+    <rdfs:domain rdf:resource="&owl;Thing"/>
     <rdfs:label xml:lang="en">volume or number</rdfs:label>
     <rdfs:comment xml:lang="en">The number of a journal, magazine, technical report, or of a work in a series. An issue of a journal or magazine is usually identified by its volume and number; the organization that issues a technical report usually gives it a number; and sometimes books are given numbers in a named series.</rdfs:comment>
   </owl:DatatypeProperty>
