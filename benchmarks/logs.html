@@ -15,11 +15,22 @@
 <h1>Modifications of the benchmark test library</h1>
 
 <hr />
-<h2><a href="../../versions/bench40.zip">5.0</a>: OAEI-2008 preversion
+<h2><a href="../../versions/bench50.zip">5.0</a>: OAEI-2008 preversion
   released 25/05/2008</h2>
 
 <ul compact="1">
-<li>Modified refalign (was not RDF/XML) [ALL]</li>
+<li>Added new partially scrambled tests [*-2,4,6,8]</li>
+<li>Added correctly scrambled tests for instances (previous year tests
+  had the instances) [249,253,257,258,259,262,265]</li>
+</ul>
+<p>Corrections from Christian Meilicke:
+<ul compact="1">
+<li>Changed the range of "numberOrVolume" in ontology 101 from
+  "Reference" to "Reference OR Conference" this is also changed in all
+  the generated ontologies [101+2xx]</li>
+<li>Changed "Part = Publication" into "Part &lt; Publication" [302] </li>
+<li>Removed "Collection &lt; booktitle", changed "collection =
+  booktitle" into "collection &lt; booktitle" [303] </li>
 </ul>
 <hr />
 
@@ -211,7 +222,7 @@ in 301-304;</li>
 
 <div class="address">
 <div class="footer">http://oaei.ontologymatching.org/2008/benchmarks/logs.html</div>
-$Id: logs.html,v 1.26 2007/05/15 22:12:22 euzenat Exp euzenat $
+$Id: logs.html,v 1.27 2008/05/25 14:09:17 euzenat Exp euzenat $
 </div>
 </body>
 </html>
