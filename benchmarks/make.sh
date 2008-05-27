@@ -1,13 +1,13 @@
 #!/bin/sh
-# $Id: make.sh,v 1.26 2007/05/15 21:40:10 euzenat Exp euzenat $
+# $Id: make.sh,v 1.25 2006/08/23 11:05:04 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
 # //pass3: generate HTML
 # //pass4: put everything on the web site (to be processed manually)
 
-VERSION=40
-CURRENT=2007/benchmarks
+VERSION=50
+CURRENT=2008/benchmarks
 #CURRENT=tests
 
 echo Generating files
@@ -56,6 +56,22 @@ cp 101/refalign.rdf 104/refalign.rdf
 mkdir 201
 xsltproc xslt/trans-random.xsl onto.rdf > 201/onto.rdf
 xsltproc xslt/trans-random.xsl refalign.rdf > 201/refalign.rdf
+\rm -rf 201-2
+mkdir 201-2
+xsltproc xslt/trans-random2.xsl onto.rdf > 201-2/onto.rdf
+xsltproc xslt/trans-random2.xsl refalign.rdf > 201-2/refalign.rdf
+\rm -rf 201-4
+mkdir 201-4
+xsltproc xslt/trans-random4.xsl onto.rdf > 201-4/onto.rdf
+xsltproc xslt/trans-random4.xsl refalign.rdf > 201-4/refalign.rdf
+\rm -rf 201-6
+mkdir 201-6
+xsltproc xslt/trans-random6.xsl onto.rdf > 201-6/onto.rdf
+xsltproc xslt/trans-random6.xsl refalign.rdf > 201-6/refalign.rdf
+\rm -rf 201-8
+mkdir 201-8
+xsltproc xslt/trans-random8.xsl onto.rdf > 201-8/onto.rdf
+xsltproc xslt/trans-random8.xsl refalign.rdf > 201-8/refalign.rdf
 
 #####################################################################
 # 202) Systematic: No names, no comment
@@ -66,6 +82,22 @@ xsltproc xslt/trans-random.xsl refalign.rdf > 201/refalign.rdf
 mkdir 202
 xsltproc xslt/strip-comments.xsl 201/onto.rdf > 202/onto.rdf
 xsltproc xslt/trans-random.xsl refalign.rdf > 202/refalign.rdf
+\rm -rf 202-2
+mkdir 202-2
+xsltproc xslt/strip-comments.xsl 201-2/onto.rdf > 202-2/onto.rdf
+xsltproc xslt/trans-random2.xsl refalign.rdf > 202-2/refalign.rdf
+\rm -rf 202-4
+mkdir 202-4
+xsltproc xslt/strip-comments.xsl 201-4/onto.rdf > 202-4/onto.rdf
+xsltproc xslt/trans-random4.xsl refalign.rdf > 202-4/refalign.rdf
+\rm -rf 202-6
+mkdir 202-6
+xsltproc xslt/strip-comments.xsl 201-6/onto.rdf > 202-6/onto.rdf
+xsltproc xslt/trans-random6.xsl refalign.rdf > 202-6/refalign.rdf
+\rm -rf 202-8
+mkdir 202-8
+xsltproc xslt/strip-comments.xsl 201-8/onto.rdf > 202-8/onto.rdf
+xsltproc xslt/trans-random8.xsl refalign.rdf > 202-8/refalign.rdf
 
 #####################################################################
 # 203) Systematic: No comment (was Misspelling)
@@ -400,6 +432,22 @@ xsltproc xslt/strip-propalign.xsl 238/refalign.rdf > 247/refalign.rdf
 mkdir 248
 xsltproc xslt/strip-subclass.xsl 202/onto.rdf > 248/onto.rdf
 cp 202/refalign.rdf 248/refalign.rdf
+\rm -rf 248-2
+mkdir 248-2
+xsltproc xslt/strip-subclass.xsl 202-2/onto.rdf > 248-2/onto.rdf
+cp 202-2/refalign.rdf 248-2/refalign.rdf
+\rm -rf 248-4
+mkdir 248-4
+xsltproc xslt/strip-subclass.xsl 202-4/onto.rdf > 248-4/onto.rdf
+cp 202-4/refalign.rdf 248-4/refalign.rdf
+\rm -rf 248-6
+mkdir 248-6
+xsltproc xslt/strip-subclass.xsl 202-6/onto.rdf > 248-6/onto.rdf
+cp 202-6/refalign.rdf 248-6/refalign.rdf
+\rm -rf 248-8
+mkdir 248-8
+xsltproc xslt/strip-subclass.xsl 202-8/onto.rdf > 248-8/onto.rdf
+cp 202-8/refalign.rdf 248-8/refalign.rdf
 
 #####################################################################
 # 249) Systematic: No names, no instances
@@ -409,6 +457,22 @@ cp 202/refalign.rdf 248/refalign.rdf
 mkdir 249
 xsltproc xslt/strip-instances.xsl 202/onto.rdf > 249/onto.rdf
 cp 202/refalign.rdf 249/refalign.rdf
+\rm -rf 249-2
+mkdir 249-2
+xsltproc xslt/strip-instances.xsl 202-2/onto.rdf > 249-2/onto.rdf
+cp 202-2/refalign.rdf 249-2/refalign.rdf
+\rm -rf 249-4
+mkdir 249-4
+xsltproc xslt/strip-instances.xsl 202-4/onto.rdf > 249-4/onto.rdf
+cp 202-4/refalign.rdf 249-4/refalign.rdf
+\rm -rf 249-6
+mkdir 249-6
+xsltproc xslt/strip-instances.xsl 202-6/onto.rdf > 249-6/onto.rdf
+cp 202-6/refalign.rdf 249-6/refalign.rdf
+\rm -rf 249-8
+mkdir 249-8
+xsltproc xslt/strip-instances.xsl 202-8/onto.rdf > 249-8/onto.rdf
+cp 202-8/refalign.rdf 249-8/refalign.rdf
 
 #####################################################################
 # 250) Systematic: No names, no properties
@@ -418,6 +482,22 @@ cp 202/refalign.rdf 249/refalign.rdf
 mkdir 250
 xsltproc xslt/strip-properties.xsl 202/onto.rdf > 250/onto.rdf
 xsltproc xslt/strip-propalign.xsl 202/refalign.rdf > 250/refalign.rdf
+\rm -rf 250-2
+mkdir 250-2
+xsltproc xslt/strip-properties.xsl 202-2/onto.rdf > 250-2/onto.rdf
+xsltproc xslt/strip-propalign.xsl 202-2/refalign.rdf > 250-2/refalign.rdf
+\rm -rf 250-4
+mkdir 250-4
+xsltproc xslt/strip-properties.xsl 202-4/onto.rdf > 250-4/onto.rdf
+xsltproc xslt/strip-propalign.xsl 202-4/refalign.rdf > 250-4/refalign.rdf
+\rm -rf 250-6
+mkdir 250-6
+xsltproc xslt/strip-properties.xsl 202-6/onto.rdf > 250-6/onto.rdf
+xsltproc xslt/strip-propalign.xsl 202-6/refalign.rdf > 250-6/refalign.rdf
+\rm -rf 250-8
+mkdir 250-8
+xsltproc xslt/strip-properties.xsl 202-8/onto.rdf > 250-8/onto.rdf
+xsltproc xslt/strip-propalign.xsl 202-8/refalign.rdf > 250-8/refalign.rdf
 
 #####################################################################
 # 251) Systematic: No names, flattened classes
@@ -428,6 +508,26 @@ mkdir 251
 xsltproc xslt/strip-comments.xsl 222/onto.rdf > 251/preonto.rdf
 xsltproc xslt/trans-random.xsl 251/preonto.rdf > 251/onto.rdf
 xsltproc xslt/trans-random.xsl 222/refalign.rdf > 251/refalign.rdf
+\rm -rf 251-2
+mkdir 251-2
+xsltproc xslt/strip-comments.xsl 222/onto.rdf > 251-2/preonto.rdf
+xsltproc xslt/trans-random2.xsl 251-2/preonto.rdf > 251-2/onto.rdf
+xsltproc xslt/trans-random2.xsl 222/refalign.rdf > 251-2/refalign.rdf
+\rm -rf 251-4
+mkdir 251-4
+xsltproc xslt/strip-comments.xsl 222/onto.rdf > 251-4/preonto.rdf
+xsltproc xslt/trans-random4.xsl 251-4/preonto.rdf > 251-4/onto.rdf
+xsltproc xslt/trans-random4.xsl 222/refalign.rdf > 251-4/refalign.rdf
+\rm -rf 251-6
+mkdir 251-6
+xsltproc xslt/strip-comments.xsl 222/onto.rdf > 251-6/preonto.rdf
+xsltproc xslt/trans-random6.xsl 251-6/preonto.rdf > 251-6/onto.rdf
+xsltproc xslt/trans-random6.xsl 222/refalign.rdf > 251-6/refalign.rdf
+\rm -rf 251-8
+mkdir 251-8
+xsltproc xslt/strip-comments.xsl 222/onto.rdf > 251-8/preonto.rdf
+xsltproc xslt/trans-random8.xsl 251-8/preonto.rdf > 251-8/onto.rdf
+xsltproc xslt/trans-random8.xsl 222/refalign.rdf > 251-8/refalign.rdf
 
 #####################################################################
 # 252) Systematic: No names, expanded classes
@@ -438,6 +538,26 @@ mkdir 252
 xsltproc xslt/strip-comments.xsl 223/onto.rdf > 252/preonto.rdf
 xsltproc xslt/trans-random.xsl 252/preonto.rdf > 252/onto.rdf
 xsltproc xslt/trans-random.xsl 223/refalign.rdf > 252/refalign.rdf
+\rm -rf 252-2
+mkdir 252-2
+xsltproc xslt/strip-comments.xsl 223/onto.rdf > 252-2/preonto.rdf
+xsltproc xslt/trans-random2.xsl 252-2/preonto.rdf > 252-2/onto.rdf
+xsltproc xslt/trans-random2.xsl 223/refalign.rdf > 252-2/refalign.rdf
+\rm -rf 252-4
+mkdir 252-4
+xsltproc xslt/strip-comments.xsl 223/onto.rdf > 252-4/preonto.rdf
+xsltproc xslt/trans-random2.xsl 252-4/preonto.rdf > 252-4/onto.rdf
+xsltproc xslt/trans-random2.xsl 223/refalign.rdf > 252-4/refalign.rdf
+\rm -rf 252-6
+mkdir 252-6
+xsltproc xslt/strip-comments.xsl 223/onto.rdf > 252-6/preonto.rdf
+xsltproc xslt/trans-random2.xsl 252-6/preonto.rdf > 252-6/onto.rdf
+xsltproc xslt/trans-random2.xsl 223/refalign.rdf > 252-6/refalign.rdf
+\rm -rf 252-8
+mkdir 252-8
+xsltproc xslt/strip-comments.xsl 223/onto.rdf > 252-8/preonto.rdf
+xsltproc xslt/trans-random2.xsl 252-8/preonto.rdf > 252-8/onto.rdf
+xsltproc xslt/trans-random2.xsl 223/refalign.rdf > 252-8/refalign.rdf
 
 #####################################################################
 # 253) Systematic: No names, no hierarchy, no instance
@@ -447,6 +567,22 @@ xsltproc xslt/trans-random.xsl 223/refalign.rdf > 252/refalign.rdf
 mkdir 253
 xsltproc xslt/strip-instances.xsl 248/onto.rdf > 253/onto.rdf
 cp 248/refalign.rdf 253/refalign.rdf
+\rm -rf 253-2
+mkdir 253-2
+xsltproc xslt/strip-instances.xsl 248-2/onto.rdf > 253-2/onto.rdf
+cp 248-2/refalign.rdf 253-2/refalign.rdf
+\rm -rf 253-4
+mkdir 253-4
+xsltproc xslt/strip-instances.xsl 248-4/onto.rdf > 253-4/onto.rdf
+cp 248-4/refalign.rdf 253-4/refalign.rdf
+\rm -rf 253-6
+mkdir 253-6
+xsltproc xslt/strip-instances.xsl 248-6/onto.rdf > 253-6/onto.rdf
+cp 248-6/refalign.rdf 253-6/refalign.rdf
+\rm -rf 253-8
+mkdir 253-8
+xsltproc xslt/strip-instances.xsl 248-8/onto.rdf > 253-8/onto.rdf
+cp 248-8/refalign.rdf 253-8/refalign.rdf
 
 #####################################################################
 # 254) Systematic: No names, no hierarchy, no properties
@@ -456,6 +592,22 @@ cp 248/refalign.rdf 253/refalign.rdf
 mkdir 254
 xsltproc xslt/strip-properties.xsl 248/onto.rdf > 254/onto.rdf
 xsltproc xslt/strip-propalign.xsl 248/refalign.rdf > 254/refalign.rdf
+\rm -rf 254-2
+mkdir 254-2
+xsltproc xslt/strip-properties.xsl 248-2/onto.rdf > 254-2/onto.rdf
+xsltproc xslt/strip-propalign.xsl 248-2/refalign.rdf > 254-2/refalign.rdf
+\rm -rf 254-4
+mkdir 254-4
+xsltproc xslt/strip-properties.xsl 248-4/onto.rdf > 254-4/onto.rdf
+xsltproc xslt/strip-propalign.xsl 248-4/refalign.rdf > 254-4/refalign.rdf
+\rm -rf 254-6
+mkdir 254-6
+xsltproc xslt/strip-properties.xsl 248-6/onto.rdf > 254-6/onto.rdf
+xsltproc xslt/strip-propalign.xsl 248-6/refalign.rdf > 254-6/refalign.rdf
+\rm -rf 254-8
+mkdir 254-8
+xsltproc xslt/strip-properties.xsl 248-8/onto.rdf > 254-8/onto.rdf
+xsltproc xslt/strip-propalign.xsl 248-8/refalign.rdf > 254-8/refalign.rdf
 
 #####################################################################
 # 255) Systematic: No names, No hierarchy, flattened classes
@@ -483,6 +635,22 @@ xsltproc xslt/strip-propalign.xsl 248/refalign.rdf > 254/refalign.rdf
 mkdir 257
 xsltproc xslt/strip-properties.xsl 249/onto.rdf > 257/onto.rdf
 xsltproc xslt/strip-propalign.xsl 249/refalign.rdf > 257/refalign.rdf
+\rm -rf 257-2
+mkdir 257-2
+xsltproc xslt/strip-properties.xsl 249-2/onto.rdf > 257-2/onto.rdf
+xsltproc xslt/strip-propalign.xsl 249-2/refalign.rdf > 257-2/refalign.rdf
+\rm -rf 257-4
+mkdir 257-4
+xsltproc xslt/strip-properties.xsl 249-4/onto.rdf > 257-4/onto.rdf
+xsltproc xslt/strip-propalign.xsl 249-4/refalign.rdf > 257-4/refalign.rdf
+\rm -rf 257-6
+mkdir 257-6
+xsltproc xslt/strip-properties.xsl 249-6/onto.rdf > 257-6/onto.rdf
+xsltproc xslt/strip-propalign.xsl 249-6/refalign.rdf > 257-6/refalign.rdf
+\rm -rf 257-8
+mkdir 257-8
+xsltproc xslt/strip-properties.xsl 249-8/onto.rdf > 257-8/onto.rdf
+xsltproc xslt/strip-propalign.xsl 249-8/refalign.rdf > 257-8/refalign.rdf
 
 #####################################################################
 # 258) Systematic: No names, No instances, flattened classes
@@ -492,6 +660,22 @@ xsltproc xslt/strip-propalign.xsl 249/refalign.rdf > 257/refalign.rdf
 mkdir 258
 xsltproc xslt/strip-instances.xsl 251/onto.rdf > 258/onto.rdf
 cp 251/refalign.rdf 258/refalign.rdf
+\rm -rf 258-2
+mkdir 258-2
+xsltproc xslt/strip-instances.xsl 251-2/onto.rdf > 258-2/onto.rdf
+cp 251-2/refalign.rdf 258-2/refalign.rdf
+\rm -rf 258-4
+mkdir 258-4
+xsltproc xslt/strip-instances.xsl 251-4/onto.rdf > 258-4/onto.rdf
+cp 251-4/refalign.rdf 258-4/refalign.rdf
+\rm -rf 258-6
+mkdir 258-6
+xsltproc xslt/strip-instances.xsl 251-6/onto.rdf > 258-6/onto.rdf
+cp 251-6/refalign.rdf 258-6/refalign.rdf
+\rm -rf 258-8
+mkdir 258-8
+xsltproc xslt/strip-instances.xsl 251-8/onto.rdf > 258-8/onto.rdf
+cp 251-8/refalign.rdf 258-8/refalign.rdf
 
 #####################################################################
 # 259) Systematic: No names, No instances, expanded classes
@@ -501,6 +685,22 @@ cp 251/refalign.rdf 258/refalign.rdf
 mkdir 259
 xsltproc xslt/strip-instances.xsl 252/onto.rdf > 259/onto.rdf
 cp 252/refalign.rdf 259/refalign.rdf
+\rm -rf 259-2
+mkdir 259-2
+xsltproc xslt/strip-instances.xsl 252-2/onto.rdf > 259-2/onto.rdf
+cp 252-2/refalign.rdf 259-2/refalign.rdf
+\rm -rf 259-4
+mkdir 259-4
+xsltproc xslt/strip-instances.xsl 252-4/onto.rdf > 259-4/onto.rdf
+cp 252-4/refalign.rdf 259-4/refalign.rdf
+\rm -rf 259-6
+mkdir 259-6
+xsltproc xslt/strip-instances.xsl 252-6/onto.rdf > 259-6/onto.rdf
+cp 252-6/refalign.rdf 259-6/refalign.rdf
+\rm -rf 259-8
+mkdir 259-8
+xsltproc xslt/strip-instances.xsl 252-8/onto.rdf > 259-8/onto.rdf
+cp 252-8/refalign.rdf 259-8/refalign.rdf
 
 #####################################################################
 # 260) Systematic: No names, No properties, flattened classes
@@ -510,6 +710,22 @@ cp 252/refalign.rdf 259/refalign.rdf
 mkdir 260
 xsltproc xslt/strip-properties.xsl 251/onto.rdf > 260/onto.rdf
 xsltproc xslt/strip-propalign.xsl 251/refalign.rdf > 260/refalign.rdf
+\rm -rf 260-2
+mkdir 260-2
+xsltproc xslt/strip-properties.xsl 251-2/onto.rdf > 260-2/onto.rdf
+xsltproc xslt/strip-propalign.xsl 251-2/refalign.rdf > 260-2/refalign.rdf
+\rm -rf 260-4
+mkdir 260-4
+xsltproc xslt/strip-properties.xsl 251-4/onto.rdf > 260-4/onto.rdf
+xsltproc xslt/strip-propalign.xsl 251-4/refalign.rdf > 260-4/refalign.rdf
+\rm -rf 260-6
+mkdir 260-6
+xsltproc xslt/strip-properties.xsl 251-6/onto.rdf > 260-6/onto.rdf
+xsltproc xslt/strip-propalign.xsl 251-6/refalign.rdf > 260-6/refalign.rdf
+\rm -rf 260-8
+mkdir 260-8
+xsltproc xslt/strip-properties.xsl 251-8/onto.rdf > 260-8/onto.rdf
+xsltproc xslt/strip-propalign.xsl 251-8/refalign.rdf > 260-8/refalign.rdf
 
 #####################################################################
 # 261) Systematic: No names, No properties, expanded classes
@@ -519,6 +735,22 @@ xsltproc xslt/strip-propalign.xsl 251/refalign.rdf > 260/refalign.rdf
 mkdir 261
 xsltproc xslt/strip-properties.xsl 252/onto.rdf > 261/onto.rdf
 xsltproc xslt/strip-propalign.xsl 252/refalign.rdf > 261/refalign.rdf
+\rm -rf 261-2
+mkdir 261-2
+xsltproc xslt/strip-properties.xsl 252-2/onto.rdf > 261-2/onto.rdf
+xsltproc xslt/strip-propalign.xsl 252-2/refalign.rdf > 261-2/refalign.rdf
+\rm -rf 261-4
+mkdir 261-4
+xsltproc xslt/strip-properties.xsl 252-4/onto.rdf > 261-4/onto.rdf
+xsltproc xslt/strip-propalign.xsl 252-4/refalign.rdf > 261-4/refalign.rdf
+\rm -rf 261-6
+mkdir 261-6
+xsltproc xslt/strip-properties.xsl 252-6/onto.rdf > 261-6/onto.rdf
+xsltproc xslt/strip-propalign.xsl 252-6/refalign.rdf > 261-6/refalign.rdf
+\rm -rf 261-8
+mkdir 261-8
+xsltproc xslt/strip-properties.xsl 252-8/onto.rdf > 261-8/onto.rdf
+xsltproc xslt/strip-propalign.xsl 252-8/refalign.rdf > 261-8/refalign.rdf
 
 #####################################################################
 # 262) Systematic: No names, no instances, no properties
@@ -528,6 +760,22 @@ xsltproc xslt/strip-propalign.xsl 252/refalign.rdf > 261/refalign.rdf
 mkdir 262
 xsltproc xslt/strip-properties.xsl 253/onto.rdf > 262/onto.rdf
 xsltproc xslt/strip-propalign.xsl 253/refalign.rdf > 262/refalign.rdf
+\rm -rf 262-2
+mkdir 262-2
+xsltproc xslt/strip-properties.xsl 253-2/onto.rdf > 262-2/onto.rdf
+xsltproc xslt/strip-propalign.xsl 253-2/refalign.rdf > 262-2/refalign.rdf
+\rm -rf 262-4
+mkdir 262-4
+xsltproc xslt/strip-properties.xsl 253-4/onto.rdf > 262-4/onto.rdf
+xsltproc xslt/strip-propalign.xsl 253-4/refalign.rdf > 262-4/refalign.rdf
+\rm -rf 262-6
+mkdir 262-6
+xsltproc xslt/strip-properties.xsl 253-6/onto.rdf > 262-6/onto.rdf
+xsltproc xslt/strip-propalign.xsl 253-6/refalign.rdf > 262-6/refalign.rdf
+\rm -rf 262-8
+mkdir 262-8
+xsltproc xslt/strip-properties.xsl 253-8/onto.rdf > 262-8/onto.rdf
+xsltproc xslt/strip-propalign.xsl 253-8/refalign.rdf > 262-8/refalign.rdf
 
 #####################################################################
 # 263) Systematic: No names, No instances, No hierarchy, flattened classes
@@ -589,7 +837,7 @@ cp 261/refalign.rdf 266/refalign.rdf
 
 echo -n "Fixing URI "
 
-for i in `ls -d [1-2][0-9][0-9]` 
+for i in `ls -d [1-2][0-9][0-9]*` 
 do
 echo -n "*"$i"*"
 if [ -f $i/refalign.rdf ]
@@ -633,7 +881,7 @@ EOF
 fi
 done
 
-for i in `ls -d [1-2][0-9][0-9]` 
+for i in `ls -d [1-2][0-9][0-9]*` 
 do
 ed -s $i/onto.rdf << EOF &>/dev/null
 1,$ s;oaei.ontologymatching.org/tests/;oaei.ontologymatching.org/$CURRENT/;g
@@ -671,7 +919,7 @@ done
 echo
 echo -n "Generating HTML "
 
-for i in `ls -d [0-9][0-9][0-9]` 
+for i in `ls -d [0-9][0-9][0-9]*` 
 do
 echo -n "*"$i"*"
 xsltproc xslt/form-align.xsl $i/refalign.rdf > $i/refalign.html
@@ -732,7 +980,7 @@ cp ../versions/bench$VERSION.zip benchmarks/bench.zip
 
 #java -cp /Volumes/Phata/JAVA/alignapi/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o inria -n file:///Web/html/oaei/2006/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment
 
-for i in `ls -d [0-9][0-9][0-9]`
+for i in `ls -d [0-9][0-9][0-9]*`
 do
 ed -s $i/refalign.rdf << EOF &>/dev/null
 1,$ s;<onto1>http://oaei.ontologymatching.org/2006;<onto1>file:///Java/TEST-ALIGN;g
