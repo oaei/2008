@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: make.sh,v 1.25 2006/08/23 11:05:04 euzenat Exp euzenat $
+# $Id: make.sh,v 1.28 2008/05/27 14:17:58 euzenat Exp euzenat $
 # XSLT based test generation.
 # //pass1: generate test files
 # //pass2: fix URI
@@ -935,6 +935,13 @@ echo
 echo "Be sure that CURRENT was correctly set ("$CURRENT")"
 echo "Apply pass4 manually with the correct VERSION ("$VERSION")"
 echo "Check that the 3xx series is in the appropriate form (files contain correct URI)"
+
+# The only changes that have to be made here, and only the first time
+# tests are gererated in a campaign is:
+# for 301-304
+# edit onto.rdf and refalign.rdf
+# change yyyy/ -> yyyy+1/ or tests/ benchmarks/yyyy/
+# sh make.sh a last time
 
 exit
 
