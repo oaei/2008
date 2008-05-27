@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: strip-instances.xsl,v 1.6 2006/07/12 12:50:19 euzenat Exp euzenat $ -->
+<!-- $Id: strip-instances.xsl,v 1.7 2006/08/01 11:13:12 euzenat Exp euzenat $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -26,6 +26,10 @@
   <xsl:template match="my:Journal|my:Publisher|my:Conference"/>
   <xsl:template match="my:Proceedings|my:InProceedings|my:Article|my:InBook|my:Misc|my:Monograph"/>
   <xsl:template match="owl:oneOf"/>
+
+  <!-- JE added 2008 for scrambled instances -->
+  <xsl:template match="my:qsdsquj|my:zauio|my:zqedzbx"/>
+  <xsl:template match="my:zdqssqdb|my:deqdxcsqcsq|my:hazdn|my:vccfsq|my:wxsdxqsdh|my:dzajndsq"/>
 
   <xsl:template match="@*|node()"> <!-- node() = text()|* ? -->
     <xsl:copy>
