@@ -1,22 +1,38 @@
 <html>
 <head>
 <title>Ontology Alignment Evaluation Initiative::Test library</title>
+<link rel="stylesheet" type="text/css" href="http://oaei.ontologymatching.org/2008/style.css" />
 </head>
 <body bgcolor="white" face="tahoma, arial">
 
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2008/">Ontology
+  Alignment Evaluation Initiative - OAEI-2008
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="http://oaei.ontologymatching.org/oaeismall.jpg" alt="OAEI"
+		   style="float:right; margin-left: 5pt; border-style:none;"/></a>
+</div>
+
 <table width="100%">
 <tr BGCOLOR="yellow" ALIGN="center"><td>
-Please use the latest version of the benchmantk suite (see <a href="logs.html">here</a>).
-The benchmark suite in one file is available <a href="bench.zip">HERE</a>.<br />
+Please use the latest version of the benchmantk suite (see <a href="logs.html">here</a>).<br />
 </td></tr>
 </table>
 
-<a href=".."><img border="0" width="20%" src="../../oaei.jpg" align="right" /></a>
+<h1>Benchmark test library</h1>
 
-<h1>Ontology Alignment Evaluation Initiative<br/>
-Test library</h1>
+<p>The goal of the benchmark test library is to offer a set of tests
+  which are wide in feature coverage, progressive and stable. It serves the
+  purpose of evaluating the strength and weakness of matchers (by
+  being progressive and wide coverage) and measuring the progress of
+  matchers (by being stable and reusable over the years).</p>
+<p>Appart from that, it is made of a set of 111 pairs of ontologies
+  for which the participants have to return an alignment in the
+  alignment format. These results are compared against reference
+  alignments which are available from the beginning.
+</p>
+<h2>Data sets</h2>
 
-<h2>Reference ontology</h2>
+<h3>Reference ontology</h3>
 
 <p>The domain of this first test is Bibliographic references. It is,
   of course, based on a subjective view of what must be a
@@ -101,10 +117,10 @@ Reference
   only match named classes and properties, they mostly use the "=" relation with
   confidence of 1.</p>
 <p>The ontologies are described in OWL-DL and serialized in the
-  RDF/XML format. I'd be happy to translate them into N3 if someone
+  RDF/XML format.<!-- I'd be happy to translate them into N3 if someone
   have some translation program.</p-->
 
-<h2>Tests at a glance</h2>
+<h3>Tests at a glance</h3>
 
 <p>The tests are systematically generated to as to start from some
   reference ontology and discarding a number of information in order
@@ -216,6 +232,13 @@ Reference
 <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
 
+<p>
+These transformations generate the set of tests displayed below with
+their derivation relations. The upper the test, the easier it is
+supposed to be.<br />
+<img src="new_bench_lattice.png" width="100%" />
+</p>
+
 <h1>Alignments</h1>
 
 <p>Below are provided the set of tests with expected alignments in the
@@ -233,7 +256,7 @@ Each ontology is to be aligned with the reference ontology (i.e.,
 
 <hr />
 <a name="101"/>
-<h2>101) Concept test: Id</h2>
+<h3>101) Concept test: Id</h3>
 <p>This test compares the ontology to itself.
 </p>
 <p>Ontology : [<a href="101/onto.rdf">RDF/XML</a>]
@@ -244,7 +267,7 @@ Alignment : [<a href="101/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="102"/>
-<h2>102) Concept test: ?</h2>
+<h3>102) Concept test: ?</h3>
 <p>This test compares the ontology to a totally irrelevant one. We
   ussed the food ontology given in the OWL guide (verbatim).</p>
 <p>Ontology : [<a href="102/onto.rdf">RDF/XML</a>]
@@ -262,7 +285,7 @@ Alignment : [<a href="102/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="103"/>
-<h2>103) Concept test: Language generalisation</h2>
+<h3>103) Concept test: Language generalisation</h3>
 <p>This test compares the ontology with its generalisation in OWL Lite
   (i.e., unavailable constraints are replaced by the more general
   available). The generalization basically removes owl:unionOf and
@@ -276,7 +299,7 @@ Alignment : [<a href="103/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="104"/>
-<h2>104) Concept test: Language restriction</h2>
+<h3>104) Concept test: Language restriction</h3>
 <p>This test compares the ontology with its restriction in OWL Lite
   (where unavailable constraints have been discarded).
 </p>
@@ -288,7 +311,7 @@ Alignment : [<a href="104/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="201"/>
-<h2>201) Systematic: No names</h2>
+<h3>201[-2-4-6-8]) Systematic: No names</h3>
 <p>Each label or identifier is replaced by a random one.</p>
 <p>Ontology : [<a href="201/onto.rdf">RDF/XML</a>]
 [<a href="201/onto.html">HTML</a>]<br />
@@ -298,7 +321,7 @@ Alignment : [<a href="201/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="202"/>
-<h2>202) Systematic: No names, no comment</h2>
+<h3>202[-2-4-6-8]) Systematic: No names, no comment</h3>
 <p>Each label or identifier is replaced by a random one. Comments
   (rdfs:comment and dc:description) have been suppressed as well.</p>
 <p>Ontology : [<a href="202/onto.rdf">RDF/XML</a>]
@@ -309,7 +332,7 @@ Alignment : [<a href="202/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="203"/>
-<h2>203) Systematic: Misspelling</h2>
+<h3>203) Systematic: Misspelling</h3>
 <p>A random, but consistent, typo generator should be applied to
  labels and comments.</p>
 <p>Not available in this test (if you know how to do it, contact me).</p>
@@ -321,7 +344,7 @@ Alignment : [<a href="203/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="204"/>
-<h2>204) Systematic: Naming conventions</h2>
+<h3>204) Systematic: Naming conventions</h3>
 <p>Different naming conventions (Uppercasing, underscore, dash, etc.)
   are used for labels. Comments have been suppressed.</p>
 <p>Ontology : [<a href="204/onto.rdf">RDF/XML</a>]
@@ -332,7 +355,7 @@ Alignment : [<a href="204/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="205"/>
-<h2>205) Systematic: Synonyms</h2>
+<h3>205) Systematic: Synonyms</h3>
 <p>Labels are replaced by synonyms. Comments have been suppressed.</p>
 <p>Ontology : [<a href="205/onto.rdf">RDF/XML</a>]
 [<a href="205/onto.html">HTML</a>]<br />
@@ -342,7 +365,7 @@ Alignment : [<a href="205/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="206"/>
-<h2>206) Systematic: Foreign names</h2>
+<h3>206) Systematic: Foreign names</h3>
 <p>The complete ontology is translated to another language than
   english (French in the current case, but other languages would be fine).
 </p>
@@ -359,7 +382,7 @@ Alignment : [<a href="206/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="207"/>
-<h2>207) Systematic: </h2>
+<h3>207) Systematic: </h3>
 <p>Each label or identifieris translated to another language than
   english (French in the current case, but other languages would be fine).
 <p>Ontology : [<a href="207/onto.rdf">RDF/XML</a>]
@@ -375,7 +398,7 @@ Alignment : [<a href="207/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="208"/>
-<h2>208) Systematic: </h2>
+<h3>208) Systematic: </h3>
 <p></p>
 <p>Ontology : [<a href="208/onto.rdf">RDF/XML</a>]
 [<a href="208/onto.html">HTML</a>]<br />
@@ -385,7 +408,7 @@ Alignment : [<a href="208/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="209"/>
-<h2>209) Systematic: </h2>
+<h3>209) Systematic: </h3>
 <p></p>
 <p>Ontology : [<a href="209/onto.rdf">RDF/XML</a>]
 [<a href="209/onto.html">HTML</a>]<br />
@@ -395,7 +418,7 @@ Alignment : [<a href="209/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="210"/>
-<h2>210) Systematic: </h2>
+<h3>210) Systematic: </h3>
 <p></p>
 <p>Ontology : [<a href="210/onto.rdf">RDF/XML</a>]
 [<a href="210/onto-iso8859.rdf">RDF/XML in ISO-8859-1</a>]
@@ -410,7 +433,7 @@ Alignment : [<a href="210/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="221"/>
-<h2>221) Systematic: No hierarchy</h2>
+<h3>221) Systematic: No hierarchy</h3>
 <p>All subclass assertions to named classes are suppressed.</p>
 <p>Ontology : [<a href="221/tonto.rdf">RD/XML</a>]
 [<a href="221/onto.html">HTML</a>]<br />
@@ -421,7 +444,7 @@ Alignment : [<a href="221/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="222"/>
-<h2>222) Systematic: Flattened hierarchy</h2>
+<h3>222) Systematic: Flattened hierarchy</h3>
 <p>A hierarchy still exists but has been strictly reduced.</p>
 <p>Ontology : [<a href="222/tonto.rdf">RDF/XML</a>]
 [<a href="222/onto.html">HTML</a>]<br />
@@ -432,7 +455,7 @@ Alignment : [<a href="222/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="223"/>
-<h2>223) Systematic: Expanded hierarchy</h2>
+<h3>223) Systematic: Expanded hierarchy</h3>
 <p>Numerous intermediate classes are introduced within the hierarchy.</p>
 <p>Ontology : [<a href="223/tonto.rdf">RDF/XML</a>]
 [<a href="223/onto.html">HTML</a>]<br />
@@ -442,7 +465,7 @@ Alignment : [<a href="223/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="224"/>
-<h2>224) Systematic: No instances</h2>
+<h3>224) Systematic: No instances</h3>
 <p>All individuals have been suppressed from the ontology.</p>
 <p>Ontology : [<a href="224/onto.rdf">RDF/XML</a>]
 [<a href="224/onto.html">HTML</a>]<br />
@@ -452,7 +475,7 @@ Alignment : [<a href="224/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="225"/>
-<h2>225) Systematic: No restrictions</h2>
+<h3>225) Systematic: No restrictions</h3>
 <p>All local restrictions on properties have been suppressed from the ontology.</p>
 <p>Ontology : [<a href="225/onto.rdf">RDF/XML</a>]
 [<a href="225/onto.html">HTML</a>]<br />
@@ -463,11 +486,11 @@ Alignment : [<a href="225/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="226"/>
-<h2>226) Systematic: No datatypes</h2>
+<h3>226) Systematic: No datatypes</h3>
 <p>In this test all datatypes are converted to xsd:string.
 </p>
 <p>Not available in this test</p>
-<p>Ontology : [<a href="226/onto.rdf">RDF/XML</a>]
+<!--p>Ontology : [<a href="226/onto.rdf">RDF/XML</a>]
 [<a href="226/onto.html">HTML</a>]<br />
 Alignment : [<a href="226/refalign.rdf">RDF/XML</a>]
 [<a href="226/refalign.html">HTML</a>]<br />
@@ -475,10 +498,10 @@ Alignment : [<a href="226/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="227"/>
-<h2>227) Systematic: Unit differences</h2>
+<h3>227) Systematic: Unit differences</h3>
 <p>(Measurable) values are expressed in different datatypes.</p>
 <p>Not available in this test</p>
-<p>Ontology : [<a href="227/onto.rdf">RDF/XML</a>]
+<!--p>Ontology : [<a href="227/onto.rdf">RDF/XML</a>]
 [<a href="227/onto.html">HTML</a>]<br />
 Alignment : [<a href="227/refalign.rdf">RDF/XML</a>]
 [<a href="227/refalign.html">HTML</a>]<br />
@@ -486,7 +509,7 @@ Alignment : [<a href="227/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="228"/>
-<h2>228) Systematic: No properties</h2>
+<h3>228) Systematic: No properties</h3>
 <p>Properties and relations between objects have been completely suppressed.
 </p>
 <p>Ontology : [<a href="228/onto.rdf">RDF/XML</a>]
@@ -498,10 +521,10 @@ Alignment : [<a href="228/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="229"/>
-<h2>229) Systematic: Class vs instances</h2>
+<h3>229) Systematic: Class vs instances</h3>
 <p>Some classes have become instances.</p>
 <p>Not available in this test.</p>
-<p>Ontology : [<a href="229/onto.rdf">RDF/XML</a>]
+<!--p>Ontology : [<a href="229/onto.rdf">RDF/XML</a>]
 [<a href="229/onto.html">HTML</a>]<br />
 Alignment : [<a href="229/refalign.rdf">RDF/XML</a>]
 [<a href="229/refalign.html">HTML</a>]<br />
@@ -509,7 +532,7 @@ Alignment : [<a href="229/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="230"/>
-<h2>230) Systematic: Flattening entities</h2>
+<h3>230) Systematic: Flattening entities</h3>
 <p>Some components of classes are expanded in the class structure
   (e.g., year, month, day attributes instead of date).</p>
 <p>Ontology : [<a href="230/onto.rdf">RDF/XML</a>]
@@ -522,7 +545,7 @@ Alignment : [<a href="230/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="231"/>
-<h2>231) Systematic: Multiplying entities</h2>
+<h3>231) Systematic: Multiplying entities</h3>
 <p>Some classes are spreaded over several classes.</p>
 <p>Not available in this test.</p>
 <!--p>Ontology : [<a href="231/onto.rdf">RDF/XML</a>]
@@ -533,7 +556,7 @@ Alignment : [<a href="231/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="232"/>
-<h2>232) Systematic: </h2>
+<h3>232) Systematic: no hierarchy + no instance</h3>
 <p></p>
 <p>Ontology : [<a href="232/onto.rdf">RDF/XML</a>]
 [<a href="232/onto.html">HTML</a>]<br />
@@ -543,7 +566,7 @@ Alignment : [<a href="232/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="233"/>
-<h2>233) Systematic: </h2>
+<h3>233) Systematic: no hierarchy + no property</h3>
 <p></p>
 <p>Ontology : [<a href="233/onto.rdf">RDF/XML</a>]
 [<a href="233/onto.html">HTML</a>]<br />
@@ -553,7 +576,7 @@ Alignment : [<a href="233/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="236"/>
-<h2>236) Systematic: </h2>
+<h3>236) Systematic: no instance + no property</h3>
 <p></p>
 <p>Ontology : [<a href="236/onto.rdf">RDF/XML</a>]
 [<a href="236/onto.html">HTML</a>]<br />
@@ -563,7 +586,7 @@ Alignment : [<a href="236/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="237"/>
-<h2>237) Systematic: </h2>
+<h3>237) Systematic: flattened hierarchy + no instance</h3>
 <p></p>
 <p>Ontology : [<a href="237/onto.rdf">RDF/XML</a>]
 [<a href="237/onto.html">HTML</a>]<br />
@@ -573,7 +596,7 @@ Alignment : [<a href="237/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="238"/>
-<h2>238) Systematic: </h2>
+<h3>238) Systematic: expanded hierarchy + no instance</h3>
 <p></p>
 <p>Ontology : [<a href="238/onto.rdf">RDF/XML</a>]
 [<a href="238/onto.html">HTML</a>]<br />
@@ -583,7 +606,7 @@ Alignment : [<a href="238/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="239"/>
-<h2>239) Systematic: </h2>
+<h3>239) Systematic: flattened hierarchy + no property</h3>
 <p></p>
 <p>Ontology : [<a href="239/onto.rdf">RDF/XML</a>]
 [<a href="239/onto.html">HTML</a>]<br />
@@ -593,7 +616,7 @@ Alignment : [<a href="239/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="240"/>
-<h2>240) Systematic: </h2>
+<h3>240) Systematic: expanded hierarchy + no property</h3>
 <p></p>
 <p>Ontology : [<a href="240/onto.rdf">RDF/XML</a>]
 [<a href="240/onto.html">HTML</a>]<br />
@@ -603,7 +626,7 @@ Alignment : [<a href="240/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="241"/>
-<h2>241) Systematic: </h2>
+<h3>241) Systematic: no hierarchy + no instance + no property</h3>
 <p></p>
 <p>Ontology : [<a href="241/onto.rdf">RDF/XML</a>]
 [<a href="241/onto.html">HTML</a>]<br />
@@ -613,7 +636,7 @@ Alignment : [<a href="241/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="246"/>
-<h2>246) Systematic: </h2>
+<h3>246) Systematic: flattened hierarchy + no instance + no property</h3>
 <p></p>
 <p>Ontology : [<a href="246/onto.rdf">RDF/XML</a>]
 [<a href="246/onto.html">HTML</a>]<br />
@@ -623,7 +646,7 @@ Alignment : [<a href="246/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="247"/>
-<h2>247) Systematic: </h2>
+<h3>247) Systematic: expanded hierarchy + no instance + no property</h3>
 <p></p>
 <p>Ontology : [<a href="247/onto.rdf">RDF/XML</a>]
 [<a href="247/onto.html">HTML</a>]<br />
@@ -633,7 +656,8 @@ Alignment : [<a href="247/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="248"/>
-<h2>248) Systematic: </h2>
+<h3>248[-2-4-6-8]) Systematic: scrambled labels + no comments + no
+  hierarchy</h3>
 <p></p>
 <p>Ontology : [<a href="248/onto.rdf">RDF/XML</a>]
 [<a href="248/onto.html">HTML</a>]<br />
@@ -643,7 +667,8 @@ Alignment : [<a href="248/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="249"/>
-<h2>249) Systematic: </h2>
+<h3>249[-2-4-6-8]) Systematic: scrambled labels + no comments + no
+  instance</h3>
 <p></p>
 <p>Ontology : [<a href="249/onto.rdf">RDF/XML</a>]
 [<a href="249/onto.html">HTML</a>]<br />
@@ -653,7 +678,8 @@ Alignment : [<a href="249/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="250"/>
-<h2>250) Systematic: </h2>
+<h3>250[-2-4-6-8]) Systematic: scrambled labels + no comments + no
+  property</h3>
 <p></p>
 <p>Ontology : [<a href="250/onto.rdf">RDF/XML</a>]
 [<a href="250/onto.html">HTML</a>]<br />
@@ -663,7 +689,8 @@ Alignment : [<a href="250/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="251"/>
-<h2>251) Systematic: </h2>
+<h3>251[-2-4-6-8]) Systematic: scrambled labels + no comments +
+  flattened hierarchy</h3>
 <p></p>
 <p>Ontology : [<a href="251/onto.rdf">RDF/XML</a>]
 [<a href="251/onto.html">HTML</a>]<br />
@@ -673,7 +700,8 @@ Alignment : [<a href="251/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="252"/>
-<h2>252) Systematic: </h2>
+<h3>252[-2-4-6-8]) Systematic: scrambled labels + no comments +
+  expanded hierarchy</h3>
 <p></p>
 <p>Ontology : [<a href="252/onto.rdf">RDF/XML</a>]
 [<a href="252/onto.html">HTML</a>]<br />
@@ -683,7 +711,8 @@ Alignment : [<a href="252/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="253"/>
-<h2>253) Systematic: </h2>
+<h3>253[-2-4-6-8]) Systematic: scrambled labels + no comments + no
+  hierarchy + no instance</h3>
 <p></p>
 <p>Ontology : [<a href="253/onto.rdf">RDF/XML</a>]
 [<a href="253/onto.html">HTML</a>]<br />
@@ -693,7 +722,8 @@ Alignment : [<a href="253/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="254"/>
-<h2>254) Systematic: </h2>
+<h3>254[-2-4-6-8]) Systematic: scrambled labels + no comments + no
+  hierarchy + no property</h3>
 <p></p>
 <p>Ontology : [<a href="254/onto.rdf">RDF/XML</a>]
 [<a href="254/onto.html">HTML</a>]<br />
@@ -703,7 +733,8 @@ Alignment : [<a href="254/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="257"/>
-<h2>257) Systematic: </h2>
+<h3>257[-2-4-6-8]) Systematic: scrambled labels + no comments + no
+  instance + no property</h3>
 <p></p>
 <p>Ontology : [<a href="257/onto.rdf">RDF/XML</a>]
 [<a href="257/onto.html">HTML</a>]<br />
@@ -713,7 +744,8 @@ Alignment : [<a href="257/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="258"/>
-<h2>258) Systematic: </h2>
+<h3>258[-2-4-6-8]) Systematic: scrambled labels + no comments +
+  flattened hierarchy + no instance</h3>
 <p></p>
 <p>Ontology : [<a href="258/onto.rdf">RDF/XML</a>]
 [<a href="258/onto.html">HTML</a>]<br />
@@ -723,7 +755,8 @@ Alignment : [<a href="258/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="259"/>
-<h2>259) Systematic: </h2>
+<h3>259[-2-4-6-8]) Systematic: scrambled labels + no comments +
+  expanded hierarchy + no instance</h3>
 <p></p>
 <p>Ontology : [<a href="259/onto.rdf">RDF/XML</a>]
 [<a href="259/onto.html">HTML</a>]<br />
@@ -733,7 +766,7 @@ Alignment : [<a href="259/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="260"/>
-<h2>260) Systematic: </h2>
+<h3>260[-2-4-6-8]) Systematic: scrambled labels + no comments + flattened hierarchy + no property</h3>
 <p></p>
 <p>Ontology : [<a href="260/onto.rdf">RDF/XML</a>]
 [<a href="260/onto.html">HTML</a>]<br />
@@ -743,7 +776,8 @@ Alignment : [<a href="260/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="261"/>
-<h2>261) Systematic: </h2>
+<h3>261[-2-4-6-8]) Systematic: scrambled labels + no comments +
+  expanded hierarchy + no property</h3>
 <p></p>
 <p>Ontology : [<a href="261/onto.rdf">RDF/XML</a>]
 [<a href="261/onto.html">HTML</a>]<br />
@@ -753,7 +787,8 @@ Alignment : [<a href="261/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="262"/>
-<h2>262) Systematic: </h2>
+<h3>262[-2-4-6-8]) Systematic: scrambled labels + no comments + no
+  hierarchy + no instance + no property</h3>
 <p></p>
 <p>Ontology : [<a href="262/onto.rdf">RDF/XML</a>]
 [<a href="262/onto.html">HTML</a>]<br />
@@ -763,7 +798,8 @@ Alignment : [<a href="262/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="265"/>
-<h2>265) Systematic: </h2>
+<h3>265) Systematic: scrambled labels + no comments + flattened
+  hierarchy + no instance + no property</h3>
 <p></p>
 <p>Ontology : [<a href="265/onto.rdf">RDF/XML</a>]
 [<a href="265/onto.html">HTML</a>]<br />
@@ -773,7 +809,8 @@ Alignment : [<a href="265/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="266"/>
-<h2>266) Systematic: </h2>
+<h3>266) Systematic: scrambled labels + no comments + expanded
+  hierarchy + no instance + no property</h3>
 <p></p>
 <p>Ontology : [<a href="266/onto.rdf">RDF/XML</a>]
 [<a href="266/onto.html">HTML</a>]<br />
@@ -781,9 +818,15 @@ Alignment : [<a href="266/refalign.rdf">RDF/XML</a>]
 [<a href="266/refalign.html">HTML</a>]<br />
 </p>
 
+<p style="color: red;">
+Note that the 3xx tests are only here for comparability with previous
+years.
+We know that the reference alignments for these tests are not perfect
+(especially because the ontologies sometimes contain flaws).
+</p>
 <hr />
 <a name="301"/>
-<h2>301) Real ontology: BibTeX/MIT</h2>
+<h3>301) Real ontology: BibTeX/MIT</h3>
 <p>For a computer scientist, BibTeX is the starting point for a
   useful bibliographic ontology. It is of wide use and relatively
   well thought out.
@@ -819,7 +862,7 @@ Alignment : [<a href="301/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="302"/>
-<h2>302) Real ontology: BibTeX/UMBC</h2>
+<h3>302) Real ontology: BibTeX/UMBC</h3>
 <p>This ontology is very similar to the previous one, even closer to
   the genuine BibTeX, with different
   extensions and naming conventions. It can be found at <a
@@ -835,7 +878,7 @@ Alignment : [<a href="302/refalign.rdf">RDF/XML</a>]
 
 <hr />
 <a name="303"/>
-<h2>303) Real ontology: Karlsruhe</h2>
+<h3>303) Real ontology: Karlsruhe</h3>
 <p>This is a test of comparing our test ontology with an actual
   ontology which contains more items than the actual items used in the
   current ontology.
@@ -879,7 +922,7 @@ Publication
 
 <hr />
 <a name="304"/>
-<h2>304) Real ontology: INRIA</h2>
+<h3>304) Real ontology: INRIA</h3>
 <p>This is a test of comparing our test ontology with an actual
   ontology which is not equivalent but quite close (it can be though
   of as a previous version).
@@ -950,12 +993,34 @@ Entry
 </p-->
 <hr />
 
-<h1>Versions</h1>
+<h3>Versions</h3>
 
-<p>The release notes of the previous test versions used in the OAEI-2007
+<p>The release notes of the previous test versions used in the OAEI-2008
 can be found <a href="logs.html">here</a>.</p>
 
-<h1>Tools</h1>
+<h2>Modalities</h2>
+
+<p>The test set is made of a set of directories (one per test)
+  containing an ontology (onto.rdf) in OWL. Participants must match
+  each of these ontologies with the ontology found in 101/onto.rdf and
+  output the resulting alignment, in the alignment format, in a file
+  participant.rdf in the same directory (participant is replaced by
+  the name of the system: no more than 8 alphanumeric characters,
+  lowercase).
+</p>
+<p>The test set also contains the reference alignments against which
+  the results will be evaluated. It is, of course, forbiden to use any
+  for there results for performing the matching task.
+</p>
+<p>The resulting alignments in the same directory structure can be
+  zipped (please, zipped) and sent to the organisers.
+</p>
+
+<h2>Schedule</h2>
+
+<p>The schedule is that of <a href="../index.html#schedule">http://oaei.ontologymatching.org/2008/</a>.</p>
+
+<h2>Tools</h2>
 
 <p>A <a href="bench.zip">zip file</a> contains all the material
   about the contest. That is:
@@ -977,12 +1042,7 @@ N3 (and maybe RDFS).</p>
 generating your alignments (in particular for computing evaluation of
 your results).</p>
 
-<!--h1>Results</h1>
-
-<p>The fully detailled results, as provided from the competitors
-  files and according to the contests rules can be found <a href="results">here</a>.</p-->
-
-<h1>Acknowledgements</h1>
+<h2>Acknowledgements</h2>
 
 <p>Many resources have been used for setting up this test (I must put links):
 <ul compact="1">
@@ -1011,15 +1071,17 @@ your results).</p>
 <li>S&#322;awomir Niedba&#322;a, Guillermo Nudelman Hess, Alfio
   Ferrara, Sabine Massmann and Wei Hu suggested even more precise
   corrections in 2006.</li>
-
+<li>Christian Meilicke offered some criticism on the 3xx test series.</li>
+<li>J&eacute;r&ocirc;me David drew the lattice of tests.</li>
 </ul>
 </p>
 
-<h1>Contacts</h1>
+<h2>Contacts</h2>
 <p>Contact address is Jerome : Euzenat # inrialpes : fr</p>
-<hr />
-<center><small>http://oaei.ontologymatching.org/2007/benchmarks</small></center>
-<hr />
-$Id: index.html,v 1.23 2007/05/15 21:14:37 euzenat Exp euzenat $
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2008/benchmarks/</div>
+$Id: index.html,v 1.24 2007/05/15 21:30:37 euzenat Exp euzenat $
+</div>
 </body>
 </html>
