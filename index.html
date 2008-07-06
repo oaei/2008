@@ -104,11 +104,11 @@ process of its reaching will be recorded.
 <tr><td>benchmarks</td><td>OWL</td><td>=</td><td>[0 1]</td><td>open</td><td>EN</td><td>(36+61)*2*49</td></tr>
 <tr><td>anatomy</td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td>3k*3k</td></tr>
 <tr><td>fao</td><td>OWL</td><td>=</td><td>1</td><td>expert</td><td>EN+FR+ES</td><td></td></tr>
-<tr><td></td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td></td></tr>
+<!--tr><td></td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td></td></tr-->
 <tr><td>directory</td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td></td></tr>
 <tr><td>mdirectory</td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN+JP</td><td></td></tr>
 
-<tr><td><br/>vlcr<br/></td><td>SKOS<br/>+OWL</td><td>exactMatch,<br
+<tr><td>library<br/>vlcr<br/></td><td>SKOS<br/>+OWL</td><td>exactMatch,<br
 								 />narrowMatch,<br
 										  />broadMatch</td><td>1</td><td>blind</td><td>EN+DU</td></tr>
 
@@ -117,7 +117,7 @@ process of its reaching will be recorded.
 </center>
 </p>
 
-<!--h2>Evaluation process</h2>
+<h2>Evaluation process</h2>
 
 <p>Each data set has a different evaluation process. They can be
   roughly divided into four groups:
@@ -125,9 +125,11 @@ process of its reaching will be recorded.
 <dt>benchmark: open</dt><dd>benchmark tests are provided with the
     expected results. Participants must return their obtained results
     to organisers;</dd>
-<dt>anatomy, directory, food, library: blind</dt><dd>these are blind tests,
-    i.e., participants do not know the results and 
-    must return their results to organisers;</dd>
+<dt>anatomy, directory, mldirectory, library, vlcr: blind</dt><dd>these are
+    blind tests, i.e., participants do not know the results and must
+    return their results to organisers;</dd> 
+<dt>fao: expert</dt><dd>the results themselves are evaluated by
+    experts a posteriori on a sample of the results;</dd>
 <dt>conference: consensus</dt><dd>requires that participants
     send their results to organisers, the results are not
     pre-determined through reference alignments but computed and/or
@@ -135,25 +137,25 @@ process of its reaching will be recorded.
 <dt></dt><dd></dd>
 </dl>
 <p>However, the evaluation will be processed in the same three
-  successive steps as before.</p-->
+  successive steps as before.</p>
 
-<!--h3>Preparatory Phase </h3>
+<h3>Preparatory Phase </h3>
 
 <p>Ontologies are described in OWL-DL and serialized 
   in the RDF/XML format. The expected alignments are provided in the
   <a href="align.html">Alignment format</a> expressed in RDF/XML.
 <p>The ontologies and alignments of the evaluation are provided in
-  advance during the period between May 15th and June 15th. This gives
+  advance during the period between May 19th and June 15th. This gives
   potential participants the occasion to send observations, bug
   corrections, remarks and other test cases to the organizers. The
   goal of this primary period is to be sure that the delivered 
   tests make sense to the participants. The feedback is important, so
   all participants should not hesitate to provide it. The tests will
   certainly change after this period, but only for ensuring a better
-  participation to the tests. The final test base will be released on
-  July 2nd.</p-->
+  participation to the tests. The final test base has been released on
+  July 1st.</p>
 
-<!--h3>Execution Phase </h3>
+<h3>Execution Phase </h3>
 
 <p>During the execution phase the <b>participants</b> will use their
   algorithms to automatically match the ontologies of both part. The  
@@ -168,9 +170,9 @@ process of its reaching will be recorded.
   particular, the participants should not use the data (ontologies
   and results) from other test sets to help their algorithm. And
   cheating is not fair...</p>
-<p>The deadline for delivering finial results is October 1st,
+<p>The deadline for delivering finial results is September 26th,
   sharp. However, it is <i>highly advised</i> that participants send
-  results before (preferably by September 3rd) to the organisers so
+  results before (preferably by September 1st) to the organisers so
   that they can check that they will be able to evaluate the results
   smoothly and can provide some feedback to participants.</>
 <p>The <b>participants</b> will provide their alignment for each test
@@ -180,7 +182,7 @@ process of its reaching will be recorded.
   containing one result file in the
   RDF/XML <a href="align.html">Alignment 
   format</a> with always the same name
-  (e.g., participant.rdf replacing participant by the name you want
+  (e.g., participant.rdf replacing "participant" by the name you want
   your system to appear in the results, limited to 6 alphanumeric characters). This should yield the following structure:
 <pre>
 participant.zip
@@ -203,20 +205,21 @@ participant.zip
 + ...
 </pre>
 </p>
-<p>They will also provide for October 1st a paper to be published in the
-  proceedings and a link to their program and parameter set.</a>
+<p>Participants will also provide for September 26th a paper to be
+  published in the proceedings and a link to their program and
+  parameter set.</a>
 <p>The only interesting alignments are those involving classes and
   properties of the given ontologies. So the alignments should not
-  align individuals, nor entities from the external ontologies.</p-->
+  align individuals, nor entities from the external ontologies.</p>
 
-<!--h3>Evaluation Phase</h3>
+<h3>Evaluation Phase</h3>
 
 <p>The <b>organizers</b> will evaluate the results of the algorithms
   used by the participants and provide comparisons on the basis of the
   provided alignments.</p>
 <p>In order to ensure that it will be possible to process
   automatically the provided results, the <b>participants</b>
-  are requested to provide (preliminary) results by September 4th. In
+  are requested to provide (preliminary) results by September 1st. In
   the case of blind tests only the organizers will do the evaluation
   with regard to the withheld alignments. In the case of double blind
   tests, the <b>participants</b> will provide a version of their
@@ -239,7 +242,7 @@ participant.zip
   introduce new measures addressing some limitations of precision and
   recall. These will be presented at the workshop discussion
   in order for the participants to provide feedback on the
-  opportunity to use them in a further evaluation.</p-->
+  opportunity to use them in a further evaluation.</p>
 
 <h2><a name="schedule">Schedule</a></h2>
 
@@ -268,19 +271,14 @@ participant.zip
   with a length justified by its technical content,
   to be published online in the CEUR-WS collection and on the OAEI web
   site (this last paper will be due just before the workshop).</p>
-<p>The outline of the paper is as below:
+<p>The outline of the paper is as below (see templates for more details):
 <ul 1>
   <li> 1) Presentation of the system<br />
     <ul 1>
-      <li>1.1) State, purpose, general statement<br/>
-      It is interesting to see here what was the purpose of the
-      algorithm used in terms of the following categories: ontology
-      matching, schema matching, version matching, directory
-      matching. The purpose of this information is to study the
-      correlation between these purposes and the success in some
-      particular tests.</li>
+      <li>1.1) State, purpose, general statement</li>
       <li>1.2) Specific techniques used</li>
-      <li>1.3) Adaptations made for the evaluation</li>
+      <li>1.3) Adaptations made for the evaluation<br />
+      </li>
       <li>1.4) Link to the system and parameters file</li>
       <li>1.5) Link to the set of provided alignments (in align format)</li>
     </ul>
@@ -350,7 +348,7 @@ participant.zip
 
 <div class="address">
 <div class="footer">http://oaei.ontologymatching.org/2008/</div>
-$Id: index.html,v 1.6 2008/05/30 19:29:02 euzenat Exp euzenat $
+$Id: index.html,v 1.7 2008/07/06 06:15:08 euzenat Exp euzenat $
 </div>
 </body>
 </html>
