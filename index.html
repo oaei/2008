@@ -93,7 +93,7 @@ subset of the whole collection.
 <table>
 <tr><td>test</td><td>language</td><td>relations</td><td>confidence</td><td>Modalities</td><td>Language</td><td>Size</td></tr>
 <tr><td>benchmarks</td><td>OWL</td><td>=</td><td>[0 1]</td><td>open</td><td>EN</td><td>(36+61)*2*49</td></tr>
-<tr><td>anatomy</td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td>3k*3k</td></tr>
+<tr><td>anatomy</td><td>OWL</td><td>=</td><td>[0 1]</td><td>blind</td><td>EN</td><td>3k*3k</td></tr>
 <tr><td>fao</td><td>OWL</td><td>=</td><td>1</td><td>expert</td><td>EN+FR+ES</td><td></td></tr>
 <!--tr><td></td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td></td></tr-->
 <tr><td>directory</td><td>OWL</td><td>=</td><td>1</td><td>blind</td><td>EN</td><td></td></tr>
@@ -103,10 +103,10 @@ subset of the whole collection.
 								 />narrowMatch,<br
 										  />broadMatch</td><td>1</td><td>blind</td><td>EN+DU</td></tr>
 
-<tr><td>conference</td><td>OWL-DL</td><td>=, <=</td><td>1</td><td>blind+consensual</td><td>EN</td></tr>
+<tr><td>conference</td><td>OWL-DL</td><td>=, <=</td><td>[0 1]</td><td>blind+consensual</td><td>EN</td></tr>
 </table>
 </center>
-</p>
+[0 1] in the 'confidence-column' means that submission with confidence values in the range [0 1] are preferred, but does not exclude systems which do not distinguish between different confidence values.</p>
 
 <h2>Evaluation process</h2>
 
@@ -340,7 +340,7 @@ participant.zip
 
 <div class="address">
 <div class="footer">http://oaei.ontologymatching.org/2008/</div>
-$Id: index.html,v 1.8 2008/07/06 06:37:16 euzenat Exp euzenat $
+$Id: index.html,v 1.9 2008/07/10 16:24:24 euzenat Exp euzenat $
 </div>
 </body>
 </html>
