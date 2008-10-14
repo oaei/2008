@@ -14,7 +14,27 @@
 <h1>Ontology Alignment Evaluation Initiative</h1>
 <h1>Benchmark preliminary results</h1>
 
+<p>Like last year, 13 systems participated in the benchmark track of this year's campaign.
+</p>
+<p>The evaluation has been performed on the files provided by the
+  participants <!--(available <a href="../zip/">here</a>)--> which have
+  been processed by the
+  following <a href="runtests.sh">script</a>).
+<!--The full set of normalised alignments is also <a href="RESULTS.zip">available</a>-->.
+</p>
+
+
 <h2>Summarised results</h2>
+
+<p>Table&nbsp;1 provides the consolidated results by groups of tests.
+We display the results of participants as well as those given by some simple edit distance algorithm on labels (edna).
+The computed values are real precision and recall and not an average of precision and recall.</p>
+
+<p>
+These results show already that the three systems which last year were ahead of the pack, are still at the top with  are relatively ahead (ASMOV, Lily and RiMOM) with three close followers (AROMA, DSSim, and Anchor-Flood replacing Falcon, Prior+ and OLA2 last year). No system had strictly lower performance than edna.
+Each algorithm has its best score with the 1xx test series.
+There is no particular order between the two other series.
+</p>
 
 <table border='2' frame='sides' rules='groups'>
 <colgroup align='center' />
@@ -206,10 +226,24 @@
 <td>0.22</td>
 </tr>
 </tbody></table>
-
+Table 1: Means of results obtained by participants on the benchmark
+test case (corresponding to harmonic means).
+The full results are
+available at the bottom of this page<!--a href="HTML/results.html">here</a-->.</p>
 
 <h2>Comparison to 2007 tests</h2>
 
+<p>
+After remarks of last year we made two changes on the tests this year:
+<ul compact="1">
+<li>tests #249 and 253 still had instances in the ontologies, these have been suppressed this year. Hence the test is more difficult than previous years;</li>
+<li>test which scrambled all labels within the ontology (#201-202, 248-254 and 257-262), have been complemented by tests which respectively only scramble 20%, 40%, 60% and 80% of the labels. Globally, this make the tests easier to solve.</li>
+</ul>
+Table&nbsp;2 provides the results of the systems on the tests of last
+year. The results are not significantly different.
+</p>
+
+<p>
 <table border='2' frame='sides' rules='groups'>
 <colgroup align='center' />
 <colgroup align='center' span='2' />
@@ -400,11 +434,16 @@
 <td>0.22</td>
 </tr>
 </tbody></table>
-
-
+Table 2: Resuts on the 2007 tests only.</p>
 
 <h2>Comparison to 2004 tests</h2>
 
+<p>
+Table&nbsp;3 provides results on the very easy tests of 2004. As
+expected, systems perform very well.
+</p>
+
+<p>
 <table border='2' frame='sides' rules='groups'>
 <colgroup align='center' />
 <colgroup align='center' span='2' />
@@ -595,23 +634,70 @@
 <td>0.25</td>
 </tr>
 </tbody></table>
+Table 3: Resuts on the 2004 tests only.</p>
 
+<!--h2>Relaxed precision and recall</h2>
+
+<p>
+The results have also been compared with the three measures proposed in [Ehrig&nbsp;2005] (symmetric, effort-based and oriented). These are generalisation
+of precision and recall in order to better discriminate systems that slightly miss the target from those which are grossly wrong.
+The three measures provide the same results, so they have been displayed only once in Table&nbsp;1 under the label "Ext". This is not really surprising given the proximity of these
+measures. As expected, they only improve over traditional precision and recall.
+Again, the new measures do not dramatically change the evaluation of the participating systems (all score are improved and the six leading systems are closer to each others). This indicates that the not immediately best systems (Falcon, OLA2) could certainly easily be corrected to reach the level of the best ones (RiMOM in particular).
+Since last year, the implementation of the precision and recall evaluator has changed.
+As a consequence, a number of results which would have been rejected last year,
+and then corrected by the participants, were accepted this year.
+As a consequence, now, the extended precision and recall reject them: this concerns the systems marked with "Error".
+</p-->
 
 <h2>Precision/recall graphs</h2>
 
+<p>
+This year again the apparently best algorithms provided their results with confidence measures. It is thus possible to draw precision/recall graphs in order to compare them.
+</p>
+<p>
+We provide in Figure&nbsp;1 the precision and recall graphs of this year.
+They are only relevant for the results of participants who provided
+confidence measures different from 1 or 0 (see the table in
+the <a href="index.html">Summary page</a>).
+This graph has been drawn with only technical adaptation of the technique used in TREC.
+Moreover, due to lack of time, these graphs have been computed by averaging the graphs of
+each of the tests (instead to pure precision and recall).
+They do not feature the curves of previous years since the test sets have been changed.
+</p>
+<p>
+These results and those displayed in Figure&nbsp;2 single out a group of systems,
+ASMOV, Lily, and RiMOM which seem to perform these tests at the highest level of quality.
+So this confirm the lead that we see on raw results.
+</p>
+<p>
+Like the two previous years, there is a gap between these systems and their followers.
+The gap between these systems and the next ones (AROMA, DSSim, and Anchor-Flood) has reformed.
+It was filled last year by Falcon and OLA and Prior which did not participate this year.
+</p>
+
+<p align="center">
 <div style="text-align: center;">
 <img src="prgraph.png"/>
 </div>
-
-<p>This year the graphs seems to be particularly low, I am surprised
-  of this. I will redraw the graphs of last year in order to see if
-  they remain the same.</p>
+Figure 1: Precision/recall graphs.
+They cut the results given by the participants under a threshold necessary for achieving <i>n</i>% recall and
+compute the corresponding precision. Systems for which these graphs are not meaningful
+(because they did not provide graded confidence values) are drawn in dashed lines.
+Since the tests have changed this year we do not compare with the
+results of previous years.
+</p>
 
 <h2>Triangle</h2>
 
+<p>The triangular display shows the same results as the other representations.</p>
+
+<p align="center">
 <div style="text-align: center;">
 <img src="triangle.png"/>
 </div>
+Figure 2: Each point expresses the position of a system with regard to precision and recall.
+</p>
 
 <h2>Full results</h2>
 
@@ -4308,15 +4394,18 @@
 <td>0.22</td>
 </tr>
 </tbody></table>
+Table 4: Full results.</p>
 <p><small>n/a: result alignment not provided or not readable<br />
 NaN: division per zero, likely due to empty alignent.</small></p>
 </body></html>
 
+<!--h2>References</h2>
 
+<p>[Ehrig&nbsp;2005] Marc Ehrig and Jérôme Euzenat. Relaxed precision and recall for ontology matching. In Ben Ashpole, Jérôme Euzenat, Marc Ehrig, and Heiner Stuckenschmidt, editors, Proc. K-Cap 2005 workshop on Integrating ontology, Banff (CA), pages 25-32, 2005.</p-->
 
 <div class="address">
-<div class="footer">http://oaei.ontologymatching.org/2008/prelim/</div>
-$Id: benchmarks.html,v 1.1 2008/09/18 20:13:17 euzenat Exp euzenat $
+<div class="footer">http://oaei.ontologymatching.org/2008/results/benchmarks.html</div>
+$Id: benchmarks.html,v 1.2 2008/10/13 19:18:42 euzenat Exp euzenat $
 </div>
 </body>
 </html>
