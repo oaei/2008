@@ -17,57 +17,69 @@
 
 <h2>Data sets</h2>
  
-<p>The three data sets involved in the FAO track are AGROVOC, ASFA and two
-fisheries ontologies. 
-They differ greatly in their model. While in AGROVOC every term is modeled as
-a class with only one instance (with the same
-name by prefixed with "i_"), in the current version of the OWL ASFA both
-descriptors and non-descriptors
-are modeled as classes, so the ontology does not contain any instance.
-Concepts have annotations associated 
-containing the English definition of the term. The tree sctructure of ASFA is
-relatively flat, with
-most concept not having subclasses, and maximum depth 4 levels (double
-check).
-</p>
 <p>
-Finally, the fisheries ontologies have a fairly simple class structure (e.g.
-the species ontologies has one top 
-class and four subclasses) and a large number of instances. They contain
-instances in up to 3 languages 
-(English, French and Spanish). 
+The FAO task involved three data sets, all in OWL:
+<ul compact="1">
+<li>AGROVOC is a thesaurus about all matters of interest for FAO, it
+  has been translated in OWL in a very flat ontology containing
+  one class per term plus one instance per class (with the same
+name by prefixed with "i_")</li>
+<li>ASFA is a thesaurus more specifically dedicated to fisheries. In its
+  OWL translation, descriptors and non-descriptors are modeled as
+  classes, so the ontology does not contain any instance. The tree
+  sctructure of ASFA is relatively flat, with most concept not having
+  subclasses, and maximum depth 4 levels (double check).
+</li>
+<li>The fisheries ontologies are two small OWL ontologies, modelling
+  metadata for statistical series analysis (coming from the Reference
+  Table Management System or RTMS), about specific fishery resources:
+  commodities and species. They have a fairly simple class structure (e.g.
+the species ontologies has one top class and four subclasses) and a
+  large number of instances. They contain instances in up to 3
+  languages (English, French and Spanish).
+</li>
+</ul>
+Concepts have annotations associated containing the English definition
+of the term.
 </p>
 
 <h2>Subtracks</h2>
  
 <p>
 The mapping expected between AGROVOC and ASFA is therefore to be
-expected at the
-class level, since both model entries of the thesaurus as classes, but
-AGROVOC also adds instances to these classes. For the same reason,
-the mapping between AGROVOC and the fisheries
+expected at the class level, since both model entries of the thesaurus
+as classes, but AGROVOC also adds instances to these classes. For the
+same reason, the mapping between AGROVOC and the fisheries
 ontologies is expected to be at the instance level, so is the mapping
 between the fisheries ontologies. 
+</p>
+<p>
 However, no strict instructions were given to participants about the
 exact type of mapping expected, as one of the goal of the experiments
 was to find how automatic systems can deal with a real-life situation,
 when the ontologies given are designed according to different models
 and have little or no documentation.
+</p>
+<p>
 The alignment between AGROVOC and ASFA is called agrafsa, the
-alignment between AGROVOC and rtms data is called agrorgbio, while the
-alignment between rtms data and rtms data is called fishbio. 
+alignment between AGROVOC and RTMS data is called agrorgbio, while the
+alignment between RTMS data and RTMS data is called fishbio. 
+</p>
+<p>
 The equivalence mappings requested to be found for the subtrack
  agrafsa and agrorgbio subtrack are plausible, given the similar nature of
 the two resources
 (thesauri used for human indexing, with overlap in the domain
 covered). In the case of the fishbio subtrack this is not true, as the
- two ontologies involved are about two domains that are disjoing, although
- related (i.e. commodities and fish species). The relation between the
+ two ontologies involved are about two domains that are disjoint, although
+ related, i.e., commodities and fish species. The relation between the
  two domains is given from the fact that a specific species (or more
  than one) are the primary source of the goods sold, i.e. the commodity. 
 Their relation then is not an equivalence relation but can rather be
  seen as an object property with domain and range sitting in different
 ontologies.
+</p>
+<p>
 The intent of this
  subtrack is then to explore the possibility of using the machinery
  available for inferring equivalence mapping to non conventional cases. 
@@ -76,39 +88,17 @@ The intent of this
 <h2>Evaluation procedure</h2>
  
 <p>
-Most participants returned equivalence mapping only, the
-non-equivalence presented by one system (aroma) were ignored and
-removed. Only equivalence mappings were considered, those non-equivalent were
-removed.
+All participants but one, Aroma, returned equivalence mapping only. The
+non-equivalence correspondences of Aroma were ignored.
 </p>
 <p> 
 A reference alignment was obtained by randomly selecting a fixed
-number of alignments from each system and then pooling together.
-After the manual evaluation was down we realized the since some
-participants did not use the correct URI, in the agrafsa dataset some
-mappings were considered as different even though they were actually
-the same. However, this happened only in very few cases. 
-</p>
-
-<p>Samples:
-<center>
-<table>
-<tr bgcolor="lightgreen"><td>dataset</td><td>tot retrieved</td><td>evaluated</td><td>correct</td></tr>
-<tr><td>agrafsa</td><td>2588</td><td>506</td><td>226</td></tr>
-<tr bgcolor="lightblue"><td>agrorgbio</td><td>742</td><td>264</td><td>156</td></tr>
-<tr><td>fishbio</td><td>1013</td><td>346</td><td>131</td></tr>
-<tr bgcolor="yellow"><td>TOTAL</td><td>4343</td><td>1116</td><td>513</td></tr>
-</table>
-</center>
-</p>
-
+number of correspondences from each system and then pooling together.
+This provided a sample alignment <i>A<sup>0</sup></i>.</p>
 <p>
-Table&nbsp;1 summarizes the sample size per each data sets.
-The second column (tot retrieved) contains the total number of
-alingments provided by all participants per each track. The third
-column (evaluated) reports the size of the sample extracted for manual
-assessment. The forth column (correct) reports the number of
-alignments found correct by the assessors. 
+This sample alignment was evaluated by FAO experts for
+correctness. This provided a partial reference
+alignment <i>R<sup>0</sup></i>.
 We had two assessors: one specialized in thesauri and daily working with
 AGROVOC (assessing the alignments of the track ``agrafsa'') and one
 specialized in fisheries data (assessing subtracks agrorgbio and
@@ -121,13 +111,59 @@ evaluators were given the English labels together with all the UF
 available. 
 </p>
 
-<h2>Precision and Recall</h2>
- 
+<p>The size of samples taken for evaluation are as follows:
+<center>
+<table>
+<tr bgcolor="lightgreen"><td>dataset</td><td>tot retrieved (<i>A<sup>*</sup></i>)</td><td>evaluated (<i>A<sup>0</sup></i>)</td><td>correct (<i>R<sup>0</sup></i>)</td><td><i>A<sup>0</sup></i>/<i>A<sup>*</sup></i></td><td><i>R<sup>0</sup></i>/<i>A<sup>0</sup></i></td></tr>
+<tr><td>agrafsa</td><td>2588</td><td>506</td><td>226</td><td>19%</td><td>45%</td></tr>
+<tr bgcolor="lightblue"><td>agrorgbio</td><td>742</td><td>264</td><td>156</td><td>36%</td><td>59%</td></tr>
+<tr><td>fishbio</td><td>1013</td><td>346</td><td>131</td><td>34%</td><td>38%</td></tr>
+<tr bgcolor="yellow"><td>TOTAL</td><td>4343</td><td>1116</td><td>513</td><td>26%</td><td>46%</td></tr>
+</table>
+</center>
+Table&nbsp;1 summarizes the sample size per each data sets.
+The second column (tot retrieved) contains the total number of
+distinct correspondences provided by all participants for each track. The third
+column (evaluated) reports the size of the sample extracted for manual
+assessment. The forth column (correct) reports the number of
+correspondences found correct by the assessors. 
+</p>
+
+<p>
+After manual evaluation was over, we realized that some
+participants did not use the correct URI in the agrafsa dataset, so some
+mappings were considered as different even though they were actually
+the same. However, this happened only in very few cases. 
+</p>
+
 <p>
 For each system, precision was computed on the basis of the subset of
-alignments that were manually assessed.  Recall was computed with
+alignments that were manually assessed,
+i.e., <i>A</i>&cap;<i>A<sup>0</sup></i>.
+Hence,
+<center>
+<i>P<sup>0</sup></i>(<i>A</i>,<i>R<sup>0</sup></i>)=
+<i>P</i>(<i>A</i>&cap;<i>A<sup>0</sup></i>,<i>R<sup>0</sup></i>)=
+  |<i>A</i>&cap;<i>R<sup>0</sup></i>| / |<i>A</i>&cap;<i>A<sup>0</sup></i>|
+</center>
+</p>
+<p>
+The same was considered for recall which was computed with
 respect to the total number of correct alignment per subtrack, as
 assessed by the human assessors. 
+Hence,
+<center>
+<i>R<sup>0</sup></i>(<i>A</i>,<i>R<sup>0</sup></i>)=
+<i>R</i>(<i>A</i>&cap;<i>A<sup>0</sup></i>,<i>R<sup>0</sup></i>)=
+  |<i>A</i>&cap;<i>R<sup>0</sup></i>| / |<i>R<sup>0</sup></i>|
+</center>
+Recall is expected to be higher than actual recall because it is based
+only on correspondences that at least on system returned, leaving
+aside those that no system were able to return.
+</p>
+<p>
+We call these two measures relative precision and recall because they
+are relative to the sample that has been extracted.
 </p>
 
 <h2>Results</h2>
@@ -138,10 +174,10 @@ recall values of all systems, by subtrack.
 The third column reports the total number of mappings returned by each
 system, per each subtrack. All non-equivalence mappings were
 discarded, but this only happened for one systems (aroma).
-The fourth column reports the number of correct alignments as judged
-by the assessors, while the fifth column reports the number of
-alignments from the system that were evaluated.
-Finally, the sixth and seventh columns reports the values of precision
+The fourth column reports the number of
+alignments from the system that were evaluated, while the fifth column
+reports the number of correct alignments as judged by the assessors.
+Finally, the sixth and seventh columns reports the values of relative precision
 and recall computed as described above. 
 The star next to the alignment system marks the systems that alignmed
 proprties.
@@ -150,32 +186,69 @@ proprties.
 <p style="align: center;">
 <center>
 <table>
-<tr bgcolor="lightgreen"><td>SYSTEM</td><td>subtrack </td><td>tot retrieved </td><td>tot correct </td><td>tot evaluated </td><td>Precision</td><td>Recall</td></tr>
+<tr bgcolor="lightgreen"><td></td><td>subtrack</td><td>tot retrieved</td><td>tot evaluated</td><td>tot correct</td><td>RPrecision</td><td>RRecall</td></tr>
+<tr style="text-align=center;" bgcolor="lightgreen"><td>SYSTEM</td><td></td><td>|<i>A</i>|</td><td>|<i>A</i>&cap<i>A<sup>0</sup></i>|</td><td>|<i>A</i>&cap<i>R<sup>0</sup></i>|</td><td><i>P<sup>0</sup></i>(<i>A</i>,<i>R<sup>0</sup></i>)</td><td><i>R<sup>0</sup></i>(<i>A</i>,<i>R<sup>0</sup></i>)</td></tr>
 							
-<tr><td>aroma ***</td><td>agrafsa</td><td>195</td><td>90</td><td>144</td><td>0.625</td><td>0.39823</td><td></tr>
-<tr><td></td><td>agrorgbio</td><td>2</td><td>0</td><td>4</td><td>		</tr>
+<tr><td>aroma ***</td><td>agrafsa</td><td>195</td><td>144</td><td>90</td><td>0.625</td><td>0.39823</td><td></tr>
+<tr><td></td><td>agrorgbio</td><td>2</td><td>4</td><td>0</td><td>		</tr>
 <tr><td></td><td>fishbio *</td><td>11</td><td>				</tr>
 <tr bgcolor="lightblue"><td>ASMOV</td><td>agrafsa</td><td>1</td><td><td></td><td></td><td></td></tr>
 <tr bgcolor="lightblue"><td></td><td>agrorgbio</td><td>0</td><td><td></td><td></td><td></td></tr>
 <tr bgcolor="lightblue"><td></td><td>fishbio *</td><td>5</td><td><td></td><td></td><td></td></tr>
-<tr><td>DSSim</td><td>agrafsa</td><td>218</td><td>70</td><td>129</td><td>0.542636</td><td>0.309735</td><td></tr>
-<tr><td></td><td>agrorgbio</td><td>339</td><td>151</td><td>214</td><td>0.705607</td><td>0.967949</td><td></tr>
-<tr><td></td><td>fishbio</td><td>243</td><td>79</td><td>166</td><td>0.475904</td><td>0.603053</td><td></tr>
-<tr bgcolor="lightblue"><td>Lily</td><td>agrafsa</td><td>390</td><td>91</td><td>105</td><td>0.866667</td><td>0.402655</td></tr>
+<tr><td>DSSim</td><td>agrafsa</td><td>218</td><td>129</td><td>70</td><td>0.542636</td><td>0.309735</td><td></tr>
+<tr><td></td><td>agrorgbio</td><td>339</td><td>214</td><td>151</td><td>0.705607</td><td>0.967949</td><td></tr>
+<tr><td></td><td>fishbio</td><td>243</td><td>166</td><td>79</td><td>0.475904</td><td>0.603053</td><td></tr>
+<tr bgcolor="lightblue"><td>Lily</td><td>agrafsa</td><td>390</td><td>105</td><td>91</td><td>0.866667</td><td>0.402655</td></tr>
 <tr><td>MapPSO</td><td>agrorgbio *</td><td>6</td><td></td></tr>
 <tr><td></td><td>fishbio *</td><td>16</td><td></td></tr>
-<tr bgcolor="lightblue"><td>RiMOM</td><td>agrafsa</td><td>743</td><td>158</td><td>194</td><td>0.814433</td><td>0.699115</td></tr>
-<tr bgcolor="lightblue"><td></td><td>agrorgbio</td><td>395</td><td>149</td><td>219</td><td>0.680365</td><td>0.955128</td></tr>
-<tr bgcolor="lightblue"><td></td><td>fishbio</td><td>738</td><td>118</td><td>217</td><td>0.543779</td><td>0.900763</td></tr>
-<tr><td>SAMBO</td><td>agrafsa</td><td>389</td><td>121</td><td>176</td><td>0.6875</td><td>0.535398</td><td></tr>
-<tr bgcolor="lightblue"><td>SAMBOdtf</td><td>agrafsa</td><td>650</td><td>124</td><td>219</td><td>0.56621</td><td>0.548673</td></tr>
+<tr bgcolor="lightblue"><td>RiMOM</td><td>agrafsa</td><td>743</td><td>194</td><td>158</td><td>0.814433</td><td>0.699115</td></tr>
+<tr bgcolor="lightblue"><td></td><td>agrorgbio</td><td>395</td><td>219</td><td>149</td><td>0.680365</td><td>0.955128</td></tr>
+<tr bgcolor="lightblue"><td></td><td>fishbio</td><td>738</td><td>217</td><td>118</td><td>0.543779</td><td>0.900763</td></tr>
+<tr><td>SAMBO</td><td>agrafsa</td><td>389</td><td>176</td><td>121</td><td>0.6875</td><td>0.535398</td><td></tr>
+<tr bgcolor="lightblue"><td>SAMBOdtf</td><td>agrafsa</td><td>650</td><td>219</td><td>124</td><td>0.56621</td><td>0.548673</td></tr>
 </table>						
 </center>
 </p>
 
+<h2>Discussion</h2>
+
+<p>
+From DSSim and RiMOM results, it seems that fishbio is the more
+difficult task in terms of precision and agrafsa the more difficult in
+terms of recall (for most of the systems).
+</p>
+<p>
+It is really difficult to compare systems at this stage but it seems
+that RiMOM is the one which provided the best results. However, the
+results comparable with that of others.
+</p>
+<p>
+The sampling method that has been used is certainly not perfect. In
+particular, it did not permitted to evaluate two systems which
+returned few results (ASMOV and MapPSO) as well as most of Aroma.
+However, the results returned by these system were not likely to
+provide good recall results. This is related to the next remark
+however.
+</p>
+<p>
+The lack of instructions, and the particular character of the testset,
+clearly puzzled the participants and their systems. In consequence,
+the results may not be as good as a very polished test with easily
+comparable data sets. This provides a honest insight of what these
+systems would do when confronted with these ontologies on the web.
+In that respects, the results are not bad.
+</p>
+
+<small>
+<hr />
+* Mappings between properties<br />
+** Thanks to Andrew Bagdanov, Aureliano Gentile, Gudrun Johannsen.<br />
+*** in agrafsa: 40 non equivalence alignments ignored. In agrorgbio 2 non equivalence mapping ignored.<br />
+</small>
+
 <div class="address">
 <div class="footer">http://oaei.ontologymatching.org/2008/prelim/FAO-results.html</div>
-$Id$
+$Id: FAO-results.html,v 1.1 2008/10/16 21:51:43 euzenat Exp euzenat $
 </div>
 </body>
 </html>
