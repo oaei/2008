@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
-<!-- $Id: owl2html.xsl,v 1.4 2004/06/15 10:47:05 euzenat Exp euzenat $ -->
+<!-- $Id: owl2html.xsl,v 1.5 2004/06/20 21:39:34 euzenat Exp $ -->
 
 <!-- This stylesheet provides a rough view of a particular ontology -->
 <!-- TODO:

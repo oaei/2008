@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: trans-random.xsl,v 1.8 2006/07/08 22:36:18 euzenat Exp euzenat $ -->
+<!-- $Id: trans-random.xsl,v 1.9 2006/08/01 11:16:54 euzenat Exp $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 

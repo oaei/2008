@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
-<!-- $Id$ -->
+<!-- $Id: normowl.xsl,v 1.1 2005/06/10 20:44:28 euzenat Exp $ -->
 
 <!-- This stylesheet provides a rough view of a particular ontology -->
 

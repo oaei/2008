@@ -37,7 +37,7 @@
     <dc:date>08/06/2005</dc:date>
     <rdfs:label>Bibliographic references</rdfs:label>
     <rdfs:comment>Possible ontology to describe bibTeX entries.</rdfs:comment>
-    <owl:versionInfo>$Id: onto-flat.rdf,v 1.13 2008/05/27 14:38:02 euzenat Exp euzenat $</owl:versionInfo>
+    <owl:versionInfo>$Id: onto-flat.rdf,v 1.14 2008/05/27 14:40:54 euzenat Exp $</owl:versionInfo>
   </owl:Ontology>
 
 <!-- Every entity (even external) must be typed in OWL-DL. -->

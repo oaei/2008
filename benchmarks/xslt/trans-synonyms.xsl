@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: trans-synonyms.xsl,v 1.9 2006/07/12 12:53:37 euzenat Exp euzenat $ -->
+<!-- $Id: trans-synonyms.xsl,v 1.10 2006/08/01 11:17:17 euzenat Exp $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 

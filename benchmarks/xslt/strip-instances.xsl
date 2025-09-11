@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: strip-instances.xsl,v 1.7 2006/08/01 11:13:12 euzenat Exp euzenat $ -->
+<!-- $Id: strip-instances.xsl,v 1.8 2008/05/27 14:14:27 euzenat Exp $ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
 <!-- DOCTYPE xsl:stylesheet SYSTEM ""-->
-<!-- $Id: form-align.xsl,v 1.1 2004/04/29 11:07:38 euzenat Exp $ -->
+<!-- $Id: form-align.xsl,v 1.1 2005/06/09 21:10:58 euzenat Exp $ -->
 
 <xsl:stylesheet version="1.0"
   xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
