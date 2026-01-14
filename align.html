@@ -62,7 +62,7 @@ The last instruction should output some XML.
 
 <h4>The systematic benchmark tests</h4>
 <pre>
-$ curl http://oaei.ontologymatching.org/2008/benchmarks/bench.zip -o bench.zip
+$ curl https://zenodo.org/records/15827346/files/bench50.zip -o bench.zip
 $ unzip bench.zip
 $ cd benchmarks
 $ java -cp $CWD/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o stringeq -n http://oaei.inrialpes.fr/2008/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment -Dnoinst=1
