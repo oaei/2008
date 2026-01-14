@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Ontology Alignment Evaluation Initiative::2008</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 <body>
 <div class="header">
@@ -18,7 +18,7 @@
 <p>We use a simple alignment format example of which can be found in
   the alignments of the benchmark dataset.</p>
 
-<p>This format is described in <a href="https://moex.gitlabpages.inria.fr/alignapi">the API documentation</a>.</p>
+<p>This format is described in <a href="https://moex.gitlabpages.inria.fr/alignapi/format.html">the API documentation</a>.</p>
 
 <p>These formats can be manipulated through the Alignment API (see below).</p>
 
@@ -29,9 +29,8 @@
 <h3>Getting the API</h3>
 
 <p>See the instructions on 
-<a
-   href="https://moex.gitlabpages.inria.fr/alignapi">https://moex.gitlabpages.inria.fr/alignapi</a>
-   or download directly now at: <a href="https://moex.gitlabpages.inria.fr/alignapi/relnotes.html">https://moex.gitlabpages.inria.fr/alignapi/relnotes.html</a></p>
+<a href="https://moex.gitlabpages.inria.fr/alignapi">https://moex.gitlabpages.inria.fr/alignapi</a>
+   or download directly now at: <a href="https://gitlab.inria.fr/moex/alignapi/-/releases/version-3.0">https://gitlab.inria.fr/moex/alignapi/-/releases/version-3.0</a></p>
 <p>All required libraries are included.</p>
 <p>Please, always download the last version.</p>
 
@@ -66,7 +65,7 @@ The last instruction should output some XML.
 $ curl http://oaei.ontologymatching.org/2008/benchmarks/bench.zip -o bench.zip
 $ unzip bench.zip
 $ cd benchmarks
-$ java -cp $CWD/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o stringeq  -n http://oaei.inrialpes.fr/2008/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment -Dnoinst=1
+$ java -cp $CWD/lib/procalign.jar fr.inrialpes.exmo.align.util.GroupAlign -o stringeq -n http://oaei.inrialpes.fr/2008/benchmarks/101/onto.rdf -i fr.inrialpes.exmo.align.impl.method.StringDistAlignment -Dnoinst=1
 </pre>
 This will output the results of the test in the Alignment format,
 required by the organizers, in one file named <tt>stringeq.rdf</tt> in each test
