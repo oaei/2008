@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::MLdirectory</title>
+<link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2008/">Ontology
+  Alignment Evaluation Initiative - OAEI-2008
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../../../oaeismall.jpg" alt="OAEI"
+		   style="float:right; margin-left: 5pt; border-style:none;"/></a>
+</div>
+
+<h1>Multilingual directory Data Set (MLdirectoy) - Results</h1>
+
+<h2>Results for English-English alignment tasks</h2>
+
+<p>In the 2008 campaign, we have four participants for the mldirectory data set. The systems include
+DSSim, Lily, MapPSO and RiMOM. Among the four systems, three of them -- DSSim,
+MapPSO, and RiMOM -- were used in the alignment task for all five domains in
+the English-English alignment(ontology 1 and ontology 2), and one of them, Lily,
+was used in the task for two domains, automobile and
+movie. The number of alignments found by the systems are shown in
+Table 1. As can be seen in this table, Lily finds more
+alignments than do the other systems. Conversely, MapPSO retrieves only a
+few alignments from the data set.
+</p>
+
+<table border='2' frame='sides' rules='rows' align="center">
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<thead valign='top'>
+<tr bgcolor="lightblue">
+<td></td><td align="right">DSSim</td><td align="right">Lily</td><td align="right">MapPSO</td><td align="right">RiMOM</td></tr></thead>
+<tbody>
+<tr><td>Auto</td><td align="right">188</td><td align="right">377</td><td align="right">265</td><td align="right">275</td></tr>
+<tr><td>Movie</td><td align="right">1181</td><td align="right">1864</td><td align="right">183</td><td align="right">1681</td></tr>
+<tr><td>Outdoor</td><td align="right">268</td><td align="right">-</td><td align="right">10</td><td align="right">538</td></tr>
+<tr><td>Photo</td><td align="right">141</td><td align="right">-</td><td align="right">38</td><td align="right">166</td></tr>
+<tr><td>Software</td><td align="right">372</td><td align="right">-</td><td align="right">60</td><td align="right">536</td></tr>
+<tr><td>Total</td><td align="right">2150</td><td align="right">2241</td><td align="right">556</td><td align="right">3196</td></tr>
+</tbody>
+<caption>Table 1. Number of alignments between ontology 1 and ontology 2 (English-English alignments).</caption></table>
+
+
+<p>In order to learn the different biases of the systems, we counted the number of
+overlap alignments retrieved by the systems. The results are shown in
+Table 2. The letters D, L, M and R in the top row denote system names DSSim, Lily, MapPSO, and RiMOM, respectively.
+For example, the DR column is the number of alignments retrieved by both DSSim
+and RiMOM. We can see that both systems retrieve the same 82 
+alignments in the movie domain. In this table, we see interesting
+phenomena. Lily and RiMOM have the same bias for finding the
+alignments. For example, in the auto domain, 33% of the alignments found by
+Lily were also retrieved by RiMOM, and 46% of the alignments found by RiMOM were
+also retrieved by Lily. The same phenomenon
+is also seen in the movie domain. In contrast, MapPSO has a very
+different tendency. Although the system found 556 alignments in total, only
+one alignment was found by the other systems.
+</p>
+
+
+<table border='2' frame='sides' rules='rows' align="center">
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<thead valign='top'>
+<tr bgcolor="lightblue">
+<td></td><td align="right">D</td><td align="right">L</td><td align="right">M</td><td align="right">R</td><td align="right">DL</td><td align="right">DM</td><td align="right">DR</td><td align="right">LM</td><td align="right">LR</td><td align="right">MR</td><td align="right">DLM</td><td align="right">DLR</td><td align="right">DMR</td><td align="right">LMR</td><td align="right">DLMR</td></tr></thead>
+<tbody>
+<tr><td>Auto</td><td align="right">139</td><td align="right">208</td><td align="right">264</td><td align="right">104</td><td align="right">5</td><td align="right">0</td><td align="right">7</td><td align="right">0</td><td align="right">126</td><td align="right">0</td><td align="right">0</td><td align="right">37</td><td align="right">1</td><td align="right">0</td><td align="right">0</td></tr>
+<tr><td>Movie</td><td align="right">946</td><td align="right">988</td><td align="right">183</td><td align="right">734</td><td align="right">11</td><td align="right">0</td><td align="right">82</td><td align="right">0</td><td align="right">723</td><td align="right">0</td><td align="right">0</td><td align="right">142</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr><td>Outdoor</td><td align="right">260</td><td align="right">0</td><td align="right">10</td><td align="right">530</td><td align="right">0</td><td align="right">0</td><td align="right">8</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr><td>Photo</td><td align="right">137</td><td align="right">0</td><td align="right">38</td><td align="right">162</td><td align="right">0</td><td align="right">0</td><td align="right">4</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr><td>Software</td><td align="right">338</td><td align="right">0</td><td align="right">60</td><td align="right">502</td><td align="right">0</td><td align="right">0</td><td align="right">34</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+</tbody>
+<caption>Table 2. Number of overlap alignments retrieved by the systems. D, L, M, and R denote DSSim, Lily, MapPSO, and RiMOM, respectively.</caption></table>
+
+
+<p>We also created a component bar chart for clarifying the sharing of retrieved
+alignments. In the automobile and movie domains, 80% of the alignments are found by
+only one system, and most of the other 20% are found by both Lily and
+RiMOM. From this graph, we can see that Lily
+has the same bias as RiMOM, but the system still found many alignments that the
+other systems did not find. 
+For the remaining domains, outdoor, photo and software, the alignments found by
+only one system reached almost 100%.
+</p>
+
+<p>
+<div style="text-align: center;">
+<img src="system.png"/><br>
+Figure 1. Shared alignments.
+</div>
+</p>
+
+<h2>Results for other alignment tasks</h2>
+
+<p>Unfortunately, the results of other alignment tasks such as
+English-Japanese alignments (ontology 1-3, ontology 1-4, ontology 2-3, and
+ontology 2-4), Japanese-Japanese alignments (ontology 3-4) were only submitted
+by RiMOM. The number of alignments by RiMOM are shown in
+Table 3.
+</p>
+
+<table border='2' frame='sides' rules='rows' align="center">
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<col width="100" align="center" />
+<thead valign='top'>
+<tr bgcolor="lightblue">
+<td>Domain</td><td align="right">ont1-2</td><td align="right">ont1-3</td><td align="right">ont1-4</td><td align="right">ont2-3</td><td align="right">ont2-4</td><td align="right">ont3-4</td><td align="right">Total</td></tr></thead>
+<tbody>
+<tr><td>Auto</td><td align="right">275</td><td align="right">99</td><td align="right">242</td><td align="right">79</td><td align="right">225</td><td align="right">262</td><td align="right">1182</td></tr>
+<tr><td>Movie</td><td align="right">1681</td><td align="right">35</td><td align="right">30</td><td align="right">35</td><td align="right">59</td><td align="right">65</td><td align="right">1905</td></tr>
+<tr><td>Outdoor</td><td align="right">538</td><td align="right">25</td><td align="right">64</td><td align="right">25</td><td align="right">97</td><td align="right">31</td><td align="right">780</td></tr>
+<tr><td>Photo</td><td align="right">166</td><td align="right">15</td><td align="right">17</td><td align="right">15</td><td align="right">31</td><td align="right">20</td><td align="right">264</td></tr>
+<tr><td>Software</td><td align="right">536</td><td align="right">104</td><td align="right">125</td><td align="right">78</td><td align="right">100</td><td align="right">84</td><td align="right">1027</td></tr>
+</tbody>
+<caption>Table 3: Number of alignments by RiMOM.</caption></table>
+
+<h2>Contacts</h2>
+<p>If you have any questions and comments, please feel free to contact Ryutaro Ichise ( <img src="../../mldirectory/address.gif" alt="mail address" width="108" height="24" align="center"> )</p>
+
+<p>Initial location of this page: <a href="http://ri-www.nii.ac.jp/OAEI/2008/result.html">http://ri-www.nii.ac.jp/OAEI/2008/result.html</a>.</p>
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2008/results/mldirectory/</div>
+<!--$Id$-->
+</div>
+</body>
+</html>

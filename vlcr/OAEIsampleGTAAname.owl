@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/TR/skos-reference#">
+<owl:Ontology rdf:about=""/>
+<skos:Concept rdf:about="#Name_013">
+<skos:prefLabel>013</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>centrum voor popmuziek Tilburg</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_1meivieringen">
+<skos:prefLabel>1 meivieringen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_10CC">
+<skos:prefLabel>10 CC</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>popgroep</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_100kmvanBartlehiem">
+<skos:prefLabel>100 km van Bartlehiem</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_12eeeuw">
+<skos:prefLabel>12e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_13eeeuw">
+<skos:prefLabel>13e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_14eeeuw">
+<skos:prefLabel>14e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_15eeeuw">
+<skos:prefLabel>15e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_16Horsepower">
+<skos:prefLabel>16 Horsepower</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>muziekgroep VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_16eeeuw">
+<skos:prefLabel>16e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_17juni-opstand">
+<skos:prefLabel>17 juni-opstand</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>opstand Oost-Duitsland 1953</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_17november">
+<skos:prefLabel>17 november</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>terroristische beweging</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_17eeeuw">
+<skos:prefLabel>17e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:related rdf:resource="#Name_GoudenEeuw"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_17thUSAF-band">
+<skos:prefLabel>17th USAF-band</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_1860Munchen">
+<skos:prefLabel>1860 München</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>voetbalclub Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_18eeeuw">
+<skos:prefLabel>18e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:altLabel>pruikentijd</skos:altLabel>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_19eeeuw">
+<skos:prefLabel>19e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_2Brothersonthe4thFloor">
+<skos:prefLabel>2 Brothers on the 4th Floor</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>popgroep</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_2Manneneneenkast">
+<skos:prefLabel>2 Mannen en een kast</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>speelfilm</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_2unlimited">
+<skos:prefLabel>2 unlimited</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>popgroep</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_2Vandaag">
+<skos:prefLabel>2 Vandaag</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_2+4overleg">
+<skos:prefLabel>2+4 overleg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>conferentie Duitse eenwording tussen geallieerden en 2 Duitslanden</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_2010">
+<skos:prefLabel>2010</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>speelfilm</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_20eeeuw">
+<skos:prefLabel>20e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_20thCenturyFox">
+<skos:prefLabel>20th Century Fox</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>filmmaatschappij</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_21eeeuw">
+<skos:prefLabel>21e eeuw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_24-uursrace">
+<skos:prefLabel>24-uurs race</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>autorace</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_25FPS">
+<skos:prefLabel>25FPS</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>productiemaatschappij</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_27MC">
+<skos:prefLabel>27 MC</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_3xA">
+<skos:prefLabel>3 x A</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>tentoonstelling</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_333-project">
+<skos:prefLabel>333-project</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>raketten maken</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_36opdeschaalvanRichter">
+<skos:prefLabel>36 op de schaal van Richter</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>discotheek</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_3FM">
+<skos:prefLabel>3FM</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:related rdf:resource="#Name_Radio3"/>
+<skos:scopeNote>publieke radiozender</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_3MMuzieklaureaat">
+<skos:prefLabel>3M Muzieklaureaat</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>muziekprijs</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_3VO">
+<skos:prefLabel>3VO</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:related rdf:resource="#Name_VeiligVerkeerNederland"/>
+<skos:scopeNote>Verenigde Verkeers Veiligheids Organisatie</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_3-Zelf-Partij">
+<skos:prefLabel>3-Zelf-Partij</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>China</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_400JaarHaarlemmerhout">
+<skos:prefLabel>400 Jaar Haarlemmerhout</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_5uurshow">
+<skos:prefLabel>5 uur show</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_50x50">
+<skos:prefLabel>50 x 50</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>tentoonstelling prenten</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_50+tegenKerngeweld">
+<skos:prefLabel>50+ tegen Kerngeweld</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_7DecemberDivisie">
+<skos:prefLabel>7 December Divisie</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>Nederlandse militairen in Indië tijdens politionele acties</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_7DecemberDivisie-monument">
+<skos:prefLabel>7 December Divisie-monument</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_7december-herdenking">
+<skos:prefLabel>7 december-herdenking</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_747AM">
+<skos:prefLabel>747 AM</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:related rdf:resource="#Name_Radio5"/>
+<skos:related rdf:resource="#Name_Radio747"/>
+<skos:scopeNote>publieke radiozender, van april 2001 tot 5-11-2005</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_8december-beweging">
+<skos:prefLabel>8 december-beweging</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Abridgetoofar">
+<skos:prefLabel>A bridge too far</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>speelfilm</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AChorusLine">
+<skos:prefLabel>A Chorus Line</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Aclockworkorange">
+<skos:prefLabel>A clockwork orange</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>boek- en filmtitel</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Amandies">
+<skos:prefLabel>A man dies</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>toneelstuk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_ANightattheOpera">
+<skos:prefLabel>A Night at the Opera</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Anouslaliberte">
+<skos:prefLabel>A nous la liberté</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>speelfilm</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_APassagetoIndia">
+<skos:prefLabel>A Passage to India</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>film/boek</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Atwenty-fourdollarisland">
+<skos:prefLabel>A twenty-four dollar island</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>stomme film</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AViewtoakill">
+<skos:prefLabel>A View to a kill</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>James Bond-speelfilm</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AWorldApart">
+<skos:prefLabel>A World Apart</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>film</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Azedandtwonaughts">
+<skos:prefLabel>A zed and two naughts</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>film Peter Greenaway</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A.Kelfkens">
+<skos:prefLabel>A. Kelfkens</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A.RolandHolst-penning">
+<skos:prefLabel>A. Roland Holst-penning</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A.RolandHolststichting">
+<skos:prefLabel>A. Roland Holststichting</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A.C.deBruynInstituut">
+<skos:prefLabel>A.C. de Bruyn Instituut</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A.H.Robins">
+<skos:prefLabel>A.H. Robins</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>farmaceutisch bedrijf, Dalconschildje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A.J.vanEckprijs">
+<skos:prefLabel>A.J. van Eckprijs</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A.M.deJonghuis">
+<skos:prefLabel>A.M. de Jonghuis</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>museum</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A-1satelliet">
+<skos:prefLabel>A-1 satelliet</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_A2000">
+<skos:prefLabel>A2000</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>exploitant kabeltelevisie</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AA">
+<skos:prefLabel>AA</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:altLabel>Anonieme Alcoholisten</skos:altLabel>
+<skos:scopeNote>Anonieme Alcoholisten</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AADrinkNuenen">
+<skos:prefLabel>AA Drink/Nuenen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>badmintonclub</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AAGent">
+<skos:prefLabel>AA Gent</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>voetbalclub België</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AAA-bende">
+<skos:prefLabel>AAA-bende</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>doodseskader Argentinië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AaBeFabrieken">
+<skos:prefLabel>AaBe Fabrieken</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>te Tilburg</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Aabed">
+<skos:prefLabel>Aabed</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>raket Irak</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AAC">
+<skos:prefLabel>AAC</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AADC">
+<skos:prefLabel>AADC</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:altLabel>Arabisch-Amerikaans anti-discriminatie-comité</skos:altLabel>
+<skos:scopeNote>Arabisch-Amerikaans anti-discriminatie-comité</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Aagesta">
+<skos:prefLabel>Aagesta</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>kerncentrale Stockholm</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Aagrunol">
+<skos:prefLabel>Aagrunol</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>bestrijdingsmiddelenfabriek Groningen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Aalscholver">
+<skos:prefLabel>Aalscholver</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>loodsboot</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Aalsmeer">
+<skos:prefLabel>Aalsmeer</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>handbalclub</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Aanbiddingvanhetgoudenkalf">
+<skos:prefLabel>Aanbidding van het gouden kalf</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>schilderij</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AannemingsMaatschappijVolker">
+<skos:prefLabel>Aannemings Maatschappij Volker</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Aardappeleters">
+<skos:prefLabel>Aardappeleters</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>schilderij Vincent van Gogh</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_aarde">
+<skos:prefLabel>aarde</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>planeet</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AarhusGF">
+<skos:prefLabel>Aarhus GF</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>voetbalclub Denemarken</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AartsbisschoppelijkMuseum">
+<skos:prefLabel>Aartsbisschoppelijk Museum</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:related rdf:resource="#Name_MuseumCatharijneconvent"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AartsbisschoppelijkPaleisPraag">
+<skos:prefLabel>Aartsbisschoppelijk Paleis (Praag)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AartsbisschoppelijkPaleisUtrecht">
+<skos:prefLabel>Aartsbisschoppelijk Paleis (Utrecht)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AAW">
+<skos:prefLabel>AAW</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:altLabel>Algemene Arbeidsongeschiktheidswet</skos:altLabel>
+<skos:scopeNote>Algemene Arbeidsongeschiktheidswet</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Abadam">
+<skos:prefLabel>Abadam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>olieraffinaderij</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Abba">
+<skos:prefLabel>Abba</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>popgroep Zweden</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_AbbatheMovie">
+<skos:prefLabel>Abba, the Movie</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>film over popgroep</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Name_Abbacadabra">
+<skos:prefLabel>Abbacadabra</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/>
+<skos:scopeNote>kindermusical</skos:scopeNote>
+</skos:Concept>
+</rdf:RDF>

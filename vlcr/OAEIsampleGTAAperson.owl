@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/TR/skos-reference#">
+<owl:Ontology rdf:about=""/>
+<skos:Concept rdf:about="#Person_*">
+<skos:prefLabel>*</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_50Cent">
+<skos:prefLabel>50 Cent</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:altLabel>Jackson, Curtis</skos:altLabel>
+<skos:scopeNote>rapper, pseudoniem van Curtis Jackson</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaF.vd">
+<skos:prefLabel>Aa, F. vd</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaFransvd">
+<skos:prefLabel>Aa, Frans vd</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>acteur</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaH.A.vd">
+<skos:prefLabel>Aa, H.A. vd</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaHermanvd">
+<skos:prefLabel>Aa, Herman vd</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>gitarist</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaJ.H.vander">
+<skos:prefLabel>Aa, J.H. van der</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>wethouder Amsterdam</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaJaapvd">
+<skos:prefLabel>Aa, Jaap vd</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>acteur</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaMichelvander">
+<skos:prefLabel>Aa, Michel van der</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaW.P.vander">
+<skos:prefLabel>Aa, W.P. van der</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AafjesA.">
+<skos:prefLabel>Aafjes, A.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AafjesBertus">
+<skos:prefLabel>Aafjes, Bertus</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>schrijver</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaftinkChristine">
+<skos:prefLabel>Aaftink, Christine</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>schaatsster</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaftinkCor">
+<skos:prefLabel>Aaftink, Cor</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>tekstschrijver, producer</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AageM.">
+<skos:prefLabel>Aage M.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:altLabel>Meinesz, Aage (brandkastenkraker)</skos:altLabel>
+<skos:scopeNote>brandkastenkraker</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AagtenJan">
+<skos:prefLabel>Aagten, Jan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>journalist/programmamaker</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaijH.F.">
+<skos:prefLabel>Aaij, H.F.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalbersB.J.">
+<skos:prefLabel>Aalbers, B.J.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalbersDieuwke">
+<skos:prefLabel>Aalbers, Dieuwke</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>zangeres</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalbersKarel">
+<skos:prefLabel>Aalbers, Karel</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>vz. Vitesse</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalbersTheo">
+<skos:prefLabel>Aalbers, Theo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>voorz. FC Utrecht</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalberseH.B.">
+<skos:prefLabel>Aalberse, H.B.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalberseP.J.M.jr.">
+<skos:prefLabel>Aalberse, P.J.M. (jr.)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus KVP jaren '60, lid Tweede Kamer, partijvoorzitter</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalberseP.J.M.sr.">
+<skos:prefLabel>Aalberse, P.J.M. (sr.)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus RKSP jaren '20/'30, min. van Arbeid, lid Tweede Kamer, voorzitter Tweede Kamer</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalbertsH.">
+<skos:prefLabel>Aalberts, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>sociaal raadsman</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalbertsM.J.">
+<skos:prefLabel>Aalberts, M.J.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalderenDavidvan">
+<skos:prefLabel>Aalderen, David van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalderenH.J.van">
+<skos:prefLabel>Aalderen, H.J. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalderenR.van">
+<skos:prefLabel>Aalderen, R. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldersC.">
+<skos:prefLabel>Aalders, C.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>pastoraal psycholoog</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldersG.Ch.">
+<skos:prefLabel>Aalders, G.Ch.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>theoloog, voorz. Expogé, voorz. NBG-comm. bijbelvertaling OT</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldersGerard">
+<skos:prefLabel>Aalders, Gerard</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>historicus</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldersGert-Jan">
+<skos:prefLabel>Aalders, Gert-Jan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldersH.">
+<skos:prefLabel>Aalders, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldersIngrid">
+<skos:prefLabel>Aalders, Ingrid</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>kunstrijdster op de schaats</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldersMarius">
+<skos:prefLabel>Aalders, Marius</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>cabaretier</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldersW.J.">
+<skos:prefLabel>Aalders, W.J.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>theoloog</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaldykS.">
+<skos:prefLabel>Aaldyk, S.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalkersTh.">
+<skos:prefLabel>Aalkers, Th.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalstC.J.K.van">
+<skos:prefLabel>Aalst, C.J.K. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>president Ned. Handel-Maatschappij, mede-oprichter PHOHI</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalstFrankvan">
+<skos:prefLabel>Aalst, Frank van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalstH.van">
+<skos:prefLabel>Aalst, H. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalstR.M.van">
+<skos:prefLabel>Aalst, R.M. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_Aalst-VanHasseltHenriettevan">
+<skos:prefLabel>Aalst-Van Hasselt, Henriëtte van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaltenGeertvan">
+<skos:prefLabel>Aalten, Geert van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>dammer</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaltenThomasvan">
+<skos:prefLabel>Aalten, Thomas van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaltenTruusvan">
+<skos:prefLabel>Aalten, Truus van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>jrn. '20-30 actrice</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaltonenRauno">
+<skos:prefLabel>Aaltonen, Rauno</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>autocoureur</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AalvoetH.">
+<skos:prefLabel>Aalvoet, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AamiryMohammedAbibal">
+<skos:prefLabel>Aamiry, Mohammed Abib al</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Jordanië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AamodtKjetilAndre">
+<skos:prefLabel>Aamodt, Kjetil Andre</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>skiër</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AandewielGert">
+<skos:prefLabel>Aandewiel, Gert</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>voetbaltrainer</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AandewielM.">
+<skos:prefLabel>Aandewiel, M.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AanenMieke">
+<skos:prefLabel>Aanen, Mieke</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AanessNils">
+<skos:prefLabel>Aaness, Nils</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>schaatser</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AantjesJohan">
+<skos:prefLabel>Aantjes, Johan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AantjesWillem">
+<skos:prefLabel>Aantjes, Willem</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Nederland CDA/ARP</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarHettyvan">
+<skos:prefLabel>Aar, Hetty van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>jeugdboekenschrijfster</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarTonvander">
+<skos:prefLabel>Aar, Ton van der</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarafaHussein">
+<skos:prefLabel>Aarafa, Hussein</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardenD.">
+<skos:prefLabel>Aarden, D.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardenJ.M.">
+<skos:prefLabel>Aarden, J.M.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>Tweede-Kamerlid, fractievoorzitter PPR 1962-1972</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardenJohn">
+<skos:prefLabel>Aarden, John</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>schrijver</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardenMimi">
+<skos:prefLabel>Aarden, Mimi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>zangeres</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardenTon">
+<skos:prefLabel>Aarden, Ton</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>filmmaker</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardenburgLeen">
+<skos:prefLabel>Aardenburg, Leen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardenneG.M.V.van">
+<skos:prefLabel>Aardenne, G.M.V. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Nederland VVD, oud-minister EZ</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardenneVastertvan">
+<skos:prefLabel>Aardenne, Vastert van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>acteur</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardewijnPepijn">
+<skos:prefLabel>Aardewijn, Pepijn</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>acteur</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardingVilmar">
+<skos:prefLabel>Aarding, Vilmar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardoomA.">
+<skos:prefLabel>Aardoom, A.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>oud-verzetsstrijder</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardoomL.">
+<skos:prefLabel>Aardoom, L.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>hoogleraar TU Delft, lasermeetsysteem aardbevingen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardseRob">
+<skos:prefLabel>Aardse, Rob</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AardwegG.J.M.vanden">
+<skos:prefLabel>Aardweg, G.J.M. van den</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaremH.van">
+<skos:prefLabel>Aarem, H. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>KNO-arts</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarjalainenAhti">
+<skos:prefLabel>Aarjalainen, Ahti</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Finland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarninkLetitia">
+<skos:prefLabel>Aarnink, Letitia</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarnoutRalph">
+<skos:prefLabel>Aarnout, Ralph</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>columnist, schrijver</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarntzenJan">
+<skos:prefLabel>Aarntzen, Jan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaroEricvon">
+<skos:prefLabel>Aaro, Eric von</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaronBen">
+<skos:prefLabel>Aaron, Ben</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Israël</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaronDavid">
+<skos:prefLabel>Aaron, David</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaronH.">
+<skos:prefLabel>Aaron, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaronJoyce">
+<skos:prefLabel>Aaron, Joyce</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>toneelregisseur VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AaronMoshe">
+<skos:prefLabel>Aäron, Moshe</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>beeldhouwer</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarsbergN.">
+<skos:prefLabel>Aarsberg, N.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarseH.">
+<skos:prefLabel>Aarse, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarsmanHans">
+<skos:prefLabel>Aarsman, Hans</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>fotograaf</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarsseR.">
+<skos:prefLabel>Aarsse, R.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarssenM.W.">
+<skos:prefLabel>Aarssen, M.W.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>dirigent</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartH.G.C.v.d.">
+<skos:prefLabel>Aart, H.G.C. v. d.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartIrenevander">
+<skos:prefLabel>Aart, Irene van der</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>cabaretière</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartR.vander">
+<skos:prefLabel>Aart, R. van der</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartRiejavan">
+<skos:prefLabel>Aart, Rieja van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsAd">
+<skos:prefLabel>Aarts, Ad</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>voorz. ARKA/NKV</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsC.">
+<skos:prefLabel>Aarts, C.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsC.J.">
+<skos:prefLabel>Aarts, C.J.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>zanger/liedjesschrijver</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsE.">
+<skos:prefLabel>Aarts, E.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsEsther">
+<skos:prefLabel>Aarts, Esther</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsGuus">
+<skos:prefLabel>Aarts, Guus</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>trainer FC Gerendal '64</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsHarry">
+<skos:prefLabel>Aarts, Harry</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Nederland CDA kamerlid</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsJ.">
+<skos:prefLabel>Aarts, J.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>dir. Meditransplant</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsJ.W.">
+<skos:prefLabel>Aarts, J.W.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>topambtenaar EG</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsMarie-Claire">
+<skos:prefLabel>Aarts, Marie-Claire</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsMonique">
+<skos:prefLabel>Aarts, Monique</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsPaul">
+<skos:prefLabel>Aarts, Paul</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>docent internationale betrekkingen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsSylvester">
+<skos:prefLabel>Aarts, Sylvester</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>wielrenner</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsenJ.van">
+<skos:prefLabel>Aartsen, J. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>ARP-politicus jaren '60</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsenJoziasvan">
+<skos:prefLabel>Aartsen, Jozias van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus VVD: min. Landbouw</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsenN.">
+<skos:prefLabel>Aartsen, N.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsenStefan">
+<skos:prefLabel>Aartsen, Stefan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>zwemmer</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AartsenW.van">
+<skos:prefLabel>Aartsen, W. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AarvikEgil">
+<skos:prefLabel>Aarvik, Egil</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>voorz. Nobelprijs voor de Vrede comité</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AastedMadsen-vanStiphoutIne">
+<skos:prefLabel>Aasted Madsen-van Stiphout, Ine</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>lid Tweede Kamer CDA</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AatHenrivander">
+<skos:prefLabel>Aat, Henri van der</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AazouziRachid">
+<skos:prefLabel>Aazouzi, Rachid</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:altLabel>Rachid (zanger)</skos:altLabel>
+<skos:scopeNote>Marokkaanse zanger Nederlandse levensliederen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbabaAlemu">
+<skos:prefLabel>Ababa, Alemu</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbabdiAhmadSalah">
+<skos:prefLabel>Ababdi, Ahmad Salah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbachaSani">
+<skos:prefLabel>Abacha, Sani</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>juntaleider Nigeria</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbaciMuazzez">
+<skos:prefLabel>Abaci, Muazzez</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>zangeres</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbalkinLeonid">
+<skos:prefLabel>Abalkin, Leonid</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus USSR, vice-premier</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbankwaA.N.">
+<skos:prefLabel>Abankwa, A.N.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbarZurayOliverFilipeJose">
+<skos:prefLabel>Abar Zura y Oliver, Filipe José</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>admiraal Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbaradoVelasco">
+<skos:prefLabel>Abarado, Velasco</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Peru/president</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbarahamseA.P.J.">
+<skos:prefLabel>Abarahamse, A.P.J.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbarteCarl">
+<skos:prefLabel>Abarte, Carl</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbasRonen">
+<skos:prefLabel>Abas, Ronen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbasjidzeAslan">
+<skos:prefLabel>Abasjidze, Aslan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Adzjarië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbasoloItwibe">
+<skos:prefLabel>Abasolo, Itwibe</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbateArthur">
+<skos:prefLabel>Abate, Arthur</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbateAtnafu">
+<skos:prefLabel>Abate, Atnafu</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbatielosAntonios">
+<skos:prefLabel>Abatielos, Antonios</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Griekenland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbavanaL.R.">
+<skos:prefLabel>Abavana, L.R.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Ghana</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbayomiKofo">
+<skos:prefLabel>Abayomi, Kofo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbadoClaudio">
+<skos:prefLabel>Abbado, Claudio</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>dirigent Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_Abbasal-JubouriSaadiTu'ma">
+<skos:prefLabel>Abbas al-Jubouri, Saadi Tu'ma</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>leger Irak, min. Defensie</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasAl-MahdawiFadhel">
+<skos:prefLabel>Abbas Al-Mahdawi, Fadhel</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasAbdoel">
+<skos:prefLabel>Abbas, Abdoel</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasAbu">
+<skos:prefLabel>Abbas, Abu</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>leider Palestijnen PFLP, terrorist</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasCasquillo">
+<skos:prefLabel>Abbas, Casquillo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasF.">
+<skos:prefLabel>Abbas, F.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasFerhat">
+<skos:prefLabel>Abbas, Ferhat</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasHassan">
+<skos:prefLabel>Abbas, Hassan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasJanine">
+<skos:prefLabel>Abbas, Janine</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasMahmud">
+<skos:prefLabel>Abbas, Mahmud</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:altLabel>Abu Mazen</skos:altLabel>
+<skos:scopeNote>premier Palestina, PLO-vertegenwoordiger</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbasMekkie">
+<skos:prefLabel>Abbas, Mekkie</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>VN-commissie voor Afrika</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbdullahprinsMarokko">
+<skos:prefLabel>Abbdullah (prins Marokko)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbePierre">
+<skos:prefLabel>Abbé Pierre</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:altLabel>Groues, H.A.</skos:altLabel>
+<skos:scopeNote>stichter Emmaus communiteit; H.A. Groues</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbebeprinsesEthiopie">
+<skos:prefLabel>Abbebe (prinses Ethiopië)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbebeMedferiashWorq">
+<skos:prefLabel>Abbebe, Medferiash Worq</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbemaArnold">
+<skos:prefLabel>Abbema, Arnold</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbenesArie">
+<skos:prefLabel>Abbenes, Arie</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbenesH.">
+<skos:prefLabel>Abbenes, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbenhuesC.">
+<skos:prefLabel>Abbenhues, C.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbenhuesMartijn">
+<skos:prefLabel>Abbenhues, Martijn</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbenhuisC.W.E.">
+<skos:prefLabel>Abbenhuis, C.W.E.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>plv. hoofddirecteur Kinderbescherming</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbenhuisTim">
+<skos:prefLabel>Abbenhuis, Tim</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbesBen">
+<skos:prefLabel>Abbes, Ben</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>Marokkaanse ambassadeur te Parijs</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbeyCastors&quot;Thunderbird&quot;">
+<skos:prefLabel>Abbey, Castors "Thunderbird"</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>bokser</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbeyGeorge">
+<skos:prefLabel>Abbey, George</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbingFenna">
+<skos:prefLabel>Abbing, Fenna</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbingHenk">
+<skos:prefLabel>Abbing, Henk</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbingJ.A.">
+<skos:prefLabel>Abbing, J.A.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbinkB.">
+<skos:prefLabel>Abbink, B.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbinkG.A.M.">
+<skos:prefLabel>Abbink, G.A.M.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>kerkhistoricus</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbinkG.J.">
+<skos:prefLabel>Abbink, G.J.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbinkH.">
+<skos:prefLabel>Abbink, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbinkHenk">
+<skos:prefLabel>Abbink, Henk</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbinkJan">
+<skos:prefLabel>Abbink, Jan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbosSamira">
+<skos:prefLabel>Abbos, Samira</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:related rdf:resource="#Person_BouchibtiSamira"/>
+<skos:scopeNote>lid Tweede Kamer PvdA, journaliste</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbbottEricSymes">
+<skos:prefLabel>Abbott, Eric Symes</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbboudElFerikIbrahim">
+<skos:prefLabel>Abboud, El Ferik Ibrahim</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Soedan, president</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdSalehEl">
+<skos:prefLabel>Abd, Saleh El</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>diplomaat Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdallahA.O.">
+<skos:prefLabel>Abdallah, A.O.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdallahAchmed">
+<skos:prefLabel>Abdallah, Achmed</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Comoren, president</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdallahGeorgesIbrahim">
+<skos:prefLabel>Abdallah, Georges Ibrahim</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>terrorist</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdallahJoseph">
+<skos:prefLabel>Abdallah, Joseph</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>vermeend terrorist Armeens bevrijdingsleger</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelAzizeEl">
+<skos:prefLabel>Abdel Azize, El</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>PLO Brussel</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelGhaniRaslan">
+<skos:prefLabel>Abdel Ghani, Raslan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelHalimAbu-GhazalaMohammed">
+<skos:prefLabel>Abdel Halim Abu-Ghazala, Mohammed</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:altLabel>Ghazalah, Abu</skos:altLabel>
+<skos:scopeNote>politicus Egypte, min. Defensie</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelMaguidAhmedEsmat">
+<skos:prefLabel>Abdel Maguid, Ahmed Esmat</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:altLabel>Maguid, Esmat Abdel</skos:altLabel>
+<skos:scopeNote>politicus Egypte, min. BuZa</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelMohsenBenAbdelAzizAlSaoudprinsSaudi-Arabie">
+<skos:prefLabel>Abdel Mohsen Ben Abdel Aziz Al Saoud (prins Saudi-Arabië)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelRauf-Al-Kasam">
+<skos:prefLabel>Abdel Rauf-Al-Kasam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelShafiHaidar">
+<skos:prefLabel>Abdel Shafi, Haidar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>voorz. delegatie Palestijnen vredesoverleg Midden-Oosten</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelkarimF.">
+<skos:prefLabel>Abdelkarim, F.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>olieminister Irak</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelkrimAnuarAoulad">
+<skos:prefLabel>Abdelkrim, Anuar Aoulad</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>cabaretier</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdellaouiYassine">
+<skos:prefLabel>Abdellaoui, Yassine</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdellatifLa'abi">
+<skos:prefLabel>Abdellatif La'abi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdellatifBennis">
+<skos:prefLabel>Abdellatif, Bennis</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>redakteur oppositiekrant l'Opinion, Marokko</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_Abdel-RahmanIbrahimHelmi">
+<skos:prefLabel>Abdel-Rahman, Ibrahim Helmi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus/diplomaat Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_Abdel-RahmanOmar">
+<skos:prefLabel>Abdel-Rahman, Omar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>leider fundamentalistische moslims Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_Abdel-ShafiH.">
+<skos:prefLabel>Abdel-Shafi, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdelwahabMohamad">
+<skos:prefLabel>Abdelwahab, Mohamad</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbderemaneAhmedAbdallah">
+<skos:prefLabel>Abderemane, Ahmed Abdallah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>president eilandengroep Comoren</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbderrahimBouabidM.">
+<skos:prefLabel>Abderrahim Bouabid, M.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Marokko</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdessalamBelaid">
+<skos:prefLabel>Abdessalam, Belaid</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Algerije premier juli '92-</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdessalamRobert">
+<skos:prefLabel>Abdessalam, Robert</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Algerije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdicFikret">
+<skos:prefLabel>Abdic, Fikret</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>lid Presidentiële Raad Bosnië-Hercegovina</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_Abdighani">
+<skos:prefLabel>Abdighani</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>leider Communistische Partij Nepal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdinAbraham">
+<skos:prefLabel>Abdin, Abraham</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdoelaalSalang">
+<skos:prefLabel>Abdoela al Salang</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>generaal Jemen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdoelrahmanZaid">
+<skos:prefLabel>Abdoelrahman, Zaid</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>programmamaker IOS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdoesjaporovDjamolidine">
+<skos:prefLabel>Abdoesjaporov, Djamolidine</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>wielrenner USSR</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdohDjalal">
+<skos:prefLabel>Abdoh, Djalal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdolahKader">
+<skos:prefLabel>Abdolah, Kader</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>Iraans-Nederlandse schrijver</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdousleimanJoshaia">
+<skos:prefLabel>Abdousleiman, Joshaia</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbduheilAbdelLatif">
+<skos:prefLabel>Abduheil, Abdel Latif</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>zwemmer</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulAzizIbnSaudkoningSaudiArabie">
+<skos:prefLabel>Abdul Aziz Ibn Saud (koning Saudi Arabië)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulAzizKhalidIbn">
+<skos:prefLabel>Abdul Aziz Khalid Ibn</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulHakimAmir">
+<skos:prefLabel>Abdul Hakim Amir</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>maarschalk/vice-president Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulJaleelAlRawi">
+<skos:prefLabel>Abdul Jaleel Al Rawi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulRahmanPutraTunku">
+<skos:prefLabel>Abdul Rahman Putra, Tunku</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Maleisië, minister/premier</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulRahmanAkhtar">
+<skos:prefLabel>Abdul Rahman, Akhtar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Pakistan</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulRahmanTunIsmail">
+<skos:prefLabel>Abdul Rahman, Tun Ismail</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>vice-premier Maleisië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulPaula">
+<skos:prefLabel>Abdul, Paula</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>zangeres VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulganiRoeslan">
+<skos:prefLabel>Abdulgani, Roeslan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:altLabel>Abdoelgani, Roeslan</skos:altLabel>
+<skos:scopeNote>onafhankelijkheidsstrijder Indonesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullaAlSalimAlSubah">
+<skos:prefLabel>Abdulla Al Salim Al Subah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>sjeik</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullabinJamshidSeyyid">
+<skos:prefLabel>Abdulla bin Jamshid, Seyyid</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>sultan Zanzibar 1963-1964</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullabinKhalifa">
+<skos:prefLabel>Abdulla bin Khalifa</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>sultan Zanzibar 1960-1963</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullaOsmanDaarAden">
+<skos:prefLabel>Abdulla Osman Daar, Aden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullahkoningJordanie">
+<skos:prefLabel>Abdullah (koning Jordanië)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:related rdf:resource="#Person_AbdullahkroonprinsJordanie"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullahkroonprinsJordanie">
+<skos:prefLabel>Abdullah (kroonprins Jordanië)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:related rdf:resource="#Person_AbdullahkoningJordanie"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullahbinAbdelAzizkoningSaudi-Arabie">
+<skos:prefLabel>Abdullah bin Abdel Aziz (koning Saudi-Arabië)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullahbinAbdelAzizkroonprinsSaudi-Arabie">
+<skos:prefLabel>Abdullah bin Abdel Aziz (kroonprins Saudi-Arabië)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullahBinFadhliAhmed">
+<skos:prefLabel>Abdullah Bin Fadhli, Ahmed</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullahI.">
+<skos:prefLabel>Abdullah, I.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>terrorist</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdullahMohammed">
+<skos:prefLabel>Abdullah, Mohammed</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>sjeik/minister Kashmir, India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdulrazakHusny">
+<skos:prefLabel>Abdulrazak, Husny</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbdusSattarSajidah">
+<skos:prefLabel>Abdus Sattar, Sajidah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>Ned. Moslimraad</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbeMasao">
+<skos:prefLabel>Abe, Masao</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbeShintaro">
+<skos:prefLabel>Abe, Shintaro</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Japan</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbeShinzo">
+<skos:prefLabel>Abe, Shinzo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>premier Japan</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbebeAddis">
+<skos:prefLabel>Abebe, Addis</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbedAbuEl">
+<skos:prefLabel>Abed, Abu El</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbedH.">
+<skos:prefLabel>Abed, H.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbedoS.O.">
+<skos:prefLabel>Abedo, S.O.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>politicus Nigeria</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbeeG.">
+<skos:prefLabel>Abee, G.</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+<skos:scopeNote>onderzoeksleider RU Groningen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Person_AbeelenA.van">
+<skos:prefLabel>Abeelen, A. van</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/>
+</skos:Concept>
+</rdf:RDF>

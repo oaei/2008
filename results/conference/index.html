@@ -1,0 +1,110 @@
+<html><head><title>Ontology Alignment Evaluation Initiative::Conference track|evaluation</title>
+<meta http-equiv="Content-type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../../style.css"></head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2008/">Ontology
+  Alignment Evaluation Initiative - OAEI-2008
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../../../oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+</div>
+
+<h1>Evaluation related to Conference track</h1>
+
+<p>This year we plan to evaluate results of participants with following evaluation methods:</p>
+<ul>
+<li><a href="#general">Global characteristics of results delivered by participants</a>;
+<li><a href="#manual">(1) Evaluation based on manual labelling</a>;
+<li><a href="#reference">(2) Evaluation based on reference mappings</a>;
+<li><a href="#dmm">(3) Evaluation based on Data Mining method</a>;
+<li><a href="#reasoning">(4) Evaluation based on Logical Reasoning</a>;
+<li><a href="#consensus">(5) Evaluation based on consensus of experts</a>
+</ul>
+
+<h2><a name="general">Global characteristics of results delivered by participants</a></h2>
+<ul>
+<li>The DSSim team and the Lily team delivered totally 105 alignments. All ontologies were matched to each other. The ASMOV team delivered 75 alignments. For our evaluation we do not consider alignments where ontologies were matched to themselves.
+<li>Two participants delivered correspondences with certainty factors between 0 and 1 (ASMOV and Lily); one (DSSim) delivered ’certain’ correspondences.
+<li> DSSim team and Lily team delivered only equivalence (e.g., no subsumption) relations, while ASMOV team also provided subsumption relations.
+<li> All participants delivered class-to-class correspondences and property-to-property correspondences.
+</ul>
+<p>You can <a href="conference_submissions.zip">download</a> all alignments delivered by participants. Also partial reference alignment is available, see the section <a href="#reference">Evaluation based on reference mappings</a>. Please let us know what kind of an experiment you do with those data and the reference alignment (ondrej.zamazal at vse dot cz).</p>
+<h2>Results and explanation of particular evaluation methods</h2>
+<p>Evaluation methods are strongly intertwined. Mutual interdependencies are schematically depicted in Figure 1.</p> All but one methods are a posteriori evalution methods. 
+<img src="methods.jpg" height="30%" width="20%" alt="Figure 1" align="left" border="1" vspace="5" hspace="15">
+
+<h3><a name="manual">(1) Evaluation based on manual labelling</a></h3>
+<p>The number of all distinct correspondences is quite high number, therefore we decided to take advantage of sampling. For this kind of evaluation we followed the method of "Stratified Random Sampling" described in [4]. We divided correspondeces of each participant to three subpopulations (strata) according to confidence measures (DSSim provided merely "certain" results, therefore there is one stratum for this system). For each stratum we randomly chose 50 correspondences in order to have 150 correspondences for each system for manual labelling.</p>
+<p>Each individual correspondence was assigned a label (correct, incorrect, unclear, interesting incorrect, interesting correct).</p> 
+<p>As a result, this method provides an approximation of precision for each stratum (precision as proportion of correct correspondences given Bernoulli distribution). Moreover we computed approximated precision in the entire population from the approximated precisions of the strata. Additionally, based on the assumption that this adheres to binomial distribution we computed margin of errors (confidence of 95%) for the approximated precision for each system. These computations are based on equations from [4], section "Stratified Random Sampling".</p>
+<p>In the table below, there are data for each stratum and system where Nh is the size of stratum, nh is the number of sample correspondences from stratum, TP is the number of correct correspondences from sample from stratum, and Ph is an approximation of precision for the correspondences in stratum, additionally there is a margin of error computed as 1/sqrt(nh).</p> We can see that it holds that the higher stratum (interval), the higher precision. The highest precision achieves ASMOV system in interval (0.6,1>. On the other hand, margins of error overlap, therefore we cannot say that ASMOV outperform Lily in this stratum.</p> 
+<img src="evalManual1.jpg"> 
+<p>In the table above, there are the approximations of precision for each strata. Finally, we can compute the approximated precision in the entire population (P*). Using the following equations (where h depicts stratum, and sigma is a margin of error with a confidence of 95%) from [4]:</p>
+<img src="equations.jpg"><br>
+<img src="evalManual2.jpg">
+<p>As we can see from the table above their margins of error overlap. therefore we cannot say which system performs better in this setting. In order to get more precise approximations, we should take larger samples or decrease of confidence (to 50%). However, better way is to take larger sample.</p>
+<p>In the above table, there is also computed so-called 'relative' recall (rrecall) that is computed as ratio of the number of all correct correspondences (sum of all correct correspondences per one system) to the number of all correct correspondences found by any of systems (per all systems). Note that this year we computed rrecall over stratified random samples, so it is rather sample relative recall.</p>  
+<p>Besides, organisers will choose a list of 'interesting' (unclear, weird, surprising etc.) correspondences. These interesting cases (together with unclear cases emerged during work on new reference alignment, see section below) will be material for open discussion during so-called <a href="#consensus">'Consensus Building Workshop'</a>. 
+</p>
+<h3><a name="reference">(2) Evaluation based on reference mappings</a></h3>
+<p>This year, for the first time we have prepared reference alignments of classes for certain part of the whole collection. This reference set has been based on reference mappings done by people from Computer Science Institure at University Manheim, Germany (therefore we will call it "Mannheim reference alignment"). As a result, we provide participants with with traditional evaluation measures such as <i>precision</i> and <i>recall</i>. 
+It is evaluation based on subset reference mapping of the whole collection with regard to generic task.</p>
+<p>In the table below, there are results of all three participants with regard to Mannheim reference alignment. There are traditional measures - precision and recall and their harmonic mean (F-measure) computed for three thresholds 0.2, 0.5, and 0.7.</p>
+<img src="evalReference1a.jpg">
+<p>ASMOV team delivered not only equivalent relations but also subsumption relations. In this kind of evaluation we consider merely equivalent relations.  ASMOV system has two lines. First one considers subsumptions as equivalences (an increase of recall), while the second one excludes all subsumption relations (an increase of precision).</p>
+<p>These results are bias because Mannheim reference alignment contains just subset (8 ontologies) of all 15 ontologies from collection and because there are merely concept-to-concept correspondences.</p> 
+<p>17-10-08, we have finished new reference alignment with all possible pairs of five ontologies. Now, there are concept-to-concept and property-to-property correspondences with equivalent relation. Results of participants have been compared against this new reference alignment and the results are in the table below.</p> 
+<img src="evalReference2a.jpg">
+<p>As we have said, merely correspondences with equivalent relation have been evaluated. 
+</p>
+<p>New reference alignment have been made over five ontologies (cmt, confOf, ekaw, iasted, sigkdd) and this is based on majority vote of three evaluators. In the case of disagreement or quite problematic situation, that correspondence will be the subject of broader public discussion during 'Consensus building workshop'. Material for this discussion is now published in the <a href="http://keg.vse.cz/oaei/">blog</a>. You can download the <a href="reference-alignment.zip">new reference alignment</a> in the official OAEI format.</p>
+<h3><a name="dmm">(3) Evaluation based on Data Mining method</a></h3>
+<p>Data Mining technique enables us to discover non-trivial findings about systems of participants. These findings will be answers to so-called <i>analytic questions</i>, such as:</p>
+<ul>
+<li>Which systems give higher/lower validity than others to the mappings that are deemed 'in/correct'?
+<li>Which systems produce certain mapping patterns/correspondence patterns more often than others?
+<li>Which systems are more successful on certain types of ontologies?
+</ul>
+<p>We will try to answer abovementioned and similar analytic question. Those analytic questions will also be dealing with so-called mapping patterns [2] and newly also with correspondence patterns [1].</p>
+<p>For the purpose of this kind of evaluation, we will use the <i>LISp-Miner</i> tool. Particularly, we will use the <i>4ft-Miner procedure</i> that mines <i>association rules</i>. This kind of evaluation was first tried two years ago [2].
+<p>Evaluation will be ready in November, 2008.</p>
+<h3><a name="reasoning">(4) Evaluation based on Logical Reasoning</a></h3>
+<p>This method will be done by Christian Meilicke and Heiner Stuckenschmidt from 
+Computer Science Institure at University Manheim, Germany. In this kind of evaluation, ontologies will be merged on the base of correspondences submitted by participants. Subsequently, the incoherence of the mappings will be measured based on the incoherence of the merged ontology. This method is related to [3].</p>
+<h3><a name="consensus">(5) Evaluation based on consensus of experts</a></h3>
+<p>This method is quite different from abovementioned ones. The idea is to discuss interesting (unclear, weird, surprising etc.) correspondences collaboratively in the group of experts (everybody is expert in this domain). Similarly to previous year, we will organise (during the <a href="http://www.om2008.ontologymatching.org/">Ontology Matching workshop</a>) so-called <i>Consensus building workshop</i> during which people will discuss about correctness of given correspondences either from general point of view or from application-specific perspective. As a result, we will analyze the process of argumentation that will ideally provide important insights regarding correspondences.</p>
+<p>Evaluation will be ready in November, 2008.</p>
+<!--
+<h2>Acknowledgements</h2>
+
+<p>We deeply acknowledge the effort of contributors to the evaluation:
+</p>
+-->
+<h2>Contacts</h2>
+<p>Contact addresses are Ondřej Šváb-Zamazal (ondrej.zamazal at vse dot cz) and Vojtěch Svátek (svatek at vse dot cz).</p>
+<h2>References</h2>
+<p>
+<!--[1] Šváb O., Svátek V. Combining Ontology Mapping Methods Using Bayesian Networks. OM-2006 at ISWC-2006. -->
+</p>
+<p>
+[1] Scharffe F., Euzenat J., Ding Y., Fensel,D. Correspondence patterns for ontology mediation. OM-2007 at ISWC-2007.</p>
+<p>
+[2] Šváb O., Svátek V., Stuckenschmidt H.: A Study in Empirical and ‘Casuistic’ Analysis of Ontology Mapping Results. ESWC-2007.
+<a href="abstr.htm#eswc07" target="_blank">Abstract</a>
+<a href="http://nb.vse.cz/%7Esvatek/eswc07su.pdf">Draft paper</a> (final version available via <a href="http://www.springerlink.com/content/l3327x8n451g12r0/?p=1b0e634a25944c04836ca09588855c3d&pi=24">SpringerLink</a>)
+</p>
+<p>
+[3] Meilicke C., Stuckenschmidt H. Incoherence as a basis for measuring the quality of ontology mappings. OM-2008 at ISWC 2008.
+</p>
+<p>
+[4] van Hage W.R., Isaac A., Aleksovski Z. Sample evaluation of ontology matching systems. EON-2007, Busan, Korea, 2007.
+</p>
+<h2>Contacts</h2>
+<p>Contact addresses are Ondřej Šváb-Zamazal (ondrej.zamazal at vse dot cz) and Vojtěch Svátek (svatek at vse dot cz).</p>
+
+<p>Initial location of this page: <a href="http://nb.vse.cz/~svabo/oaei2008/eval1.html">http://nb.vse.cz/~svabo/oaei2008/eval1.html</a>.</p>
+
+<div class="address">
+<div class="footer">http://oaei.semanticweb.org/2008/results/conference/</div>
+<!--$Id$-->
+</div>
+</body></html>

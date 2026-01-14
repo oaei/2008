@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::MLdirectory</title>
+<link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2008/">Ontology
+  Alignment Evaluation Initiative - OAEI-2008
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../../oaeismall.jpg" alt="OAEI"
+		   style="float:right; margin-left: 5pt; border-style:none;"/></a>
+</div>
+
+<h1>Multilingual directory Data Set (MLdirectoy) - Internet Directory Alignment</h1>
+
+<p>This track provides alignment problems for different internet directories. The main focus on this track is treatment of multilingual environment (English and Japanese) and instances in the data set.
+</p>
+
+<h2>Data sets</h2>
+
+<p>The data set is constructed from <a href="http://www.google.com/dirhp?hl=en">Google</a> (<a href="http://www.dmoz.org/">open directory project</a>), <a href="http://dir.yahoo.com/">Yahoo!</a>, Lycos Japan, and <a href="http://dir.yahoo.co.jp/">Yahoo! Japan</a>. The data set can be downloaded from <a href="dataset_080617.tgz">here</a>.
+</p>
+
+<p>
+The data set is consist of five domains, automobile, movie, outdoor, photo and software. There are four files for each domain. Two of them (*_1.owl and *_2.owl) are for English directories and the rest (*_3.owl and *_4.owl) are for Japanese directories.
+</p>
+
+<p>
+Owl file is organized with two parts. The first part is structure part, which describes about class structures.
+The second part is description part, which describes about instances of the classes. One of the main differences between <a href="index.html">MLdirectory</a> data set and <a href="../directory/">Directory</a> data set, which is also available for OAEI-2008, is the second part. You can use snippets of the web pages in the internet directories as well as category names.
+</p>
+
+
+<h2>Modalities</h2>
+
+<p>
+The task for this data set is to find corresponding classes between different ontologies. Since we provide four data for each domain, we can obtain six aliments. In other words, we could obtain aliments between following combinations:
+<ul>
+<li> *_1.owl and *_2.owl (English - English)
+<li> *_1.owl and *_3.owl (English - Japanese)
+<li> *_1.owl and *_4.owl (English - Japanese)
+<li> *_2.owl and *_3.owl (English - Japanese)
+<li> *_2.owl and *_4.owl (English - Japanese)
+<li> *_3.owl and *_4.owl (Japanese - Japanese)
+</ul>
+</p>
+
+<p>
+Although we encourage you to submit all alignments above, you can submit some of them such as English-English alignment only.
+</p>
+
+<p>
+It is allowed to use background knowledge such as Japanese-English dictionaries and WordNet. In addition to it, you can use different data included in the MLdirectory data set for parameter tuning. For example, you can use automobile data for adjusting your system, and then induce the alignment results for movie data by the system. It is inhibited that you use the same data to adjust your system, because the system will not be applicable to unseen data. In the same manner, you cannot use specifically crafted background knowledge because it will violate the assumption that we have no idea about unseen data in advance.
+</p>
+
+<h2>Schedule</h2>
+
+<p>Please refer to the schedule
+  at <a href="../">http://oaei.ontologymatching.org/2008/</a>
+</p>
+
+<h2>Reference</h2>
+
+<p>This data set is used in the following papers:
+<ul>
+<li>Ryutaro Ichise, Masahiro Hamasaki, Hideaki Takeda: Discovering Relationships among Catalogs, Proceedings of the 7th International Conference on Discovery Science, LNAI 3245, pp. 371-379, Springer, (2004) <a href="http://www.springerlink.com/content/d2lxv03vf0bckh3k/"><img src="icon_pdf.gif" alt="PDF"></a>
+<li>Ryutaro Ichise, Hideaki Takeda, Shinichi Honiden: Integrating Multiple Internet Directories by Instance-based Learning, Proceedings of the 18th International Joint Conference on Artificial Intelligence, pp. 22-28, (2003) <a href="http://dli.iiit.ac.in/ijcai/IJCAI-2003/PDF/004.pdf"><img src="icon_pdf.gif" alt="PDF"></a>
+</ul>
+</p>
+
+<h2>Contacts</h2>
+<p>If you have any questions and comments, please feel free to contact Ryutaro Ichise ( <img src="address.gif" alt="mail address" width="108" height="24" align="center"> )</p>
+
+<p>Initial location of this page: <a href="http://ri-www.nii.ac.jp/OAEI/2008/index.html">http://ri-www.nii.ac.jp/OAEI/2008/index.html</a>.</p>
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2008/mldirectory/</div>
+<!--$Id$-->
+</div>
+</body>
+</html>

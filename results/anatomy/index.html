@@ -1,0 +1,198 @@
+<html><head><title>Ontology Alignment Evaluation Initiative::Anatomy Results 2008</title>
+
+
+<link rel="stylesheet" type="text/css" href="../../style.css"></head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2008/">Ontology
+  Alignment Evaluation Initiative - OAEI-2008
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../../../oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+</div>
+
+<h1>Results of the OAEI-2008 Anatomy Track</h1>
+
+<p>The data used within the anatomy track (ontologies and reference alignment) has already been desrcibed in the 2007 results webpage. We suggest the reader not familar with the data set to visit <a href="../../../2007/results/anatomy/index.html">http://oaei.ontologymatching.org/2007/anatomy/index.html</a> first. The same holds with respect to the definition of recall+ and the description of the label comparison approach to distinguish between trivial and non trivial correspondences.</p>
+
+<h2>Test Data and Experimental Setting</h2>
+
+<p> We divided the task of automatically generating an alignment between the human anatomy and the mouse anatomy into four subtasks. Task #1 is obligatory for participants of the anatomy track, while task #2, #3 and #4 are optional tasks. Compared to 2007, we also introduced #4 as challenging fourth subtask. For task #1 the matching system has to be applied with standard settings to obtain a result that is as good as possible with respect to the expected f-value. With respect to this task we are in particular interested in how far matching systems improved their results compared to last years evaluation. For task #2 an alignment with increased precision has to be found. Contrary to this, in task #3 an alignment with increased recall has to be generated. We believe that systems configurable with respect to these requirements will be much more useful in concrete scenarios compared to static systems. While we expect most systems to solve the first three tasks, we expect only few systems to solve task #4. For this task a part of the reference alignment is available as additional input. In task #4 we tried to simulate the following scenario. Suppose that a group of domain experts already created an incomplete reference alignment by manually validating a set of automatically generated correspondences. As a result a partial reference alignment, in the following referred to as R<sub>p</sub>, is available. Given both ontologies as well as R<sub>p</sub>, a matching system should be able to exploit the additional information encoded in R<sub>p</sub>. We constructed R<sub>p</sub> as the union of the correct trivial correspondences and a small set of 54 non trivial correspondences. Thus R<sub>p</sub> consists of 988 correspondences, while the complete reference alignment R contains 1523 correspondences.</p>
+
+<h2>Results</h2>
+
+<p>In total, nine systems participated in the anatomy task (in 2007 there were 11 participants). These systems can be divided into a group of systems using biomedical background knowledge (e.g. UMLS as lexical reference system) and another group of systems that do not exploit domain specific background knowledge. Systems belonging to the first group are SAMBO and ASMOV while the other systems belong to the second group. Table 1 gives an overview of participating systems (rows presented in grey font refer to systems which only participated in 2007). In 2007 we observed that systems of the first group have a significant advantage of finding non trivial correspondences, in particular the best three systems (AOAS, SAMBO, and ASMOV) made use of background knowledge. We will later see wether this assumption could be verified with respect to the 2008 submissions.</p>
+
+<table  width="80%" border="2" cellspacing="1" cellpadding="5">
+<tr>
+<th>Matching System</th><th> Runtime </th><th> BK </th><th> Precision </th><th> Recall </th><th> Recall+ </th><th> F-measure </th>
+</tr>
+<tr>
+<td class="grey">AOAS</td>
+<td class="grey"> &asymp; n.a. </td>
+<td class="grey">  yes </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.928</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.815</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.523</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.868</sub> </td>
+</tr>
+
+<tr>
+<td>SAMBO </td><td> &asymp; 12h </td><td> yes </td><td> 0.869 <sub class="grey">&nbsp;0.845<sub> </td><td> 0.836 <sub class="grey">&nbsp; </td><td> 0.586 <sub class="grey">&nbsp;0.601</sub> </td><td> 0.852 <sub class="grey">&nbsp;0.821</sub> </td>
+</tr><tr>
+<td>SAMBOdtf </td><td> &asymp; 17h  </td><td> yes  </td><td> 0.831 <sub class="grey">&nbsp;</sub> </td><td> 0.833 <sub class="grey">&nbsp;</sub> </td><td> 0.579 <sub class="grey">&nbsp;</sub> </td><td> 0.832 <sub class="grey">&nbsp;</sub> </td>
+</tr><tr>
+<td>RiMOM </td><td> &asymp; 24min </td><td> no </td><td> 0.929 <sub class="grey">&nbsp;0.377</sub> </td><td> 0.735 <sub class="grey">&nbsp;0.668</sub> </td><td> 0.350 <sub class="grey">&nbsp;0.404</sub> </td><td> 0.821 <sub class="grey">&nbsp;0.482</sub>  </td>
+</tr><tr>
+<td>aflood </td><td> 1min 5s </td><td>  no </td><td> 0.874 <sub class="grey">&nbsp;</sub> </td><td> 0.682 <sub class="grey">&nbsp;</sub> </td><td> 0.275 <sub class="grey">&nbsp;</sub> </td><td> 0.766 <sub class="grey">&nbsp;</sub> </td>
+</tr><tr>
+<td><i>Label Eq.</i>  </td><td> - </td><td> no </td><td> 0.981 <sub class="grey">&nbsp;0.981</sub> </td><td> 0.613 <sub class="grey">&nbsp;0.613</sub> </td><td> 0.000 <sub class="grey">&nbsp;0.000</sub> </td><td> 0.755 <sub class="grey">&nbsp;0.755</sub>  </td>
+</tr><tr>
+<td>Lily </td><td> &asymp; 3h 20min  </td><td> no </td><td> 0.796 <sub class="grey">&nbsp;0.481</sub> </td><td> 0.693 <sub class="grey">&nbsp;0.567</sub> </td><td> 0.470 <sub class="grey">&nbsp;0.387</sub> </td><td> 0.741 <sub class="grey">&nbsp;0.520</sub>  </td>
+</tr>
+<tr>
+<td class="grey">FalconAO</td>
+<td class="grey"> &asymp; 12min </td>
+<td class="grey">  no </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.963</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.599</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.127</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.738</sub> </td>
+</tr>
+<tr>
+<td>ASMOV </td><td> &asymp; 3h 50min </td><td> yes </td><td> 0.787 <sub class="grey">&nbsp;0.802</sub> </td><td> 0.652 <sub class="grey">&nbsp;0.711</sub> </td><td> 0.246 <sub class="grey">&nbsp;0.280</sub> </td><td> 0.713 <sub class="grey">&nbsp;0.754</sub>  </td>
+</tr><tr>
+<td>AROMA </td><td> 3min 50s </td><td>  no </td><td> 0.803 <sub class="grey">&nbsp;</sub> </td><td> 0.560 <sub class="grey">&nbsp;</sub> </td><td> 0.302 <sub class="grey">&nbsp;</sub> </td><td> 0.660 <sub class="grey">&nbsp;</sub>  </td>
+</tr><tr>
+<td>DSSim </td><td> &asymp; 17min </td><td> no </td><td> 0.616 <sub class="grey">&nbsp;0.208</sub> </td><td> 0.624 <sub class="grey">&nbsp;0.189</sub> </td><td> 0.170 <sub class="grey">&nbsp;0.070</sub> </td><td> 0.620 <sub class="grey">&nbsp;0.198</sub>  </td>
+</tr>
+<tr>
+<td class="grey">Prior</td>
+<td class="grey"> &asymp; 23min </td>
+<td class="grey">  no </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.593</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.598</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.350</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.596</sub> </td>
+</tr>
+
+<tr>
+<td>TaxoMap </td><td> &asymp; 25min </td><td> no </td><td> 0.460 <sub class="grey">&nbsp;0.586</sub> </td><td> 0.764 <sub class="grey">&nbsp;0.700</sub> </td><td> 0.470 <sub class="grey">&nbsp;0.234</sub> </td><td> 0.574 <sub class="grey">&nbsp;0.638</sub>  </td>
+</tr>
+
+<tr>
+<td class="grey">XSOM</td>
+<td class="grey"> &asymp; 10h </td>
+<td class="grey">  no </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.915</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.212</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.008</sub> </td>
+<td class="grey"> &nbsp;n.a.&nbsp;&nbsp; <sub class="grey">&nbsp;0.344</sub> </td>
+</tr>
+<caption align="bottom">Table 1: All participants of 2007 and 2008 evaluation. Runtime, use of domain specific background knowledge (BK), precision, recall, recall+ and f-value for task #1. Results of the 2007 evaluation are presented in smaller font if available. Notice that the measurements of 2007 have been slightly corrected due to some minor modifications of the reference alignment.</caption>
+</table>
+
+<h3>Compliance measures for task</h3>
+<p>
+Table 1 lists the results of the participants in descending order with respect to the achieved f-value (we ordered the systems according to their 2008 f-value and used the values of 2007 for those systems not participating this year). In the first row of the 2008 submission we find the SAMBO system followed by its extension SAMBOdtf. SAMBO has achieved slightly better results for both precision and recall in 2008 compared to the 2007 submission. SAMBO now nearly reaches the f-value which AOAS achieved 2007. This is an notable result, since SAMBO is originally designed to generate alignment suggestions that are afterwards presented to a human evaluator in an interactive fashion. While SAMBO and SAMBOdtf make extensive use of biomedical background knowledge, the RiMOM matching system is mainly based on computing label edit-distances combined with similarity propagation strategies. Due to a major improvement of the RiMOM results, RiMOM is now one of the top matching systems for the anatomy track even though it does not make use of any specific background knowledge. Notice also that RiMOM solves the matching task in a very efficient way. Nearly all matching systems particpating in 2007 improved their results, while ASMOV and TaxoMap obtained slightly worse results. Further considerations have to clarify the reasons for this decline.
+</p>
+
+<h3>Task #2 and #3</h3>
+<p>
+As explained above these subtasks show in how far matching systems can be configured towards a trade-off between precision and recall. To our suprise only four participants submitted results for task #2 and #3 showing that they were able to adapt their system for different scenarios of application. These systems were RiMOM, Lily, ASMOV, and DSSim. The results for track #2 and #3 can be found in table 2. The most interesting results can be found with respect to track #3. Here we see that both Lily and RiMOM were able to detect over 50&#37 of the non trivial correspondences with acceptable precision. In particular, Lily outperforms all particpants with respect the task of finding non-trivial correspondences when taking all of the results of 2007 and 2008 into account. This is a suprising result since Lily does not use any biomedical background knowledge.
+</p>
+
+<table  width="80%" border="2" cellspacing="1" cellpadding="5">
+
+<tr><th rowspan="2">Matching System</th><th colspan="4"> Task #1 </th><th colspan="3"> Task #2 </th><th colspan="4"> Task #3 </th></tr>
+
+<tr><th> Prec </th><th> Rec </th><th> Rec+ </th><th> F-Measure </th><th> Prec </th><th> Rec </th><th>  F-Measure </th><th> Prec </th><th> Rec </th><th> Rec+</th><th> F-Measure </th></tr>
+
+<tr><td>
+RiMOM </td><td> 0.929 </td><td> 0.735 </td><td> 0.350 </td><td> 0.821 </td><td> 0.964 </td><td> 0.677 </td><td>  0.795 </td><td> 0.450 </td><td> 0.808 </td><td> 0.538 </td><td> 0.578 </td></tr>
+<tr><td>
+Lily </td><td> 0.796 </td><td> 0.693 </td><td> 0.470 </td><td> 0.741 </td><td> 0.863 </td><td> 0.540 </td><td>  0.664 </td><td> 0.490 </td><td> 0.790 </td><td> 0.613 </td><td> 0.605 </td></tr>
+<tr><td>
+ASMOV </td><td> 0.787 </td><td> 0.652 </td><td> 0.246 </td><td> 0.713 </td><td> 0.944 </td><td> 0.044 </td><td> 0.084 </td><td> 0.763 </td><td> 0.647 </td><td> 0.238 </td><td> 0.700 </td></tr>
+<tr><td>
+DSSim </td><td> 0.616 </td><td> 0.624 </td><td> 0.170 </td><td> 0.620 </td><td> 0.687 </td><td> 0.525 </td><td>  0.595 </td><td> 0.339 </td><td> 0.538 </td><td> 0.258 </td><td> 0.416 </td></tr>
+<caption align="bottom">Table 2: Precision, Recall, Recall+ and F-measure comapring results of track #1, #2 and #3</caption>
+</table>
+
+<h3>Task #4</h3>
+<p>
+Four systems particpated in task #4. These systems are SAMBO and SAMBOdtf, RiMOM, and ASMOV. In the following we refer to alignment generated my a matcher for task #1 resp. #4 as M<sub>1</sub> resp. M<sub>4</sub>. Notice first of all that a direct comparison between M<sub>1</sub> and M<sub>4</sub> is not appropriate to measure the improvement that results from exploiting R<sub>p</sub>. We thus have to compare M<sub>1</sub> - R<sub>p</sub> resp. M<sub>4</sub> - R<sub>p</sub> with the unknown subset of the reference alignment R<sub>u</sub> = R<sub>p</sub> - R. The differences between M<sub>1</sub>(partial reference mapping not given) and M<sub>4</sub> (partial reference given) are presented in table 3. All particpants slightly increased the overall quality of the generated alignments with respect to the unknown part of the reference alignment. SAMBOdtf and ASMOV exploited the partial reference alignment in the most effective way. We measured an approximately 2 percentage higher f-value. This seems to be only a minor improvement at first sight, but notice that all of the correspodences in R<sub>u</sub> are non trivial due to our choice of the partial reference alignment. This improvement is primarily based on generating an alignment with increased precision. ASMOV for example could increase its precision from 0.339 to 0.402. Only SAMBOdtf could also profit from the partial reference alignment by a slightly increased recall. Obviously, the partial reference alignment is mainly used in the context of a strategy which filters out incorrect correspondences.  
+</p>
+
+<table  width="80%" border="2" cellspacing="1" cellpadding="5">
+
+<tr>
+<th>	Matching System</th>
+<th>	&Delta;-Precision</th>
+<th>	&Delta;-Recall</th>
+<th>	&Delta;-F-value</th>
+</tr>
+
+<tr>   
+<td>SAMBO </td>
+<td> +0.024&nbsp;<sub class="grey"> &nbsp; 0.636  &rarr  0.660</sub> </td>
+<td> -0.002&nbsp;<sub class="grey"> &nbsp; 0.626  &rarr  0.624</sub> </td>
+<td> +0.011&nbsp;<sub class="grey"> &nbsp; 0.631  &rarr  0.642</sub> </td>
+</tr>
+<tr>
+<td>SAMBOdtf </td>
+<td> +0.040&nbsp;<sub class="grey"> &nbsp; 0.563  &rarr  0.603</sub> </td>
+<td> +0.008&nbsp;<sub class="grey"> &nbsp; 0.622  &rarr  0.630</sub> </td>
+<td> +0.025&nbsp;<sub class="grey"> &nbsp; 0.591  &rarr  0.616</sub> </td>
+</tr>
+<tr>
+<td>ASMOV </td>
+<td> +0.063&nbsp;<sub class="grey"> &nbsp; 0.339  &rarr  0.402</sub> </td>
+<td> -0.004&nbsp;<sub class="grey"> &nbsp; 0.258  &rarr  0.254</sub> </td>
+<td> +0.019&nbsp;<sub class="grey"> &nbsp; 0.293  &rarr  0.312</sub> </td>
+</tr>
+<tr>
+<td>RiMOM </td>
+<td> +0.012&nbsp;<sub class="grey"> &nbsp; 0.700  &rarr  0.712</sub>  </td>
+<td> +0.000&nbsp;<sub class="grey"> &nbsp; 0.370  &rarr  0.370</sub>  </td>
+<td> +0.003&nbsp;<sub class="grey"> &nbsp; 0.484  &rarr  0.487</sub> </td>
+</tr>
+
+<caption align="bottom">Table 3: Each row shows the increase in precision, recall and f-measure based on a comparison with the unknown part of the reference alignment. Value for M<sub>1</sub> &rarr M<sub>4</sub> are presented in smaller font.</caption>
+</table>
+
+<h3>Runtime</h3>
+<p>
+Even though the submitted alignments have been generated on different machines, we believe that the provided runtimes are nevertheless useful and provide a basis for an approximate comparison.\footnote{Notice that most of the runtime information presented in table \ref{tab:anatomy-results1} has been provided by participants. Only for the two fastest systems, namely aflood and AROMA, runtimes have been measured by the track organizers on the same machine (Pentium D 3.4GHz, 2GB RAM).} Compared to the runtimes measured in last years competition we observe that systems with a high runtime in 2007 managed to decrease the runtime of their system significantly, e.g. Lily and ASMOV. Amongst all systems AROMA and aflood, both participating for the first time, perform best with respect to runtime efficiency. In particular, the aflood system achieves results of high quality in a very efficient way.
+</p>
+
+<h2>Conclusions</h2>
+
+<p>
+In last years evaluation we concluded that the use of domain related background knowledge is a crucial point in matching biomedical ontologies. This observation is supported by the claims made by other researchers. The current results partially support this claim, in particular the good results of the SAMBO system. Nevertheless, the results of RiMOM and Lily in subtrack #1 and #3 indicate that matching systems are able to detect a significant fraction of non trivial correspondences even though they do not rely on background knowledge.</br>In particular, we computed the union of the alignments generated by RiMOM (#3), Lily (#3) and SAMBO (#1). As a result we measured a recall of 92.25&#37 with recall+ of 80&#37 while each system on its own detects a significantly lower number of correspondences. Thus, there seems to be a significant potential of exploiting knowledge encoded in the ontologies. A combination of both approaches might result in a hybrid matching strategy that uses both background knowledge and the internal knowledge to its full extent.
+</p>
+
+<h2>Related Links</h2>
+
+<ul>
+<li><a href="../../../2007/results/anatomy/index.html">http://oaei.ontologymatching.org/2007/anatomy/index.html</a></li>
+</ul>
+
+<p>
+To enable a comparison between the results submitted by the participants, all of the submitted alignments are now available for download as zip-file.
+</p>
+
+<ul>
+	<li><b><a href="anatomy2008-submissions.zip">All final submissions of the participants *</a></b> (available since 19.Nov 2008)</li>
+</ul>
+
+<p>* Folder SEM contains the results of the simple label equality matcher.</p>
+
+
+<p class="importnant">Most of the results presented at this webpage will be published as part of the &quot;Final Results of the OAEI 2008&quot;-paper. If you are one of participants and detect some incorrect or missleading information, please contact Christian Meilicke (Email: christian (at) informatik (dot) uni-mannheim (dot) de). Comments are welcome!</p>
+
+<p>Initial location of this page: <a href="http://webrum.uni-mannheim.de/math/lski/anatomy08/results.html">http://webrum.uni-mannheim.de/math/lski/anatomy08/results.html</a>.</p>
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2008/results/anatomy/</div>
+<!--$Id$-->
+</div>
+</body></html>

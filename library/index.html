@@ -1,0 +1,245 @@
+<html>
+<head>
+  <title>Ontology Alignment Evaluation Initiative::Library Track</title>
+  <link rel="stylesheet" type="text/css"
+  href="../style.css">
+</head>
+
+<body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;"
+href="http://oaei.ontologymatching.org/2008/">Ontology Alignment Evaluation
+Initiative - OAEI-2008 Campaign</a><a
+href="http://oaei.ontologymatching.org/"><img
+src="../../oaeismall.jpg" alt="OAEI"
+style="float:right; margin-left: 5pt; border-style:none;"></a> </div>
+
+<h1>National Library of the Netherlands (KB) Thesaurus Mapping Task</h1>
+
+<p>Participants of this task are expected to align two Dutch thesauri used to
+index books from two collections held by the National Library of the
+Netherlands (<a href="http://www.kb.nl">KB</a>). The required alignments
+links are inspired by the SKOS vocabulary. Results have been evaluated by
+members of the <a href="http://stitch.cs.vu.nl">STITCH</a> project and thanks to an application-specific gold standard.</p>
+
+<p>This task reiterates the OAEI 2007 <a href="../../2007/library/">Library track</a>.
+</p>
+
+<h2>Data sets</h2>
+
+<p>KB maintains two big collections: the <a
+href="http://netuit.kb.nl/">Deposit Collection</a>, containing all the Dutch
+printed publications (one million items), and the Scientific Collection, with
+about 1.4 million books mainly about the history, language and culture of the
+Netherlands.</p>
+
+<p>Each collection is described according to its own indexing system and
+conceptual vocabulary. On the one hand, the Scientific Collection is
+described using the <strong>GTT</strong>, a huge vocabulary containing 35,000
+general concepts ranging from Wolkenkrabbers (Sky-scrapers) to Verzorging
+(Care). On the other hand, the books contained in the Deposit Collection are
+mainly indexed against the <strong>Brinkman thesaurus</strong>, containing a
+large set of headings (more than 5,000) that are expected to serve as global
+subjects of books. Both thesauri have similar coverage (there are more than
+2,000 concepts having exactly the same label) but differ in granularity.</p>
+
+<p>For each concept, the thesauri provide the usual lexical and semantic
+information: preferred labels, synonyms and notes, broader and related
+concepts, etc. The language of both thesauri is Dutch, but a quite
+substantial part of Brinkman concepts (around 60%) come with English labels.
+For the purpose of the alignment, the two thesauri have been represented
+according to the <a href="http://www.w3.org/2004/02/skos/">SKOS</a> model,
+which provides with all these features. But an OWL version is available (see
+the <a href="index.html#OWL">appendix</a> for more details).</p>
+
+<p><strong>The goal of the task is to find semantic links between the
+concepts contained by these GTT and Brinkman thesauri.</strong></p>
+
+<p>Note that the two collections described with the GTT and Brinkman
+thesaurus are overlapping: some books are hence described by the two
+thesauri. This year, book descriptions will be made available to
+participants, so as to enable the use of extension-based alignment
+techniques.</p>
+<!--h3>Versions</h3>
+<p>Please uncomment and fill if there are several versions of the
+dataset.</p-->
+
+<h2>Modalities</h2>
+
+<h3><a name="mappingconfigs">Expected Alignments</a></h3>
+
+<p>The expected alignments shall come in the format defined for the <a
+href="../align.html">Ontology Alignment
+API</a>.</p>
+
+<p>As the context of the task is clearly thesaurus-based information systems,
+the alignment links to be produced shall be compatible with standard
+thesaurus semantic links. Especially expected are alignment links found in
+the (new) <a href="http://www.w3.org/TR/skos-reference/">SKOS</a> vocabulary
+namespace (<code>http://www.w3.org/2008/05/skos#</code>, referred to as
+<code>skos:</code>):</p>
+<ul>
+  <li><code>skos:exactMatch</code>, which denotes equivalence between two
+    concepts;</li>
+  <li><code>skos:broadMatch</code> and <code>skos:narrowMatch</code>,
+    denoting hierarchical generalization and specialization;</li>
+  <li><code>skos:relatedMatch</code>, denoting general association.</li>
+</ul>
+
+<p>Note that other semantic relations found in the former <a
+href="http://www.w3.org/2004/02/skos/mapping/spec/">SKOS mapping</a>
+vocabulary namespace
+(<code>http://www.w3.org/2004/02/skos/mapping#</code>,referred to as
+<code>skosm:</code>) are <em><strong>not allowed</strong></em>:
+<code>skosm:minorMatch</code>, <code>skosm:majorMatch</code>. It is however
+possible to use classes of SKOS mapping that enable to map defined concepts,
+even though not all be evaluated:</p>
+<ul>
+  <li><code>skosm:AND</code> and <code>skosm:OR</code>, denoting intersection
+    and union of concepts, <em>will be evaluated</em>;</li>
+  <li><code>skosm:NOT</code> <em>will not be evaluated</em>.</li>
+</ul>
+
+<p>It is also possible to handle alignment results in the form of OWL
+statements (<code>rdfs:subClassOf</code>,
+<code>owl:equivalentClass</code>,...). But these will be interpreted
+according to the rules presented in the <a href="index.html#OWL">appendix on
+OWL</a>.</p>
+
+<p><em>Note on alignment cardinality and confidence measure:</em> </p>
+<ul>
+  <li>results can come with confidence measures, even though these will not
+    be formally evaluated;</li>
+  <li>it is allowed to have a same concept involved in different mapping
+    links (1-n and m-n mapping situations)</li>
+</ul>
+
+<h3><a name="evaluation" id="evaluation">Evaluation</a></h3>
+
+<p>Evaluation of the alignments will be done by members of the STITCH team
+with the help of domain experts. A special attention will be given to
+application relevance. As for last year, criteria for evaluation will be
+chosen according to specific application scenarios like unified thesaurus
+design or book re-annotation.</p>
+
+<p>Due to the size of the vocabulary, only sample evaluation may be carried
+out for some scenarios. The modality of this sample evaluation will be
+determined later, depending for example on the number of participants.</p>
+
+<h3>Data availability</h3>
+The data for the two vocabularies can be asked for by sending mail to the
+organizers of the task, <a href="mailto:aisaac at few dot vu dot nl">Antoine
+Isaac</a> and <a href="mailto:Henk dot Matthezing at kb dot nl">Henk
+Matthezing</a>. Participating requires accepting the terms of this <a
+href="http://creativecommons.org/licenses/by-nc-sa/2.5/nl/deed.en">creative
+commons licence</a> and committing not to use the data for a purpose other
+than the OAEI campaign. [This situation is caused by the data coming from two
+different environments] 
+
+<p>Please notice that this e-mail process is not only expected to ensure
+compliance with IP situation. It will also help us to keep contact with
+participants, for instance if a new version of the data is produced, after a
+complaint by a participant.</p>
+
+<h2>Schedule</h2>
+<dl>
+  <dt>May 19th</dt>
+    <dd>datasets are out</dd>
+  <dt>June 15th</dt>
+    <dd>end of commenting period</dd>
+  <dt>July 1st</dt>
+    <dd>tests are frozen</dd>
+  <dt>September 1st</dt>
+    <dd>participants send preliminary results (for
+    interoperability-checking)</dd>
+  <dt>September 26th</dt>
+    <dd>participants send final results and papers</dd>
+  <dt>October 10th</dt>
+    <dd>organisers publish results for comments</dd>
+  <dt>October 26th-27th</dt>
+    <dd>final results ready and <a
+      href="http://om2008.ontologymatching.org">OM-2008 workshop</a>.</dd>
+</dl>
+<!-- <h2>Tool</h2>
+
+<p>If there are any usable specfic tools</p> -->
+
+<h2>Acknowledgements</h2>
+
+<p>Stefan Schlobach (VU) Claus Zinn (MPI) have helped the scientific
+organization of the track. Yvonne van der Steen, Irene Wolters, Maarten van
+Schie, Erik Oltmans and Johan Stapels have given crucial help on the KB
+side.</p>
+
+<h2>Organizors and contributors</h2>
+Antoine Isaac, Henk Matthezing, Lourens van der Meij, Shenghui Wang. 
+
+<h2>Contacts</h2>
+
+<p>Please send any questions and comments to <a
+href="mailto:aisaac at few dot vu dot nl">Antoine Isaac</a> and <a
+href="mailto:Henk dot Matthezing at kb dot nl">Henk Matthezing</a>.</p>
+
+<div class="address">
+</div>
+
+<h2 name="OWL" id="OWL">Annex: OWL variant for the data</h2>
+
+<p>In case the participants' tool cannot input or output the proposed SKOS
+data, OWL versions are provided, and OWL alignment relationships can be
+evaluated. Notice, however, that this amounts to making specific
+interpretations of the original data and produced alignments, and might
+reduce the quality of the final results.</p>
+
+<p>The following conversions were made regarding the SKOS data made available
+for the track:</p>
+<ul>
+  <li>instances of <code>skos:Concept</code> are converted into instances of
+    <code>owl:Class</code>;</li>
+  <li><code>skos:prefLabel</code>, <code>skos:altLabel</code> and
+    <code>skos:hiddenLabel</code> statements are converted to
+    <code>rdfs:label</code> statements, which removes the subtle distinctions
+    that exist between these different properties (in GTT for instance, many
+    <code>altLabel</code>s are not synonyms at all)</li>
+  <li>various kind of <code>skos:note</code>s are converted to
+    <code>rdfs:comment</code>s;</li>
+  <li><code>skos:broader</code> statements are converted into
+    <code>rdfs:subClassOf</code> statements;</li>
+  <li><code>skos:related</code> statements are converted into
+    <code>rdfs:seeAlso</code> statements.</li>
+</ul>
+
+<p>The following interpretations will be made of OWL data sent <em>back</em>
+by participants:</p>
+<ul>
+  <li>instances of <code>owl:Class</code> will be interpreted as instances of
+    <code>skos:Concept</code>;</li>
+  <li><code>owl:equivalentClass</code> statements will be interpreted as
+    <code>skos:exactMatch</code> statements;</li>
+  <li>if participants align the original concepts (as instances of
+    <code>skos:Concept</code> and not <code>owl:Class</code>) using
+    <code>owl:sameAs</code>, these statements will also be interpreted as
+    <code>skos:exactMatch</code>s;</li>
+  <li><code>rdfs:subClassOf</code> statements will be interpreted as
+    <code>skos:broaderMatch</code> statements;</li>
+  <li><code>rdfs:seeAlso</code> statements will be interpreted as
+    <code>skos:relatedMatch</code> statements;</li>
+  <li>if participants' tools output alignments involving defined classes
+    using owl:intersectionOf and owl:unionOf respectively, the concerned
+    statements will be interpreted as statements involving
+    <code>skosm:AND</code> and <code>skosm:OR</code>. Disjunction-like
+    statements (<code>owl:disjoint</code>, <code>owl:differentFrom</code>,
+    <code>owl:disjointWith</code>, <code>owl:ComplementOf</code> which could
+    be interpreted as statements involving <code>skosm:NOT</code>) will be
+    ignored, as these are not evaluated.</li>
+</ul>
+
+<p>Initial location of this page: <a href="http://www.few.vu.nl/~aisaac/oaei2008/">http://www.few.vu.nl/~aisaac/oaei2008/</a>.</p>
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2008/library/</div>
+</div>
+<!--$Id$-->
+</body>
+</html>

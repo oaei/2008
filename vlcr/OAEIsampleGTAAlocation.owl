@@ -1,0 +1,2146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/TR/skos-reference#">
+<owl:Ontology rdf:about=""/>
+<skos:Concept rdf:about="#Location_30Decembrie">
+<skos:prefLabel>30 Decembrie</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Roemenië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A.G.Wildervankkanaal">
+<skos:prefLabel>A.G. Wildervankkanaal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groningen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A1">
+<skos:prefLabel>A1</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A10">
+<skos:prefLabel>A10</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A12">
+<skos:prefLabel>A12</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A13">
+<skos:prefLabel>A13</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A15">
+<skos:prefLabel>A15</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A16">
+<skos:prefLabel>A16</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A2">
+<skos:prefLabel>A2</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A20">
+<skos:prefLabel>A20</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A27">
+<skos:prefLabel>A27</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A28">
+<skos:prefLabel>A28</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A29">
+<skos:prefLabel>A29</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A30">
+<skos:prefLabel>A30</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A4">
+<skos:prefLabel>A4</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A48">
+<skos:prefLabel>A48</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A50">
+<skos:prefLabel>A50</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A58">
+<skos:prefLabel>A58</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A6">
+<skos:prefLabel>A6</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A62">
+<skos:prefLabel>A62</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A7">
+<skos:prefLabel>A7</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A73">
+<skos:prefLabel>A73</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A8">
+<skos:prefLabel>A8</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_A9">
+<skos:prefLabel>A9</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>snelweg Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aa">
+<skos:prefLabel>Aa</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>rivier Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aabey">
+<skos:prefLabel>Aabey</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Libanon</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aagtekerke">
+<skos:prefLabel>Aagtekerke</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalborg">
+<skos:prefLabel>Aalborg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Denemarken</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalburg">
+<skos:prefLabel>Aalburg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalden">
+<skos:prefLabel>Aalden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalgarde">
+<skos:prefLabel>Aalgarde</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalsmeer">
+<skos:prefLabel>Aalsmeer</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalst">
+<skos:prefLabel>Aalst</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>België</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AalstNoord-Brabant">
+<skos:prefLabel>Aalst (Noord-Brabant)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalstrup">
+<skos:prefLabel>Aalstrup</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalsund">
+<skos:prefLabel>Aalsund</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalten">
+<skos:prefLabel>Aalten</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aalzum">
+<skos:prefLabel>Aalzum</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aar">
+<skos:prefLabel>Aar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>rivier Zuid-Holland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aarbaniye">
+<skos:prefLabel>Aarbaniye</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Libanon</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aarburg">
+<skos:prefLabel>Aarburg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zwitserland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aardenburg">
+<skos:prefLabel>Aardenburg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:related rdf:resource="#Location_Sluis-Aardenburg"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aare">
+<skos:prefLabel>Aare</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>rivier Zwitserland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aarkanaal">
+<skos:prefLabel>Aarkanaal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aarlanderveen">
+<skos:prefLabel>Aarlanderveen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aarle-Rixtel">
+<skos:prefLabel>Aarle-Rixtel</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aarsele">
+<skos:prefLabel>Aarsele</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>België</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aartswoud">
+<skos:prefLabel>Aartswoud</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aayen">
+<skos:prefLabel>Aayen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aba">
+<skos:prefLabel>Aba</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Kameroen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abadan">
+<skos:prefLabel>Abadan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Iran</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abakaliki">
+<skos:prefLabel>Abakaliki</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nigeria</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abaya">
+<skos:prefLabel>Abaya</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ethiopië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abazia">
+<skos:prefLabel>Abazia</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Joegoslavië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abbasyia">
+<skos:prefLabel>Abbasyia</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Libanon</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abbega">
+<skos:prefLabel>Abbega</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abbekerk">
+<skos:prefLabel>Abbekerk</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abbenbroek">
+<skos:prefLabel>Abbenbroek</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abbenes">
+<skos:prefLabel>Abbenes</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abbeyleix">
+<skos:prefLabel>Abbeyleix</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ierland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abbis">
+<skos:prefLabel>Abbis</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abchazie">
+<skos:prefLabel>Abchazië</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Sovjet-Unie</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abcoude">
+<skos:prefLabel>Abcoude</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abde">
+<skos:prefLabel>Abde</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Israël</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abe-Ali">
+<skos:prefLabel>Abe-Ali</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abeche">
+<skos:prefLabel>Abéché</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Tsjaad</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abensberg">
+<skos:prefLabel>Abensberg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>West-Duitland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aberdare">
+<skos:prefLabel>Aberdare</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aberdeen">
+<skos:prefLabel>Aberdeen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Schotland, Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AberdeenMarylandVS">
+<skos:prefLabel>Aberdeen (Maryland, VS)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AberdeenSouthDakotaVS">
+<skos:prefLabel>Aberdeen (South Dakota, VS)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AberdeenProvingGround">
+<skos:prefLabel>Aberdeen Proving Ground</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>militaire proefbasis VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aberdeenshire">
+<skos:prefLabel>Aberdeenshire</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aberfan">
+<skos:prefLabel>Aberfan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aberkorn">
+<skos:prefLabel>Aberkorn</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zambia</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aberporth">
+<skos:prefLabel>Aberporth</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abertillery">
+<skos:prefLabel>Abertillery</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aberystwyth">
+<skos:prefLabel>Aberystwyth</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abessinie">
+<skos:prefLabel>Abessinië</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:related rdf:resource="#Location_Ethiopie"/>
+<skos:scopeNote>Afrika</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abidjan">
+<skos:prefLabel>Abidjan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ivoorkust</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abilene">
+<skos:prefLabel>Abilene</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Texas, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abingdon">
+<skos:prefLabel>Abingdon</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aboksa">
+<skos:prefLabel>Aboksa</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abruzzen">
+<skos:prefLabel>Abruzzen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>bergstreek Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuDhabi">
+<skos:prefLabel>Abu Dhabi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Verenigde Arabische Emiraten</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuDias">
+<skos:prefLabel>Abu Dias</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Israël</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuGhosh">
+<skos:prefLabel>Abu Ghosh</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Israël</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuGhraib">
+<skos:prefLabel>Abu Ghraib</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>voorstad Bagdad, Irak</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuMadi">
+<skos:prefLabel>Abu Madi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuMusa">
+<skos:prefLabel>Abu Musa</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>eiland Iran</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuRudeis">
+<skos:prefLabel>Abu Rudeis</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Sinaï</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuSimbel">
+<skos:prefLabel>Abu Simbel</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AbuSultan">
+<skos:prefLabel>Abu Sultân</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Abuna">
+<skos:prefLabel>Abuna</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Brazilië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aburi">
+<skos:prefLabel>Aburi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ghana</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Acapulco">
+<skos:prefLabel>Acapulco</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Mexico</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Accomarca">
+<skos:prefLabel>Accomarca</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Peru</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Accra">
+<skos:prefLabel>Accra</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ghana</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Accrington">
+<skos:prefLabel>Accrington</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achill">
+<skos:prefLabel>Achill</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>eiland Ierland}</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Acht">
+<skos:prefLabel>Acht</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achterberg">
+<skos:prefLabel>Achterberg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achterhoek">
+<skos:prefLabel>Achterhoek</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:altLabel>De Graafschap (Nederland)</skos:altLabel>
+<skos:altLabel>Graafschap (Nederland)</skos:altLabel>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achterhoven">
+<skos:prefLabel>Achterhoven</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achtersluispolder">
+<skos:prefLabel>Achtersluispolder</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achterveld">
+<skos:prefLabel>Achterveld</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Gelderland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AchterveldwijkIJsselstein">
+<skos:prefLabel>Achterveld (wijk IJsselstein)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achthuizen">
+<skos:prefLabel>Achthuizen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achtkarspelen">
+<skos:prefLabel>Achtkarspelen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Achtmaal">
+<skos:prefLabel>Achtmaal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Noord-Brabant</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AckerdijksePlassen">
+<skos:prefLabel>Ackerdijkse Plassen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Acquoy">
+<skos:prefLabel>Acquoy</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Acre">
+<skos:prefLabel>Acre</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Israël</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AcreBrazilie">
+<skos:prefLabel>Acre (Brazilië)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Acton">
+<skos:prefLabel>Acton</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Acuna">
+<skos:prefLabel>Acuna</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Argentinië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adabiya">
+<skos:prefLabel>Adabiya</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adamit">
+<skos:prefLabel>Adamit</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>kibboets</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adams-rivier">
+<skos:prefLabel>Adams-rivier</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Canada</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adana">
+<skos:prefLabel>Adana</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Turkije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adapazari">
+<skos:prefLabel>Adapazari</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Turkije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AddisAbeba">
+<skos:prefLabel>Addis Abeba</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ethiopië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adelaide">
+<skos:prefLabel>Adelaide</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Australië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AdelaideIsland">
+<skos:prefLabel>Adelaide Island</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Antartica</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adelboden">
+<skos:prefLabel>Adelboden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zwitserland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adelfia">
+<skos:prefLabel>Adelfia</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Jamaica</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aden">
+<skos:prefLabel>Aden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zuid-Jemen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adinkerke">
+<skos:prefLabel>Adinkerke</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>België</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adjlun">
+<skos:prefLabel>Adjlun</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Syrië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Admiralenbuurt">
+<skos:prefLabel>Admiralenbuurt</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>wijk in Amsterdam</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adorp">
+<skos:prefLabel>Adorp</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adria">
+<skos:prefLabel>Adria</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AdriatischeZee">
+<skos:prefLabel>Adriatische Zee</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adrichem">
+<skos:prefLabel>Adrichem</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>sportpark Beverwijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aduard">
+<skos:prefLabel>Aduard</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aduarderzijl">
+<skos:prefLabel>Aduarderzijl</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Adzjarie">
+<skos:prefLabel>Adzjarië</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>provincie Georgië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aegina">
+<skos:prefLabel>Aegina</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>eiland Griekenland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aerdenhout">
+<skos:prefLabel>Aerdenhout</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aerdt">
+<skos:prefLabel>Aerdt</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Gelderland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AfamUko">
+<skos:prefLabel>Afam Uko</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nigeria</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afar">
+<skos:prefLabel>Afar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Oman</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afareaitu">
+<skos:prefLabel>Afareaitu</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Mooréa, Frans-Polynesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afarland">
+<skos:prefLabel>Afarland</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>deel voormalig Frans-Somaliland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afferden">
+<skos:prefLabel>Afferden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afghanistan">
+<skos:prefLabel>Afghanistan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afobaka-stuwdam">
+<skos:prefLabel>Afobaka-stuwdam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Suriname</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afrika">
+<skos:prefLabel>Afrika</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>werelddeel</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afrikaanderwijk">
+<skos:prefLabel>Afrikaanderwijk</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>woonwijk Rotterdam</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afrikahaven">
+<skos:prefLabel>Afrikahaven</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afsluitdijk">
+<skos:prefLabel>Afsluitdijk</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afula">
+<skos:prefLabel>Afula</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Israël</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Afyon">
+<skos:prefLabel>Afyon</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Turkije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agadir">
+<skos:prefLabel>Agadir</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Marokko</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agartala">
+<skos:prefLabel>Agartala</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agassiz">
+<skos:prefLabel>Agassiz</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Canada</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agats">
+<skos:prefLabel>Agats</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Irian Jaya</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agdam">
+<skos:prefLabel>Agdam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Azerbeidzjan</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agelo">
+<skos:prefLabel>Agelo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agen">
+<skos:prefLabel>Agen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aghalee">
+<skos:prefLabel>Aghalee</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Noord-Ierland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AgiaMarina">
+<skos:prefLabel>Agia Marina</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Griekenland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agincourt">
+<skos:prefLabel>Agincourt</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>eiland bij Taiwan, ook: Penchia Hsü</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AgiosEvstratios">
+<skos:prefLabel>Agios Evstratios</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Griekenland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agostinopolis">
+<skos:prefLabel>Agostinopolis</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Brazilië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agoue">
+<skos:prefLabel>Agoue</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Togo</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agra">
+<skos:prefLabel>Agra</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agrigento">
+<skos:prefLabel>Agrigento</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AguadeDios">
+<skos:prefLabel>Agua de Dios</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>leprakolonie Colombia</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AguaEscondida">
+<skos:prefLabel>Agua Escondida</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>El Salvador</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aguascalientes">
+<skos:prefLabel>Aguascalientes</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Mexico</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aguilares">
+<skos:prefLabel>Aguilares</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Argentinië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Agung">
+<skos:prefLabel>Agung</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>berg Indonesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahaus">
+<skos:prefLabel>Ahaus</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahium">
+<skos:prefLabel>Ahium</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spaanse Sahara</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahlhorn">
+<skos:prefLabel>Ahlhorn</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AhmadKhel-vallei">
+<skos:prefLabel>Ahmad Khel-vallei</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Afghanistan</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahmadabad">
+<skos:prefLabel>Ahmadabad</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahmadnagar">
+<skos:prefLabel>Ahmadnagar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahmici">
+<skos:prefLabel>Ahmici</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Bosnië-Herzegovina</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahuas">
+<skos:prefLabel>Ahuas</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Honduras</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahun">
+<skos:prefLabel>Ahun</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ahwaz">
+<skos:prefLabel>Ahwaz</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Iran</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aigues-Mortes">
+<skos:prefLabel>Aigues-Mortes</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zuid-Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ain">
+<skos:prefLabel>Ain</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>rivier Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AinBaal">
+<skos:prefLabel>Ain Baâl</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Libanon</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AinTemouchent">
+<skos:prefLabel>Ain Temouchent</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Algerije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ain-Beida">
+<skos:prefLabel>Ain-Beida</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Algerije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ain-el-Dalb">
+<skos:prefLabel>Aïn-el-Dalb</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Libanon</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aising">
+<skos:prefLabel>Aising</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aisne">
+<skos:prefLabel>Aisne</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>rivier Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aix">
+<skos:prefLabel>Aix</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>eilandje Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aix-en-Provence">
+<skos:prefLabel>Aix-en-Provence</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aix-les-Bains">
+<skos:prefLabel>Aix-les-Bains</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ajaccio">
+<skos:prefLabel>Ajaccio</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Corsica</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ajartembaga">
+<skos:prefLabel>Ajartembaga</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Celebes, Nederlands-Indië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ajman">
+<skos:prefLabel>Ajman</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Oman</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akaba">
+<skos:prefLabel>Akaba</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Jordanië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akademgorok">
+<skos:prefLabel>Akademgorok</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aken">
+<skos:prefLabel>Aken</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akersloot">
+<skos:prefLabel>Akersloot</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Noord-Holland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akhnur">
+<skos:prefLabel>Akhnur</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akita">
+<skos:prefLabel>Akita</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Japan</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akkerwoude">
+<skos:prefLabel>Akkerwoude</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland}</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akkrum">
+<skos:prefLabel>Akkrum</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akmarijp">
+<skos:prefLabel>Akmarijp</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akmolinsk">
+<skos:prefLabel>Akmolinsk</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Sovjet-Unie</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akosombo">
+<skos:prefLabel>Akosombo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ghana</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akosombo-dam">
+<skos:prefLabel>Akosombo-dam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>dam in rivier Volta, Ghana</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akron">
+<skos:prefLabel>Akron</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ohio, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akroteri">
+<skos:prefLabel>Akroteri</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Cyprus</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akrotiri">
+<skos:prefLabel>Akrotiri</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>vliegveld Cyprus</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aksum">
+<skos:prefLabel>Aksum</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Etiopië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Akwal">
+<skos:prefLabel>Akwal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Pakistan</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlAfrun">
+<skos:prefLabel>Al Afrun</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Algerije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlAmar">
+<skos:prefLabel>Al Amar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Bahrein</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlAmari">
+<skos:prefLabel>Al Amari</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Israël</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlArish">
+<skos:prefLabel>Al Arish</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Algerije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlAsnam">
+<skos:prefLabel>Al Asnam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Algerije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlAyun">
+<skos:prefLabel>Al Ayun</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Oman</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlAzrak">
+<skos:prefLabel>Al Azrak</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlBaqa">
+<skos:prefLabel>Al Baqa</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Jordanië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlBayda">
+<skos:prefLabel>Al Bayda</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Jemen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlFaw">
+<skos:prefLabel>Al Faw</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Irak</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlHamma">
+<skos:prefLabel>Al Hamma</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Golan-hoogte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlHa-Oeta">
+<skos:prefLabel>Al Ha-Oeta</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zuid-Arabië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlHoceima">
+<skos:prefLabel>Al Hoceima</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Marokko</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlIttiad">
+<skos:prefLabel>Al Ittiad</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Jemen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlJubayl">
+<skos:prefLabel>Al Jubayl</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Saudi-Arabië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlKaal">
+<skos:prefLabel>Al Kaal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Libanon</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlKahir">
+<skos:prefLabel>Al Kahir</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlKaramah">
+<skos:prefLabel>Al Karamah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Jordanië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlKaryatein">
+<skos:prefLabel>Al Karyatein</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Jordanië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlKharijah">
+<skos:prefLabel>Al Kharijah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlKhubrah">
+<skos:prefLabel>Al Khubrah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Saudi-Arabië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlKuneitra">
+<skos:prefLabel>Al Kuneitra</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:altLabel>Koeneitra</skos:altLabel>
+<skos:scopeNote>Syrië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlKut">
+<skos:prefLabel>Al Kut</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Irak</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlMaknasi">
+<skos:prefLabel>Al Maknasi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Tunesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlMansurah">
+<skos:prefLabel>Al Mansurah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:altLabel>Mansura</skos:altLabel>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlMarsa">
+<skos:prefLabel>Al Marsa</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Tunesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlQamishli">
+<skos:prefLabel>Al Qamishli</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Syrië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alabama">
+<skos:prefLabel>Alabama</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>staat, rivier VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alamada">
+<skos:prefLabel>Alamada</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Etiopië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alameda">
+<skos:prefLabel>Alameda</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Californië, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alamo">
+<skos:prefLabel>Alamo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Mexico</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alamogordo">
+<skos:prefLabel>Alamogordo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alandseilanden">
+<skos:prefLabel>Alandseilanden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Finland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alanganellur">
+<skos:prefLabel>Alanganellur</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alanya">
+<skos:prefLabel>Alanya</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Turkije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alaska">
+<skos:prefLabel>Alaska</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>staat VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlbalatedeZorita">
+<skos:prefLabel>Albalate de Zorita</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albanie">
+<skos:prefLabel>Albanië</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zuid-Europa</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albany">
+<skos:prefLabel>Albany</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albergen">
+<skos:prefLabel>Albergen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alberobello">
+<skos:prefLabel>Alberobello</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlbertCuypstraat">
+<skos:prefLabel>Albert Cuypstraat</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Amsterdam</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlbertPark">
+<skos:prefLabel>Albert Park</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alberta">
+<skos:prefLabel>Alberta</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Canada</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albertkanaal">
+<skos:prefLabel>Albertkanaal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>België</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alberton">
+<skos:prefLabel>Alberton</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Montana, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albertslund">
+<skos:prefLabel>Albertslund</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Denemarken</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albertson">
+<skos:prefLabel>Albertson</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>New York, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albertville">
+<skos:prefLabel>Albertville</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlbertvilleBelgischKongo">
+<skos:prefLabel>Albertville (Belgisch Kongo)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:related rdf:resource="#Location_Kalemie"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albi">
+<skos:prefLabel>Albi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albina">
+<skos:prefLabel>Albina</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Suriname</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alblasserdam">
+<skos:prefLabel>Alblasserdam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alblasserwaard">
+<skos:prefLabel>Alblasserwaard</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alborg">
+<skos:prefLabel>Alborg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Denemarken</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albufeira">
+<skos:prefLabel>Albufeira</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Portugal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albuquerque">
+<skos:prefLabel>Albuquerque</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nieuw Mexico, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Albury">
+<skos:prefLabel>Albury</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Australië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alcatraz">
+<skos:prefLabel>Alcatraz</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alcazar">
+<skos:prefLabel>Alcázar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alcira">
+<skos:prefLabel>Alcira</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Argentinië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alcobaça">
+<skos:prefLabel>Alcobaça</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Portugal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Al-Daoudi">
+<skos:prefLabel>Al-Daoudi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aldaya">
+<skos:prefLabel>Aldaya</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aldergrove">
+<skos:prefLabel>Aldergrove</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>vliegveld Belfast, Noord-Ierland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aldermaston">
+<skos:prefLabel>Aldermaston</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alderney">
+<skos:prefLabel>Alderney</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Kanaaleiland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aldershot">
+<skos:prefLabel>Aldershot</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aldridge">
+<skos:prefLabel>Aldridge</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alegrete">
+<skos:prefLabel>Alegrete</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Brazilië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aleksinac">
+<skos:prefLabel>Aleksinac</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AleksinackiRudnici">
+<skos:prefLabel>Aleksinacki Rudnici</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Joegoslavië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alem">
+<skos:prefLabel>Alem</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alençon">
+<skos:prefLabel>Alençon</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alentejo">
+<skos:prefLabel>Alentejo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Portugal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aleoeten">
+<skos:prefLabel>Aleoeten</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>eilandengroep</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aleppo">
+<skos:prefLabel>Aleppo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Syrië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alessandria">
+<skos:prefLabel>Alessándria</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alesund">
+<skos:prefLabel>Alesund</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Noorwegen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alexanderplatz">
+<skos:prefLabel>Alexanderplatz</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Berlijn</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alexanderpolder">
+<skos:prefLabel>Alexanderpolder</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alexanderstad">
+<skos:prefLabel>Alexanderstad</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alexandra">
+<skos:prefLabel>Alexandra</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zuid-Afrika</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alexandria">
+<skos:prefLabel>Alexandria</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alexandrie">
+<skos:prefLabel>Alexandrië</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alexandrupolis">
+<skos:prefLabel>Alexandrupolis</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Griekenland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aley">
+<skos:prefLabel>Aley</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Libanon</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alfoula">
+<skos:prefLabel>Alfoula</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Algarve">
+<skos:prefLabel>Algarve</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Portugal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Algeciras">
+<skos:prefLabel>Algeciras</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Algerije">
+<skos:prefLabel>Algerije</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Noord-Afrika</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Algiers">
+<skos:prefLabel>Algiers</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Algerije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alhandra">
+<skos:prefLabel>Alhandra</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alicante">
+<skos:prefLabel>Alicante</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AliceSprings">
+<skos:prefLabel>Alice Springs</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Australië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Aliquippa">
+<skos:prefLabel>Aliquippa</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Pennsylvania, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AliwalNorth">
+<skos:prefLabel>Aliwal North</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alkemade">
+<skos:prefLabel>Alkemade</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zuid-Holland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alkmaar">
+<skos:prefLabel>Alkmaar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alkmaardermeer">
+<skos:prefLabel>Alkmaardermeer</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Allahabad">
+<skos:prefLabel>Allahabad</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Allardsoog">
+<skos:prefLabel>Allardsoog</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Friesland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Allentown">
+<skos:prefLabel>Allentown</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AllgauerAlpen">
+<skos:prefLabel>Allgäuer Alpen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Duitsland/Oostenrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Allibela">
+<skos:prefLabel>Allibela</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ethiopië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Allingawier">
+<skos:prefLabel>Allingawier</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alliston">
+<skos:prefLabel>Alliston</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Ontario, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Allons">
+<skos:prefLabel>Allons</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alloway">
+<skos:prefLabel>Alloway</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alma-Ata">
+<skos:prefLabel>Alma-Ata</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Sovjet-Unie</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almada">
+<skos:prefLabel>Almada</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Portugal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almagor">
+<skos:prefLabel>Almagor</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Israël</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almagro">
+<skos:prefLabel>Almagro</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almaza">
+<skos:prefLabel>Almaza</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>vliegveld Cairo</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almeda">
+<skos:prefLabel>Almeda</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almeirim">
+<skos:prefLabel>Almeirim</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Portugal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almelo">
+<skos:prefLabel>Almelo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almen">
+<skos:prefLabel>Almen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almere">
+<skos:prefLabel>Almere</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almere-Buiten">
+<skos:prefLabel>Almere-Buiten</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>woonwijk Almere</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almere-Haven">
+<skos:prefLabel>Almere-Haven</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>woonwijk Almere</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almeria">
+<skos:prefLabel>Almeria</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlmiranteBarroso">
+<skos:prefLabel>Almirante Barroso</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Almofala">
+<skos:prefLabel>Almofala</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Portugal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Al-Muhammadiyah">
+<skos:prefLabel>Al-Muhammadiyah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:altLabel>Fédala</skos:altLabel>
+<skos:scopeNote>Marokko</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Al-Mukha">
+<skos:prefLabel>Al-Mukha</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:related rdf:resource="#Location_Mokka"/>
+<skos:scopeNote>Jemen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Al-Muthanna">
+<skos:prefLabel>Al-Muthanna</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>provincie Irak</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alonissos">
+<skos:prefLabel>Alonissos</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Griekenland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlorSetar">
+<skos:prefLabel>Alor Setar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Maleisië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlorStar">
+<skos:prefLabel>Alor Star</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Maleisië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alped'Huez">
+<skos:prefLabel>Alpe d'Huez</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>berg Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alpen">
+<skos:prefLabel>Alpen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:altLabel>Franse Alpen</skos:altLabel>
+<skos:scopeNote>gebergte Europa</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alphen">
+<skos:prefLabel>Alphen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Noord-Brabant</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AlphenaandenRijn">
+<skos:prefLabel>Alphen aan den Rijn</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Zuid-Holland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Al-Qantara">
+<skos:prefLabel>Al-Qantara</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Egypte</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alresford">
+<skos:prefLabel>Alresford</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alsdorf">
+<skos:prefLabel>Alsdorf</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alsfeld">
+<skos:prefLabel>Alsfeld</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alster">
+<skos:prefLabel>Alster</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alta">
+<skos:prefLabel>Alta</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Noorwegen</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AltaGracia">
+<skos:prefLabel>Alta Gracia</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Argentinië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altamira">
+<skos:prefLabel>Altamira</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Brazilië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altamont">
+<skos:prefLabel>Altamont</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altamura">
+<skos:prefLabel>Altamura</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altan">
+<skos:prefLabel>Altan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AltePicardie-kanaal">
+<skos:prefLabel>Alte Picardie-kanaal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altena">
+<skos:prefLabel>Altena</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>West-Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altenberg">
+<skos:prefLabel>Altenberg</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Oost-Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altenmarkt-Sauchensee">
+<skos:prefLabel>Altenmarkt-Sauchensee</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Oostenrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altenstadt">
+<skos:prefLabel>Altenstadt</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Althorp">
+<skos:prefLabel>Althorp</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AltoAdige">
+<skos:prefLabel>Alto Adige</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alton">
+<skos:prefLabel>Alton</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altoona">
+<skos:prefLabel>Altoona</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altotting">
+<skos:prefLabel>Altötting</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altshausen">
+<skos:prefLabel>Altshausen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Altus">
+<skos:prefLabel>Altus</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alupe">
+<skos:prefLabel>Alupe</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Kenia</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alverna">
+<skos:prefLabel>Alverna</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Gelderland, Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alverstoke">
+<skos:prefLabel>Alverstoke</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alzira">
+<skos:prefLabel>Alzira</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Spanje</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Alziva">
+<skos:prefLabel>Alziva</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Cuba</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amadiyah">
+<skos:prefLabel>Amadiyah</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Irak</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amadora">
+<skos:prefLabel>Amadora</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Portugal</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amager">
+<skos:prefLabel>Amager</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Denemarken</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amalfi">
+<skos:prefLabel>Amalfi</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Italië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amaliapolis">
+<skos:prefLabel>Amaliapolis</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Griekenland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amarillo">
+<skos:prefLabel>Amarillo</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amasra">
+<skos:prefLabel>Amasra</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Turkije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amasya">
+<skos:prefLabel>Amasya</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Turkije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amazone">
+<skos:prefLabel>Amazone</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>rivier Zuid-Amerika</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amazonegebied">
+<skos:prefLabel>Amazonegebied</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>stroomgebied Amazone</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ambala">
+<skos:prefLabel>Ambala</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ambarawa">
+<skos:prefLabel>Ambarawa</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Java, Indonesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ambattur">
+<skos:prefLabel>Ambattur</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AmberleyRaafBase">
+<skos:prefLabel>Amberley Raaf Base</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>vliegbasis Australië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ambhra-stuwdam">
+<skos:prefLabel>Ambhra-stuwdam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ambon">
+<skos:prefLabel>Ambon</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>eiland Indonesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ambonstad">
+<skos:prefLabel>Ambon (stad)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Indonesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ambrizete">
+<skos:prefLabel>Ambrizete</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Angola</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AmbtDelden">
+<skos:prefLabel>Ambt Delden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amby">
+<skos:prefLabel>Amby</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Limburg</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amchitka">
+<skos:prefLabel>Amchitka</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Aleoeten</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ameide">
+<skos:prefLabel>Ameide</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ameland">
+<skos:prefLabel>Ameland</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>waddeneiland Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AmeliaIsland">
+<skos:prefLabel>Amelia Island</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amelisweerd">
+<skos:prefLabel>Amelisweerd</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:altLabel>Oud-Amelisweerd</skos:altLabel>
+<skos:scopeNote>landgoed Utrecht</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amels">
+<skos:prefLabel>Amels</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amer">
+<skos:prefLabel>Amer</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>water Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_America">
+<skos:prefLabel>America</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Americus">
+<skos:prefLabel>Americus</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Georgia, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amerikahaven">
+<skos:prefLabel>Amerikahaven</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amerious">
+<skos:prefLabel>Amerious</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amerongen">
+<skos:prefLabel>Amerongen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AmerongseBos">
+<skos:prefLabel>Amerongse Bos</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amersfoort">
+<skos:prefLabel>Amersfoort</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ames">
+<skos:prefLabel>Ames</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Iowa, VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amesbury">
+<skos:prefLabel>Amesbury</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Groot-Brittannië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AmherstCanada">
+<skos:prefLabel>Amherst (Canada)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AmherstVS">
+<skos:prefLabel>Amherst (VS)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amiche-eilanden">
+<skos:prefLabel>Amiche-eilanden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Algerije</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amiens">
+<skos:prefLabel>Amiens</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Frankrijk</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AmistadInternationalDam">
+<skos:prefLabel>Amistad International Dam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Mexico</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amityville">
+<skos:prefLabel>Amityville</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>VS</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amman">
+<skos:prefLabel>Amman</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Jordanië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ammersee">
+<skos:prefLabel>Ammersee</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Duitsland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ammerstol">
+<skos:prefLabel>Ammerstol</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ammerzoden">
+<skos:prefLabel>Ammerzoden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amoentai">
+<skos:prefLabel>Amoentai</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Borneo, Indonesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amoer">
+<skos:prefLabel>Amoer</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>rivier China, Sovjet-Unie</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amoy">
+<skos:prefLabel>Amoy</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>China</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ampang">
+<skos:prefLabel>Ampang</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Maleisië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Ampenan">
+<skos:prefLabel>Ampenan</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Lombok, Indonesië</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amriswil">
+<skos:prefLabel>Amriswil</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amritsar">
+<skos:prefLabel>Amritsar</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>India</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amstel">
+<skos:prefLabel>Amstel</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>rivier Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amsteldijk">
+<skos:prefLabel>Amsteldijk</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Amsterdam</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amstelkanaal">
+<skos:prefLabel>Amstelkanaal</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amstelmeer">
+<skos:prefLabel>Amstelmeer</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amstelveen">
+<skos:prefLabel>Amstelveen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amsterdam">
+<skos:prefLabel>Amsterdam</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Nederland</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_AmsterdamVS">
+<skos:prefLabel>Amsterdam (VS)</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Montana</skos:scopeNote>
+</skos:Concept>
+<skos:Concept rdf:about="#Location_Amsterdam-Noord">
+<skos:prefLabel>Amsterdam-Noord</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/>
+<skos:scopeNote>Amsterdam</skos:scopeNote>
+</skos:Concept>
+</rdf:RDF>

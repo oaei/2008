@@ -1,0 +1,290 @@
+<html><head><title>Ontology Alignment Evaluation Initiative::very large crosslingual resources</title>
+<link rel="stylesheet" type="text/css" href="../../style.css"></head><body>
+<div class="header">
+    <a style="color: grey; line-height: 5mm;"   href="http://oaei.ontologymatching.org/2008/">Ontology Alignment Evaluation Initiative - OAEI-2008 Campaign</a>
+    <a href="http://oaei.ontologymatching.org/"><img src="../../oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+</div>
+
+<h1>Very Large Crosslingual Resources</h1>
+
+<p>The purpose of this task is to match three resources to each other: the Thesaurus of the Netherlands Institute for Sound and Vision called the GTAA, WordNet and DBPedia. The GTAA is in Dutch, while WordNet is in English. DBPedia contains labels in both languages and can therefore be used as a mediator between the two.</p>
+
+<p>All three are broad in scope. WordNet is a generic English lexical database, DBPedia is a semantic web version of Wikipedia and GTAA contains all concepts needed to index Dutch broadcast television.</p>
+
+<p>The purpose of this task is twofold: (1) to map thesauri in different languages and (2) to map resources that are large, rich in semantics but weak in formal structure, i.e. realistic on the Web.</p>
+
+
+<img src="vulogo.jpg" alt="VU logo" align="right" width="120">
+
+<p>We are aiming for SKOS relations: skos:exactMatch, skos:broadmatch, skos:narrowmatch.</p>
+    <p>Go directly to: <a href="#gtaa">GTAA</a>, <a href="#wordnet">WordNet</a>, <a href="#dbpedia">DBPedia</a>, <a href="#evaluation">evaluation</a>, <a href="#schedule">schedule</a>, <a href="#contacts">contact</a></p>
+
+<h2>Data sets</h2>
+
+
+<h3>GTAA</h3>
+<a name="gtaa"></a>
+<h4>General Information</h4>
+
+<p>The GTAA thesaurus, a Dutch acronym for "Common Thesaurus [for] Audiovisual Archives", is used at the <a href="http://portal.beeldengeluid.nl/">Netherlands Institute for Sound and Vision</a>, the Dutch public audiovisual broadcast's archives, for indexing their documents. The thesaurus consists of 6 facets that concern the description of:
+<ul>
+<li>the topic of a TV program: keywords are selected from the Subject facet</li>
+<li>the main people mentioned in a TV program: keywords are selected from the Person facet</li>
+<li>the main "Named Entities" mentioned in a TV program (Corporation names, music bands etc): keywords are selected from the Name facet</li>
+<li>the main locations mentioned in a TV program or the place where it has been created: keywords are selected from the Location facet</li>
+<li>the genre of a TV program: keywords are selected from the Genre facet</li>
+<li>the makers and presentators of a TV program: keywords are selected from the Makers facet</li>
+</ul>
+The GTAA contains approximately 160.000 terms: ~3800 Subject keywords, ~97.000 "Person"s, ~27.000 "Names", ~14.000 Locations, 113 Genres and ~18.000 Makers. In this mapping experiment, we consider only the four following facets: Subject, Person, Name and Location. The thesaurus was originally structured along the lines of the ISO 2788 standard for thesauri that is commonly used by companies and institutions. We have converted it to the <a href="http://www.w3.org/TR/2008/WD-skos-reference-20080125/">SKOS reference model</a>. It contains Broader Terms, Narrower Terms, Related Terms, Scope Notes (notes that help to clarify or define a term) and Preferred and Alternative Labels. Terms in all facets of the GTAA can have Related Terms and Scope Notes, but only the Subject facet has Alternative Labels and Broader Term/Narrower Term relations, the latter organizing the terms into a hierarchy. The hierarchal organisation of the Subject facet is not very dense: 80% of the terms are not involved in hierarchies deeper than 3 levels (the average hierarchy depth is 1.3).</p>
+
+<h4>SKOS Representation </h4>
+The SKOS version of the GTAA consists of skos:Concepts related by  skos:broader, skos:narrower and skos:related properties. In addition, some concepts are clarified with a skos:scopeNote. Samples of the datasets are directly available for inspection from <a href="OAEIsampleGTAAsubject.owl">Subject</a>, <a href="OAEIsampleGTAAperson.owl">Person</a>, <a href="OAEIsampleGTAAname.owl">Name</a>, <a href="OAEIsampleGTAAlocation.owl">Location</a>, and below are examples from each facet. Each facet is in a different file, but all concepts have a skos:inScheme property that specifies the name of the facet that it belongs to, enabling you to put all the data in only one file if necessary.
+
+<h5>Examples of GTAA concepts</h5>
+
+<blockquote>
+<pre>
+&lt;skos:Concept rdf:about="#Subject_alternatieveenergie"&gt;
+    &lt;skos:prefLabel&gt;alternatieve energie&lt;/skos:prefLabel&gt;
+    &lt;skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/&gt;
+    &lt;skos:broader rdf:resource="#Subject_energie"/&gt;
+    &lt;skos:narrower rdf:resource="#Subject_biobrandstoffen"/&gt;
+    &lt;skos:narrower rdf:resource="#Subject_windenergie"/&gt;
+    &lt;skos:narrower rdf:resource="#Subject_zonne-energie"/&gt;
+    &lt;skos:related rdf:resource="#Subject_alcohol"/&gt;
+    &lt;skos:related rdf:resource="#Subject_energiebeleid"/&gt;
+    &lt;skos:related rdf:resource="#Subject_energiebronnen"/&gt;
+    &lt;skos:related rdf:resource="#Subject_getijden"/&gt;
+    &lt;skos:related rdf:resource="#Subject_milieubeleid"/&gt;
+    &lt;skos:related rdf:resource="#Subject_waterkracht"/&gt;
+    &lt;skos:related rdf:resource="#Subject_waterstof"/&gt;
+    &lt;skos:altLabel&gt;getijdenenergie&lt;/skos:altLabel&gt;
+&lt;/skos:Concept&gt;
+</pre>
+</blockquote>
+
+<blockquote>
+<pre>
+&lt;skos:Concept rdf:about="#Person_BeatrixkoninginNederland"&gt;
+    &lt;skos:prefLabel&gt;Beatrix (koningin Nederland)&lt;/skos:prefLabel&gt;
+    &lt;skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Person"/&gt;
+    &lt;skos:related rdf:resource="#Person_BeatrixkroonprinsesNederland"/&gt;
+    &lt;skos:scopeNote&gt;va30-4-80&lt;/skos:scopeNote&gt;
+&lt;/skos:Concept&gt;
+</pre>
+</blockquote>
+
+<blockquote>
+<pre>
+&lt;skos:Concept rdf:about="#Name_Abba"&gt;
+    &lt;skos:prefLabel&gt;Abba&lt;/skos:prefLabel&gt;
+    &lt;skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Name"/&gt;
+    &lt;skos:scopeNote&gt;popgroep Zweden&lt;/skos:scopeNote&gt;
+&lt;/skos:Concept&gt;
+</pre>
+</blockquote>
+
+<blockquote>
+<pre>
+&lt;skos:Concept rdf:about="#Location_Amsterdam"&gt;
+    &lt;skos:prefLabel&gt;Amsterdam&lt;/skos:prefLabel&gt;
+    &lt;skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Location"/&gt;
+    &lt;skos:scopeNote&gt;Nederland&lt;/skos:scopeNote&gt;
+&lt;/skos:Concept&gt;
+</pre>
+</blockquote>
+
+<h4>Obtaining the GTAA dataset</h4>
+The GTAA is copyrighted material. To obtain the full datasets, please download the user agreement <a href="oaei_gtaa_licence_agreement.pdf">here</a>. Fax the signed agreement to +31 20 5987728, at the attention of Laura Hollink, or alternatively scan the form and e-mail it to laurah at cs dot vu dot nl. You will receive by email the password to access the complete dataset.
+
+  <h3>WordNet</h3>
+  <a name="wordnet"></a>
+  <h4>General Information</h4>
+<p><a href="http://wordnet.princeton.edu/">WordNet<a> is a lexical database of the English language. Its main building blocks are <b>synsets</b>: groups of words with a synonymous meaning. An example of a synset is {cliff, drop, drop-off}, described as "a steep high face of rock". In this task, the goal is to match synsets (not words). Four kinds of synsets are distinguished, containing nouns, verbs, adjectives or adverbs. In this task, we are only interested in noun-synsets. There are 7 types of relations between noun-synsets:</p>
+
+    <ul>
+        <li>hyponymOf</li>
+        <li>memberMeronymOf</li>
+        <li>substanceMeronymOf</li>
+        <li>partMeronymOf</li>
+        <li>classifiedByTopic</li>
+        <li>classifiedByUsage</li>
+        <li>classifiedByRegion</li>
+<!--    <li>sameVerbGroupAs</li>
+        <li>entails: between verbs</li>
+        <li>similarTo: between adjectives</li>
+        <li>causes: between verbs</li>
+        <li>attribute:between a noun and an adjective</li>
+        <li>adjectivePertainsTo</li>
+        <li>adverbPertainsTo</li>
+        <li>classifiedBy</li>
+        <li>meronymOf</li> -->
+    </ul>
+
+<p>The main hierarchy in WordNet is built on hyponym relations between synsets, which are similar to subclass relations. Other frequently occurring relations between synsets are meronyms, which denote part-of relations. The classifiedBy relations group synsets according to their topic, region or usage.</p>
+
+<h4>RDF/OWL Representation </h4>
+<p>W3C has translated WordNet version 2.0 into RDF/OWL. The details of this translation are published in a <a href="http://www.w3.org/TR/wordnet-rdf/">working draft</a>. The working draft contains a <a href="http://www.w3.org/2001/sw/BestPractices/WNET/wn-conversion.html#downloads">download section</a>, from which the complete dataset can be downloaded. For convenience, the data is split up in different files, one for each relation. Participants of this OAEI task are free to use (or ignore) all files with all types of relations. Although the goal is to match noun-synsets, relationships between verbs, adverbs and adjectives may be used in the process.</p>
+
+<p>We recommend to use at least the following: synsets, their labels (e.g the synonymous words cliff, drop, drop-off), their descriptive sentences called 'glosses' (e.g. "a steep high face of rock"), and the hyponym hierarchy between synsets, which is comparable to a subclass hierarchy. You would need to download four files:</p>
+
+<p>The file <a href="http://www.w3.org/2006/03/wn/wn20/schemas/wnbasic.rdfs">WordNet Basic Schema</a> contains the RDF-Schema of the dataset. This file states, for example, that a NounSynset is a subClassOf a Synset, that the property meronymOf is the inverse of holonymOf, etc.</p>
+
+<p>The file <a href="http://www.w3.org/2006/03/wn/wn20/rdf/wordnet-synset.rdf">Synsets</a> contains the types of synsets (nounSynsets, verbSynsets, adjectiveSynsets or adverbSynsets), a label and an ID number. The latter is a link to the original princeton version of WordNet and can safely be ignored. Synsets have the form: http://www.w3.org/2006/03/wn/wn20/instances/synset-cliff-noun-1
+
+<blockquote>
+<pre>
+&lt;wn20schema:NounSynset rdf:about="&wn20instances;synset-cliff-noun-1"
+    rdfs:label="cliff"&gt;
+    &lt;wn20schema:synsetId>108670141&lt;/wn20schema:synsetId&gt;
+&lt;/wn20schema:NounSynset&gt;
+</pre>
+</blockquote>
+
+The file <a href="http://www.w3.org/2006/03/wn/wn20/rdf/basic/wordnet-senselabels.rdf">senseLabels</a> contains all labels of the synsets (the Synsets file gives only one for each synset).
+
+<blockquote>
+<pre>
+&lt;rdf:Description rdf:about="&wn20instances;synset-cliff-noun-1"&gt;
+  &lt;wn20schema:senseLabel&gt;cliff&lt;/wn20schema:senseLabel&gt;
+  &lt;wn20schema:senseLabel&gt;drop&lt;/wn20schema:senseLabel&gt;
+  &lt;wn20schema:senseLabel&gt;drop-off&lt;/wn20schema:senseLabel&gt;
+&lt;/rdf:Description&gt;
+</pre>
+</blockquote>
+
+The file <a href="http://www.w3.org/2006/03/wn/wn20/rdf/wordnet-hyponym.rdf">hyponymy</a> contains the hyponym (i.e. subclass) hierarchy between synsets.
+
+<blockquote>
+<pre>
+&lt;rdf:Description rdf:about="&wn20instances;synset-cliff-noun-1"&gt;
+  &lt;wn20schema:hyponymOf rdf:resource="&wn20instances;synset-geological_formation-noun-1"/&gt;
+&lt;/rdf:Description&gt;
+</pre>
+</blockquote>
+
+In a similar fashion, there are files for other the other types of relations in the <a href="http://www.w3.org/2001/sw/BestPractices/WNET/wn-conversion.html#downloads">download section</a> of the W3C working draft.
+
+
+  <h4>Translation to SKOS</h4>
+The original WordNet model is a rich and well-designed model. However, some tools may have problems with the fact that the synsets are instances rather than classes. Therefore, for the purpose of this OAEI task, we have translated the hyponym hierarchy in a skos:broader hierarchy, making the synsets skos:Concepts.
+
+<blockquote><pre>
+&lt;rdf:Description rdf:about="&wn20instances;synset-cliff-noun-1"&gt;
+  &lt;wn20schema:hyponymOf rdf:resource="&wn20instances;synset-geological_formation-noun-1"/&gt;
+&lt;/rdf:Description&gt;
+</pre></blockquote>
+
+becomes
+
+<blockquote><pre>
+&lt;skos:Concept rdf:about="&wn20instances;synset-cliff-noun-1"&gt;
+  &lt;skos:broader rdf:resource="&wn20instances;synset-geological_formation-noun-1"/&gt;
+&lt;/skos:Concept&gt;
+</pre></blockquote>
+
+This translation may be used as an alternative to the <a href="http://www.w3.org/2006/03/wn/wn20/rdf/wordnet-hyponym.rdf">hyponym</a> file and can be downloaded from <a href="wordnet-hyponym-in-skos.rdf">here</a>.
+
+  <h3>DBPedia</h3>
+  <a name="dbpedia"></a>
+  <h4>General Information</h4>
+<p>DBPedia is an extremely rich dataset. It contains 2.18 million resources or "things", each tied to an article in the English language Wikipedia. The "things" are described by titles and abstracts in English and often also in Dutch. DBPedia "things" have numerous properties, such as categories, properties derived from the wikipedia 'infoboxes', links between pages within and outside wikipedia, etc. The purpose of this task is to map the DBPedia "things" to WordNet synsets and GTAA concepts.
+</p>
+
+<p>Important to note is that some DBPedia "things" are already tied to WordNet synsets with a wordnet-type property. For example:
+
+<blockquote><pre>
+&lt;rdf:Description rdf:about="&dbpedia;Air_New_Zealand"&gt;
+    &lt;dbpedia2:wordnet-type rdf:resource="&wn20instances;synset-airline-noun-2"/&gt;
+&lt;/rdf:Description&gt;
+</pre></blockquote>
+
+In addition, most DBPedia "things" are instances in the <a href="http://www.mpi-inf.mpg.de/~suchanek/downloads/yago/">YAGO</a> ontology. Classes in the YAGO ontology correspond to wikipedia categories and WordNet synsets. For example:
+
+<blockquote><pre>
+&lt;rdf:Description rdf:about="&dbpedia;%22Crazy%22_Joe_Davola"&gt;
+    &lt;rdf:type rdf:resource="&yago;FictionalCharacter109587565"/&gt;
+&lt;/rdf:Description&gt;
+</pre></blockquote>
+
+This information may be used to find matches (skos:exactMatch, skos:broadmatch or skos:narrowmatch) between DBPedia "things" and WordNet synsets.</p>
+
+  <h4>RDF/OWL and SKOS representation</h4>
+
+  <p>All information can be downloaded from the <a href="http://wiki.dbpedia.org/Downloads">DBPedia download site</a>. For each type of property (title, abstracts, infobox properties, links to pages, etc.), there is separate file that can be downloaded. Also, small preview files are provided.</p>
+
+  Every type of relation from this download site can be used in this OAEI task. However, you are of course
+not obliged to use them all. You can pick and choose the information
+that you think is useful and that your tool can handle. A reasonable
+choice seems to be to use at least the following information: "things" and their labels, comments, and type information, in addition to the Yago class hierarchy. The model is as follows:</p>
+
+<pre>
+DBPedia "thing"
+    -- rdfs:label "its title"
+    -- rdfs:comment "its abstract"
+    -- rdf:type yago:SomeClass
+
+yago:SomeClass
+    -- rdfs:subClassOf yago:SomeSuperClass
+</pre>
+
+The file 'Titles' contains labels, in <a href="http://downloads.dbpedia.org/3.0/en/articles_label_en.nt.bz2">English</a> and in <a href="http://downloads.dbpedia.org/3.0/nl/articles_label_nl.nt.bz2">Dutch</a>, which are the titles of the corresponding wikipedia articles. The file 'Short Abstracts' contains short abstracts in <a href="http://downloads.dbpedia.org/3.0/en/shortabstract_en.nt.bz2">English</a> and in <a href="http://downloads.dbpedia.org/3.0/nl/shortabstract_nl.nt.bz2">Dutch</a>. The file <a href="http://downloads.dbpedia.org/3.0/en/yagolink_en.nt.bz2">YAGO classes</a> contains rdf:type links between the DBPedia "things" and the Yago classes, and the file <a href="http://downloads.dbpedia.org/3.0/en/yago-class-hierarchy_en.nt.bz2">YAGO Class Hierarchy</a> contains the Yago class hierarchy. In addition, the wikipedia <a href="http://downloads.dbpedia.org/3.0/en/articlecategories_en.nt.bz2">Articles Categories</a> might be useful:
+<pre>
+DBPedia "thing"
+    -- skos:subject dbpedia:SomeCategory
+</pre>
+
+<!--    <p>Note
+that the DBPedia "things" are instances. For those tools that require
+classes, we have translated the instances to classes and rdf:type to
+owl:Class: triples of the form DBPedia:SomeThing rdf:type
+yago:SomeClass become DBPedia:SomeThing rdfs:subClassOf yago:SomeClass.
+This is, however, a downgrading of the dataset:</p>
+
+    DBPedia:SomeThing rdf:type yago:SomeClass rdfs:subClassOf yago:SomeSuperClass, now becomes
+    DBPedia:SomeThing rdfs:subClassOf yago:SomeClass rdfs:subClassOf yago:SomeSuperClass.
+
+    <p>Also, some of the properties become unusable or will have to be translated, such as the wordnet-type property.</p>
+-->
+
+<h2>Evaluation</h2>
+<a name="evaluation"></a>
+<p>We will evaluate mappings between all three pairs of thesauri. Evaluation of both precision and recall will be based on a sample. More information will follow soon.</p>
+
+
+<h2>Schedule</h2>
+<a name="schedule"></a>
+
+<UL>
+<LI>May 20th-May 21rd: Datasets are made available and first task description is finalized.
+<LI>May 20th - June 14th: all comments and questions are very welcome.
+<LI>June 15th: end of commenting period
+<LI>July 1st: datasets and task description is frozen
+<LI>September 1st: participants send preliminary results (for interoperability-checking)
+<LI>September 26th: participants send final results and papers
+<LI> October 10th: organisers publish results for comments
+<LI> October 26th-27th: final results ready and OM-2008 workshop. </UL>
+
+
+
+<h2>Acknowledgements</h2>
+
+<p>We would like to thank Chris Bizer, Fabian Suchanec and Jens Lehman for their help with the DBPedia dataset. We would also like to thank Willem van Hage for his advise. We gratefully acknowledge the Dutch Institute for Sound and Vision for allowing us to use the GTAA. </p>
+
+
+<h2>Contacts</h2>
+<a name="contacts"></a>
+<p>Send any questions, comments, or suggestions to:
+</p><ul>
+  <li><a href="http://www.cs.vu.nl/%7Elaurah/">Laura Hollink</a>: laurah at cs dot vu dot nl</li>
+  <li><a href="http://www.few.vu.nl/~vmalaise/">Véronique Malaisé</a>: vmalaise at few dot vu dot nl</li>
+</ul>
+
+</body></html>
+<p>Initial location of this page: <a href="http://www.few.vu.nl/~laurah/oaei/">http://www.few.vu.nl/~laurah/oaei/</a>.</p>
+
+<div class="address">
+<div class="footer">http://oaei.semanticweb.org/2008/vlcr/</div>
+<!--$Id$-->
+</div>
+</body></html>

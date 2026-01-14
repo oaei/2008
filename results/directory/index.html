@@ -1,0 +1,621 @@
+<html><head><title>Ontology Alignment Evaluation Initiative::Track name</title>
+<link rel="stylesheet" type="text/css" href="table.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+</head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2008/">Ontology Alignment Evaluation Initiative - OAEI-2008 Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../../../oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+</div>
+
+<h1>Directory results</h1>
+
+<p>This test case aims at providing a challenging task for ontology matching systems in the domain of
+large directories. The test case set up is provided <a href="../../directory/">here</a>.
+</p>
+
+<p>In OAEI-2008, 7 out of 13 matching systems participated on the web directories dataset,
+while in <a href="../../../2007/results/directory/">OAEI-2007</a>, 9 out of 18, in <a href="../../../2006/results/directory/">OAEI-2006</a> - 7 out of 10 and in <a href="../../../2005/results/">OAEI-2005</a> - 7 out of 7.</p>
+
+
+<p> 
+Precision, Recall and F-measure results of the systems  on the web directories
+test case are shown in Figure 1. These indicators have been computed 
+following the
+
+<a href="http://eprints.biblio.unitn.it/archive/00001345/01/001.pdf" target="_blank">TaxMe2</a>
+methodology, with the help of
+<a href="http://alignapi.gforge.inria.fr/" target="_blank">Alignment API</a>, version 3.4.</p>
+<p align="center">
+<img src="2008results.jpg" >
+<br>
+<strong>Figure 1:</strong> Matching quality results.
+</p>
+
+
+
+<p>
+Let us make several observations concerning quality of the results for the participating systems.
+In particular, we can observe from Table 1, that all the systems that participated in the directory track in 2007 and 2008 (ASMOV, DSSim, Lily and RiMOM), have increased their Precision values. Considering Recall, we can see that in general the systems that had participated in 2007 and 2008 directory tracks, have decreased their values, the only system that increased it's Recall values is DSSim. In fact, DSSim is the system with the highest F-measure value in 2008.  </p>
+
+<p>
+Table 1 shows that in total 21 matching systems have participated during the 4 years (2005 - 2008) of the <a href="http://oaei.ontologymatching.org/">OAEI</a> campaign in the directory track. No single system has participated in all the web directories dataset track. A total of 14 systems have participated only one time in the evaluation, 5 systems have participated 2 times, and only 2 systems have participated 3 times. The systems that have participated in 3 evaluations are Falcon (2005, 2006 and 2007) and RiMoM (2006, 2007, 2008), the former with a constant increase in the quality of the results, the later with a constant increase in Precision, but in the last evaluation (2008) Recall dropped significantly from 71% in 2007, to 17% in 2008. As already mentioned, almost all the participating systems have experienced a decrease in Recall. </p>
+<p align="center">
+<strong>Table 1. </strong>Summary of submissions by year.
+
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=759 style='border-collapse:
+ collapse;table-layout:fixed;width:576pt'>
+ <col width=46 style='mso-width-source:userset;mso-width-alt:1682;width:35pt'>
+ <col width=113 style='mso-width-source:userset;mso-width-alt:4132;width:85pt'>
+ <col width=50 span=12 style='mso-width-source:userset;mso-width-alt:1828;
+ width:38pt'>
+ <tr height=22 style='height:16.5pt'>
+  <td rowspan=2 height=44 class=xl66 width=46 style='border-bottom:1.5pt solid black;
+  height:33.0pt;width:35pt'>#</td>
+  <td rowspan=2 class=xl67 width=113 style='border-bottom:1.5pt solid black;
+  width:85pt'>Matching System</td>
+  <td colspan=4 class=xl68 width=200 style='border-right:1.5pt solid black;
+  border-left:none;width:152pt'>Recall</td>
+  <td colspan=4 class=xl71 width=200 style='border-right:1.5pt solid black;
+  border-left:none;width:152pt'>Precision</td>
+  <td colspan=4 class=xl74 width=200 style='border-right:1.5pt solid black;
+  width:152pt'>F-measure</td>
+ </tr>
+ <tr height=22 style='height:16.5pt'>
+  <td height=22 class=xl79 align=right style='height:16.5pt;border-left:none'
+  x:num>2005</td>
+  <td class=xl80 align=right style='border-left:none' x:num>2006</td>
+  <td class=xl80 align=right style='border-left:none' x:num>2007</td>
+  <td class=xl81 align=right style='border-left:none' x:num>2008</td>
+  <td class=xl82 align=right style='border-left:none' x:num>2005</td>
+  <td class=xl83 align=right style='border-left:none' x:num>2006</td>
+  <td class=xl83 align=right style='border-left:none' x:num>2007</td>
+  <td class=xl84 align=right style='border-left:none' x:num>2008</td>
+  <td class=xl85 align=right x:num>2005</td>
+  <td class=xl86 align=right style='border-left:none' x:num>2006</td>
+  <td class=xl86 align=right style='border-left:none' x:num>2007</td>
+  <td class=xl87 align=right style='border-left:none' x:num>2008</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl88 align=right style='height:15.75pt' x:num>1</td>
+  <td class=xl89 style='border-left:none'>ASMOV</td>
+  <td class=xl90>&nbsp;</td>
+  <td class=xl91 style='border-left:none'>&nbsp;</td>
+  <td class=xl91 align=right style='border-left:none' x:num="0.4370860927152318">0.44</td>
+  <td class=xl92 align=right style='border-left:none'
+  x:num="0.12185430463576159">0.12</td>
+  <td class=xl93 style='border-left:none'>&nbsp;</td>
+  <td class=xl94 style='border-left:none'>&nbsp;</td>
+  <td class=xl94 align=right style='border-left:none'
+  x:num="0.59104477611940298">0.59</td>
+  <td class=xl95 align=right style='border-left:none' x:num="0.6403712296983759">0.64</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl97 style='border-left:none'>&nbsp;</td>
+  <td class=xl97 align=right style='border-left:none' x:num="0.5025380710659898">0.50</td>
+  <td class=xl98 align=right style='border-left:none'
+  x:num="0.20474777448071216">0.20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>2</td>
+  <td class=xl100 style='border-top:none;border-left:none'>automs</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.1457">0.15</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.31130000000000002">0.31</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.19850000000000001">0.20</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>3</td>
+  <td class=xl100 style='border-top:none;border-left:none'>CIDER</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'
+  x:num="0.38101545253863134">0.38</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 align=right style='border-top:none;border-left:none'
+  x:num="0.5988896599583623">0.60</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 align=right style='border-top:none;border-left:none'
+  x:num="0.4657312466270912">0.47</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>4</td>
+  <td class=xl100 style='border-top:none;border-left:none'>CMS</td>
+  <td class=xl101 align=right style='border-top:none'
+  x:num="0.14080000000000001">0.14</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>5</td>
+  <td class=xl100 style='border-top:none;border-left:none'>COMA</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.26840000000000003">0.27</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.31159999999999999">0.31</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.28839999999999999">0.29</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>6</td>
+  <td class=xl100 style='border-top:none;border-left:none'>ctxMatch2</td>
+  <td class=xl101 align=right style='border-top:none'
+  x:num="9.3600000000000003E-2">0.09</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>7</td>
+  <td class=xl100 style='border-top:none;border-left:none'>DSSim</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.30684326710816778">0.31</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'
+  x:num="0.40662251655629139">0.41</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.60434782608695647">0.60</td>
+  <td class=xl106 align=right style='border-top:none;border-left:none'
+  x:num="0.60156760287393862">0.60</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.40702781844802338">0.41</td>
+  <td class=xl109 align=right style='border-top:none;border-left:none'
+  x:num="0.48524762908324554">0.49</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>8</td>
+  <td class=xl100 style='border-top:none;border-left:none'>Dublin20</td>
+  <td class=xl101 align=right style='border-top:none'
+  x:num="0.26529999999999998">0.27</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>9</td>
+  <td class=xl100 style='border-top:none;border-left:none'>Falcon</td>
+  <td class=xl101 align=right style='border-top:none'
+  x:num="0.31169999999999998">0.31</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.45469999999999999">0.45</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.61280353200882998">0.61</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.40500000000000003">0.41</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.55276782158502591">0.55</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.42849999999999999">0.43</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.58123953098827463">0.58</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>10</td>
+  <td class=xl100 style='border-top:none;border-left:none'>FOAM</td>
+  <td class=xl101 align=right style='border-top:none' x:num="0.1188">0.12</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>11</td>
+  <td class=xl100 style='border-top:none;border-left:none'>hmatch</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.1338">0.13</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.3241">0.32</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.18940000000000001">0.19</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>12</td>
+  <td class=xl100 style='border-top:none;border-left:none'>Lily</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.53686534216335546">0.54</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'
+  x:num="0.37218543046357616">0.37</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.56955503512880568">0.57</td>
+  <td class=xl106 align=right style='border-top:none;border-left:none'
+  x:num="0.58827634333565948">0.59</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.55272727272727284">0.55</td>
+  <td class=xl109 align=right style='border-top:none;border-left:none'
+  x:num="0.45592212006489996">0.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>13</td>
+  <td class=xl100 style='border-top:none;border-left:none'>MapPSO</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'
+  x:num="0.31037527593818987">0.31</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 align=right style='border-top:none;border-left:none'
+  x:num="0.5720097640358015">0.57</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 align=right style='border-top:none;border-left:none'
+  x:num="0.40240412135088727">0.40</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>14</td>
+  <td class=xl100 style='border-top:none;border-left:none'>OCM</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.15720000000000001">0.16</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.33329999999999999">0.33</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.21360000000000001">0.21</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>15</td>
+  <td class=xl100 style='border-top:none;border-left:none'>OLA/OLA2</td>
+  <td class=xl101 align=right style='border-top:none' x:num="0.3196">0.32</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.84061810154525385">0.84</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.62080208672970327">0.62</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.71417854463615904">0.71</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>16</td>
+  <td class=xl100 style='border-top:none;border-left:none'>OMAP</td>
+  <td class=xl101 align=right style='border-top:none'
+  x:num="0.30640000000000001">0.31</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>17</td>
+  <td class=xl100 style='border-top:none;border-left:none'>OntoDNA</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="2.8697571743929361E-2">0.03</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.55084745762711862">0.55</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="5.4553084347461187E-2">0.05</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>18</td>
+  <td class=xl100 style='border-top:none;border-left:none'>Prior/Prior+</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.2437">0.24</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.71346578366445912">0.71</td>
+  <td class=xl103 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.3372">0.34</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.56404886561954626">0.56</td>
+  <td class=xl106 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.28289999999999998">0.28</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.63001949317738792">0.63</td>
+  <td class=xl109 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>19</td>
+  <td class=xl100 style='border-top:none;border-left:none'>RiMOM</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.40400000000000003">0.40</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'
+  x:num="0.71479028697571745">0.71</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'
+  x:num="0.16732891832229579">0.17</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.39250000000000002">0.39</td>
+  <td class=xl105 align=right style='border-top:none;border-left:none'
+  x:num="0.44102424407518387">0.44</td>
+  <td class=xl106 align=right style='border-top:none;border-left:none'
+  x:num="0.54848046309696097">0.55</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.3982">0.40</td>
+  <td class=xl108 align=right style='border-top:none;border-left:none'
+  x:num="0.54548517520215634">0.55</td>
+  <td class=xl109 align=right style='border-top:none;border-left:none'
+  x:num="0.25642760487144789">0.26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl99 align=right style='height:15.0pt;border-top:none'
+  x:num>20</td>
+  <td class=xl100 style='border-top:none;border-left:none'>TaxoMap</td>
+  <td class=xl101 style='border-top:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl102 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'
+  x:num="0.3448123620309051">0.34</td>
+  <td class=xl104 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl105 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl106 align=right style='border-top:none;border-left:none'
+  x:num="0.5854572713643178">0.59</td>
+  <td class=xl107 style='border-top:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl108 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl109 align=right style='border-top:none;border-left:none'
+  x:num="0.43400944706863021">0.43</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl110 align=right style='height:15.75pt;border-top:none'
+  x:num>21</td>
+  <td class=xl111 style='border-top:none;border-left:none'>X-SOM</td>
+  <td class=xl112 style='border-top:none'>&nbsp;</td>
+  <td class=xl113 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl113 align=right style='border-top:none;border-left:none'
+  x:num="0.28830022075055189">0.29</td>
+  <td class=xl114 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl115 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl116 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl116 align=right style='border-top:none;border-left:none'
+  x:num="0.62013295346628683">0.62</td>
+  <td class=xl117 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl118 style='border-top:none'>&nbsp;</td>
+  <td class=xl119 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl119 align=right style='border-top:none;border-left:none'
+  x:num="0.39361060880048221">0.39</td>
+  <td class=xl120 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=2 height=21 class=xl121 style='height:15.75pt'>Average</td>
+  <td class=xl90 align=right x:num="0.22231428571428571">0.22</td>
+  <td class=xl91 align=right style='border-left:none'
+  x:num="0.25821428571428573">0.26</td>
+  <td class=xl91 align=right style='border-left:none'
+  x:num="0.49771891096394405">0.50</td>
+  <td class=xl92 align=right style='border-left:none'
+  x:num="0.30059918006937869">0.30</td>
+  <td class=xl93 style='border-left:none'>&nbsp;</td>
+  <td class=xl94 align=right style='border-left:none'
+  x:num="0.34499999999999997">0.35</td>
+  <td class=xl94 align=right style='border-left:none'
+  x:num="0.56828567404867003">0.57</td>
+  <td class=xl95 align=right style='border-left:none'
+  x:num="0.59072176205191673">0.59</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl97 align=right style='border-left:none'
+  x:num="0.28564285714285714">0.29</td>
+  <td class=xl97 align=right style='border-left:none'
+  x:num="0.48681995548813412">0.49</td>
+  <td class=xl98 align=right style='border-left:none'
+  x:num="0.38635570622098775">0.39</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td colspan=2 height=21 class=xl123 style='height:15.75pt'>Number of
+  participants</td>
+  <td class=xl125 align=right style='border-top:none' x:num>7</td>
+  <td class=xl126 align=right style='border-top:none;border-left:none' x:num>7</td>
+  <td class=xl126 align=right style='border-top:none;border-left:none' x:num>9</td>
+  <td class=xl127 align=right style='border-top:none;border-left:none' x:num>7</td>
+  <td class=xl128 align=right style='border-top:none;border-left:none' x:num>0</td>
+  <td class=xl129 align=right style='border-top:none;border-left:none' x:num>7</td>
+  <td class=xl129 align=right style='border-top:none;border-left:none' x:num>9</td>
+  <td class=xl130 align=right style='border-top:none;border-left:none' x:num>7</td>
+  <td class=xl131 align=right style='border-top:none' x:num>0</td>
+  <td class=xl132 align=right style='border-top:none;border-left:none' x:num>7</td>
+  <td class=xl132 align=right style='border-top:none;border-left:none' x:num>9</td>
+  <td class=xl133 align=right style='border-top:none;border-left:none' x:num>7</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=46 style='width:35pt'></td>
+  <td width=113 style='width:85pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+  <td width=50 style='width:38pt'></td>
+ </tr>
+ <![endif]>
+</table>
+<p>
+As can be seen in Figure 2 and Table 1, there is an increase in the average Precision for directory tack of 2008, along with a decrease in the average Recall. This behavior evidence the clear trade-off between Precision and Recall, this is, if a system wants to generate more correct results (increase Precision), it will most likely loose completeness of the results (decrease Recall). 
+  Notice that in <a href="../../../2005/results/" target="_blank">2005</a> the dataset allowed only the estimation of Recall, therefore Figure 2 and Table 1 do not contain values of Precision and F-measure for 2005.</p>
+<p align="center">
+<img src="yearlyaverages.jpg" >
+<br>
+<strong>Figure 2:</strong> Average results by year.
+</p>
+
+<p>
+A comparison of the results in 2006, 2007 and 2008 for the top-3 systems of each year based on the highest values of the F-measure indicator is shown in Figure 3. The key observation here is that unfortunately the top-3 systems of 2007 did not participate in the directory track this year, therefore, the top-3 systems for 2008 is a new set of systems (Lily, CIDER and DSSim). From these 3 systems, CIDER is a newcomer, but Lily and DSSim had also participated in the directory track 2007, where they were not included in the top-3 list. </p>
+<p>The quality of the best F-measure result of 2008 (0.49) demonstrated by DSSim is lower than the best F-measure quality in 2007 (0.71) by OLA2. The best Precision result of 2008 (0.64) demonstrated by ASMOV is higher than the results obtained in 2007 (0.62) by both OLA2 and X-SOM. Finally, for what concerns Recall, the best result of 2008 (0.41) demonstrated by DSSim is also lower than the best results obtained in 2007 (0.84) obtained by OLA2. </p>
+<p>This decrease in the maximum values achieved by the participating systems can be understood if we consider that all  participants, for the different <a href="http://oaei.ontologymatching.org/2008/">OAEI-2008</a> tracks, should use the same configuration parameters for the different tracks they wish to participate. As a direct consequence, a system can aim to tune its parameters for a specific track, therefore decreasing their performance in the other tracks. For example, we can observe that both ASMOV and Lily have very good results (over 90% F-measure) for the <a href="../benchmarks.html">Benchmark-2008</a> track, which are higher than the <a href="../../../2007/results/benchmarks/">Benchmarck-2007</a> track. </p>
+<p align="center">
+<img src="3bestComparisson.jpg" width="741" height="364">
+<br>
+<strong>Figure 3:</strong> Comparison of matching quality results in 2006, 2007 and 2008. </p>
+
+<p>Partitions of positive and negative correspondences according to the
+  system results are presented in Figure 4 and Figure 5, respectively.</p>
+
+<p align="center">
+<img src="PartPosMap-08.jpg" >
+<br>
+<strong>Figure 4:</strong> Partition of the system results on positive correspondences.
+</p>
+
+<p>Figure 4 shows that the systems managed to discover only 52% of the total number of positive correspondences (Nobody = 48%). 
+Only 11% of positive correspondences were found by almost all (6) matching systems. This high percentage of positive correspondences not found by the systems correspond to the low Recall values we observe in Table 1, which are the cause of the decrease in average Recall from 2007 to 2008.
+Figure 5 shows that most of the negatives correspondences were not found by the systems (correctly). The Figure also shows that all (6) systems found 11% of negative correspondences, 
+i.e., mistakenly returned them as positive. The last two observations suggest
+that the discrimination ability of the dataset still remains high in comparison with the results obtained in 2007.</p>
+
+<p align="center">
+<img src="PartNegMap-08.jpg">
+<br>
+<strong>Figure 5:</strong> Partition of the system results on negative correspondences.
+</p>
+
+
+
+<h2>Comments</h2>
+
+<p>
+An important observation from this evaluation is that the ontology matching community is still making progress on the web directories task this year, considering Precision, but at  expense of Recall as can be seen in Figure 2.
+This suggests that the systems experience a higher number of difficulties on the test case, in comparison to 2007, which means that there is still room for further improvements, specially in Recall. 
+A considerable remark this year is that is  hard for a single system to perform  well in all the situations when finding correspondences is needed (which are simulated by the different OAEI tracks); this suggests that a general purpose matching system is noticeably difficult to construct. Finally, as partitions of positive and negative correspondences indicate (see Figure 4 and Figure 5),
+the dataset still retains good discrimination ability as in 2007, i.e., different sets of 
+correspondences are still hard for the different systems.</p>
+
+<p>Initial location of this page: <a href="http://www.disi.unitn.it/~pane/OAEI/2008/directory/result/">http://www.disi.unitn.it/~pane/OAEI/2008/directory/result/</a>.</p>
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2008/</div>
+<!--$Id$-->
+</div>
+</body></html>

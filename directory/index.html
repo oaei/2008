@@ -1,0 +1,94 @@
+<html><head><title>Ontology Alignment Evaluation Initiative::Track name</title>
+
+
+<link rel="stylesheet" type="text/css" href="../style.css"></head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2008/">Ontology
+  Alignment Evaluation Initiative - OAEI-2008
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../../oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+</div>
+
+<h1>Task 2: Real-World Challenge: Aligning Web Directories</h1>
+
+
+<p>The focus of this task is to evaluate performance of existing alignment tools 
+  in real world taxonomy integration scenario. Our aim is to show whether ontology 
+  alignment tools can effectively be applied to integration of "shallow ontologies". 
+</p>
+
+
+<h2>Data sets</h2>
+
+
+<p>The evaluation dataset was extracted from <a href="http://www.google.com/dirhp">Google</a>, <a href="http://dir.yahoo.com/">Yahoo</a> and <a href="http://www.looksmart.com/r?country=uk">Looksmart</a> web directories. 
+The specific characteristics of the dataset are:</p>
+<ul>
+  <li>More than 4500 of node matching tasks, where each node
+matching task is composed from the paths to root of the nodes in the
+web directories. </li><li>Expert mappings for all the matching tasks. 
+  </li><li>Simple relationships. Basically web directories contain only one type of 
+    relationship so called "classification relation".
+  </li><li>Vague
+terminology and modeling principles: The matching tasks incorporate the
+typical "real world" modeling and terminological errors. </li></ul>
+<p>This implies that the task will be challenging from a technological point of 
+view, but there is guidance for tuning matching approach that needs to be taken 
+into account. The paper describing the datatset construction methodology is <a href="http://eprints.biblio.unitn.it/archive/00001345/01/001.pdf">TaxME 2</a>.</p>
+
+<p>The node matching tasks are represented by pairs of OWL ontologies,
+  where classification relation is modeled as OWL subClassOf
+  construct. Therefore all OWL ontologies are taxonomies (i.e., they
+  contain <b>only classes</b> (without Object and Data
+  properties) <b>connected with subclass relation</b>. 
+  The dataset can be downloaded 
+  from <a href="directoryDataset.zip">here</a>. The matching tasks are numbered
+  from 1 to 4639. The tasks are the same as previous years but randomly shuffled.
+  Thus, for example, the first matching task is to find a mapping
+  between 1/source.owl and 1/target.owl and to output it to a file
+  called 1/yourname.rdf.</p>
+
+
+<!--h3>Versions</h3>
+<p>Please uncomment and fill if there are several versions of the
+  dataset.</p-->
+
+<h2>Modalities</h2>
+
+  
+  <p>The task is to find an alignment between classes in the
+  ontologies. 
+In order to find the alignment any information in the
+  two models can be used. In addition, it is allowed to use background
+  knowledge, <b>that has not specifically been created for the
+  alignment tasks</b>
+(ie no hand-made mappings between parts of the ontologies). Admissible
+background knowledge are "Oracles" such as WordNet, Cyc, UMLS, etc.
+Further, results must not be tuned manually by for instance removing
+obviously wrong mappings. Participants are encouraged to submit the
+results for all representations of the dataset (i.e., both for node
+matching tasks and large scale taxonomies). </p>
+
+
+<h2>Schedule</h2>
+
+
+<p>Results of the alignment should be represented using the <a href="../align.html">common format for alignments</a> and send
+  to Juan Pane <img src="Untitled.jpg"> for evaluation by September 1st. Quantitative indicators of matching
+quality (Precision and Recall) will be returned to participants till
+September 15th.</p>
+
+<p>The complete schedule of the event can be found <a href="http://oaei.ontologymatching.org/2008/">here</a>.</p>
+<h2>Tool</h2>
+
+<p>Results of the alignment should be represented using the <a href="../align.html">common format for alignments</a>.</p>
+
+<h2>Contacts</h2>
+<p>Results  should be sent to Juan Pane <img src="Untitled.jpg">.</p>
+<p>Initial location of this page: <a href="http://www.disi.unitn.it/~pane/OAEI/2008/directory/">http://www.disi.unitn.it/~pane/OAEI/2008/directory/</a>.</p>
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2008/directory/</div>
+<!--$Id$-->
+</div>
+</body></html>

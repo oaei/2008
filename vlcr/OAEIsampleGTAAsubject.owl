@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/TR/skos-reference#">
+<owl:Ontology rdf:about=""/>
+<skos:Concept rdf:about="#Subject_afbraak">
+<skos:prefLabel>afbraak</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:related rdf:resource="#Subject_krotten"/>
+<skos:related rdf:resource="#Subject_sloperijen"/>
+<skos:related rdf:resource="#Subject_stadsvernieuwing"/>
+<skos:related rdf:resource="#Subject_verwoestingen"/>
+<skos:altLabel>slopen</skos:altLabel>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_afgevaardigden">
+<skos:prefLabel>afgevaardigden</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:narrower rdf:resource="#Subject_parlementariers"/>
+<skos:related rdf:resource="#Subject_commissies"/>
+<skos:related rdf:resource="#Subject_democratie"/>
+<skos:related rdf:resource="#Subject_verkiezingen"/>
+<skos:related rdf:resource="#Subject_vertegenwoordigers"/>
+<skos:altLabel>delegaties</skos:altLabel>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_agressie">
+<skos:prefLabel>agressie</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_gedrag"/>
+<skos:narrower rdf:resource="#Subject_seksueleintimidatie"/>
+<skos:related rdf:resource="#Subject_bedreigingen"/>
+<skos:related rdf:resource="#Subject_conflicten"/>
+<skos:related rdf:resource="#Subject_geweld"/>
+<skos:related rdf:resource="#Subject_haat"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_alternatieveenergie">
+<skos:prefLabel>alternatieve energie</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_energie"/>
+<skos:narrower rdf:resource="#Subject_biobrandstoffen"/>
+<skos:narrower rdf:resource="#Subject_windenergie"/>
+<skos:narrower rdf:resource="#Subject_zonne-energie"/>
+<skos:related rdf:resource="#Subject_alcohol"/>
+<skos:related rdf:resource="#Subject_energiebeleid"/>
+<skos:related rdf:resource="#Subject_energiebronnen"/>
+<skos:related rdf:resource="#Subject_getijden"/>
+<skos:related rdf:resource="#Subject_milieubeleid"/>
+<skos:related rdf:resource="#Subject_waterkracht"/>
+<skos:related rdf:resource="#Subject_waterstof"/>
+<skos:altLabel>getijdenenergie</skos:altLabel>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_aluminium">
+<skos:prefLabel>aluminium</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_chemischeelementen"/>
+<skos:broader rdf:resource="#Subject_metalen"/>
+<skos:related rdf:resource="#Subject_bauxiet"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_atletiek">
+<skos:prefLabel>atletiek</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_sport"/>
+<skos:narrower rdf:resource="#Subject_discuswerpen"/>
+<skos:narrower rdf:resource="#Subject_estafettes"/>
+<skos:narrower rdf:resource="#Subject_hardlopen"/>
+<skos:narrower rdf:resource="#Subject_hink-stap-springen"/>
+<skos:narrower rdf:resource="#Subject_hoogspringen"/>
+<skos:narrower rdf:resource="#Subject_hordelopen"/>
+<skos:narrower rdf:resource="#Subject_kogelslingeren"/>
+<skos:narrower rdf:resource="#Subject_kogelstoten"/>
+<skos:narrower rdf:resource="#Subject_marathon"/>
+<skos:narrower rdf:resource="#Subject_meerkamp"/>
+<skos:narrower rdf:resource="#Subject_polsstokhoogspringen"/>
+<skos:narrower rdf:resource="#Subject_polsstokverspringen"/>
+<skos:narrower rdf:resource="#Subject_snelwandelen"/>
+<skos:narrower rdf:resource="#Subject_speerwerpen"/>
+<skos:narrower rdf:resource="#Subject_steeplechase"/>
+<skos:narrower rdf:resource="#Subject_veldlopen"/>
+<skos:narrower rdf:resource="#Subject_verspringen"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_schrijvers">
+<skos:prefLabel>schrijvers</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_artistiekeberoepen"/>
+<skos:narrower rdf:resource="#Subject_columnisten"/>
+<skos:narrower rdf:resource="#Subject_dichters"/>
+<skos:narrower rdf:resource="#Subject_tekstschrijvers"/>
+<skos:related rdf:resource="#Subject_auteursrecht"/>
+<skos:related rdf:resource="#Subject_journalisten"/>
+<skos:related rdf:resource="#Subject_literatuur"/>
+<skos:related rdf:resource="#Subject_redacteuren"/>
+<skos:related rdf:resource="#Subject_uitgeverijen"/>
+<skos:altLabel>auteurs</skos:altLabel>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_auto's">
+<skos:prefLabel>auto's</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_vervoermiddelen"/>
+<skos:narrower rdf:resource="#Subject_ambulances"/>
+<skos:narrower rdf:resource="#Subject_bijzondereauto's"/>
+<skos:narrower rdf:resource="#Subject_elektrischeauto's"/>
+<skos:narrower rdf:resource="#Subject_jeeps"/>
+<skos:narrower rdf:resource="#Subject_oldtimers"/>
+<skos:narrower rdf:resource="#Subject_raceauto's"/>
+<skos:narrower rdf:resource="#Subject_taxi's"/>
+<skos:narrower rdf:resource="#Subject_vrachtwagens"/>
+<skos:related rdf:resource="#Subject_autobussen"/>
+<skos:related rdf:resource="#Subject_autogebruik"/>
+<skos:related rdf:resource="#Subject_auto-industrie"/>
+<skos:related rdf:resource="#Subject_autokeuringen"/>
+<skos:related rdf:resource="#Subject_autorijscholen"/>
+<skos:related rdf:resource="#Subject_autosloperijen"/>
+<skos:related rdf:resource="#Subject_autotests"/>
+<skos:related rdf:resource="#Subject_carpooling"/>
+<skos:related rdf:resource="#Subject_chauffeurs"/>
+<skos:related rdf:resource="#Subject_garages"/>
+<skos:related rdf:resource="#Subject_joyriding"/>
+<skos:related rdf:resource="#Subject_leasing"/>
+<skos:related rdf:resource="#Subject_lifters"/>
+<skos:related rdf:resource="#Subject_monteurs"/>
+<skos:related rdf:resource="#Subject_nummerborden"/>
+<skos:related rdf:resource="#Subject_simulators"/>
+<skos:related rdf:resource="#Subject_tachografen"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_autobussen">
+<skos:prefLabel>autobussen</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_vervoermiddelen"/>
+<skos:narrower rdf:resource="#Subject_trolleybussen"/>
+<skos:related rdf:resource="#Subject_auto's"/>
+<skos:related rdf:resource="#Subject_buschauffeurs"/>
+<skos:related rdf:resource="#Subject_busstations"/>
+<skos:related rdf:resource="#Subject_openbaarvervoer"/>
+<skos:related rdf:resource="#Subject_personenvervoer"/>
+<skos:related rdf:resource="#Subject_streekvervoer"/>
+<skos:related rdf:resource="#Subject_tachografen"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_automaten">
+<skos:prefLabel>automaten</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_apparatuur"/>
+<skos:narrower rdf:resource="#Subject_speelautomaten"/>
+<skos:related rdf:resource="#Subject_jukeboxen"/>
+<skos:related rdf:resource="#Subject_machines"/>
+<skos:related rdf:resource="#Subject_robots"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_ateliers">
+<skos:prefLabel>ateliers</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_werkplaatsen"/>
+<skos:related rdf:resource="#Subject_beeldendkunstenaars"/>
+<skos:related rdf:resource="#Subject_beeldendekunsten"/>
+<skos:related rdf:resource="#Subject_studio's"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_arbeidsrecht">
+<skos:prefLabel>arbeidsrecht</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_recht"/>
+<skos:related rdf:resource="#Subject_arbeid"/>
+<skos:related rdf:resource="#Subject_arbeidsconflicten"/>
+<skos:related rdf:resource="#Subject_arbeidsinspectie"/>
+<skos:related rdf:resource="#Subject_arbeidsovereenkomsten"/>
+<skos:related rdf:resource="#Subject_arbeidsvoorwaarden"/>
+<skos:related rdf:resource="#Subject_bedrijfsverenigingen"/>
+<skos:related rdf:resource="#Subject_beroepsverbod"/>
+<skos:related rdf:resource="#Subject_ontslagen"/>
+<skos:related rdf:resource="#Subject_werkvergunningen"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_architecten">
+<skos:prefLabel>architecten</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_artistiekeberoepen"/>
+<skos:related rdf:resource="#Subject_architectuur"/>
+<skos:related rdf:resource="#Subject_bouwkunde"/>
+<skos:related rdf:resource="#Subject_gebouwen"/>
+<skos:related rdf:resource="#Subject_technischeberoepen"/>
+<skos:related rdf:resource="#Subject_vormgeving"/>
+<skos:related rdf:resource="#Subject_vrijeberoepen"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_architectuur">
+<skos:prefLabel>architectuur</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_kunst"/>
+<skos:narrower rdf:resource="#Subject_binnenhuisarchitectuur"/>
+<skos:narrower rdf:resource="#Subject_tuinarchitectuur"/>
+<skos:related rdf:resource="#Subject_architecten"/>
+<skos:related rdf:resource="#Subject_bouwkunde"/>
+<skos:related rdf:resource="#Subject_gebouwen"/>
+<skos:related rdf:resource="#Subject_gotiek"/>
+<skos:related rdf:resource="#Subject_industrielearcheologie"/>
+<skos:related rdf:resource="#Subject_ornamenten"/>
+<skos:related rdf:resource="#Subject_rococo"/>
+<skos:related rdf:resource="#Subject_schaalmodellen"/>
+<skos:related rdf:resource="#Subject_vormgeving"/>
+<skos:altLabel>bouwkunst</skos:altLabel>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_artillerie">
+<skos:prefLabel>artillerie</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_landmacht"/>
+<skos:related rdf:resource="#Subject_geschut"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_ouders">
+<skos:prefLabel>ouders</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:narrower rdf:resource="#Subject_moeders"/>
+<skos:narrower rdf:resource="#Subject_vaders"/>
+<skos:related rdf:resource="#Subject_adoptie"/>
+<skos:related rdf:resource="#Subject_gezinnen"/>
+<skos:related rdf:resource="#Subject_grootouders"/>
+<skos:related rdf:resource="#Subject_kinderen"/>
+<skos:related rdf:resource="#Subject_opvoeding"/>
+<skos:related rdf:resource="#Subject_ouderschap"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_basisonderwijs">
+<skos:prefLabel>basisonderwijs</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_onderwijs"/>
+<skos:related rdf:resource="#Subject_kleuteronderwijs"/>
+<skos:related rdf:resource="#Subject_onderwijzers"/>
+<skos:related rdf:resource="#Subject_rekenen"/>
+<skos:related rdf:resource="#Subject_schooltoetsen"/>
+<skos:related rdf:resource="#Subject_schrijven"/>
+<skos:altLabel>lager onderwijs</skos:altLabel>
+<skos:altLabel>primair onderwijs</skos:altLabel>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_voortgezetonderwijs">
+<skos:prefLabel>voortgezet onderwijs</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_onderwijs"/>
+<skos:narrower rdf:resource="#Subject_basisvorming"/>
+<skos:narrower rdf:resource="#Subject_havo"/>
+<skos:narrower rdf:resource="#Subject_lbo"/>
+<skos:narrower rdf:resource="#Subject_mavo"/>
+<skos:narrower rdf:resource="#Subject_mbo"/>
+<skos:narrower rdf:resource="#Subject_vmbo"/>
+<skos:narrower rdf:resource="#Subject_vwo"/>
+<skos:related rdf:resource="#Subject_schoolverlaters"/>
+<skos:related rdf:resource="#Subject_studiehuis"/>
+<skos:altLabel>middelbare scholen</skos:altLabel>
+<skos:altLabel>secundair onderwijs</skos:altLabel>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_dood">
+<skos:prefLabel>dood</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:related rdf:resource="#Subject_begrafenissen"/>
+<skos:related rdf:resource="#Subject_bijna-doodervaringen"/>
+<skos:related rdf:resource="#Subject_crematies"/>
+<skos:related rdf:resource="#Subject_doodkisten"/>
+<skos:related rdf:resource="#Subject_euthanasie"/>
+<skos:related rdf:resource="#Subject_geesten"/>
+<skos:related rdf:resource="#Subject_kadavers"/>
+<skos:related rdf:resource="#Subject_kindersterfte"/>
+<skos:related rdf:resource="#Subject_lijken"/>
+<skos:related rdf:resource="#Subject_lijkschouwingen"/>
+<skos:related rdf:resource="#Subject_overlijden"/>
+<skos:related rdf:resource="#Subject_reincarnatie"/>
+<skos:related rdf:resource="#Subject_rouw"/>
+<skos:related rdf:resource="#Subject_spiritisme"/>
+<skos:related rdf:resource="#Subject_versterving"/>
+<skos:related rdf:resource="#Subject_zelfdoding"/>
+</skos:Concept>
+<skos:Concept rdf:about="#Subject_presidenten">
+<skos:prefLabel>presidenten</skos:prefLabel>
+<skos:inScheme rdf:resource="http://www.beeldengeluid.nl/Thesaurus/Subject"/>
+<skos:broader rdf:resource="#Subject_staatshoofden"/>
+<skos:related rdf:resource="#Subject_republiek"/>
+</skos:Concept>
+</rdf:RDF>

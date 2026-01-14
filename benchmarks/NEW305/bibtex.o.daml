@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns     ="http://www.daml.org/2001/03/daml+oil#"
+>
+
+<Ontology about="">
+  <versionInfo>01/26/2001$</versionInfo>
+  <comment> BibTex ontology used by USC-ISI Webscripter Project. It's based on "The LaTex Companion"(M. Goossens,F.Mittelbach and A.Samarin) and Dana Jacobsen's BibTex tutorial(http://www2.ecst.csuchico.edu/~jacobsd/bib/formats/bibtex.html)
+  </comment>
+  <imports rdf:resource="http://www.daml.org/2001/03/daml+oil"/>
+</Ontology>
+
+<Class ID="article">
+  <comment>An article from a journal or magazine.</comment>
+</Class>
+
+<Class ID="book">
+  <comment>A book with an explicit publisher.</comment>
+</Class>
+
+<Class ID="booklet">
+  <comment>A work that is printed and bound, but without a named publisher or sponsoring institution. </comment>
+</Class>
+
+<Class ID="conference">
+  <comment>The same as inproceedings.</comment>
+</Class>
+
+<Class ID="inbook">
+  <comment>A part of a book, which may be a chapter (or section or whatever) and/or a range of pages.</comment>
+</Class>
+
+<Class ID="incollection">
+  <comment>A part of a book having its own title.</comment>
+</Class>
+
+<Class ID="inproceedings">
+  <comment>An article in a conference proceedings.</comment>
+</Class>
+
+<Class ID="manual">
+  <comment>Technical documentation.</comment>
+</Class> 
+
+<Class ID="mastersthesis">
+  <comment>A Master's thesis.</comment>
+</Class> 
+
+<Class ID="misc">
+  <comment>Use this type when nothing else fits.</comment>
+</Class> 
+
+<Class ID="phdthesis">
+  <comment>A PhD thesis.</comment>
+</Class> 
+
+<Class ID="proceedings">
+  <comment>The proceedings of a conference.</comment>
+</Class> 
+
+<Class ID="techreport">
+  <comment>A report published by a school or other institution, usually numbered within a series.</comment>
+</Class> 
+
+<Class ID="unpublished">
+  <comment>A document having an author and title, but not formally published.</comment>
+</Class>  
+
+<!--using the following Classes is not recommended, but they might occur in some bibliographies.--> 
+
+<Class ID="collection">
+  <comment>A collection of works. The same as proceedings</comment>
+</Class> 
+
+<Class ID="patent">
+  <comment>A patent.</comment>
+</Class> 
+
+<Property rdf:ID="address">
+  <comment>Usually the address of the publisher or other type of institution. For major publishing houses, van Leunen recommends omitting the information entirely. For small publishers, on the other hand, you can help the reader by giving the complete address.</comment>
+</Property>
+
+
+<Property rdf:ID="annote">
+  <comment>An annotation. It is not used by the standard bibliography styles, but may be used by others that produce an annotated bibliography.</comment>
+</Property>
+
+<Property rdf:ID="author">
+  <comment>The name(s) of the author(s), in the format described in the LaTeX book. </comment>
+</Property>
+
+<Property rdf:ID="booktitle">
+  <comment>Title of a book, part of which is being cited. See the LaTeX book for how to type titles. For book entries, use the title field instead.</comment>
+</Property>
+
+<Property rdf:ID="chapter">
+  <comment>A chapter (or section or whatever) number.</comment>
+</Property>
+
+<Property rdf:ID="crossref">
+  <comment>The database key of the entry being cross referenced. Any fields that are missing from the current record are inherited from the field being cross referenced.</comment>
+</Property>
+
+<Property rdf:ID="edition">
+  <comment>The edition of a book---for example, ``Second''. This should be an ordinal, and should have the first letter capitalized, as shown here; the standard styles convert to lower case when necessary.</comment>
+</Property>
+
+<Property rdf:ID="editor">
+x  <comment>Name(s) of editor(s), typed as indicated in the LaTeX book. If there is also an author field, then the editor field gives the editor of the book or collection in which the reference appears.</comment>
+</Property>
+
+<Property rdf:ID="howpublished">
+  <comment>How something strange has been published. The first word should be capitalized.</comment>
+</Property>
+
+<Property rdf:ID="institution">
+  <comment>The sponsoring institution of a technical report.</comment>
+</Property>
+
+<Property rdf:ID="journal">
+  <comment>A journal name. Abbreviations are provided for many journals.</comment>
+</Property>
+
+<Property rdf:ID="key">
+  <comment>Used for alphabetizing, cross referencing, and creating a label when the ``author'' information is missing. This field should not be confused with the key that appears in the cite command and at the beginning of the database entry.</comment>
+</Property>
+
+<Property rdf:ID="month">
+  <comment>The month in which the work was published or, for an unpublished work, in which it was written. You should use the standard three-letter abbreviation, as described in Appendix B.1.3 of the LaTeX book.</comment>
+</Property>
+
+<Property rdf:ID="note">
+  <comment>Any additional information that can help the reader. The first word should be capitalized.</comment>
+</Property>
+
+<Property rdf:ID="number">
+  <comment>The number of a journal, magazine, technical report, or of a work in a series. An issue of a journal or magazine is usually identified by its volume and number; the organization that issues a technical report usually gives it a number; and sometimes books are given numbers in a named series.</comment>
+</Property>
+
+<Property rdf:ID="organization">
+  <comment>The organization that sponsors a conference or that publishes a manual.</comment>
+</Property>
+
+<Property rdf:ID="pages">
+  <comment>One or more page numbers or range of numbers, such as 42--111 or 7,41,73--97 or 43+ (the `+' in this last example indicates pages following that don't form a simple range). To make it easier to maintain Scribe-compatible databases, the standard styles convert a single dash (as in 7-33) to the double dash used in TeX to denote number ranges (as in 7--33).</comment>
+</Property>
+
+<Property rdf:ID="publisher">
+  <comment>The publisher's name.</comment>
+</Property>
+
+<Property rdf:ID="school">
+  <comment>The name of the school where a thesis was written.</comment>
+</Property>
+
+<Property rdf:ID="series">
+  <comment>The name of a series or set of books. When citing an entire book, the the title field gives its title and an optional series field gives the name of a series or multi-volume set in which the book is published.</comment>
+</Property>
+
+<Property rdf:ID="title">
+  <comment>The work's title, typed as explained in the LaTeX book.</comment>
+</Property>
+
+<Property rdf:ID="type">
+  <comment>The type of a technical report---for example, ``Research Note''.</comment>
+</Property>
+
+<Property rdf:ID="volume">
+  <comment>The volume of a journal or multi-volume book.</comment>
+</Property>
+
+<Property rdf:ID="year">
+  <comment>The year of publication or, for an unpublished work, the year it was written. Generally it should consist of four numerals, such as 1984, although the standard styles can handle any year whose last four nonpunctuation characters are numerals, such as `\hbox{(about 1984)}'.</comment>
+</Property>
+
+<!--The following are some also common used field types -->
+
+<Property rdf:ID="affiliation">
+  <comment>The authors affiliation.</comment>
+</Property>
+
+<Property rdf:ID="abstract">
+  <comment>An abstract of the work.</comment>
+</Property>
+
+<Property rdf:ID="contents">
+  <comment>A Table of Contents</comment>
+</Property>
+
+<Property rdf:ID="copyright">
+  <comment>Copyright information.</comment>
+</Property>
+
+<Property rdf:ID="ISBN">
+  <comment>The International Standard Book Number.</comment>
+</Property>
+
+<Property rdf:ID="ISSN">
+  <comment>The International Standard Serial Number. Used to identify a journal.</comment>
+</Property>
+
+<Property rdf:ID="keywords">
+  <comment>Key words used for searching or possibly for annotation.</comment>
+</Property>
+
+<Property rdf:ID="language">
+  <comment>The language the document is in.</comment>
+</Property>
+
+<Property rdf:ID="location">
+  <comment>A location associated with the entry, such as the city in which a conference took place.</comment>
+</Property>
+
+<Property rdf:ID="LCCN">
+  <comment>The Library of Congress Call Number. Someone use "lib-congress".</comment>
+</Property> 
+
+<Property rdf:ID="mrnumber">
+  <comment>The Mathematical Reviews number.</comment>
+</Property> 
+
+<Property rdf:ID="price">
+  <comment>The price of the document.</comment>
+</Property> 
+
+<Property rdf:ID="size">
+  <comment>The physical dimensions of a work.</comment>
+</Property> 
+
+<Property rdf:ID="URL">
+  <comment>The WWW Universal Resource Locator that points to the item being referenced. This often is used for technical reports to point to the ftp site where the postscript source of the report is located.</comment>
+</Property>
+
+</rdf:RDF>
